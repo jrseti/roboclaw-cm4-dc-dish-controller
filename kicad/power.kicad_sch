@@ -15911,7 +15911,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "docs/MX26631DL_eFuse.pdf"
+		(property "Datasheet" "${DOCS}/MX26631DL_eFuse.pdf"
 			(at 134.62 80.01 0)
 			(hide yes)
 			(show_name no)
