@@ -1042,7 +1042,7 @@
 						(type none)
 					)
 				)
-				(pin passive line
+				(pin no_connect line
 					(at -2.54 -12.7 90)
 					(length 2.54)
 					(name "NC"
@@ -1060,7 +1060,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at 0 -12.7 90)
 					(length 2.54)
 					(name "A"
@@ -1078,7 +1078,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at 2.54 -12.7 90)
 					(length 2.54)
 					(name "GND"
@@ -1096,7 +1096,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin open_collector line
 					(at 2.54 12.7 270)
 					(length 2.54)
 					(name "Y"
@@ -1114,7 +1114,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -2.54 12.7 270)
 					(length 2.54)
 					(name "VCC"
@@ -1675,7 +1675,7 @@
 	)
 	(rectangle
 		(start 80.645 130.175)
-		(end 132.08 154.94)
+		(end 132.08 163.83)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1738,6 +1738,17 @@
 			)
 		)
 		(uuid "29133d3d-9f10-4b99-8075-c5475b7b75c8")
+	)
+	(text "H3, H4:\nPull-up resistors for I2C1_SDA/I2C1_SCL.\nPlace jumpers to apply pull-ups."
+		(exclude_from_sim no)
+		(at 87.376 158.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "372d484b-1e6c-47c1-8198-246722d57e13")
 	)
 	(text "EEPROM write protect = Jumper Pins 3-4\n\n"
 		(exclude_from_sim no)
