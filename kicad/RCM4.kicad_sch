@@ -249,6 +249,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -424,6 +435,17 @@
 				)
 			)
 			(property "LCSC Part" "C11702"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -619,6 +641,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -804,6 +837,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -957,6 +1001,17 @@
 			)
 			(property "LCSC Part" "C2297"
 				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0805"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1172,6 +1227,17 @@
 			)
 			(property "LCSC Part" "C67531"
 				(at 0 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOT-353 (SC-88A)"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1430,6 +1496,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
@@ -1580,6 +1657,17 @@
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD CM4 module (2x100-pin Hirose DF40)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5347,6 +5435,17 @@
 			)
 			(property "LCSC Part" "C2295"
 				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0805"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -13406,6 +13505,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 43.18 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7279ca22-0212-4ef6-b40d-c4df5c42fa13")
 		)
@@ -13513,6 +13623,17 @@
 		)
 		(property "LCSC Part" "C2297"
 			(at 115.57 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0805"
+			(at 134.62 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13832,6 +13953,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 97.79 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f372c949-8f75-40d8-9f2d-5bad8c74974d")
 		)
@@ -13934,6 +14066,17 @@
 			)
 		)
 		(property "LCSC Part" "C2295"
+			(at 86.36 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0805"
 			(at 86.36 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -14080,6 +14223,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 133.35 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f554d4b6-4ada-4a8b-b127-a66cad41e198")
 		)
@@ -14178,6 +14332,17 @@
 		)
 		(property "Field5" "2x DF40C-100DS-0.4V"
 			(at 81.28 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD CM4 module (2x100-pin Hirose DF40)"
+			(at 83.82 83.82 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14914,6 +15079,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 43.18 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a2c3258e-6503-40d5-ad62-3b0648bccc0a")
 		)
@@ -15050,6 +15226,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 40.64 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7ae441e1-de5b-4558-8b0c-5e8f941545fb")
 		)
@@ -15142,6 +15329,17 @@
 		)
 		(property "Field5" "2x DF40C-100DS-0.4V"
 			(at 187.96 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD CM4 module (2x100-pin Hirose DF40)"
+			(at 48.26 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15825,6 +16023,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Test pad D1.5"
+			(at 153.67 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "800b6e13-ec50-4d91-b98a-f84c067d4d3b")
 		)
@@ -15898,6 +16107,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 74.93 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
 			(at 74.93 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -16070,6 +16290,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Test pad D1.5"
+			(at 153.67 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2fc44bd5-5ae8-4e0f-9f5f-e26f6765c5f2")
 		)
@@ -16185,6 +16416,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD SOT-353 (SC-88A)"
+			(at 60.96 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "93bfab05-500f-4233-8b7e-80d17b3bf8bc")
 		)
@@ -16265,6 +16507,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 132.08 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
 			(at 132.08 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -16576,6 +16829,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 41.91 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fe8270d4-524f-437c-a43a-8435d4599b8b")
 		)
@@ -16707,6 +16971,17 @@
 			)
 		)
 		(property "LCSC Part" "C25076"
+			(at 41.91 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 41.91 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -16849,6 +17124,17 @@
 			)
 		)
 		(property "LCSC Part" "C1525"
+			(at 83.82 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 83.82 171.45 0)
 			(hide yes)
 			(show_name no)

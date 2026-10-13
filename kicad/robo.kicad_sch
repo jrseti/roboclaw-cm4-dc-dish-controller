@@ -128,6 +128,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
 				(at 0 0 0)
 				(show_name no)
@@ -350,6 +361,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -525,6 +547,17 @@
 				)
 			)
 			(property "LCSC Part" "C25744"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -720,6 +753,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -895,6 +939,17 @@
 				)
 			)
 			(property "LCSC Part" "C25905"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1091,6 +1146,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
@@ -1249,6 +1315,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "THT Terminal block 1x2 P2.54"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "KF2EDGR-2.54-2P_0_1"
 				(rectangle
 					(start -2.54 3.81)
@@ -1394,6 +1471,17 @@
 			)
 			(property "LCSC Part" "C577595"
 				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Terminal block 1x3 P2.54"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1577,6 +1665,17 @@
 			)
 			(property "LCSC Part" "C577596"
 				(at 0 -21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Terminal block 1x4 P2.54"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1787,6 +1886,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "THT Terminal block 1x2 P7.62"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Screw terminal"
 				(at 0 0 0)
 				(show_name no)
@@ -1943,6 +2053,17 @@
 			)
 			(property "LCSC Part" "N/A"
 				(at 0 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Module"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2435,6 +2556,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "TPESD0402G05V_0_1"
 				(polyline
 					(pts
@@ -2513,7 +2645,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "power:GNDPWR"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -2528,7 +2660,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2538,8 +2670,8 @@
 					)
 				)
 			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
+			(property "Value" "GNDPWR"
+				(at 0 -3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2549,7 +2681,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2560,6 +2692,17 @@
 				)
 			)
 			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2570,7 +2713,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "ki_keywords" "global ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2581,21 +2724,34 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
+			(symbol "GNDPWR_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -2605,8 +2761,56 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "GND_1_1"
+			(symbol "GNDPWR_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -4112,6 +4316,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 158.75 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7fc8f3a5-a81f-4373-9157-f42636e08b3c")
 		)
@@ -4248,6 +4463,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 171.45 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bd03595f-ddc7-4510-8355-2c86b514a769")
 		)
@@ -4264,7 +4490,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 153.67 120.65 0)
 		(unit 1)
 		(body_style 1)
@@ -4285,7 +4511,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 153.67 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4318,7 +4544,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 153.67 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4462,6 +4688,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 231.14 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b8ef0770-2384-4206-8fd0-588a4de09eb5")
 		)
@@ -4586,6 +4823,17 @@
 			)
 		)
 		(property "LCSC Part" "C25076"
+			(at 241.3 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 241.3 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4732,6 +4980,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "daf7b3bf-0424-400c-ba58-1f029d827ff4")
 		)
@@ -4856,6 +5115,17 @@
 			)
 		)
 		(property "LCSC Part" "C25076"
+			(at 168.91 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 168.91 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -5002,6 +5272,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 158.75 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4475c065-269b-4357-94f3-21a51dcacb11")
 		)
@@ -5116,6 +5397,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Terminal block 1x3 P2.54"
+			(at 46.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "569ad3d0-1244-4268-8ad9-a6c6f71d1384")
 		)
@@ -5135,7 +5427,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 39.37 161.29 0)
 		(unit 1)
 		(body_style 1)
@@ -5156,7 +5448,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 39.37 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -5189,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 39.37 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -5213,7 +5505,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 231.14 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -5234,7 +5526,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 231.14 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5267,7 +5559,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 231.14 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5291,7 +5583,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 176.53 118.11 0)
 		(unit 1)
 		(body_style 1)
@@ -5312,7 +5604,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 176.53 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5345,7 +5637,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 176.53 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -5369,7 +5661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 248.92 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -5390,7 +5682,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 248.92 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5423,7 +5715,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 248.92 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5544,6 +5836,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Module"
+			(at 85.09 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "S3"
 			(uuid "12f463bd-89d9-428f-8ada-af24b8210b51")
 		)
@@ -5617,7 +5920,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 171.45 118.11 0)
 		(unit 1)
 		(body_style 1)
@@ -5638,7 +5941,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 171.45 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5671,7 +5974,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 171.45 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -5695,7 +5998,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 158.75 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -5716,7 +6019,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 158.75 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5749,7 +6052,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 158.75 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5773,7 +6076,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 176.53 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -5794,7 +6097,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 176.53 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5827,7 +6130,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 176.53 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5928,6 +6231,17 @@
 			)
 		)
 		(property "MPN" "KF2EDGR-2.54-2P"
+			(at 46.99 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Terminal block 1x2 P2.54"
 			(at 46.99 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -6041,6 +6355,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Terminal block 1x2 P2.54"
+			(at 46.99 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c878a673-eb22-44f2-b9bb-57b8ec6dc61d")
 		)
@@ -6057,7 +6382,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 104.14 64.77 0)
 		(unit 1)
 		(body_style 1)
@@ -6078,7 +6403,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 104.14 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6111,7 +6436,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 104.14 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6245,6 +6570,17 @@
 			)
 		)
 		(property "Tolerance" "±10%"
+			(at 176.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 176.53 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6391,6 +6727,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c18c0799-25a8-43b2-966a-c28b3b225de9")
 		)
@@ -6525,6 +6872,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 168.91 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8052fd82-b377-4d31-bb80-edbdc410a5bb")
 		)
@@ -6541,7 +6899,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 40.64 113.03 0)
 		(unit 1)
 		(body_style 1)
@@ -6562,7 +6920,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 40.64 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6595,7 +6953,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 40.64 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6619,7 +6977,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 40.64 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -6640,7 +6998,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 40.64 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6673,7 +7031,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 40.64 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6697,7 +7055,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 39.37 171.45 0)
 		(unit 1)
 		(body_style 1)
@@ -6718,7 +7076,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 39.37 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -6751,7 +7109,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 39.37 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6852,6 +7210,17 @@
 			)
 		)
 		(property "MPN" "TPESD0402G05V"
+			(at 158.75 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 158.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6966,6 +7335,17 @@
 			)
 		)
 		(property "LCSC Part" "C577596"
+			(at 46.99 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Terminal block 1x4 P2.54"
 			(at 46.99 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7116,6 +7496,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 59.69 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9ac3c165-ea50-4e8b-9103-bd30121dd19d")
 		)
@@ -7219,6 +7610,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Terminal block 1x2 P2.54"
+			(at 46.99 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e89628f4-faa6-4b19-9177-b84d165003f0")
 		)
@@ -7235,7 +7637,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 231.14 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -7256,7 +7658,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 231.14 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7289,7 +7691,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 231.14 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7423,6 +7825,17 @@
 			)
 		)
 		(property "Tolerance" "±10%"
+			(at 248.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 248.92 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7569,6 +7982,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 176.53 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3a5e7def-7416-41a3-814d-fce49dbb1812")
 		)
@@ -7705,6 +8129,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 231.14 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5c67b864-b85a-4cca-9455-77f27333a365")
 		)
@@ -7721,7 +8156,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 231.14 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -7742,7 +8177,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 231.14 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7775,7 +8210,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 231.14 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7886,6 +8321,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 231.14 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "62847aa6-e144-4d5a-828e-45f80a53abd5")
 		)
@@ -7902,7 +8348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 176.53 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -7923,7 +8369,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 176.53 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7956,7 +8402,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 176.53 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7980,7 +8426,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 248.92 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -8001,7 +8447,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 248.92 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -8034,7 +8480,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 248.92 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8146,6 +8592,17 @@
 			)
 		)
 		(property "LCSC Part" "C475104"
+			(at 88.9 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Terminal block 1x2 P7.62"
 			(at 88.9 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8292,6 +8749,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 248.92 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "170781ff-6c92-4f9c-82fc-7d5523a17e31")
 		)
@@ -8308,7 +8776,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 248.92 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -8329,7 +8797,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 248.92 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8362,7 +8830,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 248.92 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8484,6 +8952,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Terminal block 1x2 P7.62"
+			(at 88.9 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3f02d9e3-cd45-4656-a621-50d931e3dd1e")
 		)
@@ -8500,7 +8979,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 104.14 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -8522,7 +9001,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 104.14 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8554,7 +9033,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 104.14 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -8578,7 +9057,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 158.75 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -8599,7 +9078,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 158.75 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -8632,7 +9111,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 158.75 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8764,6 +9243,17 @@
 			)
 		)
 		(property "LCSC Part" "C25076"
+			(at 49.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 49.53 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8908,6 +9398,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 241.3 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ed280ea-6ed5-4d10-9080-f1a500fcce49")
 		)
@@ -9032,6 +9533,17 @@
 			)
 		)
 		(property "LCSC Part" "C25076"
+			(at 241.3 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 241.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9178,6 +9690,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 231.14 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cc865788-c8c6-46e4-b89e-153fe5e8ce3e")
 		)
@@ -9281,6 +9804,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 153.67 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0c4afae6-e8af-4dbc-8071-ee51a2829919")
 		)
@@ -9374,6 +9908,17 @@
 			)
 		)
 		(property "MPN" "TPESD0402G05V"
+			(at 231.14 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 231.14 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9520,6 +10065,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 248.92 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ce29152f-c164-4825-b302-4954fb13b44d")
 		)
@@ -9536,7 +10092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GNDPWR")
 		(at 39.37 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -9557,7 +10113,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "PGND"
 			(at 39.37 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -9590,7 +10146,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 39.37 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -9732,6 +10288,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 163.83 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "372d40fc-0d3e-4ba9-a8e7-14dd7328426b")
 		)
@@ -9825,6 +10392,17 @@
 			)
 		)
 		(property "MPN" "TPESD0402G05V"
+			(at 231.14 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 231.14 104.14 0)
 			(hide yes)
 			(show_name no)

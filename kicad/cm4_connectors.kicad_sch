@@ -126,6 +126,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -273,6 +284,17 @@
 			)
 			(property "LCSC Part" "C124375"
 				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Pin header 1x2 P2.54"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -438,6 +460,17 @@
 			)
 			(property "LCSC Part" "C5383110"
 				(at 0 -31.75 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Pin header 2x12 P2.54"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1008,6 +1041,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD SOT-353 (SC-88A)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Buffers / Drivers"
 				(at 0 0 0)
 				(show_name no)
@@ -1227,6 +1271,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "THT Pin header 1x3 P2.54"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Pin Headers"
 				(at 0 0 0)
 				(show_name no)
@@ -1390,6 +1445,17 @@
 			)
 			(property "LCSC Part" "C65114"
 				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Pin header 2x3 P2.54"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1674,8 +1740,8 @@
 		(uuid "ad3123ec-cd81-4f54-ae5c-4f48bf86b2a5")
 	)
 	(rectangle
-		(start 80.645 130.175)
-		(end 132.08 163.83)
+		(start 118.745 159.385)
+		(end 170.18 193.04)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1687,7 +1753,7 @@
 	)
 	(rectangle
 		(start 50.8 48.26)
-		(end 118.11 121.92)
+		(end 118.11 142.24)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1721,7 +1787,7 @@
 	)
 	(text "I2C Pull-Ups"
 		(exclude_from_sim no)
-		(at 88.392 132.334 0)
+		(at 126.492 161.544 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1741,7 +1807,7 @@
 	)
 	(text "H3, H4:\nPull-up resistors for I2C1_SDA/I2C1_SCL.\nPlace jumpers to apply pull-ups."
 		(exclude_from_sim no)
-		(at 87.376 158.242 0)
+		(at 125.476 187.452 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1770,6 +1836,17 @@
 			)
 		)
 		(uuid "49c52580-cdce-44c0-b079-b639903359fb")
+	)
+	(text "AIN0 / AIN1 (J11-2 / J11-4)\nto CM4 AnalogIP0/1 (MxL7704 ADC).\nMeasures 0 to 2.55 V (8-bit).\nInput current < 1 uA (10 Mohm).\nSurvives +6.0 V / -0.3 V DC at\nthe connector (MxL7704 abs max).\nNot reverse-polarity tolerant.\nR133/R134 1k series (RCM4 sheet)."
+		(exclude_from_sim no)
+		(at 55.626 138.176 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6117e5ac-d521-40e8-b2d3-ce9f741e644f")
 	)
 	(text "CM4 External Header Pins"
 		(exclude_from_sim no)
@@ -1933,7 +2010,7 @@
 		(uuid "8851d9c6-35f9-4bbf-911a-062e7a0d8ce3")
 	)
 	(junction
-		(at 109.22 137.16)
+		(at 147.32 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed4537c0-edc5-4dcd-9375-4771edace658")
@@ -1994,7 +2071,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 134.62) (xy 106.68 134.62)
+			(xy 147.32 163.83) (xy 144.78 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2064,7 +2141,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 137.16) (xy 120.65 138.43)
+			(xy 158.75 166.37) (xy 158.75 167.64)
 		)
 		(stroke
 			(width 0)
@@ -2184,7 +2261,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 137.16) (xy 109.22 134.62)
+			(xy 147.32 166.37) (xy 147.32 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2234,7 +2311,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 146.05) (xy 96.52 147.32)
+			(xy 134.62 175.26) (xy 134.62 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2254,7 +2331,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 137.16) (xy 120.65 137.16)
+			(xy 147.32 166.37) (xy 158.75 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2274,7 +2351,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 147.32) (xy 95.25 147.32)
+			(xy 134.62 176.53) (xy 133.35 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2304,7 +2381,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 138.43) (xy 96.52 137.16)
+			(xy 134.62 167.64) (xy 134.62 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2314,7 +2391,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 146.05) (xy 120.65 147.32)
+			(xy 158.75 175.26) (xy 158.75 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2344,7 +2421,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 149.86) (xy 97.79 149.86)
+			(xy 133.35 179.07) (xy 135.89 179.07)
 		)
 		(stroke
 			(width 0)
@@ -2494,7 +2571,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 149.86) (xy 121.92 149.86)
+			(xy 157.48 179.07) (xy 160.02 179.07)
 		)
 		(stroke
 			(width 0)
@@ -2534,7 +2611,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 137.16) (xy 109.22 137.16)
+			(xy 134.62 166.37) (xy 147.32 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2614,7 +2691,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 147.32) (xy 119.38 147.32)
+			(xy 158.75 176.53) (xy 157.48 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2666,7 +2743,7 @@
 	)
 	(hierarchical_label "3V3_CM4"
 		(shape input)
-		(at 106.68 134.62 180)
+		(at 144.78 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2765,7 +2842,7 @@
 	)
 	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
-		(at 121.92 149.86 0)
+		(at 160.02 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2820,7 +2897,7 @@
 	)
 	(hierarchical_label "I2C1_SDA"
 		(shape bidirectional)
-		(at 97.79 149.86 0)
+		(at 135.89 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2996,7 +3073,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:0402WGF2201TCE")
-		(at 96.52 142.24 0)
+		(at 134.62 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3006,7 +3083,7 @@
 		(dnp no)
 		(uuid "2fb1e11f-764d-405a-919a-ea9c2938d5db")
 		(property "Reference" "R113"
-			(at 94.742 140.97 0)
+			(at 132.842 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3017,7 +3094,7 @@
 			)
 		)
 		(property "Value" "2.2kΩ"
-			(at 94.742 143.51 0)
+			(at 132.842 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3028,7 +3105,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:R0402"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3039,7 +3116,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF2201TCE.pdf"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3050,7 +3127,7 @@
 			)
 		)
 		(property "Description" "-55℃~+155℃ 2.2kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3061,7 +3138,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3072,7 +3149,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3083,7 +3160,7 @@
 			)
 		)
 		(property "MPN" "0402WGF2201TCE"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3094,7 +3171,7 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3105,7 +3182,18 @@
 			)
 		)
 		(property "LCSC Part" "C25879"
-			(at 96.52 142.24 0)
+			(at 134.62 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 134.62 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3220,6 +3308,17 @@
 		)
 		(property "LCSC Part" "C49257"
 			(at 165.1 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Pin header 1x3 P2.54"
+			(at 165.1 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3423,6 +3522,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Pin header 2x3 P2.54"
+			(at 190.5 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "46dd912a-5ce3-4999-b824-8073bdd2e6fd")
 		)
@@ -3452,7 +3562,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:210S-1*2PL=11.6MMGold-platedblack")
-		(at 114.3 148.59 180)
+		(at 152.4 177.8 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3462,7 +3572,7 @@
 		(dnp no)
 		(uuid "8798348e-f833-4607-ae45-bb40f4d00603")
 		(property "Reference" "H4"
-			(at 113.03 147.574 90)
+			(at 151.13 176.784 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3473,7 +3583,7 @@
 			)
 		)
 		(property "Value" "210S-1*2P L=11.6MMGold-plated black"
-			(at 107.95 147.3201 0)
+			(at 146.05 176.5301 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3485,7 +3595,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:HDR-TH_2P-P2.54-V-M-1"
-			(at 114.3 139.7 0)
+			(at 152.4 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3496,7 +3606,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/B-2100S02P-A110.pdf"
-			(at 114.3 137.16 0)
+			(at 152.4 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3507,7 +3617,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 148.59 0)
+			(at 152.4 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3518,7 +3628,7 @@
 			)
 		)
 		(property "Manufacturer" "Ckmtw"
-			(at 114.3 134.62 0)
+			(at 152.4 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3529,7 +3639,7 @@
 			)
 		)
 		(property "MPN" "B-2100S02P-A110"
-			(at 114.3 132.08 0)
+			(at 152.4 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3540,7 +3650,18 @@
 			)
 		)
 		(property "LCSC Part" "C124375"
-			(at 114.3 129.54 0)
+			(at 152.4 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Pin header 1x2 P2.54"
+			(at 152.4 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3567,7 +3688,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:210S-1*2PL=11.6MMGold-platedblack")
-		(at 90.17 148.59 180)
+		(at 128.27 177.8 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3577,7 +3698,7 @@
 		(dnp no)
 		(uuid "9e496b0a-4d1e-4f8b-b52a-392e39b11d9e")
 		(property "Reference" "H3"
-			(at 88.9 147.574 90)
+			(at 127 176.784 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3588,7 +3709,7 @@
 			)
 		)
 		(property "Value" "210S-1*2P L=11.6MMGold-plated black"
-			(at 83.82 147.3201 0)
+			(at 121.92 176.5301 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3600,7 +3721,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:HDR-TH_2P-P2.54-V-M-1"
-			(at 90.17 139.7 0)
+			(at 128.27 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3611,7 +3732,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/B-2100S02P-A110.pdf"
-			(at 90.17 137.16 0)
+			(at 128.27 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3622,7 +3743,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 148.59 0)
+			(at 128.27 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3633,7 +3754,7 @@
 			)
 		)
 		(property "Manufacturer" "Ckmtw"
-			(at 90.17 134.62 0)
+			(at 128.27 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3644,7 +3765,7 @@
 			)
 		)
 		(property "MPN" "B-2100S02P-A110"
-			(at 90.17 132.08 0)
+			(at 128.27 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3655,7 +3776,18 @@
 			)
 		)
 		(property "LCSC Part" "C124375"
-			(at 90.17 129.54 0)
+			(at 128.27 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Pin header 1x2 P2.54"
+			(at 128.27 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3768,6 +3900,17 @@
 		)
 		(property "LCSC Part" "C5383110"
 			(at 80.01 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Pin header 2x12 P2.54"
+			(at 80.01 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4113,6 +4256,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT Pin header 2x3 P2.54"
+			(at 196.85 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "13e9d7f6-4d04-43e9-ba4f-d8ae91982d46")
 		)
@@ -4228,6 +4382,17 @@
 		)
 		(property "LCSC Part" "C67531"
 			(at 127 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOT-353 (SC-88A)"
+			(at 157.48 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4500,7 +4665,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:0402WGF2201TCE")
-		(at 120.65 142.24 0)
+		(at 158.75 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4510,7 +4675,7 @@
 		(dnp no)
 		(uuid "fc73ab0f-b6bb-4e27-8d9e-3c243203cebb")
 		(property "Reference" "R114"
-			(at 118.872 140.97 0)
+			(at 156.972 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4521,7 +4686,7 @@
 			)
 		)
 		(property "Value" "2.2kΩ"
-			(at 118.872 143.51 0)
+			(at 156.972 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4532,7 +4697,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:R0402"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4543,7 +4708,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF2201TCE.pdf"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4554,7 +4719,7 @@
 			)
 		)
 		(property "Description" "-55℃~+155℃ 2.2kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4565,7 +4730,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4576,7 +4741,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4587,7 +4752,7 @@
 			)
 		)
 		(property "MPN" "0402WGF2201TCE"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4598,7 +4763,7 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4609,7 +4774,18 @@
 			)
 		)
 		(property "LCSC Part" "C25879"
-			(at 120.65 142.24 0)
+			(at 158.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

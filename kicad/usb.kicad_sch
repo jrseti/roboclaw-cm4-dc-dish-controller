@@ -255,6 +255,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
@@ -453,6 +464,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -628,6 +650,17 @@
 				)
 			)
 			(property "LCSC Part" "C25752"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -823,6 +856,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -998,6 +1042,17 @@
 				)
 			)
 			(property "LCSC Part" "C25879"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1193,6 +1248,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -1340,6 +1406,17 @@
 			)
 			(property "LCSC Part" "C2158037"
 				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOT-23-6"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1616,6 +1693,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
@@ -1813,6 +1901,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
 				(at 0 0 0)
 				(show_name no)
@@ -1995,6 +2094,17 @@
 			)
 			(property "LCSC Part" "C12049"
 				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT USB-A dual stacked"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2314,6 +2424,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD EIA-7343 (D case)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(show_name no)
@@ -2544,6 +2665,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "FRC0402F3602TS_0_1"
 				(rectangle
 					(start -2.54 1.27)
@@ -2678,6 +2810,17 @@
 			)
 			(property "LCSC Part" "C11355"
 				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD MSOP-10"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2976,6 +3119,17 @@
 			)
 			(property "LCSC Part" "C32713285"
 				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD Pin header 2x5 P2.54"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3302,6 +3456,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD SOD-123FL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "D_*"
 				(at 0 0 0)
 				(show_name no)
@@ -3462,6 +3627,17 @@
 			)
 			(property "LCSC Part" "C90627"
 				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD USON-10 2.5x1.0"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3782,6 +3958,17 @@
 			)
 			(property "LCSC Part" "C165948"
 				(at 0 -31.75 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD+THT USB-C receptacle"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4188,6 +4375,17 @@
 			)
 			(property "LCSC Part" "C220679"
 				(at 0 -40.64 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD QFN-36 6.0x6.0 EP"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5036,6 +5234,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD Crystal 3225 4-pad"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Crystals"
 				(at 0 0 0)
 				(show_name no)
@@ -5232,6 +5441,157 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:Earth"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Earth_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5628,7 +5988,7 @@
 		)
 		(uuid "c4adb217-178b-4631-abae-4f6d73b9569b")
 	)
-	(text "USB_OTG_ID: high = CM4 device mode (rpiboot), \nlow/GND = CM4 host. Needs otg_mode=1 in config.txt.\nUSBC1 VBUS: 5.0 V nom (4.75 V min / 5.5 V max).\nNo USB-PD controller; CC has 5.1 kΩ Rd only.\nVBUS used only for detect: R8/R6 divider -> USB_OTG_ID (2.75 V max)."
+	(text "USB_OTG_ID: high = CM4 device mode (rpiboot), \nlow/GND = CM4 host. Needs otg_mode=1 in config.txt.\nUSBC1 VBUS: 5.0 V nom (4.75 V min / 5.5 V max).\nNo USB-PD controller; CC has 5.1 kΩ Rd only.\nVBUS used only for detect: R8/R6 divider -> USB_OTG_ID (2.75 V max).\nVBUS current: 1.25 mA continuous / 1.25 mA peak.\nVBUS survives up to 6.6 V, down to -1.0 V."
 		(exclude_from_sim no)
 		(at 204.47 81.788 0)
 		(effects
@@ -5671,12 +6031,6 @@
 			(justify left top)
 		)
 		(uuid "f27fe2c1-9931-4e71-9e28-e1f9a4969941")
-	)
-	(junction
-		(at 237.49 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00c8ba98-38a5-4f31-9aab-41999b71f197")
 	)
 	(junction
 		(at 259.08 67.31)
@@ -6112,16 +6466,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 116.84) (xy 237.49 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01890378-1650-4bc2-9fce-5d4cc7ec628d")
-	)
-	(wire
-		(pts
 			(xy 69.85 139.7) (xy 60.96 139.7)
 		)
 		(stroke
@@ -6199,16 +6543,6 @@
 			(type default)
 		)
 		(uuid "0884b82d-a507-40c9-89bf-38a50b47da8d")
-	)
-	(wire
-		(pts
-			(xy 237.49 118.11) (xy 237.49 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09bd08e2-8b6d-4fca-8182-82f302449f27")
 	)
 	(wire
 		(pts
@@ -6419,16 +6753,6 @@
 			(type default)
 		)
 		(uuid "2338c351-02a1-4ee1-b11f-4bf96a1ded08")
-	)
-	(wire
-		(pts
-			(xy 223.52 118.11) (xy 237.49 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23e51805-801c-4c27-aad0-c0fab68b4ef6")
 	)
 	(wire
 		(pts
@@ -6789,16 +7113,6 @@
 			(type default)
 		)
 		(uuid "5257157c-301a-42e9-ab18-1ceefdf25ccb")
-	)
-	(wire
-		(pts
-			(xy 237.49 118.11) (xy 251.46 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5344e8e7-1792-441c-a5ff-2aa7d111ec1e")
 	)
 	(wire
 		(pts
@@ -7759,6 +8073,16 @@
 			(type default)
 		)
 		(uuid "c293bc59-17da-45ab-ae19-85d37ae15efb")
+	)
+	(wire
+		(pts
+			(xy 237.49 116.84) (xy 237.49 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c66a2b81-9555-4aad-b88b-66a2cafd5e62")
 	)
 	(wire
 		(pts
@@ -12245,6 +12569,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 57.15 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "81fece6f-3424-493c-87bb-3d6d9582d8ff")
 		)
@@ -12322,6 +12657,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 171.45 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
 			(at 171.45 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -12556,6 +12902,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 106.68 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9db05300-2db4-45c8-8473-580fe876bfdd")
 		)
@@ -12626,6 +12983,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 232.41 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
 			(at 232.41 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12765,6 +13133,17 @@
 			)
 		)
 		(property "Voltage Rating" "10V"
+			(at 273.05 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0805"
 			(at 273.05 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12917,6 +13296,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 262.89 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c4f3845d-b89f-4d0f-925f-172919014ef4")
 		)
@@ -13048,6 +13438,17 @@
 			)
 		)
 		(property "LCSC Part" "C25905"
+			(at 229.87 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 229.87 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -13198,6 +13599,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 105.41 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7641b13d-9569-49b6-9aed-e411ad6c300c")
 		)
@@ -13330,6 +13742,17 @@
 			)
 		)
 		(property "LCSC Part" "C1525"
+			(at 116.84 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 116.84 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -13538,6 +13961,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "THT USB-A dual stacked"
+			(at 237.49 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "c44adcbe-b333-435b-8382-81973e3191f7")
 		)
@@ -13698,6 +14132,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 104.14 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ba334ec8-fd29-41bd-8a53-1dfa3e817079")
 		)
@@ -13836,6 +14281,17 @@
 			)
 		)
 		(property "LCSC Part" "C19077499"
+			(at 156.21 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOD-123FL"
 			(at 156.21 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -14221,6 +14677,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 165.1 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c794940e-8c26-42bd-a58c-32487efd5242")
 		)
@@ -14345,6 +14812,17 @@
 			)
 		)
 		(property "LCSC Part" "C25879"
+			(at 227.33 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 227.33 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -14518,6 +14996,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Crystal 3225 4-pad"
+			(at 45.72 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "cda0afe1-2ead-4c15-b74b-aa07c95615a7")
 		)
@@ -14666,6 +15155,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 179.07 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e0be4ab4-8b86-49b1-b512-6d8d20d052d9")
 		)
@@ -14798,6 +15298,17 @@
 			)
 		)
 		(property "LCSC Part" "C25879"
+			(at 38.1 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 38.1 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14999,6 +15510,17 @@
 		)
 		(property "LCSC Part" "C220679"
 			(at 148.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD QFN-36 6.0x6.0 EP"
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15266,6 +15788,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 46.99 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c9d95ed8-2899-4318-86e6-83699e57e591")
 		)
@@ -15493,6 +16026,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 38.1 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e7400d4e-004f-497b-a01d-99b6588477d7")
 		)
@@ -15635,6 +16179,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 86.36 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "432de263-ea56-40f3-b5ba-941c30353c15")
 		)
@@ -15761,6 +16316,17 @@
 			)
 		)
 		(property "LCSC Part" "C1525"
+			(at 76.2 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 76.2 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -15968,6 +16534,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD USON-10 2.5x1.0"
+			(at 82.55 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2da850ac-daee-4f48-ab29-31b686f4e2a2")
 		)
@@ -16134,6 +16711,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 57.15 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c0ad4985-5ce5-460d-9b1f-d0ab3b183507")
 		)
@@ -16266,6 +16854,17 @@
 			)
 		)
 		(property "LCSC Part" "C1548"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 35.56 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -16561,6 +17160,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD+THT USB-C receptacle"
+			(at 245.11 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "721be97e-abb1-402b-bd18-88c439487447")
 		)
@@ -16830,6 +17440,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 252.73 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e0fc0e8a-64c3-401c-96cd-7e4a0d6b7b11")
 		)
@@ -16906,6 +17527,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 262.89 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
 			(at 262.89 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -17055,6 +17687,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "78176db1-2d3e-4011-bc0c-7d2ec1f07c4e")
 		)
@@ -17181,6 +17824,17 @@
 			)
 		)
 		(property "LCSC Part" "C1525"
+			(at 66.04 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 66.04 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -17326,6 +17980,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 223.52 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ec5c452a-1300-4599-9e42-d19255872adf")
 		)
@@ -17427,6 +18092,82 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 237.49 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac184305-25d8-44b3-a57f-f9ada5658c32")
+		(property "Reference" "#PWR0433"
+			(at 237.49 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CHASSIS"
+			(at 237.49 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 237.49 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb45ca1c-4337-45d1-af52-244eadbfbf34")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "#PWR0433")
 					(unit 1)
 				)
 			)
@@ -17597,7 +18338,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:Earth")
 		(at 259.08 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -17619,15 +18360,15 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 259.08 77.47 0)
-			(hide yes)
+		(property "Value" "CHASSIS"
+			(at 260.35 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -17652,7 +18393,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 259.08 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -17676,6 +18417,82 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6adf5b6-290a-451f-9856-3ee1d0d7f10e")
+		(property "Reference" "#PWR0432"
+			(at 251.46 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32435339-fcb8-4623-84e8-9a35ec60b5e1")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "#PWR0432")
 					(unit 1)
 				)
 			)
@@ -17790,6 +18607,17 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
+			(at 92.71 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 92.71 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -18018,6 +18846,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0805"
+			(at 242.57 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e732f4e9-917e-4aef-aabc-1ba42537b6e4")
 		)
@@ -18160,6 +18999,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 96.52 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "81937058-0b2f-44e9-a26c-a619c96a146b")
 		)
@@ -18177,7 +19027,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 119.38 0)
+		(at 223.52 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18188,7 +19038,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6defa32-ec9d-4003-8e14-54803d6aef5f")
 		(property "Reference" "#PWR093"
-			(at 237.49 125.73 0)
+			(at 223.52 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18199,7 +19049,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 124.46 0)
+			(at 223.52 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18210,7 +19060,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 119.38 0)
+			(at 223.52 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18221,7 +19071,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 119.38 0)
+			(at 223.52 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18232,7 +19082,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 119.38 0)
+			(at 223.52 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18767,6 +19617,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD MSOP-10"
+			(at 67.31 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6105c24c-b164-4cac-81dc-399f4e291382")
 		)
@@ -18988,6 +19849,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD USON-10 2.5x1.0"
+			(at 38.1 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "10"
 			(uuid "7054fe12-acb7-46d4-88be-bf019c15d772")
 		)
@@ -19130,6 +20002,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Pin header 2x5 P2.54"
+			(at 147.32 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "94bfcdbd-39ca-42ed-9d87-3445090f2697")
 		)
@@ -19257,6 +20140,17 @@
 		)
 		(property "LCSC Part" "C2158037"
 			(at 204.47 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOT-23-6"
+			(at 204.47 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19426,6 +20320,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD SOD-123FL"
+			(at 104.14 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b06edb10-d7bd-4249-a7f9-c282d90025e8")
 		)
@@ -19568,6 +20473,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD EIA-7343 (D case)"
+			(at 231.14 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "801c7b6a-b477-4576-a5bd-86d99c96f63f")
 		)
@@ -19677,6 +20593,17 @@
 		)
 		(property "LCSC Part" "C90627"
 			(at 135.89 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD USON-10 2.5x1.0"
+			(at 135.89 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19834,6 +20761,17 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
+			(at 111.76 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 111.76 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -20067,6 +21005,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 223.52 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e7d0def8-fe3c-4304-8887-34a68f14e1f0")
 		)
@@ -20282,6 +21231,17 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
+			(at 99.06 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 99.06 95.25 0)
 			(hide yes)
 			(show_name no)

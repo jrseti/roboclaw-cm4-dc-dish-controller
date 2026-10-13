@@ -255,6 +255,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -430,6 +441,17 @@
 				)
 			)
 			(property "LCSC Part" "C25803"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -625,6 +647,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -800,6 +833,17 @@
 				)
 			)
 			(property "LCSC Part" "C22827"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -994,6 +1038,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Resistors"
 				(at 0 0 0)
 				(show_name no)
@@ -1167,6 +1222,17 @@
 				)
 			)
 			(property "LCSC Part" "C23137"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1362,6 +1428,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -1547,6 +1624,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(show_name no)
@@ -1709,6 +1797,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Light Emitting Diodes (LED)"
 				(at 0 0 0)
 				(show_name no)
@@ -1838,7 +1937,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
+			(property "Reference" "FB"
 				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1947,6 +2046,17 @@
 				)
 			)
 			(property "DC Resistance" "9mΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 1206"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2143,6 +2253,17 @@
 				)
 			)
 			(property "LCSC Part" "C7420339"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOT-23-3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2389,6 +2510,216 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:CC0603KRX7R9BB104"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.032 1.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 2.032 -0.3782 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "MyParts:C0603"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/CC0603KRX7R9BB104.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CC0603KRX7R9BB104"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C14663"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CC0603KRX7R9BB104_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy 1.27 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CC0603KRX7R9BB104_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:CL05B104KO5NNNC"
 			(pin_numbers
 				(hide yes)
@@ -2509,6 +2840,17 @@
 				)
 			)
 			(property "Voltage Rating" "16V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2738,6 +3080,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
 				(at 0 0 0)
 				(show_name no)
@@ -2910,6 +3263,17 @@
 				)
 			)
 			(property "MPN" "DMP6023LE-13"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOT-223"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3254,6 +3618,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD Aluminum electrolytic 6.3x7.7"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "JVJ35V220M6X8_0_1"
 				(polyline
 					(pts
@@ -3438,6 +3813,17 @@
 			)
 			(property "MPN" "MX26631DL"
 				(at 0 -43.18 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD QFN-24 4x4 EP"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4017,6 +4403,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD SOIC-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "MOSFETs"
 				(at 0 0 0)
 				(show_name no)
@@ -4296,6 +4693,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD Test point loop"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Thimble/Copper Rod/Test Ring"
 				(at 0 0 0)
 				(show_name no)
@@ -4441,6 +4849,17 @@
 				)
 			)
 			(property "LCSC Part" "C41376408"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SMA (DO-214AC)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4629,6 +5048,17 @@
 					)
 				)
 			)
+			(property "Pkg Type" "SMD SMB (DO-214AA)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_fp_filters" "D_*"
 				(at 0 0 0)
 				(show_name no)
@@ -4789,6 +5219,17 @@
 				)
 			)
 			(property "MPN" "SS-12F49-G050"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Slide switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5251,6 +5692,17 @@
 				)
 			)
 			(property "Voltage Rating" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 1206"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5940,16 +6392,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 97.79) (xy 87.63 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05fa9bda-e53a-4aab-b691-ab0874538694")
-	)
-	(wire
-		(pts
 			(xy 106.68 78.74) (xy 106.68 80.01)
 		)
 		(stroke
@@ -6027,6 +6469,16 @@
 			(type default)
 		)
 		(uuid "12f01d4b-bfc8-4faa-8c67-eb8a20218e42")
+	)
+	(wire
+		(pts
+			(xy 87.63 107.95) (xy 87.63 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f0aa65-512e-4377-b706-a7983167cc31")
 	)
 	(wire
 		(pts
@@ -6560,16 +7012,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 109.22) (xy 87.63 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8944d81c-db2f-47fb-b0d3-16ed0d08ed3b")
-	)
-	(wire
-		(pts
 			(xy 78.74 133.35) (xy 78.74 135.89)
 		)
 		(stroke
@@ -6687,6 +7129,16 @@
 			(type default)
 		)
 		(uuid "a2af004e-eca4-4654-8eeb-30ac6375dca4")
+	)
+	(wire
+		(pts
+			(xy 87.63 97.79) (xy 87.63 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41657da-4289-4fa1-ae93-8b0095fe4837")
 	)
 	(wire
 		(pts
@@ -10642,7 +11094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "031f381d-c608-45f1-8819-89775e71e973")
-		(property "Reference" "L1"
+		(property "Reference" "FB1"
 			(at 78.7094 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10761,6 +11213,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 1206"
+			(at 78.74 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0d4e96a5-63de-41d8-843d-8544be6d1bf1")
 		)
@@ -10770,7 +11233,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
-					(reference "L1")
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -10831,6 +11294,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 148.59 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
 			(at 148.59 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -11031,6 +11505,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Test point loop"
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c89048d5-0199-4565-8c4e-f21c2bd2723d")
 		)
@@ -11168,6 +11653,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 110.49 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab52d84a-8dfa-4e50-b955-aa60f8b32a5c")
 		)
@@ -11293,6 +11789,17 @@
 			)
 		)
 		(property "Tolerance" "±10%"
+			(at 92.71 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 1206"
 			(at 92.71 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -11671,6 +12178,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 120.65 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a5a0232e-e27a-4ba8-bc17-ab220aa7ecb6")
 		)
@@ -11801,6 +12319,17 @@
 			)
 		)
 		(property "LCSC Part" "C23137"
+			(at 110.49 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
 			(at 110.49 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -12034,6 +12563,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 151.13 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "708c97a5-0efc-4be4-82f8-86fa14c9eb83")
 		)
@@ -12228,6 +12768,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Test point loop"
+			(at 72.39 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1174aaf9-1ca3-4406-bf74-74ff05b38aad")
 		)
@@ -12355,6 +12906,17 @@
 			)
 		)
 		(property "LCSC Part" "C22827"
+			(at 198.12 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
 			(at 198.12 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12679,6 +13241,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Test pad D1.5"
+			(at 173.99 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5f780c1b-fc60-4946-ae54-d407cb96558a")
 		)
@@ -12816,6 +13389,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 78.74 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "88706c79-ce54-410d-855a-ac90419df86d")
 		)
@@ -12918,6 +13502,17 @@
 			)
 		)
 		(property "LCSC Part" "C341716"
+			(at 97.79 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOIC-8"
 			(at 97.79 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13137,6 +13732,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD SMB (DO-214AA)"
+			(at 115.57 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d19806b0-bca0-42a2-ae36-7d0eabee6897")
 		)
@@ -13240,6 +13846,17 @@
 		)
 		(property "LCSC Part" "C2297"
 			(at 179.07 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0805"
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13462,6 +14079,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 158.75 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "86e30378-d65f-4785-873a-b4e9332fa3fc")
 		)
@@ -13596,6 +14224,17 @@
 			)
 		)
 		(property "Voltage Rating" "16V"
+			(at 147.32 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 147.32 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -13746,6 +14385,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 45.72 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cc9914e0-1198-44d2-8627-2382bfd2c794")
 		)
@@ -13848,6 +14498,17 @@
 			)
 		)
 		(property "LCSC" "C18197523"
+			(at 134.62 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD QFN-24 4x4 EP"
 			(at 134.62 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -14294,6 +14955,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Aluminum electrolytic 6.3x7.7"
+			(at 168.91 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9e65919-0fea-47ce-9018-72a82c04fde7")
 		)
@@ -14434,6 +15106,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 78.74 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9eb76303-0422-45c7-b4f3-b094082b836a")
 		)
@@ -14450,8 +15133,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:CL05B104KO5NNNC")
-		(at 87.63 104.14 90)
+		(lib_id "MyParts:CC0603KRX7R9BB104")
+		(at 87.63 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14461,17 +15144,30 @@
 		(dnp no)
 		(uuid "ca8d28b6-de45-4d4f-8bef-978a54544fdd")
 		(property "Reference" "C97"
-			(at 81.026 102.6886 90)
+			(at 85.09 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "100nF"
-			(at 82.296 104.394 90)
+			(at 85.09 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MyParts:C0603"
+			(at 85.852 104.14 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14480,7 +15176,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CC0603KRX7R9BB104.pdf"
 			(at 87.63 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -14491,7 +15187,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+		(property "Description" "100nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 87.63 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -14502,52 +15198,9 @@
 				)
 			)
 		)
-		(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Manufacturer" "YAGEO"
 			(at 87.63 104.14 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "SAMSUNG"
-			(at 87.63 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL05B104KO5NNNC"
-			(at 87.63 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C1525"
-			(at 87.63 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage Rated" "50V"
-			(at 81.28 106.172 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14567,7 +15220,40 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "16V"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 87.63 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 87.63 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 87.63 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
 			(at 87.63 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -14690,6 +15376,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD SMA (DO-214AC)"
+			(at 181.61 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3ada5f42-a169-4ed4-af00-17e651fbe5a0")
 		)
@@ -14782,6 +15479,17 @@
 			)
 		)
 		(property "MPN" "DMP6023LE-13"
+			(at 161.29 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOT-223"
 			(at 161.29 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14888,6 +15596,17 @@
 			)
 		)
 		(property "MPN" "SS-12F49-G050"
+			(at 50.8 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Slide switch"
 			(at 50.8 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -15022,6 +15741,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD Test point loop"
+			(at 110.49 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "95c1dc8e-a561-425f-9309-9250fae8f8e8")
 		)
@@ -15143,6 +15873,17 @@
 			)
 		)
 		(property "Voltage Rating" "75V"
+			(at 173.99 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
 			(at 173.99 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -15343,6 +16084,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD SOT-23-3"
+			(at 107.95 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "63fc1555-8a4b-4454-85bc-639de544b69e")
 		)
@@ -15486,6 +16238,17 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 55.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3aa06df0-cb98-4178-8ba7-cccbb3ee6858")
 		)
@@ -15616,6 +16379,17 @@
 			)
 		)
 		(property "LCSC Part" "C22797"
+			(at 198.12 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
 			(at 198.12 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -15838,6 +16612,17 @@
 			)
 		)
 		(property "Voltage Rating" "16V"
+			(at 156.21 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
 			(at 156.21 102.87 0)
 			(hide yes)
 			(show_name no)
