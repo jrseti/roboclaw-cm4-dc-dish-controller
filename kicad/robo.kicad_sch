@@ -1024,6 +1024,229 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:74LVC1G17SE-7"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 1.27 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "74LVC1G17SE-7"
+				(at 1.27 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "MyParts:SC-88A_L2.0-W1.3-P0.65-LS2.1-BL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/74LVC1G17SE-7.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-40℃~+125℃ 0.7ns@3.3V,15pF 1 1 1.65V~5.5V 10uA 32mA 32mA 74LVC Push-pull Schmitt trigger Unidirectional SOT-353 Buffers, Drivers, Receivers, Transceivers ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "DIODES"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "74LVC1G17SE-7"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C212314"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOT-353 (SC-88A)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Schmitt buffer level shifter 5V tolerant"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "74LVC1G17SE-7_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74LVC1G17SE-7_1_1"
+				(pin no_connect line
+					(at -10.16 -2.54 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name "Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:CL05B104KO5NNNC_ALT"
 			(pin_numbers
 				(hide yes)
@@ -2468,7 +2691,383 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MyParts:TPESD0402G05V"
+		(symbol "MyParts:SMF5.0A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SMF5.0A"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/SMF5.0A.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+150℃ 1 200W@10/1000us 21.7A@10/1000us 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMF5.0A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C19077497"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOD-123FL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMF5.0A_0_1"
+				(polyline
+					(pts
+						(xy -1.905 -1.905) (xy -1.27 -1.27) (xy 1.27 -1.27) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMF5.0A_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:SMF6.0A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SMF6.0A"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/SMF6.0A.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+150℃ 1 10.3V 19.4A@10/1000us 200W@10/1000us 400uA 6V 7.37V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMF6.0A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C19077499"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SOD-123FL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMF6.0A_0_1"
+				(polyline
+					(pts
+						(xy -1.905 -1.905) (xy -1.27 -1.27) (xy 1.27 -1.27) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMF6.0A_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:TPESD0402G12V"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2490,7 +3089,7 @@
 					)
 				)
 			)
-			(property "Value" "TPESD0402G05V"
+			(property "Value" "TPESD0402G12V"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2512,7 +3111,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2523,7 +3122,7 @@
 					)
 				)
 			)
-			(property "Description" "5VWM 40VC 0402"
+			(property "Description" "12VWM 40VC 0402"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2534,7 +3133,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C558615"
+			(property "Manufacturer" "TECH PUBLIC"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2545,7 +3144,18 @@
 					)
 				)
 			)
-			(property "MPN" "TPESD0402G05V"
+			(property "LCSC Part" "C558617"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TPESD0402G12V"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2567,7 +3177,7 @@
 					)
 				)
 			)
-			(symbol "TPESD0402G05V_0_1"
+			(symbol "TPESD0402G12V_0_1"
 				(polyline
 					(pts
 						(xy -2.54 -1.78) (xy 0 0) (xy -2.54 1.78) (xy -2.54 -1.78)
@@ -2623,11 +3233,328 @@
 					)
 				)
 			)
-			(symbol "TPESD0402G05V_1_1"
+			(symbol "TPESD0402G12V_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:nSMD010"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "nSMD010"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:F1206"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/nSMD010.pdf"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTC resettable fuse 100mA hold 250mA trip 60V 1206, 1.6 ohm initial"
+				(at 0 -24.13 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "TECHFUSE"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "nSMD010"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C70065"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 1206"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC resettable fuse polyfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "nSMD010_0_1"
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy -2.54 -1.27) (xy -1.27 1.27) (xy 0 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy 0 -1.27) (xy 1.27 -3.81) (xy 2.54 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy 3.81 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -8.89 -1.27 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -1.27 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2834,6 +3761,18 @@
 		)
 	)
 	(rectangle
+		(start 110.49 127)
+		(end 195.58 163.83)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "03f033ab-a239-4160-9749-875ecc9a5c19")
+	)
+	(rectangle
 		(start 24.13 91.44)
 		(end 91.44 133.35)
 		(stroke
@@ -2858,6 +3797,18 @@
 		(uuid "55ba4dba-83d6-4a97-8fb5-d1c516ccdd14")
 	)
 	(rectangle
+		(start 200.66 119.38)
+		(end 284.48 165.1)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "55c71012-1331-4ae2-9021-37ed18853b01")
+	)
+	(rectangle
 		(start 205.74 34.29)
 		(end 269.24 115.57)
 		(stroke
@@ -2871,7 +3822,7 @@
 	)
 	(rectangle
 		(start 67.31 137.16)
-		(end 107.95 184.15)
+		(end 107.95 195.58)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2939,6 +3890,17 @@
 		)
 		(uuid "0d507ea9-2976-4322-bd32-992db1fb2c15")
 	)
+	(text "J7 (azimuth encoder, field-wired) is fed from 3V3_CM4 via F3\n(100 mA PTC, 60 V) with D58 (SMF5.0A) clamping the J7 side.\nReverse polarity, or a supply above ~6.4 V, makes D58 conduct and\ntrips F3, so it cannot reach 3V3_CM4. Residual: a 5 V miswire is\nnot clamped. Place F3 and D58 at J7. AS5600 draws ~7 mA."
+		(exclude_from_sim no)
+		(at 112.522 150.495 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1435ea78-55ce-42d6-ab14-d593e0a3135d")
+	)
 	(text "Encoder Inputs"
 		(exclude_from_sim no)
 		(at 26.67 96.52 0)
@@ -2949,6 +3911,17 @@
 			(justify left bottom)
 		)
 		(uuid "33731c0b-7903-4adf-ba50-2cd42587b463")
+	)
+	(text "A1 TX buffer (no CM4 back-power)"
+		(exclude_from_sim no)
+		(at 202.692 123.19 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+			(justify left)
+		)
+		(uuid "3aa5fd11-ed54-4c76-8787-6a88874a80ef")
 	)
 	(text "E-stop / limit switches"
 		(exclude_from_sim no)
@@ -2981,6 +3954,28 @@
 			(justify left)
 		)
 		(uuid "63365c88-fe9b-48c3-8cc0-6889fb100752")
+	)
+	(text "U21 isolates A1 S2 TX from CM4 GPIO13 (ROBO_RX_MCU).\nA1 runs from the battery while the CM4 can be off (SW3 open,\nGLOBAL_EN power cycle). A1 TX idles at 3.3 V; via R118 alone it\nwould back-power the CM4 through GPIO13 (abs max VREF+0.5 V).\n74LVC1G17 Ioff: with 3V3_CM4 off, Y is high-Z and A takes 3.3 V.\nCM4 TX -> A1 RX needs none: A1 is always on when the CM4 is."
+		(exclude_from_sim no)
+		(at 202.692 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7af8d9e9-dad1-4333-adee-572b24a8eed3")
+	)
+	(text "EMC: run motor leads in shielded cable, shield\nclamped 360 deg to the enclosure at the gland\n(not to J4/J5). Clip-on CM ferrite per pair at\nentry; 100 nF brush caps at the motors. Keep\nmotor leads away from GNSS/encoder wiring."
+		(exclude_from_sim no)
+		(at 69.85 184.785 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "9e250d5e-0632-4b07-b02f-ea2918db1f2e")
 	)
 	(text "J4 = Firgelli motor (elevation):\n1 BLUE  (+)\n2 BROWN (-)\nSwap to reverse, or\ninvert M1 in Motion Studio."
 		(exclude_from_sim no)
@@ -3026,6 +4021,17 @@
 		)
 		(uuid "e21c84d4-91d3-48ad-b284-786741b02ccd")
 	)
+	(text "RC_5V budget: <= 800 mA (BEC).\nLoad: ~5 mA pull-ups + sensor."
+		(exclude_from_sim no)
+		(at 62.23 113.03 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "f2de7e5d-e19d-4e62-b25e-754e81c7ca60")
+	)
 	(text "ROBOCLAW-2X15A-OEM"
 		(exclude_from_sim no)
 		(at 66.548 20.828 0)
@@ -3035,6 +4041,17 @@
 			)
 		)
 		(uuid "fedbd62a-8502-49fd-8d84-799ddfe0e0c9")
+	)
+	(text "J7 3.3 V feed protection"
+		(exclude_from_sim no)
+		(at 112.522 129.54 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+			(justify left)
+		)
+		(uuid "ffa4be9e-afde-4cf8-b1cd-f88110961a91")
 	)
 	(junction
 		(at 153.67 110.49)
@@ -3091,6 +4108,12 @@
 		(uuid "923e9df5-5942-4e7c-8f28-9d462a9198d9")
 	)
 	(junction
+		(at 152.4 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95076a7e-c6af-43bd-b26b-2c36e91cdfdd")
+	)
+	(junction
 		(at 176.53 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3131,6 +4154,10 @@
 		(uuid "c622c09b-a71f-4d25-bc7e-bf61e73040ad")
 	)
 	(no_connect
+		(at 231.14 140.97)
+		(uuid "da63146b-57ad-49ac-ac00-2e7def69aa4c")
+	)
+	(no_connect
 		(at 67.31 72.39)
 		(uuid "dddb8303-d7cc-41c8-9684-7e04c3e19baf")
 	)
@@ -3153,6 +4180,16 @@
 			(type default)
 		)
 		(uuid "04f33edc-317d-4f59-acae-ec131394fd7c")
+	)
+	(wire
+		(pts
+			(xy 147.32 137.16) (xy 160.02 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0958b0f0-79b3-4cc4-b6b4-a493aebeedfa")
 	)
 	(wire
 		(pts
@@ -3526,6 +4563,26 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 138.43) (xy 259.08 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90d2c50a-7719-48ff-90d7-ce9735a0f73d")
+	)
+	(wire
+		(pts
+			(xy 124.46 137.16) (xy 129.54 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90eb4120-1a0d-472b-ba9f-988adc296fba")
+	)
+	(wire
+		(pts
 			(xy 41.91 166.37) (xy 36.83 166.37)
 		)
 		(stroke
@@ -3543,6 +4600,16 @@
 			(type default)
 		)
 		(uuid "98c6fdd4-ed4e-43a6-ae65-c5c5a0a0a4ae")
+	)
+	(wire
+		(pts
+			(xy 241.3 127) (xy 269.24 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d023bf2-6b86-4d86-ba33-bf35c3e6df09")
 	)
 	(wire
 		(pts
@@ -3693,6 +4760,26 @@
 			(type default)
 		)
 		(uuid "d70bb8c4-d688-4fd7-949e-0adddd34cf6a")
+	)
+	(wire
+		(pts
+			(xy 241.3 128.27) (xy 241.3 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcd3e2b6-fc63-489c-976d-e0421b5669d8")
+	)
+	(wire
+		(pts
+			(xy 231.14 138.43) (xy 215.9 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfd8e074-8e29-4d32-802d-bacb88ca615c")
 	)
 	(wire
 		(pts
@@ -3874,6 +4961,26 @@
 		)
 		(uuid "1637c88f-c974-4d46-bccc-af552f4777e9")
 	)
+	(label "AZ_ENC_3V3"
+		(at 38.1 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20116dff-5fa9-4fe0-ac3c-4cbc578fe8b1")
+	)
+	(label "ROBO_S2_TX"
+		(at 40.64 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "21c0b6a0-e8f9-442e-8a5e-bd6053ade698")
+	)
 	(label "RC_5V"
 		(at 158.75 45.72 0)
 		(effects
@@ -3893,6 +5000,16 @@
 			(justify right bottom)
 		)
 		(uuid "2f9d5b48-3120-4a2f-9d50-7eb9ec7e234e")
+	)
+	(label "3V3_CM4"
+		(at 243.84 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "352ee724-9877-4de1-b0d3-dc8d1e9ceb67")
 	)
 	(label "ESTOP_IN"
 		(at 36.83 146.05 180)
@@ -3925,6 +5042,16 @@
 		(uuid "43f48e78-5ca6-460e-ab3f-d7be3aa7db6e")
 	)
 	(label "RC_5V"
+		(at 27.94 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46aa4f00-9b45-42df-993e-e515fe6ca90d")
+	)
+	(label "RC_5V"
 		(at 158.75 68.58 0)
 		(effects
 			(font
@@ -3933,6 +5060,16 @@
 			(justify left bottom)
 		)
 		(uuid "4706b2eb-3dc6-49f3-8a6a-3e954b0ecd4c")
+	)
+	(label "AZ_ENC_3V3"
+		(at 160.02 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47351d3b-8393-460f-98ab-2e3177075858")
 	)
 	(label "AZ_LIMIT_IN"
 		(at 36.83 166.37 180)
@@ -4003,6 +5140,16 @@
 			(justify left bottom)
 		)
 		(uuid "826c7c27-6588-4f34-b999-10cafa13afd6")
+	)
+	(label "ROBO_S2_TX"
+		(at 215.9 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "843c6331-2cca-4b1b-b546-4aae56bb6a07")
 	)
 	(label "RC_5V"
 		(at 38.1 102.87 180)
@@ -4186,7 +5333,7 @@
 	)
 	(hierarchical_label "3V3_CM4"
 		(shape input)
-		(at 38.1 121.92 180)
+		(at 124.46 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4208,16 +5355,16 @@
 	)
 	(hierarchical_label "ROBO_RX_MCU"
 		(shape output)
-		(at 40.64 52.07 180)
+		(at 259.08 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "92ddde2f-ebb2-4682-8373-fd68bf52f3a3")
 	)
-	(hierarchical_label "V_BAT"
+	(hierarchical_label "V_MOTOR"
 		(shape input)
 		(at 104.14 62.23 0)
 		(effects
@@ -4229,7 +5376,7 @@
 		(uuid "d52278bf-c8f7-4178-bdbe-6d9344a86e3c")
 	)
 	(symbol
-		(lib_id "MyParts:TPESD0402G05V")
+		(lib_id "MyParts:TPESD0402G12V")
 		(at 158.75 81.28 90)
 		(unit 1)
 		(body_style 1)
@@ -4250,7 +5397,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TPESD0402G05V"
+		(property "Value" "TPESD0402G12V"
 			(at 160.655 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4272,7 +5419,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 			(at 158.75 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4283,7 +5430,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "12VWM 40VC 0402"
 			(at 158.75 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4294,7 +5441,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C558615"
+		(property "LCSC Part" "C558617"
 			(at 158.75 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4305,7 +5452,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "TPESD0402G12V"
 			(at 158.75 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -5146,6 +6293,231 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "R120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 27.94 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b33fb3f-8dd3-4c0c-beaf-a7ee5746ecd1")
+		(property "Reference" "#PWR0455"
+			(at 27.94 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PGND"
+			(at 27.94 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 27.94 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b7aa560-c80a-40e2-88b4-aa2b88fc73c4")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "#PWR0455")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:CL05B104KO5NNNC_ALT")
+		(at 269.24 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25510008-7bf5-4ad0-b89a-edda176632dd")
+		(property "Reference" "C113"
+			(at 271.78 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 271.78 131.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:C0402"
+			(at 269.24 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+			(at 269.24 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 269.24 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SAMSUNG"
+			(at 269.24 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 269.24 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 269.24 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "16V"
+			(at 269.24 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C1525"
+			(at 269.24 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 269.24 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd4f396e-8d44-4275-a483-a6d4832c8014")
+		)
+		(pin "2"
+			(uuid "23253c8f-2d9d-4b3e-b83a-9e5bf344b43a")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "C113")
 					(unit 1)
 				)
 			)
@@ -7133,7 +8505,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:TPESD0402G05V")
+		(lib_id "MyParts:TPESD0402G12V")
 		(at 158.75 58.42 90)
 		(unit 1)
 		(body_style 1)
@@ -7154,7 +8526,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TPESD0402G05V"
+		(property "Value" "TPESD0402G12V"
 			(at 160.655 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7176,7 +8548,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 			(at 158.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7187,7 +8559,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "12VWM 40VC 0402"
 			(at 158.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7198,7 +8570,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C558615"
+		(property "LCSC Part" "C558617"
 			(at 158.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7209,7 +8581,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "TPESD0402G12V"
 			(at 158.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7517,6 +8889,159 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "R117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:SMF5.0A")
+		(at 152.4 140.97 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "76e228ac-b563-4037-a461-23afec77526a")
+		(property "Reference" "D58"
+			(at 154.94 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMF5.0A"
+			(at 154.94 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/SMF5.0A.pdf"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "-55℃~+150℃ 1 200W@10/1000us 21.7A@10/1000us 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" ""
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_fp_filters" "D_*"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "SMF5.0A"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19077497"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOD-123FL"
+			(at 152.4 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ef91c172-24a2-4298-a3fc-a73e637b0bf0")
+		)
+		(pin "1"
+			(uuid "545631ca-e97a-46b5-b121-dcb109bd030c")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "D58")
 					(unit 1)
 				)
 			)
@@ -8234,7 +9759,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:TPESD0402G05V")
+		(lib_id "MyParts:TPESD0402G12V")
 		(at 231.14 81.28 90)
 		(unit 1)
 		(body_style 1)
@@ -8255,7 +9780,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TPESD0402G05V"
+		(property "Value" "TPESD0402G12V"
 			(at 233.045 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8277,7 +9802,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 			(at 231.14 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8288,7 +9813,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "12VWM 40VC 0402"
 			(at 231.14 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8299,7 +9824,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C558615"
+		(property "LCSC Part" "C558617"
 			(at 231.14 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8310,7 +9835,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "TPESD0402G12V"
 			(at 231.14 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8342,6 +9867,159 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:SMF6.0A")
+		(at 27.94 114.3 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa770aaf-fdec-4fcc-814d-9214e43ec1b1")
+		(property "Reference" "D57"
+			(at 30.48 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMF6.0A"
+			(at 30.48 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/SMF6.0A.pdf"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "-55℃~+150℃ 1 10.3V 19.4A@10/1000us 200W@10/1000us 400uA 6V 7.37V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" ""
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_fp_filters" "D_*"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "SMF6.0A"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19077499"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOD-123FL"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9c181e53-9a8d-47ab-bed1-4ddb18b92bef")
+		)
+		(pin "1"
+			(uuid "65b8f555-6e91-4104-9f80-a62ebbd2bb99")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "D57")
 					(unit 1)
 				)
 			)
@@ -8629,6 +10307,129 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:nSMD010")
+		(at 138.43 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6e346b8-a69e-4926-9337-bc2dbf791d64")
+		(property "Reference" "F3"
+			(at 138.43 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "nSMD010"
+			(at 138.43 139.7 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:F1206"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/nSMD010.pdf"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC resettable fuse 100mA hold 250mA trip 60V 1206, 1.6 ohm initial"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "nSMD010"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C70065"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 1206"
+			(at 138.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b743a828-250b-48d9-b514-8435e097d479")
+		)
+		(pin "2"
+			(uuid "c4516caa-af82-4c36-af4e-e95b7805e526")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:0402B103K500CT")
 		(at 248.92 104.14 0)
 		(unit 1)
@@ -8770,6 +10571,85 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "C107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 269.24 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be23a0a2-f1e6-4ebf-ae53-460be76a2799")
+		(property "Reference" "#PWR0448"
+			(at 269.24 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 269.24 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 269.24 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1efd1110-8bba-4c4e-96bf-4551ac3bf77a")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "#PWR0448")
 					(unit 1)
 				)
 			)
@@ -9129,6 +11009,219 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "#PWR0412")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce693d9a-da7a-4ae0-8049-7581f56f8178")
+		(property "Reference" "#PWR0447"
+			(at 241.3 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86f1ddb4-9df0-440c-bbe3-0d1407bf37b4")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "#PWR0447")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:74LVC1G17SE-7")
+		(at 241.3 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d23a92f0-37ec-44f3-b884-eea5d2c94364")
+		(property "Reference" "U21"
+			(at 247.65 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC1G17SE-7"
+			(at 243.84 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:SC-88A_L2.0-W1.3-P0.65-LS2.1-BL"
+			(at 220.98 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/74LVC1G17SE-7.pdf"
+			(at 218.44 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+125℃ 0.7ns@3.3V,15pF 1 1 1.65V~5.5V 10uA 32mA 32mA 74LVC Push-pull Schmitt trigger Unidirectional SOT-353 Buffers, Drivers, Receivers, Transceivers ROHS"
+			(at 241.3 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "DIODES"
+			(at 215.9 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "74LVC1G17SE-7"
+			(at 213.36 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C212314"
+			(at 210.82 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOT-353 (SC-88A)"
+			(at 241.3 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "2de3cc1c-6e51-4816-b948-58e6dadb8f7c")
+		)
+		(pin "4"
+			(uuid "0d4b2cb8-301b-4f95-bd01-70d8db92f72d")
+		)
+		(pin "1"
+			(uuid "8ffcd8bc-60ec-4ad9-ab7b-d05926f2686e")
+		)
+		(pin "2"
+			(uuid "7fa66576-c51e-4821-a477-4c58138f79a3")
+		)
+		(pin "3"
+			(uuid "2dbaeffd-4c75-447f-9731-1e0c85cf4c67")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -9717,7 +11810,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:TPESD0402G05V")
+		(lib_id "MyParts:TPESD0402G12V")
 		(at 153.67 115.57 90)
 		(unit 1)
 		(body_style 1)
@@ -9738,7 +11831,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TPESD0402G05V"
+		(property "Value" "TPESD0402G12V"
 			(at 155.575 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9760,7 +11853,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 			(at 153.67 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9771,7 +11864,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "12VWM 40VC 0402"
 			(at 153.67 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9782,7 +11875,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C558615"
+		(property "LCSC Part" "C558617"
 			(at 153.67 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9793,7 +11886,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "TPESD0402G12V"
 			(at 153.67 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9831,7 +11924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:TPESD0402G05V")
+		(lib_id "MyParts:TPESD0402G12V")
 		(at 231.14 58.42 90)
 		(unit 1)
 		(body_style 1)
@@ -9852,7 +11945,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TPESD0402G05V"
+		(property "Value" "TPESD0402G12V"
 			(at 233.045 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9874,7 +11967,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 			(at 231.14 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9885,7 +11978,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "12VWM 40VC 0402"
 			(at 231.14 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9896,7 +11989,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C558615"
+		(property "LCSC Part" "C558617"
 			(at 231.14 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9907,7 +12000,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "TPESD0402G12V"
 			(at 231.14 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10170,6 +12263,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 152.4 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f657c3f1-dd73-4402-b071-57398fb9768d")
+		(property "Reference" "#PWR0456"
+			(at 152.4 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PGND"
+			(at 152.4 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 152.4 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "625c4cc6-a3c7-446c-8f88-46b7a12c0794")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "#PWR0456")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:0402WGF1002TCE")
 		(at 163.83 110.49 90)
 		(unit 1)
@@ -10315,7 +12486,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:TPESD0402G05V")
+		(lib_id "MyParts:TPESD0402G12V")
 		(at 231.14 104.14 90)
 		(unit 1)
 		(body_style 1)
@@ -10336,7 +12507,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TPESD0402G05V"
+		(property "Value" "TPESD0402G12V"
 			(at 233.045 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10358,7 +12529,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G12V.pdf"
 			(at 231.14 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10369,7 +12540,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "12VWM 40VC 0402"
 			(at 231.14 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10380,7 +12551,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C558615"
+		(property "LCSC Part" "C558617"
 			(at 231.14 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10391,7 +12562,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "TPESD0402G12V"
 			(at 231.14 104.14 0)
 			(hide yes)
 			(show_name no)

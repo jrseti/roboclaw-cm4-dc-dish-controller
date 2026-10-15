@@ -5218,7 +5218,18 @@
 		)
 		(uuid "1ec0c020-9baa-4e45-95d9-e6e11a994516")
 	)
-	(text "HR911130A, shielded, integrated magnetics and LEDs, 100/1000Base-T (LCSC C54408).\nEP0-EP3 come straight from the CM4 - the PHY is on the module, no external PHY.\nChip-side center taps (P1) bypassed to GND by C17 100nF.\nBob Smith termination (4x75R + 1000pF/2kV) is built into the jack; P10 is that node, tied to GND.\nShield pins tied to signal GND."
+	(text "Use JLC's impedance calculator for the stackup to get \nwidth and gap for 100 Ω (Ethernet) and 90 Ω (USB) differential \non the outer layers. Put those values into ETH_100_OHM and USB_90_OHM.\nOrder with impedance control enabled, so JLC adjusts to the target."
+		(exclude_from_sim no)
+		(at 168.148 149.352 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6076ef26-d6e5-4ff2-8345-c542e78da637")
+	)
+	(text "HR911130A, shielded, integrated magnetics and LEDs, 100/1000Base-T (LCSC C54408).\nEP0-EP3 come straight from the CM4 - the PHY is on the module, no external PHY.\nChip-side center taps (P1) bypassed to GND by C17 100nF.\nBob Smith termination (4x75R + 1000pF/2kV) is built into the jack;\nP10 is that node, tied to CHASSIS. Shield pins are also on CHASSIS\n(bled to GND by R136/C109 on the top sheet)."
 		(exclude_from_sim no)
 		(at 43.688 142.24 0)
 		(effects
@@ -5239,7 +5250,7 @@
 		)
 		(uuid "695a0353-7b33-4a33-ab36-250d1d02e917")
 	)
-	(text "Clamps all four pairs on the CM4 side of the magnetics. \nPlace both at RJ1."
+	(text "Clamps all four pairs on the CM4 side of the magnetics. \nPlace both at RJ1.\n\nMatches CM4 datasheet Fig. 2 (TPD4EUSB30 on all pairs).\nTPD4EUSB30 IO range is 0-5.5 V, so EP lines must stay\n>= 0 V. MDI DC level is set inside the BCM54210PE\n(not published; CT is AC-grounded only).\nFirst boards: scope each EP line to GND at the clamps\nat 1000/100/10 (ethtool -s eth0 speed N duplex full\nautoneg off). Minimum must be >= -0.3 V."
 		(exclude_from_sim no)
 		(at 177.038 116.078 0)
 		(effects

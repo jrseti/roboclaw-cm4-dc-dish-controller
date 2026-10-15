@@ -1717,7 +1717,7 @@
 	)
 	(rectangle
 		(start 127 47.625)
-		(end 229.87 121.92)
+		(end 283.21 121.92)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1805,12 +1805,23 @@
 		)
 		(uuid "29133d3d-9f10-4b99-8075-c5475b7b75c8")
 	)
-	(text "H3, H4:\nPull-up resistors for I2C1_SDA/I2C1_SCL.\nPlace jumpers to apply pull-ups."
+	(text "EEPROM WRITE PROTECT (EEPROM_nWP, J2 3-4)\nThe CM4 pulls EEPROM_nWP up internally (100k), so the\nbootloader EEPROM is writable unless J2 3-4 is fitted.\nThe jumper only takes effect once protection is enabled\nin the bootloader config (CM4 datasheet 2.18).\n\nProduction:\n- Set eeprom_write_protect=1 in the bootloader config\n  (via usbboot or rpi-eeprom-config) before shipping.\n- Fit the J2 3-4 jumper. The EEPROM is then protected\n  from power-up (CM4 datasheet 5.1).\n\nBootloader update:\n- Remove J2 3-4, update via usbboot or self-update,\n  then refit the jumper.\n\nWhy not a GPIO with a pull-down: CM4 EEPROM updates run\nonly via usbboot or bootloader self-update (datasheet\n6.3), before Linux can drive a GPIO, so the pin could\nnever be released for an update."
 		(exclude_from_sim no)
-		(at 125.476 187.452 0)
+		(at 231.14 84.455 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "342137f9-6d01-4fc1-9444-f251dee01ff6")
+	)
+	(text "H3/H4: optional I2C1 pull-ups, normally OPEN.\nCM4 already pulls GPIO2/3 up with 1.8k (DS p.7).\nFit both only for a long, high-capacitance bus\nat 400 kHz: ~1k total, ~2.9 mA sink at 0.4 V\n(I2C spec min 3 mA, so compliant devices are OK)."
+		(exclude_from_sim no)
+		(at 120.65 187.452 0)
+		(effects
+			(font
+				(size 1.016 1.016)
 			)
 			(justify left)
 		)
@@ -1837,12 +1848,12 @@
 		)
 		(uuid "49c52580-cdce-44c0-b079-b639903359fb")
 	)
-	(text "AIN0 / AIN1 (J11-2 / J11-4)\nto CM4 AnalogIP0/1 (MxL7704 ADC).\nMeasures 0 to 2.55 V (8-bit).\nInput current < 1 uA (10 Mohm).\nSurvives +6.0 V / -0.3 V DC at\nthe connector (MxL7704 abs max).\nNot reverse-polarity tolerant.\nR133/R134 1k series (RCM4 sheet)."
+	(text "AIN0 / AIN1 (J11-2 / J11-4), field wired, to CM4\nAnalogIP0/1 (MxL7704 ADC). Measures 0 to 2.55 V (8-bit).\nSurvives +/-24 V either polarity: R133/R134 10k series\n+ D54/D55 BAT54S clamps to GND and 3V3_CM4 (RCM4 sheet)\nhold the pins within -0.3 V / +3.6 V (abs max -0.3/+6.0).\nError: ADC input < 1 uA x 10k = 10 mV, plus clamp leakage\n(up to ~1-2 % hot). With the CM4 off, a driven input feeds\n< 0.3 mA (at 6 V) into 3V3_CM4 through the upper clamp."
 		(exclude_from_sim no)
 		(at 55.626 138.176 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)

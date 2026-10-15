@@ -606,6 +606,9 @@
       "/V_BAT": [
         "V_BAT"
       ],
+      "Net-(D56-Pad1)": [
+        "VBUS"
+      ],
       "Net-(R8-Pad2)": [
         "VBUS"
       ]
@@ -761,7 +764,7 @@
         "uuid": "c1285fbe-5f56-49a8-9041-410713cbe619"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R1",
     "variants": []
   },
   "sheets": [
@@ -800,6 +803,10 @@
     [
       "fb50d315-12f7-4e6b-b285-268923f15ffb",
       "Robo"
+    ],
+    [
+      "47c45030-5e0e-4373-90dd-e8e713456a1d",
+      "usb2"
     ]
   ],
   "text_variables": {},
