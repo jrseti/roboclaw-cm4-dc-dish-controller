@@ -1805,7 +1805,7 @@
 		)
 		(uuid "29133d3d-9f10-4b99-8075-c5475b7b75c8")
 	)
-	(text "EEPROM WRITE PROTECT (EEPROM_nWP, J2 3-4)\nThe CM4 pulls EEPROM_nWP up internally (100k), so the\nbootloader EEPROM is writable unless J2 3-4 is fitted.\nThe jumper only takes effect once protection is enabled\nin the bootloader config (CM4 datasheet 2.18).\n\nProduction:\n- Set eeprom_write_protect=1 in the bootloader config\n  (via usbboot or rpi-eeprom-config) before shipping.\n- Fit the J2 3-4 jumper. The EEPROM is then protected\n  from power-up (CM4 datasheet 5.1).\n\nBootloader update:\n- Remove J2 3-4, update via usbboot or self-update,\n  then refit the jumper.\n\nWhy not a GPIO with a pull-down: CM4 EEPROM updates run\nonly via usbboot or bootloader self-update (datasheet\n6.3), before Linux can drive a GPIO, so the pin could\nnever be released for an update."
+	(text "EEPROM WRITE PROTECT (EEPROM_nWP, J3 3-4)\nThe CM4 pulls EEPROM_nWP up internally (100k), so the\nbootloader EEPROM is writable unless J3 3-4 is fitted.\nThe jumper only takes effect once protection is enabled\nin the bootloader config (CM4 datasheet 2.18).\n\nProduction:\n- Set eeprom_write_protect=1 in the bootloader config\n  (via usbboot or rpi-eeprom-config) before shipping.\n- Fit the J3 3-4 jumper. The EEPROM is then protected\n  from power-up (CM4 datasheet 5.1).\n\nBootloader update:\n- Remove J3 3-4, update via usbboot or self-update,\n  then refit the jumper.\n\nWhy not a GPIO with a pull-down: CM4 EEPROM updates run\nonly via usbboot or bootloader self-update (datasheet\n6.3), before Linux can drive a GPIO, so the pin could\nnever be released for an update."
 		(exclude_from_sim no)
 		(at 231.14 84.455 0)
 		(effects
@@ -1816,7 +1816,7 @@
 		)
 		(uuid "342137f9-6d01-4fc1-9444-f251dee01ff6")
 	)
-	(text "H3/H4: optional I2C1 pull-ups, normally OPEN.\nCM4 already pulls GPIO2/3 up with 1.8k (DS p.7).\nFit both only for a long, high-capacitance bus\nat 400 kHz: ~1k total, ~2.9 mA sink at 0.4 V\n(I2C spec min 3 mA, so compliant devices are OK)."
+	(text "H5/H6: optional I2C1 pull-ups, normally OPEN.\nCM4 already pulls GPIO2/3 up with 1.8k (DS p.7).\nFit both only for a long, high-capacitance bus\nat 400 kHz: ~1k total, ~2.9 mA sink at 0.4 V\n(I2C spec min 3 mA, so compliant devices are OK)."
 		(exclude_from_sim no)
 		(at 120.65 187.452 0)
 		(effects
@@ -1848,7 +1848,7 @@
 		)
 		(uuid "49c52580-cdce-44c0-b079-b639903359fb")
 	)
-	(text "AIN0 / AIN1 (J11-2 / J11-4), field wired, to CM4\nAnalogIP0/1 (MxL7704 ADC). Measures 0 to 2.55 V (8-bit).\nSurvives +/-24 V either polarity: R133/R134 10k series\n+ D54/D55 BAT54S clamps to GND and 3V3_CM4 (RCM4 sheet)\nhold the pins within -0.3 V / +3.6 V (abs max -0.3/+6.0).\nError: ADC input < 1 uA x 10k = 10 mV, plus clamp leakage\n(up to ~1-2 % hot). With the CM4 off, a driven input feeds\n< 0.3 mA (at 6 V) into 3V3_CM4 through the upper clamp."
+	(text "AIN0 / AIN1 (J4-2 / J4-4), field wired, to CM4\nAnalogIP0/1 (MxL7704 ADC). Measures 0 to 2.55 V (8-bit).\nSurvives +/-24 V either polarity: R7/R6 10k series\n+ D4/D5 BAT54S clamps to GND and 3V3_CM4 (RCM4 sheet)\nhold the pins within -0.3 V / +3.6 V (abs max -0.3/+6.0).\nError: ADC input < 1 uA x 10k = 10 mV, plus clamp leakage\n(up to ~1-2 % hot). With the CM4 off, a driven input feeds\n< 0.3 mA (at 6 V) into 3V3_CM4 through the upper clamp."
 		(exclude_from_sim no)
 		(at 55.626 138.176 0)
 		(effects
@@ -1911,7 +1911,7 @@
 		)
 		(uuid "807e8285-9c1a-47ad-8cd7-d74550796211")
 	)
-	(text "POWER-CYCLE CONTROL (nPWR_CYCLE)\nLets the CM4 cut its own power after a clean shutdown and restart\nby itself. Use it when a normal reboot is not enough: it fully resets\nthe PMIC and all on-module power rails.\n\nHow it works:\n- GPIO6 drives U15 (74LVC1G07, open-drain). J2 pins 5-6 connect U15's\n  output to GLOBAL_EN (CM4 pin 99, 100k internal pull-up to 5V).\n- GPIO6 high (default pull-up at reset): U15 output is off and the\n  CM4 runs.\n- GPIO6 low: GLOBAL_EN is pulled low and the CM4 powers off.\n- U15 is powered from 3V3_CM4, which switches off with the CM4, so\n  U15 releases GLOBAL_EN and the CM4 powers back on.\n\nUse:\n- Fit the J2 5-6 jumper to enable. Fit J2 5-6 only after the \n  board and GPIO6 behaviour have been verified.\n- config.txt: dtoverlay=gpio-poweroff,gpiopin=6,active_low=1\n  \"sudo poweroff\" then shuts down cleanly and power-cycles the CM4.\n- Do not drive GPIO6 low while the OS is running. CM4 datasheet\n  section 2.13: pull GLOBAL_EN low only after the OS has shut down.\n- The datasheet needs GLOBAL_EN low for >1 ms. The low time here is\n  set by how fast 3V3_CM4 decays and is not guaranteed; check it with\n  a scope on first boards.\n"
+	(text "POWER-CYCLE CONTROL (nPWR_CYCLE)\nLets the CM4 cut its own power after a clean shutdown and restart\nby itself. Use it when a normal reboot is not enough: it fully resets\nthe PMIC and all on-module power rails.\n\nHow it works:\n- GPIO6 drives U10 (74LVC1G07, open-drain). J3 pins 5-6 connect U10's\n  output to GLOBAL_EN (CM4 pin 99, 100k internal pull-up to 5V).\n- GPIO6 high (default pull-up at reset): U10 output is off and the\n  CM4 runs.\n- GPIO6 low: GLOBAL_EN is pulled low and the CM4 powers off.\n- U10 is powered from 3V3_CM4, which switches off with the CM4, so\n  U10 releases GLOBAL_EN and the CM4 powers back on.\n\nUse:\n- Fit the J3 5-6 jumper to enable. Fit J3 5-6 only after the \n  board and GPIO6 behaviour have been verified.\n- config.txt: dtoverlay=gpio-poweroff,gpiopin=6,active_low=1\n  \"sudo poweroff\" then shuts down cleanly and power-cycles the CM4.\n- Do not drive GPIO6 low while the OS is running. CM4 datasheet\n  section 2.13: pull GLOBAL_EN low only after the OS has shut down.\n- The datasheet needs GLOBAL_EN low for >1 ms. The low time here is\n  set by how fast 3V3_CM4 decays and is not guaranteed; check it with\n  a scope on first boards.\n"
 		(exclude_from_sim no)
 		(at 146.812 98.552 0)
 		(effects
@@ -1953,7 +1953,7 @@
 		)
 		(uuid "f277ca29-2390-40bd-b66c-1021ef592967")
 	)
-	(text "GPIO0 / GPIO1 (J11-22 / J11-23)\nCM4 pins 36 (ID_SD = GPIO0) and 35 (ID_SC = GPIO1). This is the\nI2C0 bus the firmware normally uses to look for a HAT EEPROM and to\ncontrol CSI0/DSI0 cameras and displays. This board has no HAT, camera\nor display, so the pins are free for general use.\n\nTo use them as GPIO, add to config.txt (CM4 datasheet section 2.10):\n  force_eeprom_read=0\n  disable_poe_fan=1\nWithout these, the firmware drives the bus at boot to look for an\nEEPROM, and anything wired to these pins sees I2C activity.\n\n- Both pins are pulled up (high) at reset.\n- 3.3 V logic. Not 5 V tolerant.\n- They can also be used as an I2C bus (I2C0: GPIO0 = SDA,\n  GPIO1 = SCL). Add external pull-ups if you do.\n"
+	(text "GPIO0 / GPIO1 (J4-22 / J4-23)\nCM4 pins 36 (ID_SD = GPIO0) and 35 (ID_SC = GPIO1). This is the\nI2C0 bus the firmware normally uses to look for a HAT EEPROM and to\ncontrol CSI0/DSI0 cameras and displays. This board has no HAT, camera\nor display, so the pins are free for general use.\n\nTo use them as GPIO, add to config.txt (CM4 datasheet section 2.10):\n  force_eeprom_read=0\n  disable_poe_fan=1\nWithout these, the firmware drives the bus at boot to look for an\nEEPROM, and anything wired to these pins sees I2C activity.\n\n- Both pins are pulled up (high) at reset.\n- 3.3 V logic. Not 5 V tolerant.\n- They can also be used as an I2C bus (I2C0: GPIO0 = SDA,\n  GPIO1 = SCL). Add external pull-ups if you do.\n"
 		(exclude_from_sim no)
 		(at 54.356 106.934 0)
 		(effects
@@ -3093,7 +3093,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2fb1e11f-764d-405a-919a-ea9c2938d5db")
-		(property "Reference" "R113"
+		(property "Reference" "R20"
 			(at 132.842 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3223,7 +3223,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "R113")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -3240,7 +3240,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39dc5246-62d5-47dc-8d2e-2f3e30515450")
-		(property "Reference" "J13"
+		(property "Reference" "J5"
 			(at 166.116 147.066 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3351,7 +3351,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "J13")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -3447,7 +3447,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cf53d7b-8cc7-4593-ab51-67e81741db2e")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 190.246 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3565,7 +3565,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -3582,7 +3582,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8798348e-f833-4607-ae45-bb40f4d00603")
-		(property "Reference" "H4"
+		(property "Reference" "H6"
 			(at 151.13 176.784 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3691,7 +3691,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "H4")
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -3708,7 +3708,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e496b0a-4d1e-4f8b-b52a-392e39b11d9e")
-		(property "Reference" "H3"
+		(property "Reference" "H5"
 			(at 127 176.784 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3817,7 +3817,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "H3")
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -3834,7 +3834,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a2b4c5b2-9fde-4feb-8642-628cbe3d8427")
-		(property "Reference" "J11"
+		(property "Reference" "J4"
 			(at 80.01 67.056 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4006,7 +4006,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "J11")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -4181,7 +4181,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c7114443-3bfb-4f1c-a389-3edd6c41524d")
-		(property "Reference" "J12"
+		(property "Reference" "J6"
 			(at 196.596 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4299,7 +4299,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "J12")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -4316,7 +4316,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d5adc98b-ff8d-4652-8437-dcf4a565f80d")
-		(property "Reference" "U15"
+		(property "Reference" "U10"
 			(at 157.48 64.516 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4431,7 +4431,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "U15")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -4685,7 +4685,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fc73ab0f-b6bb-4e27-8d9e-3c243203cebb")
-		(property "Reference" "R114"
+		(property "Reference" "R21"
 			(at 156.972 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4815,7 +4815,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "R114")
+					(reference "R21")
 					(unit 1)
 				)
 			)

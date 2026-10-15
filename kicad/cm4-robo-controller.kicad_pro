@@ -606,6 +606,9 @@
       "/V_BAT": [
         "V_BAT"
       ],
+      "Net-(D24-Pad1)": [
+        "VBUS"
+      ],
       "Net-(D56-Pad1)": [
         "VBUS"
       ],

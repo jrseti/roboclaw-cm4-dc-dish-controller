@@ -5433,7 +5433,7 @@
 		)
 		(uuid "c45d4fb6-cfe1-4ca4-a317-424c878bf7e8")
 	)
-	(text "3.3V Caps for U3 and U4 VDD/VCC."
+	(text "3.3V Caps for U2 and U3 VDD/VCC."
 		(exclude_from_sim no)
 		(at 20.828 172.72 0)
 		(effects
@@ -5455,7 +5455,7 @@
 		)
 		(uuid "0ad6e70e-cf24-4510-8a71-67cb4a25fe79")
 	)
-	(text "Place each 100nF next to its own U4 supply pin (pins 5, 10, 15, 23, 29, 36)\nOne 100nF place near pin 1 of U3"
+	(text "Place each 100nF next to its own U3 supply pin (pins 5, 10, 15, 23, 29, 36)\nOne 100nF place near pin 1 of U2"
 		(exclude_from_sim no)
 		(at 21.082 190.246 0)
 		(effects
@@ -5477,7 +5477,7 @@
 		)
 		(uuid "260337aa-8a4e-4500-a31d-57c01df67ce9")
 	)
-	(text "Supplies and protects the 5V going out to all four USB ports\nILIM with 15K resistor limits to ~1.75A shared across USB1 and J14\n"
+	(text "Supplies and protects the 5V going out to all four USB ports\nILIM with 15K resistor limits to ~1.75A shared across USB1 and J2\n"
 		(exclude_from_sim no)
 		(at 172.974 151.384 0)
 		(effects
@@ -5520,7 +5520,7 @@
 		)
 		(uuid "8c149452-fd24-4ffb-8cad-2ab0629db33e")
 	)
-	(text "U5 port power, diode-OR (D52/D53, R138). The hub straps CFG_SEL=00:\nindividual port power switching and OC sensing (USB2514B Table 5-1).\nU5 feeds all four ports, so its EN is the OR of PRTPWR1-4: VBUS stays\non while any port is enabled and drops only when all four are off.\nOCS_N1-4 share nOCS1: a U5 fault is reported on every port (correct\nfor one shared switch). BC_EN straps read 0 via the internal 10k IPD."
+	(text "U4 port power, diode-OR (D6/D7, R11). The hub straps CFG_SEL=00:\nindividual port power switching and OC sensing (USB2514B Table 5-1).\nU4 feeds all four ports, so its EN is the OR of PRTPWR1-4: VBUS stays\non while any port is enabled and drops only when all four are off.\nOCS_N1-4 share nOCS1: a U4 fault is reported on every port (correct\nfor one shared switch). BC_EN straps read 0 via the internal 10k IPD."
 		(exclude_from_sim no)
 		(at 187.96 110.49 0)
 		(effects
@@ -5542,7 +5542,7 @@
 		)
 		(uuid "96badb1f-4142-47bf-876d-92074ca4d31a")
 	)
-	(text "Protects both expansion ports (4 lines).\nDiode clamps VBUS. Place both at J14."
+	(text "Protects both expansion ports (4 lines).\nDiode clamps VBUS. Place both at J2."
 		(exclude_from_sim no)
 		(at 115.062 159.512 0)
 		(effects
@@ -15132,7 +15132,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0210b915-4ec9-4a92-809a-bd1b62ffc3d5")
-		(property "Reference" "C5"
+		(property "Reference" "C15"
 			(at 58.42 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15268,7 +15268,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C5")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -15285,7 +15285,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "02a92b04-1263-4d52-bb30-40ef3283059c")
-		(property "Reference" "TP21"
+		(property "Reference" "TP9"
 			(at 153.67 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15357,13 +15357,13 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP21")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP21")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -15380,7 +15380,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0758e7a5-f24f-41ad-8a7e-4dda7f0c18e8")
-		(property "Reference" "C6"
+		(property "Reference" "C20"
 			(at 108.204 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15510,7 +15510,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C6")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -15527,7 +15527,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a3ac6ef-2abb-4999-a336-529c9862fb22")
-		(property "Reference" "C16"
+		(property "Reference" "C12"
 			(at 275.336 139.0649 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15663,7 +15663,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C16")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -15680,7 +15680,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b25dd24-d003-4d7a-9b95-c250ca7fb6ce")
-		(property "Reference" "C15"
+		(property "Reference" "C11"
 			(at 265.176 139.0649 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15816,7 +15816,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C15")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -15833,7 +15833,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11741e12-dcac-482b-bc7c-fbfb0c467190")
-		(property "Reference" "R13"
+		(property "Reference" "R14"
 			(at 88.646 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15967,7 +15967,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R13")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -15984,7 +15984,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1355fff8-a0dd-42a6-844c-ae01ed094568")
-		(property "Reference" "C19"
+		(property "Reference" "C21"
 			(at 118.364 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16114,7 +16114,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C19")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -16367,7 +16367,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21998827-b1d3-4b75-a553-e2a28ab02cca")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 85.344 63.246 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16500,7 +16500,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -16517,7 +16517,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23e9ae70-3803-4ce9-918d-7f36dcd03585")
-		(property "Reference" "D3"
+		(property "Reference" "D9"
 			(at 161.29 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16653,7 +16653,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "D3")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -16909,7 +16909,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a9f7d94-d3d1-4b08-af69-2399f004a3e2")
-		(property "Reference" "C20"
+		(property "Reference" "C22"
 			(at 167.386 182.2449 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17039,7 +17039,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C20")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -17056,7 +17056,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b6645e9-f52b-4374-b83d-8b77f4d0427c")
-		(property "Reference" "R138"
+		(property "Reference" "R11"
 			(at 267.97 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17190,7 +17190,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R138")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -17207,7 +17207,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2db1cb95-7039-4bec-9216-88175992662c")
-		(property "Reference" "TP31"
+		(property "Reference" "TP8"
 			(at 46.99 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17266,13 +17266,13 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP31")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP31")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -17469,7 +17469,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42c511af-d6d9-4b26-993c-ea0366eb115a")
-		(property "Reference" "C11"
+		(property "Reference" "C5"
 			(at 176.784 137.7949 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17605,7 +17605,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C11")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -17704,7 +17704,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "495bd7b1-662b-431d-9ad0-1fedfe0ad88f")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 129.54 65.278 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17921,7 +17921,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -17938,7 +17938,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4c12c85f-42f3-4911-8d3e-3e31a3afa35f")
-		(property "Reference" "D52"
+		(property "Reference" "D6"
 			(at 258.445 65.405 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18054,7 +18054,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "D52")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -18071,7 +18071,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5145a64c-07d0-411d-a81c-07463ce55464")
-		(property "Reference" "C3"
+		(property "Reference" "C14"
 			(at 49.276 180.9749 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18218,7 +18218,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C3")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -18320,7 +18320,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5671cb66-7057-4c97-96e3-eb9874062e58")
-		(property "Reference" "C112"
+		(property "Reference" "C6"
 			(at 182.88 145.288 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18448,7 +18448,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C112")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -18465,7 +18465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57de4f09-70dd-4630-a735-46e2ea4e7e1b")
-		(property "Reference" "C2"
+		(property "Reference" "C13"
 			(at 40.386 180.9749 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18601,7 +18601,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C2")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -18618,7 +18618,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f790a25-bd66-4325-bc39-7a14d7005aa9")
-		(property "Reference" "C8"
+		(property "Reference" "C18"
 			(at 87.884 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18748,7 +18748,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C8")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -18765,7 +18765,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d40712d-e4fb-4f59-909c-b5a8c7c8eef7")
-		(property "Reference" "C9"
+		(property "Reference" "C17"
 			(at 77.724 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18895,7 +18895,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C9")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -19229,7 +19229,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a00aa37-1551-4469-b618-3ed373bb4232")
-		(property "Reference" "C4"
+		(property "Reference" "C3"
 			(at 52.832 82.8039 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19365,7 +19365,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C4")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -19382,7 +19382,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8befd233-a072-43ae-bfd6-f47bc7466ea1")
-		(property "Reference" "C1"
+		(property "Reference" "C4"
 			(at 24.638 87.3759 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19518,7 +19518,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C1")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -19787,7 +19787,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9fe2c8ae-462d-4859-9186-55630ba258d1")
-		(property "Reference" "C14"
+		(property "Reference" "C10"
 			(at 255.016 139.0649 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19923,7 +19923,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C14")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -19940,7 +19940,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "a05c0b67-d404-408c-af3f-46c43c3fba91")
-		(property "Reference" "TP23"
+		(property "Reference" "TP10"
 			(at 262.89 148.082 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20011,13 +20011,13 @@
 		(instances
 			(project "rcm_dish_controller"
 				(path "/10d7c3e5-be4d-4306-a59e-500b86bd141f/a4b43769-68f4-4111-a02f-817ae260783a/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP23")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP23")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -20034,7 +20034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a07dfc9a-dadc-47fc-81d9-0f433a447c2c")
-		(property "Reference" "R135"
+		(property "Reference" "R16"
 			(at 170.942 94.361 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20164,7 +20164,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R135")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -20181,7 +20181,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a0939fad-15c8-44be-8c80-7a0a78f98a20")
-		(property "Reference" "C10"
+		(property "Reference" "C16"
 			(at 67.564 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20311,7 +20311,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C10")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -20731,7 +20731,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b91e5fc7-dba3-4cee-b4d7-48b545eb73e4")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 75.946 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20865,7 +20865,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R10")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -20958,7 +20958,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0e74c53-1b5f-4b37-a647-bfd9cbb96c6a")
-		(property "Reference" "C13"
+		(property "Reference" "C9"
 			(at 244.856 139.0649 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21094,7 +21094,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C13")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -21111,7 +21111,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c480d1dd-2bb1-4c48-802c-1164bf3a5573")
-		(property "Reference" "C7"
+		(property "Reference" "C19"
 			(at 98.044 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21241,7 +21241,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C7")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -21668,7 +21668,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9e2033a-d910-458a-9a2a-1e2581dae563")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 61.214 40.132 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21804,7 +21804,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -21900,7 +21900,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ddea6a62-976e-4a1b-ae86-5cb4e6be39f7")
-		(property "Reference" "U2"
+		(property "Reference" "U5"
 			(at 38.1 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22036,7 +22036,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "U2")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -22053,7 +22053,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e28cf685-0d92-46a5-8eca-11fa940fa599")
-		(property "Reference" "J14"
+		(property "Reference" "J2"
 			(at 147.32 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22183,7 +22183,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "J14")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -22200,7 +22200,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e535d394-18d5-4e03-b972-02431e8e08dd")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 203.962 135.128 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22324,7 +22324,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -22341,7 +22341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5753b9e-909e-4207-9e8f-053f7bbc06bc")
-		(property "Reference" "C111"
+		(property "Reference" "C8"
 			(at 236.22 146.812 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22469,7 +22469,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C111")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -22486,7 +22486,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e77956e1-03d6-4dc1-99ee-4bf396257ba1")
-		(property "Reference" "D1"
+		(property "Reference" "D8"
 			(at 109.22 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22628,7 +22628,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "D1")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -22645,7 +22645,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e78227c5-94a6-4e05-839e-409a4665bffc")
-		(property "Reference" "C12"
+		(property "Reference" "C7"
 			(at 231.14 146.812 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22779,7 +22779,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C12")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -22796,7 +22796,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e92425cb-e2c8-4b7c-92b0-5930843e25dd")
-		(property "Reference" "U11"
+		(property "Reference" "U7"
 			(at 135.89 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22926,7 +22926,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "U11")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -22943,7 +22943,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef9e4009-8a61-4871-b6c4-92f38b14965e")
-		(property "Reference" "R14"
+		(property "Reference" "R15"
 			(at 94.996 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23077,7 +23077,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R14")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -23094,7 +23094,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f1300289-5fc0-4869-93fa-7007048f4315")
-		(property "Reference" "D53"
+		(property "Reference" "D7"
 			(at 259.08 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23208,7 +23208,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "D53")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -23307,7 +23307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6c0bd3e-71fb-4d0b-bc0d-0465ea9d38c7")
-		(property "Reference" "R15"
+		(property "Reference" "R17"
 			(at 225.044 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23442,7 +23442,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R15")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -23544,7 +23544,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fcf0fb3a-9fca-4bde-858e-b16c6ca7b17c")
-		(property "Reference" "R11"
+		(property "Reference" "R13"
 			(at 82.296 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23678,7 +23678,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "R11")
+					(reference "R13")
 					(unit 1)
 				)
 			)

@@ -2679,7 +2679,7 @@
 		)
 		(uuid "1e9e4907-6f34-46dc-9b93-9f0838d1607f")
 	)
-	(text "V_MOTOR (A1 BAT+, via F2 15 A): motors 7.5 A max (F-SD-H-450 \nactuator  5.5 A + worm motor 2 A).\nF1 5 A feeds the CM4 board branch (V_BAT) only.\nF1/F2: Keystone 3557-2 holders; fit Littelfuse ATO\n0287005.PXCN (5 A) / 0287015.PXCN (15 A)."
+	(text "V_MOTOR (A1 BAT+, via F1 15 A): motors 7.5 A max (F-SD-H-450 \nactuator  5.5 A + worm motor 2 A).\nF2 5 A feeds the CM4 board branch (V_BAT) only.\nF2/F1: Keystone 3557-2 holders; fit Littelfuse ATO\n0287005.PXCN (5 A) / 0287015.PXCN (15 A)."
 		(exclude_from_sim no)
 		(at 26.67 106.68 0)
 		(effects
@@ -2690,7 +2690,7 @@
 		)
 		(uuid "3a20a1a7-be7d-4a96-bd67-388f526064a1")
 	)
-	(text "H1/H2/H5/H6: M3 plated mounting holes\non CHASSIS. Bond to the metal enclosure\nor dish frame."
+	(text "H1/H2/H3/H4: M3 plated mounting holes\non CHASSIS. Bond to the metal enclosure\nor dish frame."
 		(exclude_from_sim no)
 		(at 114.3 160.02 0)
 		(effects
@@ -2722,7 +2722,7 @@
 		)
 		(uuid "4bb4b2ec-4427-4282-b134-eeda165f170a")
 	)
-	(text "V_BAT (J1): 12.8 V nom, 10.0 V min, 14.6 V max (charging).\nSurvives 18 V max (TVS). Reverse battery: Q12 P-FET blocks it;\nsurvives -14.6 V, nothing conducts, no fuse blows."
+	(text "V_BAT (J1): 12.8 V nom, 10.0 V min, 14.6 V max (charging).\nSurvives 18 V max (TVS). Reverse battery: Q1 P-FET blocks it;\nsurvives -14.6 V, nothing conducts, no fuse blows."
 		(exclude_from_sim no)
 		(at 26.924 115.57 0)
 		(effects
@@ -2744,7 +2744,7 @@
 		)
 		(uuid "a0f547e3-98e5-461e-a0ed-828c9bac58cb")
 	)
-	(text "R136/C109: CHASSIS-GND bleed. Place near\nUSB-C / USB-A / RJ45. Shields and RJ45\ntermination (P10) go to CHASSIS."
+	(text "R2/C1: CHASSIS-GND bleed. Place near\nUSB-C / USB-A / RJ45. Shields and RJ45\ntermination (P10) go to CHASSIS."
 		(exclude_from_sim no)
 		(at 73.66 177.8 0)
 		(effects
@@ -2766,7 +2766,7 @@
 		)
 		(uuid "d8d4a515-a6ea-43ed-ab55-59f414573884")
 	)
-	(text "Give Q12's drain tab a solid copper pour; it \ndissipates about 0.55 W worst case."
+	(text "Give Q1's drain tab a solid copper pour; it \ndissipates about 0.55 W worst case."
 		(exclude_from_sim no)
 		(at 26.924 119.126 0)
 		(effects
@@ -6910,7 +6910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ca70c35-7fe8-42d6-b6bb-d2f27f45154d")
-		(property "Reference" "TP28"
+		(property "Reference" "TP2"
 			(at 80.264 154.686 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6970,7 +6970,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "TP28")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -6987,7 +6987,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "1160b4af-9745-45e3-b511-45386be5f263")
-		(property "Reference" "H6"
+		(property "Reference" "H4"
 			(at 147.32 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7058,7 +7058,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "H6")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7155,7 +7155,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16b8e82b-7cab-45ba-9f94-9f058c5afdc6")
-		(property "Reference" "F2"
+		(property "Reference" "F1"
 			(at 67.564 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7278,7 +7278,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "F2")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -7538,7 +7538,7 @@
 		(in_pos_files no)
 		(dnp no)
 		(uuid "3dbbda65-4612-4baa-a71c-b89cb4cfc120")
-		(property "Reference" "H5"
+		(property "Reference" "H3"
 			(at 137.16 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7609,7 +7609,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "H5")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -7907,7 +7907,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "726a54d6-718d-4b60-af8c-09a4df0512fd")
-		(property "Reference" "R136"
+		(property "Reference" "R2"
 			(at 91.44 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8035,7 +8035,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "R136")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8131,7 +8131,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "821bdf74-5ba7-4c5e-a51e-ed451265401c")
-		(property "Reference" "D50"
+		(property "Reference" "D1"
 			(at 97.536 67.056 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8239,7 +8239,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "D50")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -8346,7 +8346,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "89f27c52-a9fa-43e5-9b82-ec5ed071328e")
-		(property "Reference" "R139"
+		(property "Reference" "R1"
 			(at 58.42 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8476,7 +8476,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "R139")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8494,7 +8494,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91cca348-e787-4c65-905f-45bf59341df8")
-		(property "Reference" "F1"
+		(property "Reference" "F2"
 			(at 67.564 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8617,7 +8617,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "F1")
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -8711,7 +8711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1a2596a-4ea7-44b0-9662-c35423f682ff")
-		(property "Reference" "C109"
+		(property "Reference" "C1"
 			(at 91.44 151.892 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8839,7 +8839,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "C109")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -8856,7 +8856,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b93700f8-eddf-4f9a-b030-8231a8b03bec")
-		(property "Reference" "D59"
+		(property "Reference" "D2"
 			(at 60.452 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8975,7 +8975,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "D59")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8992,7 +8992,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba06b5db-c54d-4b28-a7b1-59f1a3298818")
-		(property "Reference" "TP29"
+		(property "Reference" "TP1"
 			(at 241.3 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9051,7 +9051,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "TP29")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9222,7 +9222,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bda4bbdc-e02d-4ffc-9369-c7c17a4670c1")
-		(property "Reference" "Q12"
+		(property "Reference" "Q1"
 			(at 48.26 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9349,7 +9349,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "Q12")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -9921,7 +9921,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fca06645-64a7-40ee-881f-ee9b354560b7")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 77.216 74.676 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10029,7 +10029,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
