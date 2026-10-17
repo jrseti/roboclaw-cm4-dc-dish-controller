@@ -1848,6 +1848,17 @@
 		)
 		(uuid "49c52580-cdce-44c0-b079-b639903359fb")
 	)
+	(text "BOOT CONSOLE UART (J5): CM4 UART0, 3.3 V logic, 115200 baud, 8N1, no flow control\n  J5-1  BOOT_CONSOLE_RXD (GPIO15, CM4 receives)   <- adapter TXD\n  J5-2  BOOT_CONSOLE_TXD (GPIO14, CM4 transmits)  -> adapter RXD\n  J5-3  GND                                       -- adapter GND\nTX and RX cross over: the adapter TXD goes to the CM4 RXD.\n\nUse an inexpensive USB-to-TTL serial cable (PL2303 / CP2102 / FTDI type) with\nfemale jumper leads. Typical colours: black GND, white RXD, green TXD, red 5V.\nCheck the labels on your cable.\n\nDO NOT connect the adapter 5V lead. The board powers itself and J5 has no 5V pin.\nA loose 5V lead can short to the header or the board, so it is best to cut it off\n(or insulate it).\nUse an adapter with 3.3 V signals only. CM4 GPIOs are not 5 V tolerant: check that\nthe adapter TXD idles at about 3.3 V with a meter before connecting.\n\nLinux console: enable_uart=1 in config.txt (Pi OS cmdline.txt already has\nconsole=serial0,115200).\nBootloader messages: set BOOT_UART=1 in the EEPROM config (rpi-eeprom-config)."
+		(exclude_from_sim no)
+		(at 16.51 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "59b5c7cd-9338-40a3-9b53-036619d169b0")
+	)
 	(text "AIN0 / AIN1 (J4-2 / J4-4), field wired, to CM4\nAnalogIP0/1 (MxL7704 ADC). Measures 0 to 2.55 V (8-bit).\nSurvives +/-24 V either polarity: R7/R6 10k series\n+ D4/D5 BAT54S clamps to GND and 3V3_CM4 (RCM4 sheet)\nhold the pins within -0.3 V / +3.6 V (abs max -0.3/+6.0).\nError: ADC input < 1 uA x 10k = 10 mV, plus clamp leakage\n(up to ~1-2 % hot). With the CM4 off, a driven input feeds\n< 0.3 mA (at 6 V) into 3V3_CM4 through the upper clamp."
 		(exclude_from_sim no)
 		(at 55.626 138.176 0)
@@ -4820,16 +4831,5 @@
 				)
 			)
 		)
-	)
-	(text "BOOT CONSOLE UART (J5): CM4 UART0, 3.3 V logic, 115200 baud, 8N1, no flow control\n  J5-1  BOOT_CONSOLE_RXD (GPIO15, CM4 receives)   <- adapter TXD\n  J5-2  BOOT_CONSOLE_TXD (GPIO14, CM4 transmits)  -> adapter RXD\n  J5-3  GND                                       -- adapter GND\nTX and RX cross over: the adapter TXD goes to the CM4 RXD.\n\nUse an inexpensive USB-to-TTL serial cable (PL2303 / CP2102 / FTDI type) with\nfemale jumper leads. Typical colours: black GND, white RXD, green TXD, red 5V.\nCheck the labels on your cable.\n\nDO NOT connect the adapter 5V lead. The board powers itself and J5 has no 5V pin.\nA loose 5V lead can short to the header or the board, so it is best to cut it off\n(or insulate it).\nUse an adapter with 3.3 V signals only. CM4 GPIOs are not 5 V tolerant: check that\nthe adapter TXD idles at about 3.3 V with a meter before connecting.\n\nLinux console: enable_uart=1 in config.txt (Pi OS cmdline.txt already has\nconsole=serial0,115200).\nBootloader messages: set BOOT_UART=1 in the EEPROM config (rpi-eeprom-config)."
-		(exclude_from_sim no)
-		(at 16.51 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "59b5c7cd-9338-40a3-9b53-036619d169b0")
 	)
 )
