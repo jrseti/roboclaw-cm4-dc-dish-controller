@@ -632,7 +632,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MyParts:0402WGF1502TCE"
+		(symbol "MyParts:0402WGF1003TCE"
 			(pin_numbers
 				(hide yes)
 			)
@@ -655,7 +655,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "15kΩ"
+			(property "Value" "100kΩ"
 				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -676,7 +676,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1502TCE.pdf"
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1003TCE.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -687,7 +687,7 @@
 					)
 				)
 			)
-			(property "Description" "-55℃~+155℃ 15kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(property "Description" "-55℃~+155℃ 100kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -720,7 +720,7 @@
 					)
 				)
 			)
-			(property "MPN" "0402WGF1502TCE"
+			(property "MPN" "0402WGF1003TCE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -742,7 +742,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C25756"
+			(property "LCSC Part" "C25741"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -775,7 +775,7 @@
 					)
 				)
 			)
-			(symbol "0402WGF1502TCE_0_1"
+			(symbol "0402WGF1003TCE_0_1"
 				(rectangle
 					(start -1.016 2.54)
 					(end 1.016 -2.54)
@@ -788,7 +788,7 @@
 					)
 				)
 			)
-			(symbol "0402WGF1502TCE_1_1"
+			(symbol "0402WGF1003TCE_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -985,6 +985,202 @@
 				)
 			)
 			(symbol "0402WGF5101TCE_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:0402WGF6802TCE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "68kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:R0402"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF6802TCE.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+155℃ 68kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0402WGF6802TCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C36871"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402WGF6802TCE_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402WGF6802TCE_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -2188,6 +2384,264 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:PM254-2-09-Z-8.5"
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PM254-2-09-Z-8.5"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:HDR-F-TH_2x09-P2.54-H8.5_PM254_NOPADS"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/PM254-2-09-Z-8.5.pdf"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.54mm 2x09P female header socket, 8.5mm, 3A/contact, through hole. Socket for the RoboClaw OEM module; no electrical pins - the socket tails solder into the A1 footprint holes."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "HCTL"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PM254-2-09-Z-8.5"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2897410"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Female header 2x09 P2.54 H8.5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "socket female header roboclaw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PM254-2-09-Z-8.5_0_1"
+				(rectangle
+					(start -5.715 1.905)
+					(end 5.715 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:PM254-2-12-Z-8.5"
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PM254-2-12-Z-8.5"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:HDR-F-TH_2x12-P2.54-H8.5_PM254_NOPADS"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/PM254-2-12-Z-8.5.pdf"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.54mm 2x12P female header socket, 8.5mm, 3A/contact, through hole. Socket for the RoboClaw OEM module; no electrical pins - the socket tails solder into the A1 footprint holes."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "HCTL"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PM254-2-12-Z-8.5"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2897413"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "THT Female header 2x12 P2.54 H8.5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "socket female header roboclaw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PM254-2-12-Z-8.5_0_1"
+				(rectangle
+					(start -7.62 1.905)
+					(end 7.62 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -3923,6 +4377,17 @@
 		)
 		(uuid "3aa5fd11-ed54-4c76-8787-6a88874a80ef")
 	)
+	(text "Sockets for A1\n(RoboClaw plugs in)"
+		(exclude_from_sim no)
+		(at 25.4 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3e2e4943-d7ae-43dc-8e88-678755527005")
+	)
 	(text "E-stop / limit switches"
 		(exclude_from_sim no)
 		(at 24.384 140.716 0)
@@ -5490,7 +5955,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:0402WGF1502TCE")
+		(lib_id "MyParts:0402WGF1003TCE")
 		(at 171.45 114.3 0)
 		(unit 1)
 		(body_style 1)
@@ -5511,7 +5976,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "15kΩ"
+		(property "Value" "100kΩ"
 			(at 169.545 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5533,7 +5998,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1502TCE.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1003TCE.pdf"
 			(at 171.45 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5544,7 +6009,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 15kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 171.45 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5577,7 +6042,7 @@
 				)
 			)
 		)
-		(property "MPN" "0402WGF1502TCE"
+		(property "MPN" "0402WGF1003TCE"
 			(at 171.45 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5599,7 +6064,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C25756"
+		(property "LCSC Part" "C25741"
 			(at 171.45 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7118,7 +7583,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a4b46bc-3e71-47ab-ad27-915bbbf1abe9")
@@ -8343,6 +8808,123 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "#PWR0425")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:PM254-2-09-Z-8.5")
+		(at 39.37 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63b7ffd9-5d21-446c-aaed-f231e2ccf733")
+		(property "Reference" "J16"
+			(at 39.37 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PM254-2-09-Z-8.5"
+			(at 39.37 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:HDR-F-TH_2x09-P2.54-H8.5_PM254_NOPADS"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/PM254-2-09-Z-8.5.pdf"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.54mm 2x09P female header socket, 8.5mm, 3A/contact, through hole. Socket for the RoboClaw OEM module; no electrical pins - the socket tails solder into the A1 footprint holes."
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "HCTL"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PM254-2-09-Z-8.5"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2897410"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Female header 2x09 P2.54 H8.5"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -11094,6 +11676,123 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:PM254-2-12-Z-8.5")
+		(at 39.37 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d0b91aca-a4e3-4ff7-a3e5-a47f2ff5b0cb")
+		(property "Reference" "J15"
+			(at 39.37 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PM254-2-12-Z-8.5"
+			(at 39.37 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:HDR-F-TH_2x12-P2.54-H8.5_PM254_NOPADS"
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/PM254-2-12-Z-8.5.pdf"
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.54mm 2x12P female header socket, 8.5mm, 3A/contact, through hole. Socket for the RoboClaw OEM module; no electrical pins - the socket tails solder into the A1 footprint holes."
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "HCTL"
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PM254-2-12-Z-8.5"
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2897413"
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "THT Female header 2x12 P2.54 H8.5"
+			(at 39.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:74LVC1G17SE-7")
 		(at 241.3 138.43 0)
 		(unit 1)
@@ -12341,7 +13040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:0402WGF1002TCE")
+		(lib_id "MyParts:0402WGF6802TCE")
 		(at 163.83 110.49 90)
 		(unit 1)
 		(body_style 1)
@@ -12361,7 +13060,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "68kΩ"
 			(at 163.83 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12382,7 +13081,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF6802TCE.pdf"
 			(at 163.83 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -12393,7 +13092,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 68kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 163.83 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -12426,7 +13125,7 @@
 				)
 			)
 		)
-		(property "MPN" "0402WGF1002TCE"
+		(property "MPN" "0402WGF6802TCE"
 			(at 163.83 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -12448,7 +13147,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C25744"
+		(property "LCSC Part" "C36871"
 			(at 163.83 110.49 0)
 			(hide yes)
 			(show_name no)

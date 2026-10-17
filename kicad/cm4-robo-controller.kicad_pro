@@ -500,7 +500,6 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -519,7 +518,6 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -538,7 +536,6 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -557,7 +554,6 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -576,7 +572,6 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -604,6 +599,9 @@
         "AIN"
       ],
       "/V_BAT": [
+        "V_BAT"
+      ],
+      "/battery-input/V_BAT": [
         "V_BAT"
       ],
       "Net-(D24-Pad1)": [
@@ -810,6 +808,14 @@
     [
       "47c45030-5e0e-4373-90dd-e8e713456a1d",
       "usb2"
+    ],
+    [
+      "1525a509-badf-4965-b170-1459e1f19ebf",
+      "Motor Notes"
+    ],
+    [
+      "f33f7058-fe78-4de3-afa6-be46a5f18f95",
+      "battery-input"
     ]
   ],
   "text_variables": {},
