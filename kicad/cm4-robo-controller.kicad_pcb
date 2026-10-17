@@ -36568,6 +36568,7 @@
 		(property "Reference" "Module1"
 			(at 18.38 -5.08 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "0a0cb8c0-99b4-410f-87b9-bb6bf3732b83")
 			(effects
 				(font
@@ -45010,7 +45011,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "66bf9f55-d35a-4492-b7e6-9f745fc1a770")
+			(uuid "fe9fd125-e7ed-4f7c-96ba-c225752bf591")
 			(effects
 				(font
 					(size 1 1)
@@ -50260,7 +50261,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "78b021bf-c122-4ab4-ad1a-8191c2db8c0d")
+			(uuid "917be45f-f76e-45d2-8da8-37b3cfcf0a9b")
 			(effects
 				(font
 					(size 1 1)
@@ -54466,7 +54467,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "99121cc2-93e7-4695-bb0c-c95255b6290c")
+			(uuid "f2f754a0-d1d0-48d1-881a-267120fd813b")
 			(effects
 				(font
 					(size 1 1)
@@ -59920,7 +59921,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9412168f-5b21-4523-9f6e-ac02b9dd7142")
+			(uuid "513ca011-119f-4a77-a10d-114de361d7b1")
 			(effects
 				(font
 					(size 1 1)
@@ -71101,7 +71102,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "be6ee404-4e48-42aa-8180-20a85b3c9145")
+			(uuid "d16b0ea2-4738-4d3b-ad13-4465a2cd660d")
 			(effects
 				(font
 					(size 1 1)
@@ -75493,6 +75494,18 @@
 		(layer "Edge.Cuts")
 		(uuid "52d30c19-15da-470b-88fc-28e28a0240d2")
 	)
+	(gr_text "Ethernet"
+		(at 112.37 112.528709 0)
+		(layer "F.SilkS")
+		(uuid "d3b486dd-eeee-48b3-a9a4-c896f57a2252")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "+12.8V"
 		(at 148.5 139.35 0)
 		(layer "F.SilkS")
@@ -75650,13 +75663,37 @@
 		)
 	)
 	(gr_text "12.8VDC\nBattery"
-		(at 139.25 138.35 0)
+		(at 145.55 137.6 0)
 		(layer "F.SilkS")
 		(uuid "7a612c7e-69f8-4699-aa50-b931e2ad41a1")
 		(effects
 			(font
 				(size 1.2 1.2)
 				(thickness 0.15)
+			)
+			(justify right bottom)
+		)
+	)
+	(gr_text "Raspberry Pi Compute Module 4"
+		(at 80.25 91.1 0)
+		(layer "F.SilkS")
+		(uuid "1ad76de9-22d8-424f-aebb-dd8986a80159")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.2)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "ROBOCLAW-2X15A-OEM"
+		(at 169.6 108.75 45)
+		(layer "F.SilkS")
+		(uuid "61141d2a-8cf9-49a2-816a-b828b0a0555d")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.2)
 			)
 			(justify left bottom)
 		)
