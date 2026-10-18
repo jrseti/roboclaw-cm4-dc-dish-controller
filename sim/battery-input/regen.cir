@@ -1,0 +1,37 @@
+* Regenerative braking with the battery's BMS opening.
+* The RoboClaw returns braking current (IREG, set by run.sh) into
+* V_MOTOR. While the battery is connected Q1 conducts it back to the
+* battery. At 4 ms the BMS opens (charge over-current or a full cell);
+* the current then has nowhere to go but the RoboClaw's capacitors and
+* the TVS diodes D1 and D3.
+.include models.lib
+.include board.inc
+.param RF1=4.5m CRC=470u ESRRC=40m
+.include case.inc
+
+VBAT bat 0 14.6
+RBAT bat b1 25m
+SBMS b1 b2 ctl 0 SWM
+VCTL ctl 0 PWL(0 1 4m 1 4.001m 0)
+LCAB b2 b3 1u
+RCAB b3 jp 17m
+IRG 0 vm PWL(0 0 2m 0 3m {IREG})
+
+.tran 1u 8m
+.control
+run
+let vsg = v(vs) - v(g)
+let p_d1 = v(vm) * i(VSD1)
+meas tran vm_before find v(vm) at=3.9m
+meas tran vm_pk max v(vm)
+meas tran vbf_pk max v(vbf)
+meas tran vsg_pk max vsg
+meas tran id1_end find i(VSD1) at=8m
+meas tran id3_end find i(VSD3) at=8m
+meas tran pd1_end find p_d1 at=8m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vm) v(vbf) vsg i(VSD1) i(VSD3)
+quit
+.endc
+.end

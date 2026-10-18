@@ -5306,80 +5306,13 @@
 		)
 		(uuid "efaff94f-3ad5-4d9d-aeda-8b9b988a7bb5")
 	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 119.38 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "8d3de150-1d07-4089-82b9-851270356ce2")
-		(property "Net Class" "V_BAT"
-			(at 119.38 73.152 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "VOLTAGE_NOM" "12.8V"
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VOLTAGE_MIN" "10.0V"
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VOLTAGE_MAX" "14.6V"
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VOLTAGE_EXCURSION_MAX" "18.0V"
-			(at 119.38 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
 		(at 82.55 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5977,7 +5910,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R1206"
+		(property "Footprint" "MyPartsIPC:RESC3216X70N"
 			(at 91.44 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -6290,7 +6223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:C1206"
+		(property "Footprint" "MyPartsIPC:CAPC3216X180N"
 			(at 91.44 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6410,7 +6343,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)

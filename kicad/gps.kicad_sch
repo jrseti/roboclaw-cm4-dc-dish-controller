@@ -14771,7 +14771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 229.87 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14919,7 +14919,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:LED0805-R-RD"
+		(property "Footprint" "MyPartsIPC:LEDC2012X110N"
 			(at 71.12 127 0)
 			(hide yes)
 			(show_name no)
@@ -15050,7 +15050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 74.422 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -15292,7 +15292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:L0402-RD"
+		(property "Footprint" "MyPartsIPC:INDC1005X55N"
 			(at 99.06 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -15456,7 +15456,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:SC-88A_L2.0-W1.3-P0.65-LS2.1-BL"
+		(property "Footprint" "MyPartsIPC:SOT65P210X110-5N"
 			(at 241.3 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -15588,7 +15588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R2512"
+		(property "Footprint" "MyPartsIPC:RESC6332X70N"
 			(at 113.03 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -15825,7 +15825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 66.802 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -16230,7 +16230,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:DIO-SMD_2P-L1.0-W0.6-P0.65-RD"
+		(property "Footprint" "MyPartsIPC:DIOC1006X40N"
 			(at 153.67 127 0)
 			(hide yes)
 			(show_name no)
@@ -17228,7 +17228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 82.55 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -17381,7 +17381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 236.22 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -17604,7 +17604,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 59.69 74.168 90)
 			(hide yes)
 			(show_name no)
@@ -17846,7 +17846,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:SOD-123_L2.7-W1.6-LS3.7-RD"
+		(property "Footprint" "MyPartsIPC:SOD3716X135N"
 			(at 125.73 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -17976,7 +17976,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 241.3 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -18282,7 +18282,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:L0603"
+		(property "Footprint" "MyPartsIPC:INDC1608X95N"
 			(at 59.69 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -18446,7 +18446,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 154.432 69.85 90)
 			(hide yes)
 			(show_name no)
@@ -18650,7 +18650,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -18912,7 +18912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 167.132 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -19453,7 +19453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 82.042 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -19607,7 +19607,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:SOD-323_L1.8-W1.3-LS2.5-RD"
+		(property "Footprint" "MyPartsIPC:SOD2513X110N"
 			(at 163.83 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -19737,7 +19737,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 71.12 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -19969,7 +19969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 101.092 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -20285,7 +20285,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 269.24 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -20432,7 +20432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:SC-88A_L2.0-W1.3-P0.65-LS2.1-BL"
+		(property "Footprint" "MyPartsIPC:SOT65P210X110-5N"
 			(at 248.92 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -20567,7 +20567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 108.712 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -20720,7 +20720,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 125.73 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -20865,7 +20865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 82.55 71.628 90)
 			(hide yes)
 			(show_name no)
@@ -21196,7 +21196,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:D0402-BI"
+		(property "Footprint" "MyPartsIPC:DIOC1005X55N"
 			(at 223.52 80.01 0)
 			(hide yes)
 			(show_name no)

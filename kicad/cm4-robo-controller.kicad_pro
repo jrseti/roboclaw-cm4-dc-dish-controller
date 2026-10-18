@@ -137,7 +137,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -516,9 +516,9 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.13,
+        "diff_pair_width": 0.11,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -526,7 +526,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.11,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -534,9 +534,9 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.15,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -544,7 +544,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.15,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -598,42 +598,101 @@
       "/CM4/AIN1": [
         "AIN"
       ],
-      "/V_BAT": [
-        "V_BAT"
-      ],
       "/battery-input/V_BAT": [
         "V_BAT"
       ],
       "Net-(D24-Pad1)": [
-        "VBUS"
-      ],
-      "Net-(D56-Pad1)": [
-        "VBUS"
-      ],
-      "Net-(R8-Pad2)": [
         "VBUS"
       ]
     },
     "netclass_patterns": [
       {
         "netclass": "USB_90_OHM",
-        "pattern": "/CM4/USB2_?"
+        "pattern": "/CM4/USB2_P"
       },
       {
         "netclass": "USB_90_OHM",
-        "pattern": "/CM4/usb/HSD2?"
+        "pattern": "/CM4/USB2_N"
       },
       {
         "netclass": "USB_90_OHM",
-        "pattern": "/CM4/usb/HD?_?"
+        "pattern": "/CM4/usb/HSD2+"
       },
       {
         "netclass": "USB_90_OHM",
-        "pattern": "/CM4/usb/USB_HUB_?"
+        "pattern": "/CM4/usb/HSD2-"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/USB_HUB_P"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/USB_HUB_N"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD1_P"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD1_N"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD2_P"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD2_N"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD3_P"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD3_N"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD4_P"
+      },
+      {
+        "netclass": "USB_90_OHM",
+        "pattern": "/CM4/usb/HD4_N"
       },
       {
         "netclass": "ETH_100_OHM",
-        "pattern": "/CM4/EP??"
+        "pattern": "/CM4/EP0+"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP0-"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP1+"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP1-"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP2+"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP2-"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP3+"
+      },
+      {
+        "netclass": "ETH_100_OHM",
+        "pattern": "/CM4/EP3-"
       }
     ]
   },

@@ -2413,7 +2413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:SMC_L6.9-W5.9-LS7.9-RD"
+		(property "Footprint" "MyPartsIPC:DIOM7959X262N"
 			(at 175.26 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -2538,7 +2538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 137.16 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2903,7 +2903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:SOD-123_L2.7-W1.6-LS3.7-RD"
+		(property "Footprint" "MyPartsIPC:SOD3716X135N"
 			(at 139.7 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3114,7 +3114,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:PDFN-8_L6.0-W5.0-P1.27_HGQ065NE4A"
+		(property "Footprint" "MyPartsIPC:SON127P600X500X110-9N"
 			(at 129.54 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3340,7 +3340,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:SMC_L6.9-W5.9-LS7.9-RD"
+		(property "Footprint" "MyPartsIPC:DIOM7959X262N"
 			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3428,6 +3428,74 @@
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/f33f7058-fe78-4de3-afa6-be46a5f18f95"
 					(reference "D3")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 156.21 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "8d3de150-1d07-4089-82b9-851270356ce2")
+		(property "Net Class" "V_BAT"
+			(at 157.48 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "VOLTAGE_NOM" "12.8V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MIN" "10.0V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MAX" "14.6V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_EXCURSION_MAX" "18.0V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

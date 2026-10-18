@@ -5900,7 +5900,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 102.87 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6130,7 +6130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:USON-10_L2.5-W1.0-P0.50-BL"
+		(property "Footprint" "MyPartsIPC:SON50P100X250X60-10N"
 			(at 203.2 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6695,7 +6695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 49.022 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -7016,7 +7016,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:USON-10_L2.5-W1.0-P0.50-BL"
+		(property "Footprint" "MyPartsIPC:SON50P100X250X60-10N"
 			(at 203.2 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7171,7 +7171,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 62.23 39.37 0)
 			(hide yes)
 			(show_name no)

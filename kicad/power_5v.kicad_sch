@@ -5,6 +5,202 @@
 	(uuid "c79f1f37-0b64-4ead-9fa2-736f6b30db26")
 	(paper "A4")
 	(lib_symbols
+		(symbol "MyParts:0402WGF1003TCE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:R0402"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1003TCE.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+155℃ 100kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0402WGF1003TCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C25741"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402WGF1003TCE_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402WGF1003TCE_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint_Small"
 			(pin_numbers
 				(hide yes)
@@ -3379,7 +3575,7 @@
 		)
 		(uuid "83f145ca-0a92-4f2c-81a4-89c7396c3800")
 	)
-	(text "12V to 5V Buck - AP64501 (5A, 570kHz, 0.8V reference)\nVout = 5.16V, designed for 3A. Input 8.3V-19V (eFuse UVLO cuts in at 8.3V, OVP cuts out at 17.5-19V).\nEN tied to VIN: starts automatically, the eFuse upstream provides the UVLO.\n\nOutput voltage set by the FB divider\n\nVout = 0.8V x (1 + R42/R44) = 0.8 x (1 + 12k/2.2k) = 5.16V\nCorners 5.10-5.22V (Vref 792-808mV, R42/R44 0.1%). Worst-case USB VBUS\n= 5.10V - 40mV load reg - 1.908A x 135mΩ (U4) = 4.81V >= 4.75V;\nmax 5.22V stays within the CM4 5.25V limit. 1% resistors cannot meet both.\nR42 12k   0.1% thin film  top leg, 5V to FB\nR44 2.2k  0.1% thin film  bottom leg, FB to GND\nC46 DNP       optional feedforward across R42 for transient tuning\n\nLoop compensation\n\nR43 20k + C56 1.2nF  series RC on COMP sets the loop response\nC55 DNP              optional HF pole, fit only if the loop needs it\n\nGate drive and soft-start\n\nC40 100nF  bootstrap cap, BST to SW - powers the high-side FET driver\nR41 10R    boot resistor, slows the SW rising edge to cut EMI\nC54 100nF  soft-start; the internal 4uA source gives a ~20ms ramp\n\nInput bulk and bypass\n\nC48-C53  6 x 10uF 35V  bulk; carries ~1.5A RMS ripple at 3A out\nC47      0.1uF         HF bypass, place closest to VIN/GND\n\nOutput filter\n\nL2 3.3uH SRP7028A-3R3M  Bourns molded, 6A Irms, 12A Isat, 30mΩ DCR\n                     with 570kHz gives 1.56A p-p ripple at 12V in\n                     (2.0A p-p at 19V in; peak coil current 4.0A at 3A load)\n                     Isat 12A > U15 peak current limit (9.2A max), so L2\n                     does not saturate during overload before hiccup\nC41-C44 4 x 10uF 10V ceramic, low ESR\nC45 100uF 6.3V       polymer bulk for load steps; 5.16V = 82% of rating\n"
+	(text "12V to 5V Buck - AP64501 (5A, 570kHz, 0.8V reference)\nVout = 5.16V, designed for 3A. Input 8.3V-19V (eFuse UVLO cuts in at 8.3V, OVP cuts out at 17.5-19V).\nEN pulled up to VIN by R65 (100k): starts automatically, the eFuse upstream provides\nthe UVLO. TP30 on EN lets a test fixture hold the buck off.\n\nOutput voltage set by the FB divider\n\nVout = 0.8V x (1 + R42/R44) = 0.8 x (1 + 12k/2.2k) = 5.16V\nCorners 5.10-5.22V (Vref 792-808mV, R42/R44 0.1%). Worst-case USB VBUS\n= 5.10V - 40mV load reg - 1.908A x 135mΩ (U4) = 4.81V >= 4.75V;\nmax 5.22V stays within the CM4 5.25V limit. 1% resistors cannot meet both.\nR42 12k   0.1% thin film  top leg, 5V to FB\nR44 2.2k  0.1% thin film  bottom leg, FB to GND\nC46 DNP 470pF optional feedforward across R42 for transient tuning\n              (datasheet example 47pF across 115k, scaled for R42 = 12k)\n\nLoop compensation\n\nR43 20k + C56 1.2nF  series RC on COMP sets the loop response\nC55 DNP 33pF         optional HF pole (datasheet Table 1, 5V), fit only if needed\n\nGate drive and soft-start\n\nC40 100nF  bootstrap cap, BST to SW - powers the high-side FET driver\nR41 10R    boot resistor, slows the SW rising edge to cut EMI\nC54 100nF  soft-start; the internal 4uA source gives a ~20ms ramp\n\nInput bulk and bypass\n\nC48-C53  6 x 10uF 35V  bulk; carries ~1.5A RMS ripple at 3A out\nC47      0.1uF         HF bypass, place closest to VIN/GND\n\nOutput filter\n\nL2 3.3uH SRP7028A-3R3M  Bourns molded, 6A Irms, 12A Isat, 30mΩ DCR\n                     with 570kHz gives 1.56A p-p ripple at 12V in\n                     (2.0A p-p at 19V in; peak coil current 4.0A at 3A load)\n                     Isat 12A > U15 peak current limit (9.2A max), so L2\n                     does not saturate during overload before hiccup\nC41-C44 4 x 10uF 10V ceramic, low ESR\nC45 100uF 6.3V       polymer bulk for load steps; 5.16V = 82% of rating\n"
 		(exclude_from_sim no)
 		(at 28.956 155.448 0)
 		(effects
@@ -3563,12 +3759,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1498fa6-05ab-4cbf-bf8b-4e560c543ff4")
-	)
-	(junction
-		(at 116.84 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d53bcee6-3ebb-4757-abb3-e02c8bb1f384")
 	)
 	(junction
 		(at 215.9 69.85)
@@ -3836,16 +4026,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 83.82) (xy 106.68 83.82)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "3c338bd6-7b67-4307-bd0f-8b1ef98da238")
-	)
-	(wire
-		(pts
 			(xy 198.12 78.74) (xy 198.12 80.01)
 		)
 		(stroke
@@ -4093,16 +4273,6 @@
 			(type solid)
 		)
 		(uuid "703475da-8844-47d2-9585-85adc0a72495")
-	)
-	(wire
-		(pts
-			(xy 116.84 83.82) (xy 116.84 86.36)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "7288aac7-d15d-443f-8c9f-fa2876c66c29")
 	)
 	(wire
 		(pts
@@ -11208,7 +11378,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 223.52 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11355,7 +11525,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 114.3 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -11501,7 +11671,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 164.592 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -11735,7 +11905,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL-EP-1"
+		(property "Footprint" "MyPartsIPC:SOIC127P600X170-9N"
 			(at 129.54 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11948,7 +12118,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "33pF"
 			(at 147.828 99.822 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11959,7 +12129,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 147.0152 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12106,7 +12276,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 62.23 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -12252,7 +12422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 154.432 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -12563,7 +12733,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 214.63 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -12709,7 +12879,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:IND-SMD_L7.3-W6.6_SRP7028A"
+		(property "Footprint" "MyPartsIPC:INDM7366X280N"
 			(at 156.21 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -12878,7 +13048,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 163.83 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13148,7 +13318,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 83.82 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13295,7 +13465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 42.672 90.17 90)
 			(hide yes)
 			(show_name no)
@@ -13442,7 +13612,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 72.39 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13578,7 +13748,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "470pF"
 			(at 179.07 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13589,7 +13759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 177.4952 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -13736,7 +13906,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 93.98 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13881,7 +14051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0402"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 173.99 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -14028,7 +14198,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 115.062 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -14173,7 +14343,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R1206"
+		(property "Footprint" "MyPartsIPC:RESC3216X70N"
 			(at 121.92 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14398,7 +14568,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 104.14 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -14545,7 +14715,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 113.792 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -14692,7 +14862,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 205.74 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14839,7 +15009,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0805"
+		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
 			(at 196.85 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14986,7 +15156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
+		(property "Footprint" "MyPartsIPC:CAPMP7343X310N"
 			(at 233.68 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -15184,7 +15354,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15249,6 +15419,296 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9/2b73156f-617f-4ddb-9603-19922a26015d"
 					(reference "TP26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "BUCK_EN"
+		(at 116.84 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c32f54f4-fd2a-4aa9-8de6-52dfeb9846a7")
+	)
+	(wire
+		(pts
+			(xy 96.52 83.82) (xy 101.6 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daffefdc-1cbc-4186-b32e-0b7379ed4d38")
+	)
+	(wire
+		(pts
+			(xy 101.6 83.82) (xy 106.68 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94ff5631-c94b-437b-8aff-85abcac6d404")
+	)
+	(junction
+		(at 101.6 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "294eaba7-5fb9-4839-b5b1-d51a45154ea0")
+	)
+	(wire
+		(pts
+			(xy 101.6 76.2) (xy 101.6 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d35a425-0b56-472f-b13e-f92a433fdc27")
+	)
+	(wire
+		(pts
+			(xy 101.6 73.66) (xy 96.52 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45cf7a82-b39c-499c-9a71-a71176027b5c")
+	)
+	(label "BUCK_EN"
+		(at 96.52 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a69125c9-38b2-4e92-a7aa-b728c3b85f08")
+	)
+	(symbol
+		(lib_id "MyParts:0402WGF1003TCE")
+		(at 101.6 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e7d90d5-cb09-4791-a63b-c13c4f843fbc")
+		(property "Reference" "R65"
+			(at 99.695 79.375 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 99.695 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1003TCE.pdf"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 100kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1003TCE"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25741"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 101.6 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf03381d-4b39-486a-9815-6fde76e3e9a3")
+		)
+		(pin "2"
+			(uuid "eb6d5b71-ec28-4368-a1d8-b6231f770067")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9/2b73156f-617f-4ddb-9603-19922a26015d"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 101.6 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "53a23cf9-7c0c-4131-bda8-40daff2c5377")
+		(property "Reference" "TP30"
+			(at 103.124 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 101.6 74.422 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 101.6 74.422 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 101.6 74.422 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de35408d-572d-421c-8f75-d19ee7629ac9")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9/2b73156f-617f-4ddb-9603-19922a26015d"
+					(reference "TP30")
 					(unit 1)
 				)
 			)

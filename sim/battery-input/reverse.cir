@@ -1,0 +1,39 @@
+* Battery connected backwards (J1 pin 1 at -14.6 V).
+* QSHORT=0: Q1 healthy, it should block.
+* QSHORT=1: Q1 failed short; the reversed battery forward-biases D1, D3
+* and the RoboClaw's bridge body diodes, and F1/F2 carry that current.
+.include models.lib
+.include board.inc
+.param RF1=4.5m CRC=470u ESRRC=40m
+.include case.inc
+RQ1SHORT jp vs {1m + (1-QSHORT)*1e9}
+
+* RoboClaw H-bridge body diodes: 2 channels x 2 legs
+XRC1 vm 0 RC_BODY
+XRC2 vm 0 RC_BODY
+XRC3 vm 0 RC_BODY
+XRC4 vm 0 RC_BODY
+
+VBAT 0 bat 14.6
+RBAT bat b1 25m
+SPLUG b1 b2 ctl 0 SWM
+VCTL ctl 0 PWL(0 0 10u 0 10.01u 1)
+LCAB b2 b3 1u
+RCAB b3 jp 17m
+
+.tran 100n 2m 0 1u uic
+.control
+run
+let if1 = (v(vs) - v(vm)) / 4.5m
+let if2 = (v(vs) - v(vb)) / 17m
+meas tran icab_end find i(LCAB) at=2m
+meas tran if1_end find if1 at=2m
+meas tran if2_end find if2 at=2m
+meas tran vm_end find v(vm) at=2m
+meas tran vbf_min min v(vbf)
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vm) v(vbf) if1 if2
+quit
+.endc
+.end

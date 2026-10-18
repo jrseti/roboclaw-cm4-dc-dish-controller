@@ -1,0 +1,36 @@
+* Battery hot-plug: a fully charged LiFePO4 (14.6 V) is connected to J1
+* through ~1 m of 14 AWG pair. Cable inductance rings with the board's
+* ceramic capacitance; the TVS diodes and Q1's gate clamp must cope.
+* CRC (RoboClaw input capacitance) is set by run.sh.
+.include models.lib
+.include board.inc
+.param RF1=4.5m ESRRC=40m
+.include case.inc
+
+VBAT bat 0 14.6
+RBAT bat b1 25m
+* Contact closes at 10 us
+SPLUG b1 b2 ctl 0 SWM
+VCTL ctl 0 PWL(0 0 10u 0 10.01u 1)
+LCAB b2 b3 1u
+RCAB b3 jp 17m
+
+.tran 5n 1.5m 0 20n uic
+.control
+run
+let vsg = v(vs) - v(g)
+meas tran vm_pk max v(vm)
+meas tran vb_pk max v(vb)
+meas tran vbf_pk max v(vbf)
+meas tran vsg_pk max vsg
+meas tran vsg_end find vsg at=1.5m
+meas tran icab_pk max i(LCAB)
+meas tran id1_pk max i(VSD1)
+meas tran id3_pk max i(VSD3)
+meas tran id10_pk max i(VSD10)
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vm) v(vbf) vsg i(LCAB)
+quit
+.endc
+.end

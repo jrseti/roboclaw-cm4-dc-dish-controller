@@ -7095,16 +7095,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 110.49) (xy 125.73 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99166ae8-894f-4201-9c95-4b549d16b552")
-	)
-	(wire
-		(pts
 			(xy 86.36 80.01) (xy 87.63 80.01)
 		)
 		(stroke
@@ -14451,7 +14441,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:L1206"
+		(property "Footprint" "MyPartsIPC:INDC3216X130N"
 			(at 78.74 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -14898,7 +14888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 110.49 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -15049,7 +15039,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C1206"
+		(property "Footprint" "MyPartsIPC:CAPC3216X180N"
 			(at 100.33 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15427,7 +15417,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 120.65 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -15574,7 +15564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 110.49 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -15885,7 +15875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 151.13 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -16238,7 +16228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 200.66 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -16711,7 +16701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 78.74 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -16860,7 +16850,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:SOP-8_L4.9-W3.9-P1.27-LS6.0-BL"
+		(property "Footprint" "MyPartsIPC:SOIC127P600X175-8N"
 			(at 97.79 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -17080,7 +17070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:D_SMB"
+		(property "Footprint" "MyPartsIPC:DIOM5436X244N"
 			(at 115.57 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -17203,7 +17193,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:LED0805-R-RD"
+		(property "Footprint" "MyPartsIPC:LEDC2012X110N"
 			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -17407,7 +17397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 111.252 77.47 90)
 			(hide yes)
 			(show_name no)
@@ -17552,7 +17542,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 158.75 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -17697,7 +17687,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:C0402"
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
 			(at 147.32 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -17816,7 +17806,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -17919,7 +17909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 48.26 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -18068,7 +18058,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias"
+		(property "Footprint" "MyPartsIPC:QFN50P400X400X80-25N"
 			(at 134.62 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -18494,7 +18484,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:CAP-SMD_BD6.3-L6.6-W6.6-FD"
+		(property "Footprint" "MyPartsIPC:CAPAE660X770N"
 			(at 168.91 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -18640,7 +18630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 78.74 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -18791,7 +18781,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 85.852 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -18936,7 +18926,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:D_SMA"
+		(property "Footprint" "MyPartsIPC:DIOM5226X244N"
 			(at 181.61 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -19060,7 +19050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "MyPartsIPC:SOT230P700X180-4N"
 			(at 161.29 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -19421,7 +19411,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -19644,7 +19634,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "MyPartsIPC:SOT95P237X112-3N"
 			(at 107.95 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -19772,7 +19762,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 58.42 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -19923,7 +19913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:R0603"
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
 			(at 200.66 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -20152,7 +20142,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyParts:C0603"
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
 			(at 156.21 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -20338,6 +20328,109 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
 					(page "8")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 125.73 110.49) (xy 125.73 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "796c3ab4-2aae-415b-abe0-b92b97038ace")
+	)
+	(wire
+		(pts
+			(xy 125.73 119.38) (xy 125.73 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee1be7e-09f4-4616-a0a8-3f53dbd2dcbe")
+	)
+	(junction
+		(at 125.73 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7287652e-3228-4314-8c49-c48339d87f21")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 125.73 119.38 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5943dc9-2b1d-4c17-9f6f-e1df5e05be73")
+		(property "Reference" "TP31"
+			(at 123.19 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 125.73 120.142 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 125.73 120.142 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 125.73 120.142 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4665da88-8ca6-4991-b5f6-0e3c412b93ad")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
+					(reference "TP31")
+					(unit 1)
 				)
 			)
 		)
