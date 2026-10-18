@@ -1,0 +1,31 @@
+* SW1 switched on with the battery already connected and U11 up (PGOOD high).
+* Q2's gate is pulled straight to ground, so Q2 turns on hard and C28
+* (220 uF) dumps into the discharged 12V rail capacitors.
+.include models.lib
+.param VB=12.8 IOUT=3
+.include case.inc
+.include source.inc
+.include board.inc
+VPLUG plug 0 PWL(0 0 1m 0 1.001m 1)
+VSW1C sw1 0 PWL(0 0 150m 0 150.001m 1)
+IMOT vm 0 0
+.tran 0.5u 260m 0 2u
+.control
+run
+meas tran pg_before find v(pg) at=149m
+meas tran v12_before max v(v12) from=2m to=149m
+let vgs = v(q2g) - v(efo)
+meas tran vgs_end find vgs at=255m
+meas tran ief_pk max i(VSEF) from=149.9m
+meas tran idem_pk max v(xu11.idem) from=149.9m
+meas tran iq2_pk max i(VSQ2) from=149.9m
+meas tran efo_min min v(efo) from=149.9m to=170m
+meas tran pg_min min v(pg) from=149.9m to=200m
+meas tran t_lim when i(VSEF)=3.0 fall=last from=149.9m
+meas tran t_12v when v(v12)=12 rise=1 from=149.9m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(efo) v(v12) v(q2g) v(pg) i(VSEF) i(VSQ2) v(xu11.idem) v(vo5)
+quit
+.endc
+.end

@@ -1,0 +1,40 @@
+* Over-voltage on the battery rail, as when braking current has nowhere to
+* go (battery BMS open) and the TVS diodes hold the rail at about 21.5 V.
+* The battery source steps 14.6 V -> 21.5 V at 150 ms and back at 250 ms.
+* U11 cuts off at 17.96 V; the 12V rail and buck then run on C28 and the
+* rail capacitors until they drain.
+.include models.lib
+.param VB=14.6 IOUT=3 QSOFT=0
+VBATP bat 0 PWL(0 14.6 150m 14.6 151m 21.5 250m 21.5 251m 14.6)
+RBAT bat b1 25m
+SPLUG b1 b2 plug 0 SWM
+LCAB b2 b3 1u
+RCAB b3 jp 17m
+RQ1 jp vs 5m
+RF1 vs vm 4.5m
+CRC vm crc 470u
+RCRC crc 0 40m
+RF2 vs vb 17m
+RFB vb nfb 9m
+LFB nfb vbatf 0.2u
+RFBP vb vbatf 120
+.include board.inc
+VPLUG plug 0 PWL(0 0 1m 0 1.001m 1)
+Vsw1 sw1 0 1
+IMOT vm 0 0
+.tran 2u 400m 0 20u
+.control
+run
+meas tran t_ovp when v(ovp)=1.21 rise=1
+meas tran t_off when i(VSEF)=0.1 fall=1 from=150m
+meas tran t_5v_low when v(vo5)=4.75 fall=1 from=150m
+meas tran t_pg_low when v(pg)=1.65 fall=1 from=150m
+meas tran t_back when v(ovp)=1.13 fall=1 from=250m
+meas tran t_5v_ok when v(vo5)=5.1 rise=1 from=250m
+meas tran efo_pk max v(efo) from=150m to=260m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vbatf) v(efo) v(v12) v(vo5) v(pg) i(VSEF)
+quit
+.endc
+.end

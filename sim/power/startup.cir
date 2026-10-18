@@ -1,0 +1,26 @@
+* Start-up: a full battery (12.8 V rested) is plugged in at 1 ms with SW1
+* already on. Shows the UVLO filter delay, U11's turn-on delay and dV/dt
+* ramp, PGOOD, and the buck starting on the 12V rail.
+.include models.lib
+.param VB=12.8 IOUT=3 QSOFT=0
+.include source.inc
+.include board.inc
+VPLUG plug 0 PWL(0 0 1m 0 1.001m 1)
+Vsw1 sw1 0 1
+IMOT vm 0 0
+.tran 2u 120m 0 20u
+.control
+run
+meas tran t_uvlo when v(uvlo)=1.21 rise=1
+meas tran t_on when v(efo)=1 rise=1
+meas tran t_12v when v(efo)=12 rise=1
+meas tran t_pg when v(pg)=1.65 rise=1
+meas tran t_5v when v(vo5)=5.1 rise=1
+meas tran ief_pk max i(VSEF)
+meas tran vbf_min min v(vbatf) from=1.1m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vbatf) v(uvlo) v(dvdt) v(efo) v(v12) v(vo5) v(pg) i(VSEF) v(bgate,vbatf)
+quit
+.endc
+.end

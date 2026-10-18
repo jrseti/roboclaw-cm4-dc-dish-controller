@@ -1,0 +1,50 @@
+* Switching ripple at 3 A: the AP64501 power stage as two switches
+* (HS 45 mOhm, LS 20 mOhm) at 570 kHz, duty fixed for 5.16 V out.
+* VIN set by run.sh; the 12V rail is fed through the eFuse path (0.12 ohm).
+.include models.lib
+.include case.inc
+.param FSW=570k IOUT=3
+.param D={(5.164 + IOUT*(0.020 + 0.030))/(VIN - 0.15 - IOUT*0.025)}
+V12S v12s 0 {VIN}
+R12S v12s v12 0.12
+C47 v12 0 100n
+CIN v12 cin 30u
+VSCIN cin cinr 0
+RCIN cinr 0 1m
+VG g 0 PULSE(0 1 0 2n 2n {D/FSW - 2n} {1/FSW})
+SHS v12 lx g 0 SHS
+SLS lx 0 0 g SLS
+.model SHS SW(Ron=45m Roff=1Meg Vt=0.5 Vh=0)
+.model SLS SW(Ron=20m Roff=1Meg Vt=-0.5 Vh=0)
+L2 lx nl 3.3u ic={IOUT}
+RDCR nl vout 30m
+CCER vout cc 24u
+RCC cc 0 0.75m
+C45 vout c45 100u
+VSC45 c45 c45r 0
+RC45 c45r 0 15m
+C5 vout c5 6u
+RC5 c5 0 3m
+C6 vout 0 100n
+R42 vout fbd 12k
+R44 fbd 0 2.2k
+RLOAD vout 0 1.72
+.ic v(vout)=5.16 v(v12)={VIN-0.15} v(cc)=5.16 v(c45)=5.16 v(c5)=5.16 v(cin)={VIN-0.15}
+.tran 2n 1.2m 0 2n uic
+.control
+run
+let per = 1/570e3
+meas tran vout_avg avg v(vout) from=1.1m to=1.2m
+meas tran il_pp pp i(L2) from=1.19m to=1.2m
+meas tran il_max max i(L2) from=1.19m to=1.2m
+meas tran vout_pp pp v(vout) from=1.19m to=1.2m
+meas tran v12_pp pp v(v12) from=1.19m to=1.2m
+meas tran icin_rms rms i(VSCIN) from=1.19m to=1.2m
+meas tran ic45_rms rms i(VSC45) from=1.19m to=1.2m
+set wr_singlescale
+set wr_vecnames
+linearize v(lx) i(L2) v(vout) v(v12) i(VSCIN)
+wrdata out.dat v(lx) i(L2) v(vout) v(v12) i(VSCIN)
+quit
+.endc
+.end

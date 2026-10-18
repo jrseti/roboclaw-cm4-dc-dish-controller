@@ -1,0 +1,26 @@
+* Motor surge with a partly discharged battery. The RoboClaw draws 15 A for
+* 300 ms; the shared battery and cable resistance pulls V_BAT_F down.
+* VB (rested battery voltage) is set by run.sh. Watch EFUSE_OUT against the
+* PGOOD threshold (10.58 V falling, 11.41 V rising) and UVLO (7.79 V).
+.include models.lib
+.param IOUT=3 QSOFT=0
+.include case.inc
+.include source.inc
+.include board.inc
+VPLUG plug 0 PWL(0 0 1m 0 1.001m 1)
+Vsw1 sw1 0 1
+IMOT vm 0 PWL(0 0 150m 0 151m 15 450m 15 451m 0)
+.tran 5u 650m 0 50u
+.control
+run
+meas tran efo_before find v(efo) at=149m
+meas tran efo_min min v(efo) from=150m to=460m
+meas tran vbf_min min v(vbatf) from=150m to=460m
+meas tran pg_min min v(pg) from=150m to=460m
+meas tran pg_end find v(pg) at=650m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vbatf) v(efo) v(pg) v(vo5)
+quit
+.endc
+.end

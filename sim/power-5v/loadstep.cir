@@ -1,0 +1,23 @@
+* Load step on 5V: 0.5 A base load, +IST step (1 us edge) at 2 ms,
+* removed at 4 ms. The CM4 needs 4.75-5.25 V. IST, C46, C55 set by run.sh.
+.include models.lib
+.param ACINJ=0
+.include case.inc
+V12 v12 0 12.6
+.include board.inc
+RLOAD vout 0 10.3
+ISTEP vout 0 PWL(0 0 2m 0 2.001m {IST} 4m {IST} 4.001m 0)
+.ic v(ss)=2 v(vout)=5.164
+.tran 0.2u 6m 0 1u
+.control
+run
+meas tran v_pre find v(vout) at=1.99m
+meas tran v_min min v(vout) from=2m to=4m
+meas tran v_max max v(vout) from=4m to=6m
+meas tran v_end find v(vout) at=5.99m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vout) i(L2) v(comp)
+quit
+.endc
+.end

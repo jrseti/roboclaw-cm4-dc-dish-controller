@@ -1,0 +1,23 @@
+* Start-up: the 12V rail comes up (as when SW1 closes) with a 3 A load on 5V.
+.include models.lib
+.param C46=1f C55=1f ACINJ=0
+V12S v12s 0 PWL(0 0 0.1m 0 0.2m 12.6)
+R12S v12s v12i 0.12
+VS12 v12i v12 0
+.include board.inc
+RLOAD vout 0 1.72
+.tran 1u 30m 0 5u
+.control
+run
+meas tran t_start when v(vout)=0.1 rise=1
+meas tran t_51 when v(vout)=5.1 rise=1
+meas tran vout_pk max v(vout)
+meas tran vout_end find v(vout) at=30m
+meas tran il_pk max i(L2)
+meas tran iin_pk max i(VS12) from=0.3m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vout) v(ss) v(comp) i(L2) i(VS12)
+quit
+.endc
+.end

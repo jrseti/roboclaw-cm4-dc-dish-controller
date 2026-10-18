@@ -1,0 +1,23 @@
+* Loop gain of the 5 V buck (averaged model), injected at FB.
+* T = -V(fbd)/V(fb). Load (RLOAD) and C46/C55 set by run.sh.
+.include models.lib
+.param ACINJ=1
+.include case.inc
+V12 v12 0 12.6
+.include board.inc
+RLOAD vout 0 {RL}
+.ic v(ss)=2
+.ac dec 50 10 300k
+.control
+run
+let T = -v(fbd)/v(fb)
+let Tdb = db(T)
+let Tph = 180/pi*cph(T)
+meas ac fc when Tdb=0
+meas ac ph_fc find Tph when Tdb=0
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat Tdb Tph
+quit
+.endc
+.end

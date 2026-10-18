@@ -1,0 +1,56 @@
+* Models for the 5 V buck (U15 AP64501) simulations.
+* Diodes' AP64501 has no published SPICE model. AP64501AVG below is an
+* averaged peak-current-mode model built from datasheet numbers; it is
+* valid up to roughly fsw/5 (about 100 kHz). Switching ripple is studied
+* separately with a switching power stage (ripple.cir).
+
+* rshunt (1 Gohm from every node to ground) stops floating internal nodes
+* from stalling the solver; it has no visible effect on the results.
+.options method=gear rshunt=1e9
+
+.model SC_UV SW(Ron=1 Roff=1e9 Vt=3.3 Vh=0.2)
+.model SC_EN SW(Ron=1 Roff=1e9 Vt=1.135 Vh=0.045)
+
+**************************************************************************
+* U15 AP64501, averaged peak-current-mode model. Datasheet numbers used:
+*   VFB 0.8 V; error amplifier gm 0.15 mS (Ro assumed 10 Mohm)
+*   current-sense gain RT 0.089 V/A (COMP volts per inductor amp)
+*   soft-start: 4 uA into CSS, reference = lower of SS and 0.8 V
+*   UVLO 3.5 V rising, 3.1 V falling; EN 1.18 V rising, 1.09 V falling
+*   HS 45 mOhm, LS 20 mOhm (averaged as D x 45 + (1-D) x 20)
+*   HS peak current limit 8 A (applied to the average current)
+* The inner current loop is modelled as a 190 kHz (about fsw/3)
+* bandwidth loop. This stands in for the sampling double pole of
+* peak-current-mode control at fsw/2. Not modelled: PFM at light load,
+* spread spectrum, the valley limit, thermal shutdown.
+* Pins: VIN, LX (averaged switch node, connect L2 here), VOUT (output
+* sense for the inner loop), FB, COMP, SS, EN
+**************************************************************************
+.subckt AP64501AVG VIN LX VOUT FB COMP SS EN params: VOS=0.5 RT=0.089 GM=0.15m RO=10Meg K=4
+Vone one 0 1
+Ruv one uvn 1k
+Suv uvn 0 VIN 0 SC_UV
+Ren one enn 1k
+Sen enn 0 EN 0 SC_EN
+Bon on 0 V=(V(uvn) < 0.5 && V(enn) < 0.5) ? 1 : 0
+* soft-start current source, clamped at 2 V, discharged when off
+BSS 0 SS I=V(on)*4u*0.5*(1-tanh((V(SS)-2)*20)) - (1-V(on))*V(SS)/100
+* error amplifier (gm type) with output resistance and COMP clamp 0.2-2.5 V
+BEA 0 COMP I=V(on)*GM*(min(V(SS),0.8) - V(FB))
+REA COMP 0 {RO}
+DCL COMP ncl DCLMP
+VCL ncl 0 2.5
+DCL2 nlo COMP DCLMP
+VCL2 nlo 0 0.2
+.model DCLMP D(Is=1e-12 N=0.5)
+* current command from COMP, limited to 8 A
+Bic ic 0 V=min(8, max(0, (V(COMP)-VOS)/RT))
+* averaged switch node: the inductor sees K x (ic - IL), a first-order
+* current loop with bandwidth K/(2 pi L); clamped between 0 and VIN
+Bsw swn 0 V=V(on)*max(0, min(V(VIN), V(VOUT) + K*(V(ic) - I(VSL))))
+* averaged conduction loss of the two switches (about 30 mOhm at D = 0.4)
+Rsw swn lxs 0.03
+VSL lxs LX 0
+* input current: D x inductor current
+Bin VIN 0 I=I(VSL)*V(swn)/max(V(VIN),1)
+.ends

@@ -1,0 +1,116 @@
+* Models for the power-sheet simulations (U11 eFuse stage, SW1/Q2, 12V rail).
+* The LCSC parts have no vendor SPICE models. These are behavioural models
+* fitted to datasheet numbers: good for sequencing, thresholds and margins,
+* not exact waveforms.
+
+* rshunt (1 Gohm from every node to ground) stops floating internal nodes
+* from stalling the solver; it has no visible effect on the results.
+.options method=gear rshunt=1e9
+
+* Q3 NCE6008AS: 60 V N-MOSFET, RDS(on) 15.6 mOhm typ @ 10 V, Vth 1.6 V, Ciss 1.6 nF
+.model NCE6008AS VDMOS nchan Vto=1.6 Kp=14 Rd=4m Rs=2m Rg=2
++ Cgs=1.4n Cgdmax=0.4n Cgdmin=0.08n Cjo=0.5n Is=1e-11 N=1.1 Rb=5m BV=60
+
+* Q4 BSS138: 50 V signal N-MOSFET, about 1.5 ohm, Vth 1.3 V
+.model BSS138 VDMOS nchan Vto=1.3 Kp=0.08 Rd=0.3 Rs=0.2 Cgs=30p Cgdmax=10p Cgdmin=3p Cjo=15p BV=50
+
+* Q2 DMP6023LE: -60 V P-MOSFET, about 25 mOhm @ -10 V, Vth -2 V, Ciss 2.6 nF
+.model DMP6023LE VDMOS pchan Vto=-2 Kp=8 Rd=6m Rs=3m Rg=3
++ Cgs=2.2n Cgdmax=0.6n Cgdmin=0.1n Cjo=0.6n Is=1e-11 N=1.1 Rb=5m BV=60
+
+* D10 SMBJ18CA bidirectional TVS: VBR 20.0-22.1 V, VC 29.2 V at 20.5 A
+.subckt SMBJ18CA A K
+Rz1 A n1 0.2
+D1 n1 m DTVSB
+D2 K m DTVSB
+Rm m A 100Meg
+.model DTVSB D(Is=1e-14 Rs=0.2 BV=20.8 IBV=1m Cjo=1.2n)
+.ends
+
+* D11 SMAJ20A unidirectional TVS: VBR 22.2-24.5 V, VC 32.4 V at 12.3 A
+.subckt SMAJ20A A K
+Dfwd A K DF
+Rz K n1 0.7
+Dz A n1 DZ
+.model DF D(Is=1e-10 N=1.6 Rs=10m Cjo=1n)
+.model DZ D(Is=1e-14 Rs=1m BV=23.3 IBV=1m)
+.ends
+
+* LED3 (green, about 2 V at a few mA)
+.model DLED D(Is=1e-20 N=1.7 Rs=5)
+
+* Switches and comparators with hysteresis (on above Vt+Vh, off below Vt-Vh)
+.model SWM SW(Ron=10m Roff=100Meg Vt=0.5 Vh=0.1)
+.model SC_UV  SW(Ron=1 Roff=1e9 Vt=1.17 Vh=0.04)
+.model SC_OV  SW(Ron=1 Roff=1e9 Vt=1.17 Vh=0.04)
+.model SC_PG  SW(Ron=1 Roff=1e9 Vt=1.195 Vh=0.045)
+.model SC_REV SW(Ron=1 Roff=1e9 Vt=-0.021 Vh=0.036)
+.model SC_BUV SW(Ron=1 Roff=1e9 Vt=3.3 Vh=0.2)
+
+**************************************************************************
+* U11 MX26631DL eFuse, behavioural.
+* Datasheet numbers used:
+*   UVLO and OVP comparators 1.21 V rising / 1.13 V falling
+*   PGTH 1.24 V rising / 1.15 V falling, PGOOD rising deglitch 2 ms
+*   turn-on delay after UVLO: 730 us + 49.5 us/nF x CdVdT  (5.7 ms at 100 nF)
+*   turn-on after OVP recovery: fast (34 us) when PGTH is still good
+*   OVP turn-off 14 us
+*   dVdT: 2.1 uA source, OUT = 25 x V(dVdT), clamp 5 V
+*   current limit IOL (40 V / RILIM in kOhm: 3.08 A for 13k), RON 30 mOhm
+*   reverse comparator: off at VIN_SYS - OUT < -15 mV, on again at +57 mV
+*   BGATE: 20 uA charge pump to VIN_SYS + 10 V; DRV = VIN_SYS + 5 V on reverse
+* Not modelled: thermal shutdown, the 1.5 x IOL fast trip (the current here
+* is clamped at IOL; idem reports the current the load is asking for),
+* IMON, SHDN, the 15 V internal UVLO option.
+**************************************************************************
+.subckt MX26631 INSYS IN OUT UVLO OVP PGTH DVDT BGATE DRV PG params: IOL=3.08 RON=30m
+Vone one 0 1
+* comparators: each pulls a 1 V node low when it trips
+Ruv one uvn 1k
+Suv uvn 0 UVLO 0 SC_UV
+Rov one ovn 1k
+Sov ovn 0 OVP 0 SC_OV
+Rpg one pgn 1k
+Spg pgn 0 PGTH 0 SC_PG
+Rrv one rvn 1k
+Srv rvn 0 OUT INSYS SC_REV
+Buvok uvok 0 V=1-V(uvn)
+Bpgok pgok 0 V=1-V(pgn)
+Ben en 0 V=V(uvok)*V(ovn)
+* turn-on delay: slow (5.7 ms) from UVLO, fast (34 us) when PGTH is good; off in ~10 us
+Cden den 0 1u
+Bden 0 den I=V(en)>0.5 ? (1-V(den))/(V(pgok)>0.5 ? 30 : 8.2k) : -V(den)/10
+Bon on 0 V=0.5*(1+tanh((V(den)-0.5)*40))
+* dVdT pin: 2.1 uA source clamped at 5 V, 14 ohm discharge when off
+Bdv 0 DVDT I=V(on)*2.1u*0.5*(1-tanh((V(DVDT)-5)*20)) - (1-V(on))*V(DVDT)/14
+* fast turn-on flag: PGTH state sampled while the FET is off, held while on
+Cfst fst 0 1n
+Bfst 0 fst I=(1-V(on))*(V(pgok)-V(fst))/1k
+* pass FET: follows 25 x dVdT (fully on at once in fast mode), limited to IOL
+Bdem idem 0 V=max(0, min(V(IN,OUT)/RON, 20*(25*V(DVDT) + 100*V(fst) - V(OUT))))
+Bfet IN OUT I=V(on)*min(IOL, V(idem))
+* PGOOD: FET on and PGTH good, 2 ms rising deglitch, ~3 us falling; 3.3 V logic out
+Cpgd pgd 0 1u
+Bpgd 0 pgd I=V(on)*V(pgok)>0.5 ? (1-V(pgd))/2.9k : -V(pgd)/3
+BPG PG 0 V=3.3*0.5*(1+tanh((V(pgd)-0.5)*40))
+* blocking-FET gate (BGATE) and its fast pull-down driver (DRV)
+Bbg INSYS BGATE I=V(rvn)*20u*0.5*(1-tanh((V(BGATE,INSYS)-10)*5))
+Rbgpd BGATE INSYS 1.3Meg
+BDRV DRV 0 V=V(INSYS)+5*(1-V(rvn))
+.ends
+
+**************************************************************************
+* U15 buck converter seen as a load on the 12V rail (detailed model is in
+* sim/power-5v). It starts when VIN > 3.5 V (off below 3.1 V), ramps its
+* 5.16 V output over the 20 ms soft-start, and draws input power
+* Vo^2/RL/EFF. Below about Vo + 0.3 V it drops out and Vo follows VIN.
+**************************************************************************
+.subckt BUCKLOAD VIN VO params: IOUT=3 VSET=5.16 EFF=0.9 TSS=20m
+Vone one 0 1
+Ruv one uvn 1k
+Suv uvn 0 VIN 0 SC_BUV
+Css ss 0 1u
+Bss 0 ss I=V(uvn)<0.5 ? 1u*VSET/TSS*0.5*(1-tanh((V(ss)-VSET)*50)) : -V(ss)/10
+BVO VO 0 V=max(0, min(V(ss), V(VIN)-0.3))
+Bin VIN 0 I=V(VO)*V(VO)/(VSET/IOUT)/EFF/max(V(VIN),1)
+.ends
