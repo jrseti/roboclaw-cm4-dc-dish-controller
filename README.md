@@ -6,7 +6,9 @@ elevation motors. The board runs from a 12.8 V LiFePO4 battery.
 
 **Schematic:** [kicad/cm4-robo-controller.pdf](kicad/cm4-robo-controller.pdf)
 
-[Tomachie AI](https://tomachie.com) reviewed the schematic. Here is the [Certificate of Accomplishment](https://tomachie.com/v/b25c2e633f5102c3428ca107923799f4ff11). Scored 94/100 (which I think is pretty good).
+**Simulations:** [sim/README.md](sim/README.md)
+
+[Tomachie AI](https://tomachie.com) reviewed the schematic. Here is the [Certificate of Accomplishment](https://tomachie.com/v/b8da506f574865dab301721f5bbff94c9c30). Scored 97/100 (which I think is pretty good).
 
 ![3D render of the controller PCB](images/pcb-3d.png)
 
