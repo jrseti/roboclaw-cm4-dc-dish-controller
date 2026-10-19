@@ -6576,7 +6576,7 @@
 	)
 	(text "L2 supply-bead DCR must be < 0.2 Ω (u-blox MAX-M10S IM §3.1.1: series\nresistance on VCC causes ripple under dynamic current). BLM18KG121TN1D:\n0.030 Ω max (0.040 Ω after test). Do not substitute a higher-DCR bead."
 		(exclude_from_sim no)
-		(at 57.15 153.67 0)
+		(at 49.53 146.812 0)
 		(effects
 			(font
 				(size 0.762 0.762)
