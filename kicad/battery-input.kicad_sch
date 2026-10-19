@@ -1626,6 +1626,17 @@
 		)
 		(uuid "4bb4b2ec-4427-4282-b134-eeda165f170a")
 	)
+	(text "Standby drain: SW1 (power sheet) switches the CM4 / logic supply only.\nWith SW1 off the battery still feeds the RoboClaw logic (~30 mA, via F1)\nand U11 + dividers (~1.3 mA): about 31 mA, so 12 Ah lasts ~16 days.\nFor storage or transport unplug J1 (or remove F1/F2); charge first."
+		(exclude_from_sim no)
+		(at 107.95 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "65278272-93f3-427d-9ae1-870c6d49fa04")
+	)
 	(text "V_BAT (J1): 12.8 V nom, 10.0 V min, 14.6 V max (charging).\nSurvives 18 V max (TVS). Reverse battery: Q1 P-FET blocks it;\nsurvives -14.6 V, nothing conducts, no fuse blows."
 		(exclude_from_sim no)
 		(at 108.204 120.65 0)
@@ -1637,12 +1648,12 @@
 		)
 		(uuid "97e5dd86-419d-48b1-8295-b550fc1b307e")
 	)
-	(text "Designed to survive battery connected reverse.\nFuses may blow, but are cheap an easy to replace."
+	(text "F1/F2 are the backup for a reversed battery: they blow only if Q1\nhas failed short (about 270 A then flows through D1/D3 and the RoboClaw\ndiodes). Check polarity and Q1 before replacing a blown fuse."
 		(exclude_from_sim no)
 		(at 107.95 134.366 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
 			(justify left)
 		)
@@ -1786,16 +1797,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 66.04) (xy 170.18 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "403be0a5-24d5-42e5-b10a-f90f3185f1d0")
-	)
-	(wire
-		(pts
 			(xy 142.24 66.04) (xy 143.51 66.04)
 		)
 		(stroke
@@ -1843,6 +1844,16 @@
 			(type default)
 		)
 		(uuid "a26565e0-7dd6-4a4a-a0ba-378366853ad8")
+	)
+	(wire
+		(pts
+			(xy 167.64 66.04) (xy 175.26 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a567b2ce-b7e9-458a-b456-41fe32321cd8")
 	)
 	(wire
 		(pts
@@ -1936,7 +1947,7 @@
 	)
 	(hierarchical_label "V_MOTOR"
 		(shape output)
-		(at 170.18 66.04 0)
+		(at 175.26 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1955,6 +1966,142 @@
 			(justify left)
 		)
 		(uuid "7737f1b9-a3d4-4b24-aab7-cc0c819cb272")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 172.72 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ced5783-aba5-4be2-ad0d-6c063dd4106a")
+		(property "Net Class" "V_MOTOR"
+			(at 173.99 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "VOLTAGE_NOM" "12.8V"
+			(at 173.99 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MIN" "10.0V"
+			(at 173.99 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MAX" "14.6V"
+			(at 173.99 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_EXCURSION_MAX" "22V"
+			(at 173.99 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 156.21 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "8d3de150-1d07-4089-82b9-851270356ce2")
+		(property "Net Class" "V_BAT"
+			(at 157.48 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "VOLTAGE_NOM" "12.8V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MIN" "10.0V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MAX" "14.6V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_EXCURSION_MAX" "22V"
+			(at 157.48 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
@@ -2145,6 +2292,39 @@
 			)
 		)
 		(property "Fuse" "Littelfuse 0287015.PXCN (ATO 15A)"
+			(at 148.59 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "32VDC"
+			(at 148.59 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interrupting Rating" "1000A @ 32VDC"
+			(at 148.59 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Fuse Type" "Fast-acting ATO (Littelfuse 287 series)"
 			(at 148.59 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2762,6 +2942,39 @@
 			)
 		)
 		(property "Fuse" "Littelfuse 0287005.PXCN (ATO 5A)"
+			(at 148.59 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "32VDC"
+			(at 148.59 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interrupting Rating" "1000A @ 32VDC"
+			(at 148.59 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Fuse Type" "Fast-acting ATO (Littelfuse 287 series)"
 			(at 148.59 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -3428,74 +3641,6 @@
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/f33f7058-fe78-4de3-afa6-be46a5f18f95"
 					(reference "D3")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 156.21 72.39 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right top)
-		)
-		(uuid "8d3de150-1d07-4089-82b9-851270356ce2")
-		(property "Net Class" "V_BAT"
-			(at 157.48 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "VOLTAGE_NOM" "12.8V"
-			(at 157.48 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VOLTAGE_MIN" "10.0V"
-			(at 157.48 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VOLTAGE_MAX" "14.6V"
-			(at 157.48 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VOLTAGE_EXCURSION_MAX" "18.0V"
-			(at 157.48 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 			)
 		)

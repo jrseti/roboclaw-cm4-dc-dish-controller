@@ -5958,7 +5958,7 @@
 		)
 		(uuid "a5c8f753-7318-4504-8c3d-f776f7ce7b69")
 	)
-	(text "Suggest a CM4004016.\n4GB RAM, 8GB eMMC program storage."
+	(text "Suggest a CM4004008.\n4GB RAM, 8GB eMMC program storage."
 		(exclude_from_sim no)
 		(at 136.906 17.526 0)
 		(effects

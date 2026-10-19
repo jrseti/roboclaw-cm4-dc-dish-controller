@@ -92,6 +92,12 @@ detail.
 - **Logic supply:** the logic branch goes through a hot-swap eFuse (U11), a power
   switch (SW1) and a 5 A buck converter (U15). The buck makes 5 V for the CM4 and the
   USB ports. The CM4's own 3.3 V output powers the 3.3 V logic.
+- **SW1 is not a battery disconnect.** It switches the CM4 and logic supply only.
+  With SW1 off the board still draws about 31 mA from the battery: about 30 mA for
+  the RoboClaw's logic, which runs straight from V_MOTOR, plus about 1.3 mA for U11
+  and its dividers. A full 12 Ah battery runs flat in about 16 days. For storage or
+  transport, unplug J1 (or pull F1 and F2), and charge the battery first. A LiFePO4
+  battery left at its BMS cutoff for months loses capacity.
 - **Grounding:**
   - Motor return current stays on a separate ground (PGND). It joins the logic
     ground at a single point (NT1) next to the battery terminal.

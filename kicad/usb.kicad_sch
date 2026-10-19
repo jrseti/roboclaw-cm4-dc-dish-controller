@@ -6826,6 +6826,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 40.64) (xy 76.2 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c0e182-674c-4a1e-a96f-9351c28fea4b")
+	)
+	(wire
+		(pts
 			(xy 80.01 82.55) (xy 80.01 90.17)
 		)
 		(stroke
@@ -7203,6 +7213,16 @@
 			(type default)
 		)
 		(uuid "9921fa2f-a329-4f5e-9e97-c69a87f46589")
+	)
+	(wire
+		(pts
+			(xy 48.26 58.42) (xy 60.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8dccfe-da46-423f-83ca-03cb9eeebb59")
 	)
 	(wire
 		(pts
@@ -14622,6 +14642,16 @@
 		)
 		(uuid "4d6ff19b-6a07-4cba-bd0f-6b5a90ae1533")
 	)
+	(label "MUX_OE"
+		(at 48.26 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e7b4389-ec2a-407f-a10b-1b25fecb3ac7")
+	)
 	(label "HD1_P"
 		(at 229.87 83.82 0)
 		(effects
@@ -14641,6 +14671,16 @@
 			(justify left)
 		)
 		(uuid "584a69bb-1a06-48c2-843a-819a360a7f20")
+	)
+	(label "MUX_OE"
+		(at 76.2 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "605070aa-c5e2-49d2-af91-c760fddebeae")
 	)
 	(label "nOCS1"
 		(at 165.1 87.63 0)
@@ -18572,6 +18612,83 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 60.96 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5c05ba39-1f5c-4892-8303-b27a2f4fd383")
+		(property "Reference" "TP29"
+			(at 59.69 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 60.96 59.182 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 60.96 59.182 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 60.96 59.182 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f118137-baa8-48fa-81e5-ab7259a17598")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "TP29")
 					(unit 1)
 				)
 			)
@@ -23654,132 +23771,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 213.36 33.02)
-		(size 33.02 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "47c45030-5e0e-4373-90dd-e8e713456a1d")
-		(property "Sheetname" "usb2"
-			(at 213.36 32.3084 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "usb2.kicad_sch"
-			(at 213.36 48.8416 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "HSD2+" bidirectional
-			(at 213.36 35.56 180)
-			(uuid "c4e47944-09de-4d82-a958-c8a3394272a3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "HSD2-" bidirectional
-			(at 213.36 38.1 180)
-			(uuid "ac08abd5-98f7-4253-80db-4fb3c6419a76")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "USB_OTG_ID" output
-			(at 213.36 40.64 180)
-			(uuid "1565410d-6d35-4361-bdfa-b4cc8a864e81")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "3V3_CM4" input
-			(at 213.36 43.18 180)
-			(uuid "42661aaa-1167-49a9-ace7-2c6acfcf52dc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(page "10")
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 73.66 40.64) (xy 76.2 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67c0e182-674c-4a1e-a96f-9351c28fea4b")
-	)
-	(label "MUX_OE"
-		(at 76.2 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "605070aa-c5e2-49d2-af91-c760fddebeae")
-	)
-	(wire
-		(pts
-			(xy 48.26 58.42) (xy 60.96 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f8dccfe-da46-423f-83ca-03cb9eeebb59")
-	)
-	(label "MUX_OE"
-		(at 48.26 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4e7b4389-ec2a-407f-a10b-1b25fecb3ac7")
-	)
 	(symbol
 		(lib_id "MyParts:0402WGF1002TCE")
 		(at 64.77 58.42 90)
@@ -23927,79 +23918,88 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 60.96 58.42 0)
-		(unit 1)
-		(body_style 1)
+	(sheet
+		(at 213.36 33.02)
+		(size 33.02 15.24)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(uuid "5c05ba39-1f5c-4892-8303-b27a2f4fd383")
-		(property "Reference" "TP29"
-			(at 59.69 55.88 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "47c45030-5e0e-4373-90dd-e8e713456a1d")
+		(property "Sheetname" "usb2"
+			(at 213.36 32.3084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "TestPoint_Small"
-			(at 60.96 59.182 0)
-			(hide yes)
+		(property "Sheetfile" "usb2.kicad_sch"
+			(at 213.36 48.8416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 60.96 59.182 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "HSD2+" bidirectional
+			(at 213.36 35.56 180)
+			(uuid "c4e47944-09de-4d82-a958-c8a3394272a3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" ""
-			(at 60.96 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "HSD2-" bidirectional
+			(at 213.36 38.1 180)
+			(uuid "ac08abd5-98f7-4253-80db-4fb3c6419a76")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Description" "Test Point"
-			(at 60.96 59.182 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "USB_OTG_ID" output
+			(at 213.36 40.64 180)
+			(uuid "1565410d-6d35-4361-bdfa-b4cc8a864e81")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(pin "1"
-			(uuid "6f118137-baa8-48fa-81e5-ab7259a17598")
+		(pin "3V3_CM4" input
+			(at 213.36 43.18 180)
+			(uuid "42661aaa-1167-49a9-ace7-2c6acfcf52dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "TP29")
-					(unit 1)
+					(page "10")
 				)
 			)
 		)

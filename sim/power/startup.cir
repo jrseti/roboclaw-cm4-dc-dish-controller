@@ -2,7 +2,7 @@
 * already on. Shows the UVLO filter delay, U11's turn-on delay and dV/dt
 * ramp, PGOOD, and the buck starting on the 12V rail.
 .include models.lib
-.param VB=12.8 IOUT=3 QSOFT=0
+.param VB=12.8 IOUT=3 QSOFT=1
 .include source.inc
 .include board.inc
 VPLUG plug 0 PWL(0 0 1m 0 1.001m 1)

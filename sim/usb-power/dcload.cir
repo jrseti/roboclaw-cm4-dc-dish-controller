@@ -1,0 +1,21 @@
+* VBUS voltage at the ports against total port load (0-1.9 A), with the
+* buck regulating the 5V rail. USB 2.0 wants 4.75-5.25 V at a hub port.
+.include ../power-5v/models.lib
+.include models.lib
+.include case.inc
+.include board.inc
+ILOAD vbus 0 0
+.dc ILOAD 0 1.9 0.05
+.control
+run
+meas dc vbus_0 find v(vbus) at=0
+meas dc vbus_05 find v(vbus) at=0.5
+meas dc vbus_15 find v(vbus) at=1.5
+meas dc vbus_17 find v(vbus) at=1.7
+meas dc vout_17 find v(vout) at=1.7
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vbus) v(vout)
+quit
+.endc
+.end

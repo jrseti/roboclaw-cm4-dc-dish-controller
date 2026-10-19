@@ -1,0 +1,35 @@
+* Models for the USB port-power simulations (U4 AP22653 and VBUS).
+* The 5 V buck model (AP64501AVG) comes from ../power-5v/models.lib.
+
+**************************************************************************
+* U4 AP22653W6-7 current-limited power switch, behavioural.
+* Datasheet numbers used:
+*   RDS(on) 65 mOhm typ, 135 mOhm max (parameter RDS)
+*   current limit 1.735 A typ with RLIM = 15k (1.56-1.91 A), constant
+*   current while overloaded
+*   short-circuit current (OUT at 0 V) 0.47 A: modelled as a fold-back
+*   from 0.47 A at 0 V to the full limit at 2 V and above
+*   fast short-circuit response about 5 us: the limit starts high and
+*   settles to the threshold with a 1.5 us time constant once overloaded
+*   reverse current blocked
+* Not modelled: thermal shutdown, the 6 ms FAULT blanking, enable ramp.
+**************************************************************************
+.subckt AP22653 IN OUT params: RDS=65m ILIM=1.735
+* overloaded when the switch, fully on, would pass more than the threshold
+Bovl ovl 0 V=(V(IN,OUT)/RDS > V(thr)) ? 1 : 0
+* dynamic limit: relaxes to the fold-back threshold when overloaded,
+* returns quickly to 50 A (not limiting) when the overload clears
+Bthr thr 0 V=0.47 + (ILIM-0.47)*min(1, max(0, V(OUT)/2))
+Clim lim 0 1n
+Blim 0 lim I=V(ovl) > 0.5 ? (V(thr)-V(lim))/1.5k : (50-V(lim))/0.5k
+Bsw IN OUT I=max(0, min(V(IN,OUT)/RDS, V(lim)))
+.ends
+
+* SMF6.0A TVS on VBUS (D8, D9): VBR 6.67-7.37 V, VC 10.3 V at 19.4 A
+.subckt SMF6A A K
+* cathode on the line (A), anode on ground (K)
+D1 K A DTVS
+.model DTVS D(Is=1e-12 N=1.3 Rs=0.18 BV=6.9 IBV=1m Cjo=500p)
+.ends
+
+.model SWM SW(Ron=5m Roff=100Meg Vt=0.5 Vh=0.1)

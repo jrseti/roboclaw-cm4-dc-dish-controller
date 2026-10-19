@@ -39,8 +39,12 @@ The simulation files are in [power/](power/); see its
   never feed current back into the battery side.
 
 **SW1 and Q2: the power switch.**
-- Q2 is a P-channel MOSFET from EFUSE_OUT to the 12V rail. R22 holds it off.
-- SW1 pulls Q2's gate straight to ground to turn it on.
+- Q2 is a P-channel MOSFET from EFUSE_OUT to the 12V rail. R22 (33k) holds
+  it off.
+- SW1 pulls Q2's gate low through R91 (33k) to turn it on. R22 and R91 form
+  a divider, so Q2's gate-source voltage is half of EFUSE_OUT.
+- C82 (47 nF, gate to drain) makes Q2 turn on slowly, ramping the 12V rail
+  instead of switching it hard.
 
 **12V rail.** C47, C48–C53, the LED3 indicator and the U15 buck. Here U15 is
 modelled as a load: 5.16 V at 3 A, 90 % efficient, with a 20 ms
@@ -76,15 +80,15 @@ wait, then ramp together. The 5V output follows on its 20 ms soft-start.
 **eFuse current (bottom left):** it never comes near the 3.08 A limit.
 - The output ramp charges C28 with only about 0.1 A.
 - The rest is the buck starting up, which settles at 1.4 A.
-- The small step at about 62 ms is Q2 turning on once EFUSE_OUT passes its
-  2 V gate threshold.
+- Q2 turns on once EFUSE_OUT is high enough for the R22/R91 divider to give
+  it more than its 2 V gate threshold, then the 12V rail follows the ramp.
 
 **PGOOD and blocking FET (bottom right):**
 - Q3's gate reaches 10 V above V_BAT_F within about a millisecond of
   plug-in.
 - PGOOD_12V goes high **81 ms** after plug-in, once EFUSE_OUT passes
   11.41 V and the 2 ms deglitch has passed.
-- 5V is in regulation at **84 ms**.
+- 5V is in regulation at **88 ms**.
 
 ## SW1 switched on
 
@@ -92,27 +96,23 @@ wait, then ramp together. The 5V output follows on its 20 ms soft-start.
 
 **The test:** the battery is connected with SW1 off, so U11 is up and
 PGOOD is high. SW1 is then switched on at 150 ms. Each panel compares the
-board as drawn with a slower Q2 turn-on.
+earlier design (SW1 straight to the gate, R22 100k, no C82) with the board
+as built.
 
-**As built:**
-- SW1 pulls Q2's gate straight to ground, so Q2 switches on in well under
+**Earlier design:**
+- SW1 pulled Q2's gate straight to ground, so Q2 switched on in well under
   a microsecond.
-- C28 then dumps into the discharged 12V rail capacitors. Q2's current
-  peaks at **63 A** (top right), above its 50 A pulse rating.
-- EFUSE_OUT collapses to **4.3 V** (top left) and stays below the PGOOD
-  threshold for 17 µs, so PGOOD drops for 2 ms (bottom right).
-- The load asks U11 for far more than 1.5 × its current limit. A real U11
-  would fast-trip, then either restart in current limit or wait about
-  670 ms and retry. The model can't tell which, because it clamps U11's
-  current at 3.08 A.
-- Either way the board does start, as the bottom-left panel shows, but
-  later than it should, and the surge stresses Q2.
+- C28 then dumped into the discharged 12V rail capacitors. Q2's current
+  peaked at **63 A** (top right), above its 50 A pulse rating.
+- EFUSE_OUT collapsed to **4.3 V** (top left) and stayed below the PGOOD
+  threshold for 17 µs, so PGOOD dropped for 2 ms (bottom right).
+- The load asked U11 for far more than 1.5 × its current limit, so a real
+  U11 would have fast-tripped and restarted, delaying start-up by up to
+  about 0.7 s.
 
-**With a slow Q2 turn-on:**
-- The changes are R22 33k, a 33k resistor in series with SW1, and 47 nF from
-  Q2's gate to its drain.
-- The gate-to-drain capacitor sets how fast Q2 can raise its drain. The
-  12V rail ramps at about 5 V/ms and reaches 12 V in 2.6 ms.
+**As built (R22 33k, R91 33k, C82 47 nF):**
+- C82 sets how fast Q2 can raise its drain. The 12V rail ramps at about
+  5 V/ms and reaches 12 V in 2.6 ms.
 - The surge is gone: the current never exceeds the 1.4 A load, EFUSE_OUT
   doesn't move, and PGOOD stays high.
 - The values were chosen so Q2 stays off while EFUSE_OUT itself ramps up at
@@ -158,7 +158,9 @@ BMS open (see [battery-input.md](battery-input.md)). It then returns to
 
 **Left panel:** the whole event.
 
-**Right panel:** a zoom on the moment U11 cuts off.
+**Middle panel:** a zoom on the moment U11 cuts off.
+
+**Right panel:** Q2's gate-source voltage, earlier design and as built.
 
 **What happens:**
 1. U11 cuts off within microseconds of V_BAT_F passing 17.96 V. Q3 and Q4
@@ -170,7 +172,13 @@ BMS open (see [battery-input.md](battery-input.md)). It then returns to
 4. PGOOD drops the moment U11 cuts off, giving the CM4 1.8 ms of warning.
    That's too short to do anything useful.
 5. When the rail falls back below 16.78 V, the 12V rail has collapsed, so
-   U11 restarts with its slow ramp. 5V is back **33 ms** later.
+   U11 restarts with its slow ramp. 5V is back **35 ms** later.
+6. **Q2's gate stays well inside its ±20 V rating.** With SW1 straight to
+   the gate (earlier design), V_GS followed EFUSE_OUT to **−17.8 V**, and
+   it would reach about −19 V at U11's 18.7 V worst-case cutoff. As built,
+   the R22/R91 divider halves it: **−7.2 V** before the event and **−7.8 V**
+   at the peak. EFUSE_OUT itself can't follow a fast surge, because U11's
+   3.08 A limit into about 250 µF caps its slew at about 0.012 V/µs.
 
 ## Assessment
 
@@ -178,7 +186,7 @@ The power sheet does its protective job well:
 
 - **Start-up is clean and well sequenced.** The eFuse current never
   approaches its limit, and the UVLO filter keeps U11 off while the battery
-  connection settles. The roughly 84 ms from plug-in to 5V is fine for this
+  connection settles. The roughly 88 ms from plug-in to 5V is fine for this
   application.
 - **The protection thresholds are sensible.**
   - UVLO and OVP bracket the battery range (10–14.6 V) with margin.
@@ -187,23 +195,19 @@ The power sheet does its protective job well:
   - Q3 and Q4 block reverse current.
 - **A motor surge doesn't disturb the logic supply** at any battery voltage
   the BMS allows.
+- **SW1 switch-on is gentle.** R91 and C82 ramp the 12V rail in 2.6 ms with
+  no inrush beyond the load current, and the R22/R91 divider keeps Q2's
+  gate at half of EFUSE_OUT (−7.8 V at worst against ±20 V).
 
 Things I'd change or act on, in order:
 
-1. **Slow down Q2's turn-on.**
-   - As built, switching SW1 on puts a 63 A spike through Q2 (rated 50 A)
-     and probably trips U11, delaying start-up by up to about 0.7 s.
-   - The fix is three passives: R22 to 33k, 33k in series with SW1, and
-     47 nF from Q2's gate to its drain.
-   - The simulation shows it removes the surge without letting Q2 turn on
-     early.
-2. **Use PGOOD_12V in the CM4 software as a "battery nearly empty"
+1. **Use PGOOD_12V in the CM4 software as a "battery nearly empty"
    warning.**
    - Start a clean shutdown when it has been low for more than a few
      seconds. Motor surges only pull it low briefly, and only on an
      already-low battery.
    - The BMS will cut power at about 10 V with no further warning.
-3. **The OVP event resets the CM4.** That's the same braking-into-an-open-
+2. **The OVP event resets the CM4.** That's the same braking-into-an-open-
    battery case as in [battery-input.md](battery-input.md). The fix belongs
    on the motor side: set the RoboClaw's maximum battery voltage below 18 V
    and keep braking current under the battery's 6 A charge limit. More hold-

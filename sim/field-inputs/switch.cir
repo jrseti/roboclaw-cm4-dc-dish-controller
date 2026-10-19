@@ -1,0 +1,32 @@
+* Limit / E-stop input: a normally-closed switch at the end of 2 m of
+* cable. It opens (trip) at 1 ms with contact bounce: open 1.00 ms,
+* closed again 1.15-1.30 ms, open from 1.30 ms. The RoboClaw input is set
+* to Invert (active-high), so high = tripped.
+.include models.lib
+.include board.inc
+VRC v5 0 5
+XS conn pin v5 FIELDIN
+XC1 conn c1 CABSEG
+XC2 c1 c2 CABSEG
+XC3 c2 c3 CABSEG
+XC4 c3 sw CABSEG
+XG1 0 g1 CABSEG
+XG2 g1 g2 CABSEG
+XG3 g2 g3 CABSEG
+XG4 g3 sg CABSEG
+SNC sw sg ctl 0 SOC
+VCTL ctl 0 PWL(0 1 1m 1 1.0001m 0 1.15m 0 1.1501m 1 1.3m 1 1.3001m 0)
+.tran 0.1u 2m 0 0.2u
+.control
+run
+meas tran t_trip when v(pin)=2.3 rise=1
+let t_delay = t_trip - 1m
+print t_delay
+meas tran t_clear when v(pin)=1.0 fall=1 from=1.1m
+meas tran t_trip2 when v(pin)=2.3 rise=2
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(ctl) v(conn) v(pin)
+quit
+.endc
+.end

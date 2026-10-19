@@ -1,0 +1,28 @@
+* A dead short on a USB port (or a shorted cable) at 5 ms, held for 5 ms.
+* U4 limits within a few us, then folds back to 0.47 A while VBUS is
+* near 0 V. Watch the 5V rail, which powers the CM4.
+.include ../power-5v/models.lib
+.include models.lib
+.include case.inc
+.include board.inc
+RDEV1 vbus 0 10
+SSHORT vbus s1 sh 0 SWM
+VSH sh 0 PWL(0 0 5m 0 5.0001m 1 10m 1 10.0001m 0)
+RSH s1 s2 50m
+LSH s2 0 0.3u
+.ic v(ss)=2 v(vout)=5.164 v(vbus)=5.06
+.tran 0.05u 14m 0 0.2u
+.control
+run
+meas tran vout_min min v(vout) from=5m
+meas tran vout_max max v(vout) from=9.9m
+meas tran iu4_pk max i(VSU4) from=5m
+meas tran iu4_lim find i(VSU4) at=7m
+meas tran vbus_lim find v(vbus) at=7m
+meas tran t_vbus_back when v(vbus)=4.75 rise=1 from=10m
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vbus) v(vout) i(VSU4)
+quit
+.endc
+.end

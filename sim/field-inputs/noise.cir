@@ -1,0 +1,39 @@
+* Motor PWM coupling into a Hall (or switch) wire. The motor lead runs in
+* the same cable; its 0 <-> V_MOTOR PWM edges (50 ns) couple through CC
+* (total, spread over the 2 m). HALLON=1 holds the line low, 0 lets the
+* pull-up hold it high. CC and HALLON are set by run.sh.
+.include models.lib
+.include board.inc
+.include case.inc
+VRC v5 0 5
+XA connA pinA v5 FIELDIN
+XCA1 connA a1 CABSEG
+XCA2 a1 a2 CABSEG
+XCA3 a2 a3 CABSEG
+XCA4 a3 sA CABSEG
+XCG1 0 g1 CABSEG
+XCG2 g1 g2 CABSEG
+XCG3 g2 g3 CABSEG
+XCG4 g3 sg CABSEG
+SA sA sg ctl 0 SOC
+VCTL ctl 0 {HALLON}
+* motor lead: 20 kHz PWM, 14.6 V, 50 ns edges, through the RoboClaw bridge
+VM m 0 PULSE(0 14.6 10u 50n 50n 25u 50u)
+CC1 m connA {CC/8}
+CC2 m a1 {CC/4}
+CC3 m a2 {CC/4}
+CC4 m a3 {CC/4}
+CC5 m sA {CC/8}
+.tran 5n 120u 0 5n
+.control
+run
+meas tran pin_min min v(pinA) from=5u
+meas tran pin_max max v(pinA) from=5u
+meas tran conn_min min v(connA) from=5u
+meas tran conn_max max v(connA) from=5u
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(m) v(connA) v(pinA)
+quit
+.endc
+.end

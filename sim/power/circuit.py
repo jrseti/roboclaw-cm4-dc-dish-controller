@@ -131,17 +131,22 @@ with schemdraw.Drawing(show=False) as d:
     qg = q2.gate[0]
     d.add(elm.Line().down().at(q2.gate).to((qg, -2.6)))
     d.add(elm.Dot().at((qg, -2.6)))
-    d.add(elm.Resistor().left().at((qg, -2.6)).to((xs - 2.0, -2.6)).label("R22 100k", loc="bottom"))
+    d.add(elm.Resistor().left().at((qg, -2.6)).to((xs - 2.0, -2.6)).label("R22 33k", loc="bottom"))
     d.add(elm.Line().up().at((xs - 2.0, -2.6)).to((xs - 2.0, Y)))
     d.add(elm.Dot().at((xs - 2.0, Y)))
-    d.add(elm.Switch().down().at((qg, -2.6)).length(2.4).label("SW1", loc="bottom"))
+    # slow turn-on: R91 in series with SW1, C82 gate-to-drain (12V)
+    d.add(elm.Resistor().down().at((qg, -2.6)).length(2.0).label("R91\n33k", loc="bottom"))
+    d.add(elm.Switch().down().length(2.0).label("SW1", loc="bottom"))
     d.add(elm.Ground())
+    d.add(elm.Line().right().at((qg, -2.6)).to((qg + 1.6, -2.6)))
+    d.add(elm.Capacitor().up().at((qg + 1.6, -2.6)).to((qg + 1.6, Y)).label("C82\n47 nF", loc="top"))
+    d.add(elm.Dot().at((qg + 1.6, Y)))
 
     # ---- 12V rail ----
     x12 = q2.drain[0]
     d.add(elm.Line().right().at(q2.drain).to((x12 + 8.0, Y)))
     net(d, (x12 + 0.2, Y), "12V")
-    shunt(d, x12 + 1.8, Y, elm.Capacitor(), "C47 100 nF\nC48-C53\n6 × 10 µF")
+    shunt(d, x12 + 2.6, Y, elm.Capacitor(), "C47 100 nF\nC48-C53\n6 × 10 µF")
     d.add(elm.Dot().at((x12 + 5.0, Y)))
     d.add(elm.Resistor().down().at((x12 + 5.0, Y)).length(2).label("R23\n3k", loc="bottom"))
     d.add(elm.LED().down().length(1.8).label("LED3", loc="bottom"))
@@ -156,7 +161,7 @@ with schemdraw.Drawing(show=False) as d:
 
     d.add(elm.Label().at((0, -10.4)).label(
         "Black: board parts (kicad/power.kicad_sch).  Grey: test-bench parts.  Blue: net labels (same name = same net).  "
-        "Q3/Q4 block reverse current; U11 cuts off below UVLO (7.8 V) and above OVP (18.0 V); PGOOD_12V is high above 11.4 V.",
+        "Q3/Q4 block reverse current; U11 cuts off below UVLO (7.8 V) and above OVP (18.0 V); PGOOD_12V is high above 11.4 V.\nR22/R91 halve Q2's gate drive and C82 ramps the 12V rail in ~2.6 ms when SW1 closes.",
         halign="left", fontsize=9))
     d.save(OUT, dpi=120)
 print("wrote", OUT)

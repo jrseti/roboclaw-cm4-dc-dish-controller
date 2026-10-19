@@ -151,6 +151,12 @@ and the AC ripple on 5V and on the 12V rail.
   narrow spikes at each switching edge. Good layout keeps those small.
 - **Input capacitors:** about 1.5 A RMS shared across six capacitors is
   about 0.25 A each, comfortably within the rating of a 0805 X7S/X6S part.
+- **C28 (220 µF electrolytic on EFUSE_OUT)** sits behind Q2 and the copper,
+  so it sees little of the switching ripple. A variant of this test
+  (`c28ripple.cir`) models that path. C28's ESR at 570 kHz isn't published,
+  so it's swept: C28 carries **77 mA RMS** at a pessimistic 0.1 Ω, 30 mA at
+  0.3 Ω and 9 mA at 1 Ω. Its ripple rating is 190 mA at 120 Hz, or 247 mA
+  at 10 kHz and above, so even the worst case uses under a third of it.
 
 ## Assessment
 

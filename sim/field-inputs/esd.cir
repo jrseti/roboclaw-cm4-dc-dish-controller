@@ -1,0 +1,41 @@
+* IEC 61000-4-2 contact discharge (8 kV) onto a field-input terminal
+* (J8-2, J10-1, J12-1 or J13-1), cable unplugged. Simplified ESD gun:
+* 150 pF at 8 kV through 330 ohm with 0.5 uH (24 A peak, ~50 ns decay;
+* the sub-ns first peak is not modelled). VESD set by run.sh.
+.include models.lib
+.include board.inc
+.include case.inc
+VRC v5 0 5
+XA conn pin v5 FIELDIN TVS={TVS}
+CG gun 0 150p
+RG gun g1 330
+LG g1 g2 0.5u
+SG g2 conn ctl 0 SESDG
+.model SESDG SW(Ron=0.1 Roff=1e14 Vt=0.5 Vh=0)
+VCTL ctl 0 PWL(0 0 10n 0 10.1n 1)
+VSN pin pinr 0
+.ic v(gun)={VESD}
+.tran 0.05n 1u 0 0.05n
+.control
+run
+* magnitudes, so both polarities read the same way
+let vconn = abs(v(conn))
+let vf = abs(v(xa.f))
+let vpin = abs(v(pin))
+let icl = abs(i(v.xa.xpin.vcl)) + abs(i(v.xa.xpin.vlo))
+let ig = abs(i(LG))
+meas tran conn_pk max vconn
+meas tran conn_clamp max vconn from=20n
+meas tran f_pk max vf
+meas tran pin_pk max vpin
+meas tran pin_max max v(pin)
+meas tran pin_min min v(pin)
+meas tran iclamp_pk max icl
+meas tran q_clamp integ icl from=0 to=1u
+meas tran igun_pk max ig
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(conn) v(xa.f) v(pin) i(LG) icl
+quit
+.endc
+.end

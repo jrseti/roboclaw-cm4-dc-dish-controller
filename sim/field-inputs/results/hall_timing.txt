@@ -1,0 +1,6 @@
+Hall timing (open-collector Hall, 2 m cable, RoboClaw VIH 2.3 V / VIL 1.0 V)
+ F/channel  counts/s  rise delay  fall delay  min A/B edge gap  nominal gap  gap kept
+    300 Hz      1200      33.8 µs      2.17 µs           801.5 µs      833.3 µs       96 %
+     1k Hz      4000      32.3 µs      2.17 µs           219.6 µs      250.0 µs       88 %
+     3k Hz     12000      32.4 µs      1.95 µs            52.9 µs       83.3 µs       63 %
+    10k Hz     40000      32.3 µs      1.60 µs             5.8 µs       25.0 µs       23 %

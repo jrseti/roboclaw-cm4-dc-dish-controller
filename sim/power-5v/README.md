@@ -21,6 +21,7 @@ python3 circuit.py       # needs schemdraw; writes results/circuit.png
 | `loadstep.cir` | 0.5 A base load with a 1 A or 2.5 A step, as built and with C46 fitted |
 | `loop.cir` | Loop gain (AC) at 0.5 A and 3 A, as built and with C46 fitted |
 | `ripple.cir` | Switching power stage at 570 kHz, 3 A, with 10, 12.6 and 17 V in |
+| `c28ripple.cir` | As `ripple.cir`, with the 12V side modelled through C28 (EFUSE_OUT), Q2 and copper, to find C28's share of the input ripple. C28's ESR at 570 kHz isn't published, so it's swept from 0.1 to 1 Ω. |
 | `circuit.py` | Draws the circuit above |
 
 **What the averaged model uses from the datasheet:**
@@ -58,3 +59,4 @@ which includes the 0.5 A base load of the step tests.
 | Load step, C46 470 pF fitted | 4.93 V, then 5.39 V on release |
 | Loop gain | Crossover 8.1 kHz. Phase margin 53° at 0.5 A, 57° at 3 A, 70° with C46 fitted. |
 | Ripple at 3 A, 10 / 12.6 / 17 V in | Inductor 1.3 / 1.6 / 1.9 A peak-to-peak, peaking at 3.6 / 3.8 / 4.0 A (L2 saturates at 12 A). 5V ripple 7–11 mV p-p. 12V rail ripple 41–46 mV p-p. Input capacitors carry 1.4–1.5 A RMS in total, C45 0.17–0.25 A RMS. |
+| C28 ripple share | C28 carries 77 mA RMS at most (ESR 0.1 Ω, 10–12.6 V in), 30 mA at 0.3 Ω and 9 mA at 1 Ω. Its rating is 190 mA at 120 Hz, or 247 mA at 10 kHz and above. C48–C53 carry the rest, about 1.4–1.6 A RMS. |

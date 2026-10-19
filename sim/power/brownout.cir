@@ -3,7 +3,7 @@
 * VB (rested battery voltage) is set by run.sh. Watch EFUSE_OUT against the
 * PGOOD threshold (10.58 V falling, 11.41 V rising) and UVLO (7.79 V).
 .include models.lib
-.param IOUT=3 QSOFT=0
+.param IOUT=3 QSOFT=1
 .include case.inc
 .include source.inc
 .include board.inc

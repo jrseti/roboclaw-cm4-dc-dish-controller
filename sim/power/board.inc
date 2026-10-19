@@ -36,15 +36,16 @@ XD11 0 efo SMAJ20A
 R28 efo pgth 82k
 R31 pgth 0 10k
 
-* Power switch: Q2 P-FET (S = EFUSE_OUT, D = 12V), R22 gate pull-up, SW1 to GND
+* Power switch: Q2 P-FET (S = EFUSE_OUT, D = 12V) with its slow turn-on:
+* R22 33k gate pull-up, R91 33k in series with SW1, C82 47 nF gate-to-drain.
+* QSOFT=1 is the board as built; QSOFT=0 is the earlier design (R22 100k,
+* SW1 straight to the gate, no C82), kept for comparison.
 MQ2 v12q q2g efo DMP6023LE
 VSQ2 v12q v12 0
 R22 efo q2g {QSOFT > 0.5 ? 33k : 100k}
 SSW1 q2s 0 sw1 0 SWM
-* QSOFT=1 tries a slower Q2 turn-on (not on the board; QSOFT=0 is the board
-* as drawn): R22 33k, 33k in series with SW1, 47 nF gate-to-drain
-RSWS q2g q2s {QSOFT > 0.5 ? 33k : 1m}
-CQ2GD q2g v12 {QSOFT > 0.5 ? 47n : 1p}
+R91 q2g q2s {QSOFT > 0.5 ? 33k : 1m}
+C82 q2g v12 {QSOFT > 0.5 ? 47n : 1p}
 
 * 12V rail: LED3 + R23, C47 100 nF, C48-C53 6 x 10 uF/35 V (derated to ~5 uF each)
 R23 v12 led 3k

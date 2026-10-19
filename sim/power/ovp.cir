@@ -4,7 +4,8 @@
 * U11 cuts off at 17.96 V; the 12V rail and buck then run on C28 and the
 * rail capacitors until they drain.
 .include models.lib
-.param VB=14.6 IOUT=3 QSOFT=0
+.param VB=14.6 IOUT=3
+.include case.inc
 VBATP bat 0 PWL(0 14.6 150m 14.6 151m 21.5 250m 21.5 251m 14.6)
 RBAT bat b1 25m
 SPLUG b1 b2 plug 0 SWM
@@ -32,9 +33,12 @@ meas tran t_pg_low when v(pg)=1.65 fall=1 from=150m
 meas tran t_back when v(ovp)=1.13 fall=1 from=250m
 meas tran t_5v_ok when v(vo5)=5.1 rise=1 from=250m
 meas tran efo_pk max v(efo) from=150m to=260m
+let vgsq2 = v(q2g) - v(efo)
+meas tran vgs_q2_min min vgsq2 from=140m to=260m
+meas tran vgs_q2_before find vgsq2 at=149m
 set wr_singlescale
 set wr_vecnames
-wrdata out.dat v(vbatf) v(efo) v(v12) v(vo5) v(pg) i(VSEF)
+wrdata out.dat v(vbatf) v(efo) v(v12) v(vo5) v(pg) i(VSEF) vgsq2
 quit
 .endc
 .end

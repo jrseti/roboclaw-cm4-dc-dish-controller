@@ -1111,6 +1111,202 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:0603WAF3302T5E"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "33kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:R0603"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/0603WAF3302T5E.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+155℃ 100mW 33kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF3302T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "75V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C4216"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0603WAF3302T5E_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0603WAF3302T5E_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:0603WAF3303T5E"
 			(pin_numbers
 				(hide yes)
@@ -3143,6 +3339,238 @@
 				)
 			)
 			(symbol "CL10A105KA8NNNC_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MyParts:CL10B473KB8NNNC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "47nF"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:C0603"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C1622.html"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "47nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "SAMSUNG"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CL10B473KB8NNNC"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C1622"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CL10B473KB8NNNC_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.51 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.51 2.03) (xy -0.51 -2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.51 2.03) (xy 0.51 -2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.51 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CL10B473KB8NNNC_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -6068,6 +6496,17 @@
 		)
 		(uuid "5720ef05-0762-453f-ac12-a7a0b4ad2a04")
 	)
+	(text "SW1 SWITCHES THE CM4 / LOGIC SUPPLY ONLY.\nWith SW1 off the board still draws about 31 mA from\nthe battery: RoboClaw logic ~30 mA (fed from V_MOTOR),\nU11 + UVLO/OVP/PGOOD dividers ~1.3 mA. A full 12 Ah\nbattery runs flat in about 16 days. For storage or\ntransport, unplug J1 (or pull F1 and F2), and charge\nthe battery first."
+		(exclude_from_sim no)
+		(at 132.08 152.4 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "7367834e-eaea-437c-8ce2-60d077390298")
+	)
 	(text "Place D10 close\nto IN_SYS"
 		(exclude_from_sim no)
 		(at 116.84 114.554 0)
@@ -6110,12 +6549,12 @@
 		)
 		(uuid "f7c752e3-ca41-46b2-b977-a0a01d4c7e1f")
 	)
-	(text "Q2 = P-FET high-side switch, 12 V logic rail.\nSW1 closed -> gate pulled to GND, VGS = -12 V,\nQ2 ON (LED3 lights).\nSW1 open -> R22 pulls gate to source,\nVGS = 0, Q2 OFF."
+	(text "Q2 = P-FET high-side switch, 12 V rail.\nSW1 closed: gate pulled low via R91 33k.\nR22/R91 halve VGS: -6.3 V at 12.6 V,\n-9.5 V at the 19 V OVP limit (+/-20 V).\nC82 47 nF gate-drain ramps 12V in\n~2.6 ms, so no C28 inrush (was 63 A).\nSW1 open: R22 pulls gate to source, OFF."
 		(exclude_from_sim no)
-		(at 163.83 67.056 0)
+		(at 181.61 64.77 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left)
 		)
@@ -6200,6 +6639,12 @@
 		(uuid "6efef0ab-fdb8-4058-a49b-e0e01401558b")
 	)
 	(junction
+		(at 125.73 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7287652e-3228-4314-8c49-c48339d87f21")
+	)
+	(junction
 		(at 106.68 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6252,6 +6697,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c05eb0f4-1d7c-4945-b12b-937e00ea3bb5")
+	)
+	(junction
+		(at 156.21 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8994a44-8786-47f1-9027-0fefe5235afa")
 	)
 	(junction
 		(at 72.39 80.01)
@@ -6432,6 +6883,16 @@
 			(type default)
 		)
 		(uuid "0deee92c-136d-428c-b964-99dddce763eb")
+	)
+	(wire
+		(pts
+			(xy 125.73 119.38) (xy 125.73 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee1be7e-09f4-4616-a0a8-3f53dbd2dcbe")
 	)
 	(wire
 		(pts
@@ -6885,6 +7346,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 62.23) (xy 156.21 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a34c01-08ba-44fd-b4aa-4a3dd352a960")
+	)
+	(wire
+		(pts
 			(xy 105.41 87.63) (xy 120.65 87.63)
 		)
 		(stroke
@@ -6962,6 +7433,16 @@
 			(type default)
 		)
 		(uuid "795e53fa-0f13-4234-87ca-a562e084ae7d")
+	)
+	(wire
+		(pts
+			(xy 125.73 110.49) (xy 125.73 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "796c3ab4-2aae-415b-abe0-b92b97038ace")
 	)
 	(wire
 		(pts
@@ -7132,6 +7613,16 @@
 			(type default)
 		)
 		(uuid "9e435880-c544-4278-9d9e-7076ecb17bf8")
+	)
+	(wire
+		(pts
+			(xy 163.83 59.69) (xy 166.37 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0eeab8d-4cc4-4592-aa03-7f2c99c03225")
 	)
 	(wire
 		(pts
@@ -7335,6 +7826,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 72.39) (xy 71.12 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c51a50e7-e2bd-4cec-8405-a20d6cce8826")
+	)
+	(wire
+		(pts
 			(xy 105.41 97.79) (xy 115.57 97.79)
 		)
 		(stroke
@@ -7385,6 +7886,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 72.39) (xy 60.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df7d3555-3f35-4c83-99a9-e5bae4c77f62")
+	)
+	(wire
+		(pts
 			(xy 58.42 77.47) (xy 59.69 77.47)
 		)
 		(stroke
@@ -7412,16 +7923,6 @@
 			(type default)
 		)
 		(uuid "e30bb330-4eac-4882-b36b-10848b6e0166")
-	)
-	(wire
-		(pts
-			(xy 58.42 72.39) (xy 71.12 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3728bfe-988f-48d8-b99d-1cbdbcb8408d")
 	)
 	(wire
 		(pts
@@ -14231,6 +14732,16 @@
 		)
 		(uuid "d6e73a55-299c-4f88-8a4e-35b10fd7577e")
 	)
+	(label "12V"
+		(at 166.37 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e38c4e99-3c83-455e-891b-e92c166d71ba")
+	)
 	(hierarchical_label "3V3_CM4"
 		(shape input)
 		(at 55.88 107.95 90)
@@ -14329,6 +14840,74 @@
 			(justify right)
 		)
 		(uuid "9f2260d1-0234-4be3-aabf-a983d50bdc59")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 87.63 95.25 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6f7b318-933c-4617-ba07-32ca18bee37b")
+		(property "Net Class" "V_BAT"
+			(at 83.82 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+		(property "VOLTAGE_NOM" "12.8V"
+			(at 83.82 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MIN" "10.0V"
+			(at 83.82 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_MAX" "14.6V"
+			(at 83.82 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VOLTAGE_EXCURSION_MAX" "22V"
+			(at 83.82 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -14727,6 +15306,155 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
 					(reference "#FLG12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:0603WAF3302T5E")
+		(at 64.77 72.39 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f01b7a6-95d3-4a82-9c7e-7b4b0f1cc62b")
+		(property "Reference" "R91"
+			(at 64.77 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33kΩ"
+			(at 64.77 75.565 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:RESC1608X55N"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0603WAF3302T5E.pdf"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 100mW 33kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "75V"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C4216"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 64.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a038af8-4478-42ea-a623-b2369c036ab5")
+		)
+		(pin "2"
+			(uuid "7eb00729-59cd-4793-9d07-1e0299f457ff")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
+					(reference "R91")
 					(unit 1)
 				)
 			)
@@ -15843,7 +16571,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:0603WAF1003T5E")
+		(lib_id "MyParts:0603WAF3302T5E")
 		(at 151.13 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -15864,7 +16592,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ"
+		(property "Value" "33kΩ"
 			(at 153.67 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15887,7 +16615,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/0603WAF1003T5E.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0603WAF3302T5E.pdf"
 			(at 151.13 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -15899,7 +16627,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 33kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 151.13 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -15934,7 +16662,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1003T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 151.13 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -15956,7 +16684,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C25803"
+		(property "LCSC Part" "C4216"
 			(at 151.13 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -16341,6 +17069,151 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
 					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:CL10B473KB8NNNC")
+		(at 160.02 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "503be983-3d8f-4390-81e6-a04bb4dff8a7")
+		(property "Reference" "C82"
+			(at 156.845 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47nF"
+			(at 163.195 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1622.html"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "47nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SAMSUNG"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10B473KB8NNNC"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C1622"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99d96673-1f7e-4771-96da-88f2819db1c2")
+		)
+		(pin "2"
+			(uuid "55d4a6c9-a651-47a9-b0ea-ab32c95a9d07")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
+					(reference "C82")
 					(unit 1)
 				)
 			)
@@ -18376,6 +19249,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 125.73 119.38 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5943dc9-2b1d-4c17-9f6f-e1df5e05be73")
+		(property "Reference" "TP31"
+			(at 123.19 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 125.73 120.142 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 125.73 120.142 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 125.73 120.142 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4665da88-8ca6-4991-b5f6-0e3c412b93ad")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
+					(reference "TP31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 90.17 110.49 0)
 		(unit 1)
@@ -20328,109 +21278,6 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
 					(page "8")
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 125.73 110.49) (xy 125.73 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "796c3ab4-2aae-415b-abe0-b92b97038ace")
-	)
-	(wire
-		(pts
-			(xy 125.73 119.38) (xy 125.73 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ee1be7e-09f4-4616-a0a8-3f53dbd2dcbe")
-	)
-	(junction
-		(at 125.73 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7287652e-3228-4314-8c49-c48339d87f21")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 125.73 119.38 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b5943dc9-2b1d-4c17-9f6f-e1df5e05be73")
-		(property "Reference" "TP31"
-			(at 123.19 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 125.73 120.142 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 125.73 120.142 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Test Point"
-			(at 125.73 120.142 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4665da88-8ca6-4991-b5f6-0e3c412b93ad")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9"
-					(reference "TP31")
-					(unit 1)
 				)
 			)
 		)

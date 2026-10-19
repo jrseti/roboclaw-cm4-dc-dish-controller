@@ -24,6 +24,12 @@ for v in 10 12.6 17; do
   ngspice -b ripple.cir > results/ripple_$v.log 2>&1
   mv out.dat results/ripple_$v.dat
 done
+# C28 (EFUSE_OUT bulk) share of the input ripple; its ESR at 570 kHz is not published
+for e in 0.1 0.3 1; do
+  printf '.param VIN=12.6 ESR28=%s\n' "$e" > case.inc
+  ngspice -b c28ripple.cir > results/c28ripple_esr$e.log 2>&1
+  mv out.dat results/c28ripple_esr$e.dat
+done
 rm -f case.inc
 grep -H -E '^[a-z0-9_]+ +=' results/*.log
 grep -l -i -E 'too small|abort' results/*.log && echo "^^ check these logs" || true

@@ -1,0 +1,32 @@
+* A USB device is plugged into a port while another device already draws
+* 0.5 A. The new device's input capacitance (CDEV, set by run.sh: 10 uF is
+* the USB 2.0 maximum) charges through ~1 m of cable from VBUS.
+* USB 2.0 allows VBUS on the other ports to droop by at most 330 mV.
+.include ../power-5v/models.lib
+.include models.lib
+.include case.inc
+.include board.inc
+RDEV1 vbus 0 10
+SPLUG vbus p1 plug 0 SWM
+VPLUG plug 0 PWL(0 0 5m 0 5.0001m 1)
+RCAB p1 p2 0.2
+LCAB p2 p3 1u
+CDEV p3 p4 {CDEV}
+RDEVC p4 0 10m
+.ic v(ss)=2 v(vout)=5.164 v(vbus)=5.06
+.tran 0.1u 9m 0 0.5u
+.control
+run
+meas tran vbus_pre find v(vbus) at=4.99m
+meas tran vbus_min min v(vbus) from=5m
+meas tran vout_pre find v(vout) at=4.99m
+meas tran vout_min min v(vout) from=5m
+meas tran iu4_pk max i(VSU4) from=5m
+let droop = vbus_pre - vbus_min
+print droop
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(vbus) v(vout) v(p3) i(VSU4)
+quit
+.endc
+.end

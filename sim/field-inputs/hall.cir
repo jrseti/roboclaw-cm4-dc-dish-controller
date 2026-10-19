@@ -1,0 +1,37 @@
+* Elevation Hall encoder: open-collector quadrature outputs at the far end
+* of a 2 m cable (4 x 0.5 m sections per wire, plus the ground return),
+* through the board input channels to EN1_A / EN1_B.
+* F (Hall frequency per channel) is set by run.sh. Count rate = 4 x F.
+.include models.lib
+.include board.inc
+.include case.inc
+.param T={1/F}
+VRC v5 0 5
+XA connA pinA v5 FIELDIN
+XB connB pinB v5 FIELDIN
+XCA1 connA a1 CABSEG
+XCA2 a1 a2 CABSEG
+XCA3 a2 a3 CABSEG
+XCA4 a3 sA CABSEG
+XCB1 connB b1 CABSEG
+XCB2 b1 b2 CABSEG
+XCB3 b2 b3 CABSEG
+XCB4 b3 sB CABSEG
+XCG1 0 g1 CABSEG
+XCG2 g1 g2 CABSEG
+XCG3 g2 g3 CABSEG
+XCG4 g3 sg CABSEG
+* Hall outputs: transistor on (line low) when ctl = 1; B lags A by 90 degrees
+SA sA sg ctlA 0 SOC
+SB sB sg ctlB 0 SOC
+VCA ctlA 0 PULSE(0 1 {T/2} 0.2u 0.2u {T/2-0.2u} {T})
+VCB ctlB 0 PULSE(0 1 {3*T/4} 0.2u 0.2u {T/2-0.2u} {T})
+.tran {T/2000} {3.25*T} 0 {T/2000}
+.control
+run
+set wr_singlescale
+set wr_vecnames
+wrdata out.dat v(ctlA) v(ctlB) v(connA) v(pinA) v(pinB)
+quit
+.endc
+.end

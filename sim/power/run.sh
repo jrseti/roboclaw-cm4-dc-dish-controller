@@ -4,9 +4,13 @@
 set -e
 cd "$(dirname "$0")"
 mkdir -p results
-for t in startup ovp; do
-  ngspice -b $t.cir > results/$t.log 2>&1
-  mv out.dat results/$t.dat
+ngspice -b startup.cir > results/startup.log 2>&1
+mv out.dat results/startup.dat
+# QSOFT=1: board as built (slow Q2 turn-on); QSOFT=0: the earlier design
+for q in 1 0; do
+  printf '.param QSOFT=%s\n' "$q" > case.inc
+  ngspice -b ovp.cir > results/ovp_soft$q.log 2>&1
+  mv out.dat results/ovp_soft$q.dat
 done
 for q in 0 1; do
   printf '.param QSOFT=%s\n' "$q" > case.inc
@@ -14,7 +18,7 @@ for q in 0 1; do
   mv out.dat results/sw1_soft$q.dat
 done
 for v in 12.8 12.0 11.4; do
-  printf '.param VB=%s QSOFT=0\n' "$v" > case.inc
+  printf '.param VB=%s QSOFT=1\n' "$v" > case.inc
   ngspice -b brownout.cir > results/brownout_$v.log 2>&1
   mv out.dat results/brownout_$v.dat
 done

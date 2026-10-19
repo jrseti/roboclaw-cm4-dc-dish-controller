@@ -55,7 +55,7 @@ fig.savefig(os.path.join(R, "startup.png"), dpi=110)
 
 # SW1 switched on
 fig, ax = plt.subplots(2, 2, figsize=(11, 7))
-for q, lab in (("0", "as built"), ("1", "with slow Q2 turn-on")):
+for q, lab in (("0", "earlier design"), ("1", "as built (R91, C82)")):
     d = load(f"sw1_soft{q}.dat")
     t = d["time"] * 1e3
     m = (t > 149.95) & (t < 150.3)
@@ -94,9 +94,9 @@ fig.tight_layout()
 fig.savefig(os.path.join(R, "brownout.png"), dpi=110)
 
 # OVP
-d = load("ovp.dat")
+d = load("ovp_soft1.dat")
 t = d["time"] * 1e3
-fig, ax = plt.subplots(1, 2, figsize=(11, 4))
+fig, ax = plt.subplots(1, 3, figsize=(14, 4))
 m = (t > 140) & (t < 300)
 for k, lab in (("v(vbatf)", "V_BAT_F"), ("v(efo)", "EFUSE_OUT"), ("v(v12)", "12V rail"), ("v(vo5)", "5V")):
     ax[0].plot(t[m], d[k][m], label=lab)
@@ -109,6 +109,14 @@ ax[1].plot(t[m], d["v(v12)"][m], label="12V rail")
 ax[1].plot(t[m], d["v(pg)"][m], label="PGOOD_12V")
 thr(ax[1], 4.75, "CM4 min 4.75 V")
 finish(ax[1], "Hold-up after U11 cuts off (zoom)", "V")
+for q, lab in (("0", "earlier design"), ("1", "as built (R22/R91 divider)")):
+    d = load(f"ovp_soft{q}.dat")
+    t = d["time"] * 1e3
+    m = (t > 140) & (t < 160)
+    ax[2].plot(t[m], d["vgsq2"][m], label=lab)
+thr(ax[2], -20, "Q2 VGS rating -20 V")
+ax[2].set_ylim(-22, 0)
+finish(ax[2], "Q2 gate-source voltage", "V")
 fig.tight_layout()
 fig.savefig(os.path.join(R, "ovp.png"), dpi=110)
 print("wrote", R)

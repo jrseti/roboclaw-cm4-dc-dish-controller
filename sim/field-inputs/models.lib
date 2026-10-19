@@ -1,0 +1,54 @@
+* Models for the field-input simulations (Hall encoder and limit/E-stop
+* inputs on the Robo sheet). Behavioural, fitted to datasheet numbers.
+
+.options method=gear rshunt=1e9
+
+* D16-D20, D22 TPESD0402G12V: bidirectional polymer ESD suppressor. It is
+* open (0.05 pF) until about 450 V, then snaps back and clamps near 40 V
+* (datasheet, 8 kV contact). Modelled as two switches with hysteresis (on
+* above 450 V, off below 30 V), each with a 40 V, 1 ohm clamp.
+.subckt POLYESD A K
+C0 A K 0.05p
+S1 A n1 A K SPOLY
+Vcl1 n1 n2 40
+Rcl1 n2 n3 1
+D1 n3 K DPOLY
+S2 K m1 K A SPOLY
+Vcl2 m1 m2 40
+Rcl2 m2 m3 1
+D2 m3 A DPOLY
+.model SPOLY SW(Ron=0.1 Roff=1e12 Vt=240 Vh=210)
+.model DPOLY D(Is=1e-12)
+.ends
+
+* Alternative for comparison (not on the board): a 5 V unidirectional TVS
+* diode such as an SMF5.0A-class part, VBR about 6.4 V, about 0.5 ohm
+* dynamic resistance (about 14 V at 15 A).
+.subckt TVS5V A K
+* single diode: anode on ground (K), cathode on the line (A)
+D1 K A DTVS
+.model DTVS D(Is=1e-12 N=1.3 Rs=0.5 BV=6.4 IBV=1m Cjo=200p)
+.ends
+
+* RoboClaw input pin: 3.3 V CMOS logic, 5 V tolerant ("internal current
+* limiting and voltage clipping", manual). Modelled as 10 pF with clamp
+* diodes to 0 V and 5.5 V; the clamp current is reported.
+.subckt RCPIN P
+Cin P 0 10p
+Dhi P vcl DCLP
+Vcl vcl 0 5.5
+Dlo nlo P DCLP
+Vlo nlo 0 0
+.model DCLP D(Is=1e-14 N=1.2 Rs=2)
+.ends
+
+* Open-collector Hall output (or a switch contact): closes when ctl > 0.5
+.model SOC SW(Ron=20 Roff=1e9 Vt=0.5 Vh=0.05)
+
+* Cable: one 0.5 m section of a wire in a multi-core cable
+* (about 0.1 ohm/m, 0.6 uH/m, 60 pF/m to the other wires/ground)
+.subckt CABSEG A B
+R1 A n1 0.05
+L1 n1 B 0.3u
+C1 B 0 30p
+.ends
