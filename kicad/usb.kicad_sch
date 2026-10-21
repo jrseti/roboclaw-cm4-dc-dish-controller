@@ -3818,7 +3818,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 12.7 -5.08 180)
 					(length 2.54)
 					(name "N.C."
@@ -3836,7 +3836,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 12.7 -2.54 180)
 					(length 2.54)
 					(name "N.C."
@@ -3872,7 +3872,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "N.C."
@@ -3890,7 +3890,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 12.7 5.08 180)
 					(length 2.54)
 					(name "N.C."
@@ -5899,36 +5899,12 @@
 		(uuid "facf0d89-d2c6-4fb4-96b3-e1ae0ac5533f")
 	)
 	(no_connect
-		(at 50.8 139.7)
-		(uuid "073142ad-5090-48a4-9e5c-eb7303813a07")
-	)
-	(no_connect
 		(at 95.25 55.88)
 		(uuid "0d79e791-dc2b-4646-9876-6890758f2225")
 	)
 	(no_connect
 		(at 25.4 144.78)
 		(uuid "17379c69-9968-4cf9-b48d-02ec9bfa9f8a")
-	)
-	(no_connect
-		(at 95.25 142.24)
-		(uuid "25d37a22-b4d3-44e3-aeb6-c5fab20783ea")
-	)
-	(no_connect
-		(at 148.59 134.62)
-		(uuid "37f0682f-8356-4916-b942-9fbe2b0be027")
-	)
-	(no_connect
-		(at 50.8 137.16)
-		(uuid "55774549-94f9-49e0-9fc4-9109ce0326bb")
-	)
-	(no_connect
-		(at 148.59 137.16)
-		(uuid "6eaa0d34-0219-47a9-9a0d-a4ed704bbecf")
-	)
-	(no_connect
-		(at 95.25 144.78)
-		(uuid "7578b218-53f0-4d10-8095-183993998341")
 	)
 	(no_connect
 		(at 50.8 147.32)
@@ -5943,28 +5919,12 @@
 		(uuid "8d9e5592-2191-4fb3-8394-cadef6e08672")
 	)
 	(no_connect
-		(at 148.59 144.78)
-		(uuid "b21d96a2-acba-4b72-b767-ac27e911f294")
-	)
-	(no_connect
-		(at 95.25 137.16)
-		(uuid "b2bc256b-c1e6-4712-8374-995a63da8dc5")
-	)
-	(no_connect
-		(at 95.25 134.62)
-		(uuid "c0abff32-5b6f-46cc-98b5-1058e25992b1")
-	)
-	(no_connect
 		(at 153.67 187.96)
 		(uuid "c30ec59d-0091-45b0-af26-6d7134f360c3")
 	)
 	(no_connect
 		(at 95.25 72.39)
 		(uuid "e3dbaab9-67ac-4445-8ccb-2ce13cad50d0")
-	)
-	(no_connect
-		(at 148.59 142.24)
-		(uuid "e782652f-24a6-4a2f-9997-7100e3a27f73")
 	)
 	(no_connect
 		(at 50.8 144.78)
@@ -6203,16 +6163,6 @@
 			(type default)
 		)
 		(uuid "19d841de-b3b4-4c04-b252-0e662cbb5aae")
-	)
-	(wire
-		(pts
-			(xy 97.79 139.7) (xy 97.79 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b3d7b9b-c0cf-43c8-ae4b-c17b848c68aa")
 	)
 	(wire
 		(pts
@@ -6573,16 +6523,6 @@
 			(type default)
 		)
 		(uuid "43e57664-ce2e-41d4-8254-3c3e521feebc")
-	)
-	(wire
-		(pts
-			(xy 148.59 139.7) (xy 151.13 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46ee0ba5-1f8b-4e81-8e3d-7f14441c8e31")
 	)
 	(wire
 		(pts
@@ -7516,16 +7456,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 139.7) (xy 151.13 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1eb3e29-ccf8-499e-ba83-be264ee55d61")
-	)
-	(wire
-		(pts
 			(xy 46.99 80.01) (xy 50.8 80.01)
 		)
 		(stroke
@@ -7543,16 +7473,6 @@
 			(type default)
 		)
 		(uuid "d278be4a-d69e-4757-81ef-80dda1a0a500")
-	)
-	(wire
-		(pts
-			(xy 95.25 139.7) (xy 97.79 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d318601a-15fc-47fa-99cc-a1575279b2c3")
 	)
 	(wire
 		(pts
@@ -14462,7 +14382,7 @@
 		)
 		(uuid "047eb632-c602-4fc4-a5ab-5db1b5a0549f")
 	)
-	(label "HD4_P"
+	(label "HD3_P"
 		(at 162.56 182.88 180)
 		(effects
 			(font
@@ -14562,7 +14482,7 @@
 		)
 		(uuid "35994f31-a135-4bc6-b066-8eecbdcf679e")
 	)
-	(label "HD2_N"
+	(label "HD1_N"
 		(at 204.47 81.28 180)
 		(effects
 			(font
@@ -14592,7 +14512,7 @@
 		)
 		(uuid "38380ce0-7e24-4f81-9272-bdd0260aee2f")
 	)
-	(label "HD3_P"
+	(label "HD4_P"
 		(at 132.08 182.88 0)
 		(effects
 			(font
@@ -14652,7 +14572,7 @@
 		)
 		(uuid "4e7b4389-ec2a-407f-a10b-1b25fecb3ac7")
 	)
-	(label "HD1_P"
+	(label "HD2_P"
 		(at 229.87 83.82 0)
 		(effects
 			(font
@@ -14702,7 +14622,7 @@
 		)
 		(uuid "74b0fde2-34ad-4061-803f-33ff5a5a370a")
 	)
-	(label "HD2_P"
+	(label "HD1_P"
 		(at 204.47 83.82 180)
 		(effects
 			(font
@@ -14802,7 +14722,7 @@
 		)
 		(uuid "a75ccc9d-cd27-4a76-aef9-0294741e5be1")
 	)
-	(label "HD3_N"
+	(label "HD4_N"
 		(at 132.08 180.34 0)
 		(effects
 			(font
@@ -14882,7 +14802,7 @@
 		)
 		(uuid "cce9ccc5-ce72-4781-89cb-b3975ee8d165")
 	)
-	(label "HD1_N"
+	(label "HD2_N"
 		(at 229.87 81.28 0)
 		(effects
 			(font
@@ -14952,7 +14872,7 @@
 		)
 		(uuid "dd2ab91f-5269-4007-8581-32fac42d729a")
 	)
-	(label "HD4_N"
+	(label "HD3_N"
 		(at 162.56 180.34 180)
 		(effects
 			(font
@@ -17623,7 +17543,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 97.79 140.97 0)
+		(at 95.25 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17633,7 +17553,7 @@
 		(dnp no)
 		(uuid "464868c2-4723-4ceb-981c-8bc79572dc29")
 		(property "Reference" "#PWR098"
-			(at 101.6 140.97 0)
+			(at 99.06 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17644,7 +17564,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 140.97 0)
+			(at 91.44 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17655,7 +17575,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 140.97 0)
+			(at 95.25 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17665,7 +17585,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 140.97 0)
+			(at 95.25 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17675,7 +17595,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 97.79 140.97 0)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21506,7 +21426,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 140.97 0)
+		(at 148.59 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21516,7 +21436,7 @@
 		(dnp no)
 		(uuid "c7bd2f4d-5a0f-4f2f-8a3b-11446cc602bc")
 		(property "Reference" "#PWR0103"
-			(at 154.94 140.97 0)
+			(at 152.4 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21527,7 +21447,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 140.97 0)
+			(at 144.78 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21538,7 +21458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 140.97 0)
+			(at 148.59 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21548,7 +21468,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 140.97 0)
+			(at 148.59 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21558,7 +21478,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 140.97 0)
+			(at 148.59 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24003,5 +23923,105 @@
 				)
 			)
 		)
+	)
+	(label "HD2_P"
+		(at 95.25 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e03c9dbb-a9e8-4447-8934-c507770d4d12")
+	)
+	(label "HD2_N"
+		(at 95.25 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b4dc325-0c05-45d9-8d1a-676f64319d65")
+	)
+	(label "HD1_P"
+		(at 95.25 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cad4185b-f9d2-4179-a6e8-3352ac943fe7")
+	)
+	(label "HD1_N"
+		(at 95.25 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5adf3212-22c4-4381-ad23-ebe2c87ad958")
+	)
+	(label "HD4_P"
+		(at 148.59 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6d4b410-d7ee-476d-a957-6d1e4c2ac931")
+	)
+	(label "HD4_N"
+		(at 148.59 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2dd93740-e751-4453-872f-d5f283a125d9")
+	)
+	(label "HD3_P"
+		(at 148.59 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f6aecb70-13e1-438d-86d0-7cb6d0dd9054")
+	)
+	(label "HD3_N"
+		(at 148.59 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "976ae731-da6a-4d85-8449-dc68025c49ed")
+	)
+	(label "HSD2+"
+		(at 50.8 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f5b193c-bba9-49bd-a90e-e6822203efea")
+	)
+	(label "HSD2-"
+		(at 50.8 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a45b0341-d72c-498b-8db4-0ab90e228ae5")
 	)
 )
