@@ -6467,7 +6467,7 @@
 		)
 		(uuid "9a7f9e5a-3521-4ddf-97b4-b6b978c18bcd")
 	)
-	(label "M2A"
+	(label "M2B"
 		(at 80.01 162.56 180)
 		(effects
 			(font
@@ -6537,7 +6537,7 @@
 		)
 		(uuid "dca40635-72cb-420c-a2f7-3d187ec45fce")
 	)
-	(label "M2B"
+	(label "M2A"
 		(at 80.01 165.1 180)
 		(effects
 			(font
