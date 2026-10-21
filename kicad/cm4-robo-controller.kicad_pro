@@ -534,6 +534,42 @@
       },
       {
         "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_1A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_3A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.15,
         "diff_pair_width": 0.15,
@@ -562,10 +598,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.6,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       },
       {
@@ -580,10 +616,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 2.0,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       },
       {
@@ -598,10 +634,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 3.0,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 1.0,
+        "via_drill": 0.5,
         "wire_width": 6
       }
     ],
@@ -616,17 +652,17 @@
       "/CM4/AIN1": [
         "AIN"
       ],
+      "/Robo/V_MOTOR": [
+        "V_MOTOR"
+      ],
       "/battery-input/V_BAT": [
+        "V_BAT"
+      ],
+      "/power/V_BAT_F": [
         "V_BAT"
       ],
       "Net-(D24-Pad1)": [
         "VBUS"
-      ],
-      "/Robo/V_MOTOR": [
-        "V_MOTOR"
-      ],
-      "/power/V_BAT_F": [
-        "V_BAT"
       ]
     },
     "netclass_patterns": [
@@ -717,6 +753,70 @@
       {
         "netclass": "ETH_100_OHM",
         "pattern": "/CM4/EP3-"
+      },
+      {
+        "netclass": "V_MOTOR",
+        "pattern": "Net-(J1-Pad1)"
+      },
+      {
+        "netclass": "V_MOTOR",
+        "pattern": "Net-(D2-K)"
+      },
+      {
+        "netclass": "V_MOTOR",
+        "pattern": "/Robo/M1A"
+      },
+      {
+        "netclass": "V_MOTOR",
+        "pattern": "/Robo/M1B"
+      },
+      {
+        "netclass": "V_MOTOR",
+        "pattern": "/Robo/M2A"
+      },
+      {
+        "netclass": "V_MOTOR",
+        "pattern": "/Robo/M2B"
+      },
+      {
+        "netclass": "V_BAT",
+        "pattern": "Net-(C24-Pad1)"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/power/EFUSE_OUT"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/power/12V"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/5V"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "Net-(U15-SW)"
+      },
+      {
+        "netclass": "VBUS",
+        "pattern": "/CM4/usb/VBUS"
+      },
+      {
+        "netclass": "PWR_1A",
+        "pattern": "/3V3_CM4"
+      },
+      {
+        "netclass": "PWR_1A",
+        "pattern": "/Robo/RC_5V"
+      },
+      {
+        "netclass": "PWR_1A",
+        "pattern": "/Robo/AZ_ENC_3V3"
+      },
+      {
+        "netclass": "PWR_1A",
+        "pattern": "Net-(U18-OUT)"
       }
     ]
   },
