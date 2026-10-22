@@ -1,5 +1,11 @@
 # USB port power: ngspice analysis
 
+> **Out of date (2026-10-21):** the expansion header J2 has since been
+> removed, along with its VBUS capacitor C22, ESD parts U7/D9 and diode D7.
+> Hub ports 3 and 4 are now disabled, so U4 feeds only the two USB1 ports and
+> VBUS has one 10 µF capacitor less than modelled here. The results below
+> still assume the old circuit; re-run the simulation to refresh them.
+
 This note covers how the board powers its four USB ports: two USB-A
 (USB1) and two on the expansion header (J2). It asks three questions:
 - How far does VBUS sag when a device is plugged in?

@@ -5338,18 +5338,6 @@
 		)
 	)
 	(rectangle
-		(start 130.81 167.64)
-		(end 173.99 194.31)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "150c4808-31e7-40cf-98aa-e6419008c963")
-	)
-	(rectangle
 		(start 19.05 168.91)
 		(end 125.73 194.31)
 		(stroke
@@ -5477,7 +5465,7 @@
 		)
 		(uuid "260337aa-8a4e-4500-a31d-57c01df67ce9")
 	)
-	(text "Supplies and protects the 5V going out to all four USB ports\nILIM with 15K resistor limits to ~1.75A shared across USB1 and J2\n"
+	(text "Supplies and protects the 5V going out to both USB-A ports\nILIM with 15K resistor limits to ~1.75A shared across USB1\n"
 		(exclude_from_sim no)
 		(at 172.974 151.384 0)
 		(effects
@@ -5498,6 +5486,17 @@
 			(justify left)
 		)
 		(uuid "653292b0-a9e2-4176-8503-74f19aaa7c7f")
+	)
+	(text "Hub ports 3 and 4 are not used. 10k pull-ups on\nD+ and D- disable them: the PRT_DIS straps are\nsampled at RESET_N (USB2514B, CFG_SEL=00)."
+		(exclude_from_sim no)
+		(at 115.062 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7adc2223-d48a-4dd3-86d1-1e0e91b6622e")
 	)
 	(text "24MHz"
 		(exclude_from_sim no)
@@ -5520,7 +5519,7 @@
 		)
 		(uuid "8c149452-fd24-4ffb-8cad-2ab0629db33e")
 	)
-	(text "U4 port power, diode-OR (D6/D7, R11). The hub straps CFG_SEL=00:\nindividual port power switching and OC sensing (USB2514B Table 5-1).\nU4 feeds all four ports, so its EN is the OR of PRTPWR1-4: VBUS stays\non while any port is enabled and drops only when all four are off.\nOCS_N1-4 share nOCS1: a U4 fault is reported on every port (correct\nfor one shared switch). BC_EN straps read 0 via the internal 10k IPD."
+	(text "U4 port power, diode-OR (D6, R11). The hub straps CFG_SEL=00:\nindividual port power switching and OC sensing (USB2514B Table 5-1).\nU4 feeds both USB1 ports, so its EN is the OR of PRTPWR1-2: VBUS stays\non while either port is enabled and drops only when both are off.\nPorts 3 and 4 are disabled by strap, so PRTPWR3/4 are left open.\nOCS_N1-4 share nOCS1: a U4 fault is reported on every port (correct\nfor one shared switch). BC_EN straps read 0 via the internal 10k IPD."
 		(exclude_from_sim no)
 		(at 187.96 110.49 0)
 		(effects
@@ -5531,29 +5530,7 @@
 		)
 		(uuid "95d7bf1f-19b0-41fd-a459-247bd7f9d325")
 	)
-	(text "Expansion Port Note:\nPinout matches the standard PC front-panel USB 2.0 header.\nPin 9 is the key position - clip the post after reflow so \na keyed cable seats. Pin 10 NC.\n"
-		(exclude_from_sim no)
-		(at 173.99 160.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "96badb1f-4142-47bf-876d-92074ca4d31a")
-	)
-	(text "Protects both expansion ports (4 lines).\nDiode clamps VBUS. Place both at J2."
-		(exclude_from_sim no)
-		(at 115.062 159.512 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "9787d6fd-6ae3-47fc-ae7a-7e9d3a929948")
-	)
-	(text "USB - 2 Ports + 2 Port Expansion Header"
+	(text "USB - 2 Ports"
 		(exclude_from_sim no)
 		(at 99.314 20.32 0)
 		(effects
@@ -5562,17 +5539,6 @@
 			)
 		)
 		(uuid "9a8a5e51-9e4a-4d65-a6ee-31a6937836ec")
-	)
-	(text "2 Port Expansion \nUSB connector"
-		(exclude_from_sim no)
-		(at 132.08 174.244 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-			)
-			(justify left bottom)
-		)
-		(uuid "a394387f-ecc2-4f0a-bf3e-3e1db8b564bc")
 	)
 	(text "Stacked USB connectors"
 		(exclude_from_sim no)
@@ -5595,7 +5561,7 @@
 		)
 		(uuid "c4adb217-178b-4631-abae-4f6d73b9569b")
 	)
-	(text "Expansion USB ESD"
+	(text "Unused hub ports 3 and 4"
 		(exclude_from_sim no)
 		(at 115.062 121.92 0)
 		(effects
@@ -5665,6 +5631,12 @@
 		(uuid "1c89f111-fd94-4e34-8c66-a0a00d2c48b0")
 	)
 	(junction
+		(at 125.73 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fbad1bc-2866-4bfc-9fb1-00b0ec3e9719")
+	)
+	(junction
 		(at 57.15 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5707,12 +5679,6 @@
 		(uuid "45d02791-60bb-4e69-b2e4-16a1fd02aa1c")
 	)
 	(junction
-		(at 165.1 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48a04f5e-64fe-4763-b92b-a8eaa118f0a7")
-	)
-	(junction
 		(at 46.99 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5729,6 +5695,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "573e03b0-2b02-4824-8a9f-6d0521e71813")
+	)
+	(junction
+		(at 133.35 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58f9cf2d-688c-461c-825c-e003e2953c73")
 	)
 	(junction
 		(at 76.2 177.8)
@@ -5797,12 +5769,6 @@
 		(uuid "a628fbb1-6633-4ae6-94e5-d6c016ff6994")
 	)
 	(junction
-		(at 265.43 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a73ebd76-90b0-4757-a0ef-9283a005a30d")
-	)
-	(junction
 		(at 262.89 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5837,6 +5803,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4a20e9c-5853-406c-a8bf-399e24b75615")
+	)
+	(junction
+		(at 140.97 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2cf60c6-3953-4ee2-b367-9b68d54d03ab")
 	)
 	(junction
 		(at 92.71 35.56)
@@ -5907,20 +5879,20 @@
 		(uuid "17379c69-9968-4cf9-b48d-02ec9bfa9f8a")
 	)
 	(no_connect
+		(at 162.56 85.09)
+		(uuid "77a64f26-f326-4349-9741-828d788941a8")
+	)
+	(no_connect
+		(at 162.56 73.66)
+		(uuid "82a132a8-c637-46dd-9959-051746397cdc")
+	)
+	(no_connect
 		(at 50.8 147.32)
 		(uuid "8565dbfc-56a2-4770-9a73-1590bf993b7f")
 	)
 	(no_connect
 		(at 25.4 147.32)
 		(uuid "86a80c62-1651-49c3-bbe3-dc541ca6e8af")
-	)
-	(no_connect
-		(at 140.97 187.96)
-		(uuid "8d9e5592-2191-4fb3-8394-cadef6e08672")
-	)
-	(no_connect
-		(at 153.67 187.96)
-		(uuid "c30ec59d-0091-45b0-af26-6d7134f360c3")
 	)
 	(no_connect
 		(at 95.25 72.39)
@@ -5986,13 +5958,13 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 185.42) (xy 156.21 185.42)
+			(xy 133.35 137.16) (xy 140.97 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "038a993d-cc9d-4991-974d-a442ce6c713e")
+		(uuid "044d3441-e946-4d9a-92fb-4b80fbdb1572")
 	)
 	(wire
 		(pts
@@ -6003,16 +5975,6 @@
 			(type default)
 		)
 		(uuid "049dbf20-5dbf-449d-b190-8b6446a437de")
-	)
-	(wire
-		(pts
-			(xy 132.08 182.88) (xy 140.97 182.88)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "04a2da95-6c63-4920-b16f-895fb13418ef")
 	)
 	(wire
 		(pts
@@ -6176,16 +6138,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 182.88) (xy 153.67 182.88)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "1eb18207-3f7e-4897-8098-6a54c2f135f0")
-	)
-	(wire
-		(pts
 			(xy 44.45 43.18) (xy 48.26 43.18)
 		)
 		(stroke
@@ -6223,16 +6175,6 @@
 			(type default)
 		)
 		(uuid "227e9c18-e42b-49ea-96c1-064af070d58f")
-	)
-	(wire
-		(pts
-			(xy 252.73 78.74) (xy 247.65 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22ee2b82-d4e7-455a-8a70-7c898200c71d")
 	)
 	(wire
 		(pts
@@ -6416,16 +6358,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 143.51) (xy 156.21 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a20e096-a382-4d1e-abec-4b2836f31625")
-	)
-	(wire
-		(pts
 			(xy 214.63 138.43) (xy 215.9 138.43)
 		)
 		(stroke
@@ -6446,7 +6378,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 71.12) (xy 265.43 81.28)
+			(xy 265.43 71.12) (xy 265.43 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6463,16 +6395,6 @@
 			(type default)
 		)
 		(uuid "3d3ac356-9a3a-49b4-8206-9980dfbcd011")
-	)
-	(wire
-		(pts
-			(xy 156.21 186.69) (xy 165.1 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f1fb87d-d6d4-4d2f-b6e5-13e5a01c1c6c")
 	)
 	(wire
 		(pts
@@ -6646,16 +6568,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 185.42) (xy 138.43 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b345fa0-91ea-41e9-aa7c-acf0cb34349f")
-	)
-	(wire
-		(pts
 			(xy 31.75 177.8) (xy 38.1 177.8)
 		)
 		(stroke
@@ -6673,16 +6585,6 @@
 			(type default)
 		)
 		(uuid "5d97206f-e7a7-444b-a3d3-577068e9eda8")
-	)
-	(wire
-		(pts
-			(xy 153.67 177.8) (xy 165.1 177.8)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "5efd1fde-8e12-40ce-9270-9a16fa679f5c")
 	)
 	(wire
 		(pts
@@ -6713,16 +6615,6 @@
 			(type default)
 		)
 		(uuid "603a5df9-0c5e-4583-b974-0fa5c7d75a13")
-	)
-	(wire
-		(pts
-			(xy 165.1 179.07) (xy 165.1 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61221a2a-5815-4938-bbbd-42bbebb51474")
 	)
 	(wire
 		(pts
@@ -6906,16 +6798,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 85.09) (xy 165.1 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a5879d6-881b-4d69-9c2e-023626bdb949")
-	)
-	(wire
-		(pts
 			(xy 162.56 62.23) (xy 165.1 62.23)
 		)
 		(stroke
@@ -6923,16 +6805,6 @@
 			(type default)
 		)
 		(uuid "7c97630e-3544-4bf9-82a7-90db7fc7f38d")
-	)
-	(wire
-		(pts
-			(xy 132.08 180.34) (xy 140.97 180.34)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "7d26fe41-0950-43cd-a781-dd81d526147c")
 	)
 	(wire
 		(pts
@@ -6993,16 +6865,6 @@
 			(type default)
 		)
 		(uuid "8e10d6bf-34a0-47e3-95a2-af367b002fcf")
-	)
-	(wire
-		(pts
-			(xy 132.08 177.8) (xy 140.97 177.8)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "8f38eb6c-ca8b-4105-b161-727a34f84603")
 	)
 	(wire
 		(pts
@@ -7073,16 +6935,6 @@
 			(type default)
 		)
 		(uuid "933e9a04-fdad-49ce-b517-f3948aebecb1")
-	)
-	(wire
-		(pts
-			(xy 265.43 81.28) (xy 265.43 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93cd66f0-5152-42f7-8873-b36359c32e20")
 	)
 	(wire
 		(pts
@@ -7216,6 +7068,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 137.16) (xy 125.73 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7d50465-aaab-43ca-9a8f-3457d1878081")
+	)
+	(wire
+		(pts
 			(xy 92.71 100.33) (xy 92.71 102.87)
 		)
 		(stroke
@@ -7316,16 +7178,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 83.82) (xy 247.65 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3e3c926-6c8e-4f1e-b999-24ee4c38bc47")
-	)
-	(wire
-		(pts
 			(xy 182.88 142.24) (xy 182.88 143.51)
 		)
 		(stroke
@@ -7336,16 +7188,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 139.7) (xy 114.3 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b717831d-7b8e-4051-b647-283d0c83ebab")
-	)
-	(wire
-		(pts
 			(xy 40.64 97.79) (xy 40.64 99.06)
 		)
 		(stroke
@@ -7353,16 +7195,6 @@
 			(type default)
 		)
 		(uuid "b7335b60-d4fa-4fce-bbbd-12e4a6286e0d")
-	)
-	(wire
-		(pts
-			(xy 156.21 185.42) (xy 156.21 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b934a523-5b1c-46db-8b41-6397c07706b6")
 	)
 	(wire
 		(pts
@@ -7403,16 +7235,6 @@
 			(type default)
 		)
 		(uuid "c66a2b81-9555-4aad-b88b-66a2cafd5e62")
-	)
-	(wire
-		(pts
-			(xy 165.1 186.69) (xy 165.1 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c889240e-27d0-497f-a479-dc9bb06f5329")
 	)
 	(wire
 		(pts
@@ -7496,16 +7318,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 73.66) (xy 165.1 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7c939c0-9f3e-43c7-848c-78aca4f53f83")
-	)
-	(wire
-		(pts
 			(xy 162.56 68.58) (xy 165.1 68.58)
 		)
 		(stroke
@@ -7556,6 +7368,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 137.16) (xy 133.35 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e247681b-a285-4d03-b624-65cd0c0a752d")
+	)
+	(wire
+		(pts
 			(xy 231.14 86.36) (xy 229.87 86.36)
 		)
 		(stroke
@@ -7596,16 +7418,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 180.34) (xy 153.67 180.34)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "e6fa2492-f7a3-4693-b50d-ca5ec5ea212c")
-	)
-	(wire
-		(pts
 			(xy 262.89 133.35) (xy 273.05 133.35)
 		)
 		(stroke
@@ -7636,6 +7448,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 137.16) (xy 148.59 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea6f3516-9ded-4f4a-acbc-e886ece92a7b")
+	)
+	(wire
+		(pts
 			(xy 83.82 102.87) (xy 86.36 102.87)
 		)
 		(stroke
@@ -7656,16 +7478,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 185.42) (xy 138.43 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1c2e8be-73b6-4e7a-9cdb-b32bd44dcb6d")
-	)
-	(wire
-		(pts
 			(xy 81.28 60.96) (xy 80.01 60.96)
 		)
 		(stroke
@@ -7673,16 +7485,6 @@
 			(type default)
 		)
 		(uuid "f367fba5-f6d5-4336-8736-f8d6bf8acacb")
-	)
-	(wire
-		(pts
-			(xy 114.3 139.7) (xy 114.3 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f640a84f-efaf-4cca-8818-304746fdf11a")
 	)
 	(wire
 		(pts
@@ -7753,16 +7555,6 @@
 			(type default)
 		)
 		(uuid "fbc01ba1-db86-4647-b7d5-16f05d9e8241")
-	)
-	(wire
-		(pts
-			(xy 156.21 135.89) (xy 156.21 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc2fe958-eb36-4e7b-a913-3ef17598ca5b")
 	)
 	(wire
 		(pts
@@ -14382,26 +14174,6 @@
 		)
 		(uuid "047eb632-c602-4fc4-a5ab-5db1b5a0549f")
 	)
-	(label "HD3_P"
-		(at 162.56 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "15a55e5f-a0ec-46f7-ab49-6efbac0433d6")
-	)
-	(label "PWR3"
-		(at 247.65 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1fbe8d6b-2b24-47c7-a75a-5e009413e217")
-	)
 	(label "HD2_P"
 		(at 69.85 134.62 180)
 		(effects
@@ -14472,6 +14244,16 @@
 		)
 		(uuid "2a091c57-f45a-41b4-99e1-cc602000babc")
 	)
+	(label "HD3_N"
+		(at 125.73 144.78 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2ad9c6dc-b485-46a7-85ca-d6ad04cb9391")
+	)
 	(label "Net-(U5-ILIM)"
 		(at 218.948 135.89 0)
 		(effects
@@ -14502,26 +14284,6 @@
 		)
 		(uuid "37b3ea93-6c6d-41ff-87c6-6646ad91cd0f")
 	)
-	(label "HD4_N"
-		(at 123.19 137.16 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "38380ce0-7e24-4f81-9272-bdd0260aee2f")
-	)
-	(label "HD4_P"
-		(at 132.08 182.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "396577f1-ca40-4375-bbcc-da168f403754")
-	)
 	(label "HSD2-"
 		(at 25.4 139.7 180)
 		(effects
@@ -14541,6 +14303,16 @@
 			(justify left bottom)
 		)
 		(uuid "423b35ed-32d7-4d11-93fc-1879a77c3af1")
+	)
+	(label "HD2_N"
+		(at 95.25 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b4dc325-0c05-45d9-8d1a-676f64319d65")
 	)
 	(label "3V3_CM4"
 		(at 205.74 43.18 180)
@@ -14592,6 +14364,16 @@
 		)
 		(uuid "584a69bb-1a06-48c2-843a-819a360a7f20")
 	)
+	(label "HD1_N"
+		(at 95.25 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5adf3212-22c4-4381-ad23-ebe2c87ad958")
+	)
 	(label "MUX_OE"
 		(at 76.2 40.64 0)
 		(effects
@@ -14601,6 +14383,16 @@
 			(justify left bottom)
 		)
 		(uuid "605070aa-c5e2-49d2-af91-c760fddebeae")
+	)
+	(label "HD4_N"
+		(at 140.97 144.78 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6544749d-2105-45fa-8832-311ef8630a5d")
 	)
 	(label "nOCS1"
 		(at 165.1 87.63 0)
@@ -14632,15 +14424,15 @@
 		)
 		(uuid "7846f4b9-a448-4f42-8843-4f5cf3e012a3")
 	)
-	(label "PWR3"
-		(at 165.1 73.66 0)
+	(label "HSD2+"
+		(at 50.8 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "7aafb3f7-9845-45e7-a850-069ff7e66100")
+		(uuid "7f5b193c-bba9-49bd-a90e-e6822203efea")
 	)
 	(label "HD1_N"
 		(at 165.1 45.72 0)
@@ -14652,16 +14444,6 @@
 		)
 		(uuid "8e923394-34ac-4a40-bd04-c5389353481b")
 	)
-	(label "PWR4"
-		(at 165.1 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "918e96f3-263a-491a-ae1c-64c94a697325")
-	)
 	(label "HSD2-"
 		(at 76.2 45.72 0)
 		(effects
@@ -14672,15 +14454,15 @@
 		)
 		(uuid "9712256e-106a-4f4a-8879-52d729af65a8")
 	)
-	(label "VBUS"
-		(at 156.21 132.08 90)
+	(label "HSD2-"
+		(at 50.8 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "a3651916-8929-4b3c-8e78-56b1a28ebe46")
+		(uuid "a45b0341-d72c-498b-8db4-0ab90e228ae5")
 	)
 	(label "HD2_N"
 		(at 165.1 57.15 0)
@@ -14692,16 +14474,6 @@
 		)
 		(uuid "a4b8627c-44e8-4f30-8c12-d31503965ae2")
 	)
-	(label "HD3_N"
-		(at 123.19 144.78 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a6230228-df17-4e9d-bff8-79ea89c75106")
-	)
 	(label "nOCS1"
 		(at 165.1 76.2 0)
 		(effects
@@ -14711,26 +14483,6 @@
 			(justify left bottom)
 		)
 		(uuid "a646d346-7606-47e2-a7f0-da05ef3f60ff")
-	)
-	(label "HD4_P"
-		(at 123.19 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a75ccc9d-cd27-4a76-aef9-0294741e5be1")
-	)
-	(label "HD4_N"
-		(at 132.08 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a7c3e4b8-2c9d-4036-a124-7bbcf8b38b47")
 	)
 	(label "U5_EN"
 		(at 265.43 76.2 270)
@@ -14762,16 +14514,6 @@
 		)
 		(uuid "b650b304-fb8a-42df-b6d7-51d0856b3a1f")
 	)
-	(label "HD3_P"
-		(at 123.19 142.24 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b852db9b-0234-4828-b66e-4d9ef85cb7b1")
-	)
 	(label "PWR1"
 		(at 165.1 50.8 0)
 		(effects
@@ -14782,15 +14524,15 @@
 		)
 		(uuid "be1ac3ef-ce73-4ff9-af79-574e7464b6a9")
 	)
-	(label "VBUS"
-		(at 162.56 177.8 180)
+	(label "HD1_P"
+		(at 95.25 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "c80b71f0-71d1-4022-b2a9-cb69f952f156")
+		(uuid "cad4185b-f9d2-4179-a6e8-3352ac943fe7")
 	)
 	(label "USB_HUB_P"
 		(at 74.93 48.26 0)
@@ -14822,16 +14564,6 @@
 		)
 		(uuid "d4e7d99d-8c65-4926-85cb-a7d6e9c9270e")
 	)
-	(label "PWR4"
-		(at 247.65 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d5ee1834-655a-4d4c-9187-a86368057963")
-	)
 	(label "nOCS1"
 		(at 165.1 53.34 0)
 		(effects
@@ -14862,25 +14594,25 @@
 		)
 		(uuid "dd205a82-f25d-4c12-bd36-7c06b39d54c3")
 	)
-	(label "VBUS"
-		(at 132.08 177.8 0)
+	(label "HD2_P"
+		(at 95.25 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "dd2ab91f-5269-4007-8581-32fac42d729a")
+		(uuid "e03c9dbb-a9e8-4447-8934-c507770d4d12")
 	)
-	(label "HD3_N"
-		(at 162.56 180.34 180)
+	(label "HD4_P"
+		(at 148.59 144.78 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "e08a5b56-3f4a-4c05-a678-fc239ba7052b")
+		(uuid "e76a31a8-1e28-44dd-829f-f0bf5e537414")
 	)
 	(label "HD3_N"
 		(at 165.1 68.58 0)
@@ -14901,6 +14633,16 @@
 			(justify left bottom)
 		)
 		(uuid "e9081690-e5f1-4ab0-aa1c-66153e7daecf")
+	)
+	(label "HD3_P"
+		(at 133.35 144.78 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e980ee8f-1dec-4c93-82a8-cf9f18e68e8f")
 	)
 	(label "VBUS"
 		(at 201.93 78.74 180)
@@ -15050,6 +14792,17 @@
 			(justify right)
 		)
 		(uuid "b36b055e-1503-4354-8ede-a963ff235248")
+	)
+	(hierarchical_label "3V3_CM4"
+		(shape input)
+		(at 120.65 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b40b3884-a00a-4ef3-9ee1-1ca2fb4366b2")
 	)
 	(symbol
 		(lib_id "MyParts:CL05B104KO5NNNC_ALT")
@@ -16437,235 +16190,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:SMF6.0A")
-		(at 156.21 139.7 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "23e9ae70-3803-4ce9-918d-7f36dcd03585")
-		(property "Reference" "D9"
-			(at 161.29 139.954 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMF6.0A"
-			(at 164.592 142.748 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MyPartsIPC:SODFL3718X110N"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/SMF6.0A.pdf"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "-55℃~+150℃ 1 10.3V 19.4A@10/1000us 200W@10/1000us 400uA 6V 7.37V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Manufacturer" "hongjiacheng"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "ki_keywords" ""
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "ki_fp_filters" "D_*"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "MPN" "SMF6.0A"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C19077499"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pkg Type" "SMD SOD-123FL"
-			(at 156.21 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3f690582-d63b-4e75-b17d-fe5d53b2b251")
-		)
-		(pin "1"
-			(uuid "085a32c0-3699-43a2-bf1b-8a2850677544")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.3 140.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "24736452-d70e-4bb9-a583-e7f72e0581d7")
-		(property "Reference" "#PWR0102"
-			(at 110.49 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 109.22 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8d843cb-e9fa-4e1d-8b22-25241dd0a1a3")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 128.27 95.25 0)
 		(unit 1)
@@ -16750,9 +16274,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 165.1 187.96 0)
-		(mirror y)
+		(lib_id "MyParts:0402WGF1002TCE")
+		(at 148.59 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16760,109 +16283,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2a255f47-a52d-46a4-81a8-ba22d96da118")
-		(property "Reference" "#PWR027"
-			(at 165.1 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 164.973 192.3542 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ab2f797-5735-4556-808d-1b90c81d0891")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MyParts:CL21B106KPQNNNE")
-		(at 165.1 182.88 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2a9f7d94-d3d1-4b08-af69-2399f004a3e2")
-		(property "Reference" "C22"
-			(at 167.386 182.2449 90)
+		(uuid "2ab7b0fd-8d58-4be0-94bc-88fb49eb0416")
+		(property "Reference" "R97"
+			(at 149.86 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 167.386 184.15 90)
+		(property "Value" "10kΩ"
+			(at 149.86 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.016 1.016)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "MyPartsIPC:CAPC2012X145N"
-			(at 172.72 182.88 0)
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16872,8 +16317,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL21B106KPQNNNE.pdf"
-			(at 175.26 182.88 0)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16883,8 +16328,8 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 187.96 182.88 0)
+		(property "Description" "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16894,8 +16339,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG"
-			(at 177.8 182.88 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16905,8 +16350,8 @@
 				)
 			)
 		)
-		(property "MPN" "CL21B106KPQNNNE"
-			(at 180.34 182.88 0)
+		(property "Tolerance" "±1%"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16916,8 +16361,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C32635"
-			(at 182.88 182.88 0)
+		(property "MPN" "0402WGF1002TCE"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16927,8 +16372,8 @@
 				)
 			)
 		)
-		(property "Tolerance" "±10%"
-			(at 165.1 182.88 0)
+		(property "Voltage Rating" "50V"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16938,8 +16383,8 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "10V"
-			(at 165.1 182.88 0)
+		(property "LCSC Part" "C25744"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16949,8 +16394,8 @@
 				)
 			)
 		)
-		(property "Pkg Type" "SMD 0805"
-			(at 165.1 182.88 0)
+		(property "Pkg Type" "SMD 0402"
+			(at 148.59 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16959,17 +16404,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "c794940e-8c26-42bd-a58c-32487efd5242")
 		)
 		(pin "1"
-			(uuid "dfdcfd63-a7cc-4ed6-8620-2ef4d99c8ecd")
+			(uuid "7ad331cb-d856-4748-9050-b7c07fb56d0f")
+		)
+		(pin "2"
+			(uuid "7af11225-dc5e-4954-9aa0-cbcbf0ec093b")
 		)
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "C22")
+					(reference "R97")
 					(unit 1)
 				)
 			)
@@ -20573,85 +20018,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 138.43 186.69 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b3800dd1-5d9e-4555-9b25-02c1c12d541e")
-		(property "Reference" "#PWR028"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 138.303 191.0842 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.43 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b465a5cb-698b-45fd-9982-6247369afbb0")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 231.14 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -20873,82 +20239,6 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bc923ab5-07e9-421b-966e-22ce8411ed90")
-		(property "Reference" "#PWR0104"
-			(at 156.21 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f64a5469-258c-48ec-943b-860c4610c05b")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -21419,82 +20709,6 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 148.59 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c7bd2f4d-5a0f-4f2f-8a3b-11446cc602bc")
-		(property "Reference" "#PWR0103"
-			(at 152.4 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 144.78 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 139.7 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 139.7 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6fae57c8-7c6a-4a72-80c1-58c1b8c1a8af")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -22050,8 +21264,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:HXPZ2.54-2X5PTP")
-		(at 147.32 182.88 0)
+		(lib_id "MyParts:0402WGF1002TCE")
+		(at 140.97 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22059,29 +21273,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e28cf685-0d92-46a5-8eca-11fa940fa599")
-		(property "Reference" "J2"
-			(at 147.32 176.53 0)
+		(uuid "e27504ca-d268-4f3b-822f-90820c2ef3b6")
+		(property "Reference" "R96"
+			(at 142.24 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "HX PZ2.54-2X5P TP"
-			(at 147.574 192.532 0)
+		(property "Value" "10kΩ"
+			(at 142.24 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "MyParts:HDR-SMD_10P-P2.54-V-M-R2-C5-LS7.5"
-			(at 147.32 195.58 0)
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22091,8 +21307,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/HX_PZ2.54-2x5P_TP.pdf"
-			(at 147.32 198.12 0)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22102,8 +21318,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 147.32 182.88 0)
+		(property "Description" "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22113,8 +21329,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "hanxia"
-			(at 147.32 200.66 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22124,8 +21340,8 @@
 				)
 			)
 		)
-		(property "MPN" "HX PZ2.54-2x5P TP"
-			(at 147.32 203.2 0)
+		(property "Tolerance" "±1%"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22135,8 +21351,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C32713285"
-			(at 147.32 205.74 0)
+		(property "MPN" "0402WGF1002TCE"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22146,8 +21362,8 @@
 				)
 			)
 		)
-		(property "Pkg Type" "SMD Pin header 2x5 P2.54"
-			(at 147.32 182.88 0)
+		(property "Voltage Rating" "50V"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22157,40 +21373,38 @@
 				)
 			)
 		)
-		(pin "5"
-			(uuid "94bfcdbd-39ca-42ed-9d87-3445090f2697")
+		(property "LCSC Part" "C25744"
+			(at 140.97 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "2"
-			(uuid "bd6c94c9-f3e8-4127-8b48-5c59d0126ffe")
+		(property "Pkg Type" "SMD 0402"
+			(at 140.97 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "1f0fc201-a180-4a35-ae88-5ea3cb992f66")
+			(uuid "1467b36d-7063-4ed5-b182-1b8ebd07481c")
 		)
-		(pin "10"
-			(uuid "02fb14a5-77a9-4378-b98f-98f09f3af99d")
-		)
-		(pin "3"
-			(uuid "4efda301-00d8-4b5f-8078-a0fbe473ed78")
-		)
-		(pin "4"
-			(uuid "d33288c0-599d-4587-a67e-2f3559e3e8a3")
-		)
-		(pin "6"
-			(uuid "61a16d73-c6bc-4b84-ba97-273a43b4c388")
-		)
-		(pin "7"
-			(uuid "b65e9dac-0f33-441c-8e39-c76d5e79a422")
-		)
-		(pin "8"
-			(uuid "162d8542-0a48-466f-addd-d46a80dfa36d")
-		)
-		(pin "9"
-			(uuid "cb51164d-66ef-4781-92ba-55adb5d4f116")
+		(pin "2"
+			(uuid "64821d3d-1c99-4740-a429-0aca5e273a6a")
 		)
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "J2")
+					(reference "R96")
 					(unit 1)
 				)
 			)
@@ -22793,153 +22007,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:TPD4EUSB30DQAR")
-		(at 135.89 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e92425cb-e2c8-4b7c-92b0-5930843e25dd")
-		(property "Reference" "U7"
-			(at 135.89 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPD4EUSB30DQAR"
-			(at 135.89 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyPartsIPC:SON50P100X250X60-10N"
-			(at 135.89 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPD4EUSB30DQAR.pdf"
-			(at 135.89 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "-40℃~+85℃ 0.8pF 45W@8/20us 5.5V 5A@8/20us 7V 8V ESD Four channels IEC 61000-4-2, IEC 61000-4-5 Unidirectional USON-10(1x2.5) ESD and Surge Protection (TVS/ESD) ROHS"
-			(at 135.89 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "TI"
-			(at 135.89 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TPD4EUSB30DQAR"
-			(at 135.89 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C90627"
-			(at 135.89 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pkg Type" "SMD USON-10 2.5x1.0"
-			(at 135.89 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "59e2cbdc-ccc7-4cce-8f75-65be31f734dc")
-		)
-		(pin "2"
-			(uuid "64d50406-5077-4ca0-8e74-fcf84e71f70b")
-		)
-		(pin "3"
-			(uuid "ff55c2ad-d8ba-4987-924c-aae6d2595674")
-		)
-		(pin "4"
-			(uuid "0c3ca203-4b96-4a45-9d31-c7f9d874a4aa")
-		)
-		(pin "5"
-			(uuid "ae55acee-b948-430e-9082-59f5cce4965d")
-		)
-		(pin "6"
-			(uuid "37c3072c-567a-476b-be9b-893e7c8dbda3")
-		)
-		(pin "7"
-			(uuid "4e835890-f2bd-4e73-a42e-3e7bcff182ae")
-		)
-		(pin "8"
-			(uuid "50edfee8-9e6a-4838-9f3b-21cfd1a0aa3d")
-		)
-		(pin "9"
-			(uuid "b65d218d-ffca-4d00-b8ac-3f616891cfeb")
-		)
-		(pin "10"
-			(uuid "669d3bd7-f2ed-4c69-9eed-943aabbf4767")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MyParts:FRC0402F3602TS")
 		(at 92.71 95.25 90)
 		(unit 1)
@@ -23091,8 +22158,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:BAT54C")
-		(at 259.08 81.28 0)
+		(lib_id "MyParts:0402WGF1002TCE")
+		(at 125.73 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23100,53 +22167,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f1300289-5fc0-4869-93fa-7007048f4315")
-		(property "Reference" "D7"
-			(at 259.08 76.2 0)
+		(uuid "f13416f7-c346-4448-94f2-478465c3ee50")
+		(property "Reference" "R94"
+			(at 127 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "BAT54C"
-			(at 259.08 86.36 0)
+		(property "Value" "10kΩ"
+			(at 127 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" "MyPartsIPC:SOT95P280X110-3N"
-			(at 259.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 				(justify left)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/BAT54C.pdf"
-			(at 259.08 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "1 Pair Common Cathode 200mA 30V 800mV@100mA SOT-23 Schottky Diodes ROHS"
-			(at 259.08 81.28 0)
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
+			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23156,8 +22201,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Nexperia"
-			(at 259.08 81.28 0)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23165,11 +22210,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "MPN" "BAT54C,215"
-			(at 259.08 81.28 0)
+		(property "Description" "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23177,11 +22221,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "LCSC Part" "C37704"
-			(at 259.08 81.28 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23189,11 +22232,54 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Pkg Type" "SMD SOT-23"
-			(at 259.08 81.28 0)
+		(property "Tolerance" "±1%"
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25744"
+			(at 125.73 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 125.73 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23204,18 +22290,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "05bc5d4f-d1dd-49ab-8233-4a8777edac04")
+			(uuid "a15921f5-25e4-45c4-b09e-d7003474e283")
 		)
 		(pin "2"
-			(uuid "8f444053-12f2-4abc-b67a-5f57247775df")
-		)
-		(pin "3"
-			(uuid "5eed116f-56e0-45a9-beee-88248c5fa631")
+			(uuid "b2f28ed6-4bc5-4a84-91fe-037d090a8d97")
 		)
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
-					(reference "D7")
+					(reference "R94")
 					(unit 1)
 				)
 			)
@@ -23298,6 +22381,153 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:0402WGF1002TCE")
+		(at 133.35 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5db80a5-cedf-4567-a81f-7b1d89f311a1")
+		(property "Reference" "R95"
+			(at 134.62 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 134.62 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25744"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 133.35 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3b07d9a-b01c-4932-9df5-5e3b5d0619ea")
+		)
+		(pin "2"
+			(uuid "010731f9-bfb2-45b8-a121-82da3faf9075")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "R95")
 					(unit 1)
 				)
 			)
@@ -23923,105 +23153,5 @@
 				)
 			)
 		)
-	)
-	(label "HD2_P"
-		(at 95.25 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e03c9dbb-a9e8-4447-8934-c507770d4d12")
-	)
-	(label "HD2_N"
-		(at 95.25 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4b4dc325-0c05-45d9-8d1a-676f64319d65")
-	)
-	(label "HD1_P"
-		(at 95.25 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cad4185b-f9d2-4179-a6e8-3352ac943fe7")
-	)
-	(label "HD1_N"
-		(at 95.25 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5adf3212-22c4-4381-ad23-ebe2c87ad958")
-	)
-	(label "HD4_P"
-		(at 148.59 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b6d4b410-d7ee-476d-a957-6d1e4c2ac931")
-	)
-	(label "HD4_N"
-		(at 148.59 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2dd93740-e751-4453-872f-d5f283a125d9")
-	)
-	(label "HD3_P"
-		(at 148.59 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6aecb70-13e1-438d-86d0-7cb6d0dd9054")
-	)
-	(label "HD3_N"
-		(at 148.59 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "976ae731-da6a-4d85-8449-dc68025c49ed")
-	)
-	(label "HSD2+"
-		(at 50.8 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7f5b193c-bba9-49bd-a90e-e6822203efea")
-	)
-	(label "HSD2-"
-		(at 50.8 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a45b0341-d72c-498b-8db4-0ab90e228ae5")
 	)
 )

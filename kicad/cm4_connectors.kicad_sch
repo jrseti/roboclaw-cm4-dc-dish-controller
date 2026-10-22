@@ -5,216 +5,6 @@
 	(uuid "65f5b412-f4df-4f30-892e-6cfb5ccc4df9")
 	(paper "A4")
 	(lib_symbols
-		(symbol "MyParts:CL05B104KO5NNNC_ALT"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.032 1.668 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "100nF"
-				(at 2.032 -0.3782 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "MyParts:C0402"
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "SAMSUNG"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Tolerance" "±10%"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "CL05B104KO5NNNC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Voltage Rating" "16V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C1525"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pkg Type" "SMD 0402"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CL05B104KO5NNNC_ALT_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CL05B104KO5NNNC_ALT_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.175)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.175)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MyParts:0402WGF2201TCE"
 			(pin_numbers
 				(hide yes)
@@ -1389,6 +1179,216 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:CL05B104KO5NNNC_ALT"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.032 1.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 2.032 -0.3782 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "MyParts:C0402"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "SAMSUNG"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CL05B104KO5NNNC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "16V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C1525"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0402"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CL05B104KO5NNNC_ALT_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy 1.27 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CL05B104KO5NNNC_ALT_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:Header-Male-2.54_1x3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2007,7 +2007,7 @@
 	)
 	(text "GPIO2"
 		(exclude_from_sim no)
-		(at 104.902 76.708 0)
+		(at 104.902 86.614 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2037,7 +2037,7 @@
 		)
 		(uuid "372d484b-1e6c-47c1-8198-246722d57e13")
 	)
-	(text "I2C PULL-UPS\nI2C1: GPIO2 = I2C1_SDA (J4-16), GPIO3 = I2C1_SCL (J4-18)\nPulled up to 3.3 V (GPIO_VREF) by 1.8 kΩ inside the CM4\n(CM4 datasheet section 2.5, pins 56/58). No board pull-ups\nare needed. R20/R21 (2.2k, fitted via H5/H6) are optional.\n\nI2C0: GPIO0 = ID_SD (J4-22), GPIO1 = ID_SC (J4-23)\nNo I2C pull-ups on the CM4, only the BCM2711's weak reset\npull-ups (33-73 kΩ). If J4-22/23 are used as an I2C bus, the\ndevice on J4 must supply the pull-ups (2.2k-4.7k to 3.3 V)."
+	(text "I2C PULL-UPS\nI2C1: GPIO2 = I2C1_SDA (J4-24), GPIO3 = I2C1_SCL (J4-22)\nPulled up to 3.3 V (GPIO_VREF) by 1.8 kΩ inside the CM4\n(CM4 datasheet section 2.5, pins 56/58). No board pull-ups\nare needed. R20/R21 (2.2k, fitted via H5/H6) are optional.\n\nI2C0: GPIO0 = ID_SD (J4-22), GPIO1 = ID_SC (J4-23)\nNo I2C pull-ups on the CM4, only the BCM2711's weak reset\npull-ups (33-73 kΩ). If J4-22/23 are used as an I2C bus, the\ndevice on J4 must supply the pull-ups (2.2k-4.7k to 3.3 V)."
 		(exclude_from_sim no)
 		(at 220.98 129.54 0)
 		(effects
@@ -2061,7 +2061,7 @@
 	)
 	(text "GPIO3"
 		(exclude_from_sim no)
-		(at 104.902 79.248 0)
+		(at 104.902 84.074 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2104,7 +2104,7 @@
 	)
 	(text "GPIO9"
 		(exclude_from_sim no)
-		(at 104.902 69.088 0)
+		(at 55.8 78.994 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2114,7 +2114,7 @@
 	)
 	(text "GPIO10"
 		(exclude_from_sim no)
-		(at 105.5067 66.548 0)
+		(at 55.8 81.534 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2156,7 +2156,7 @@
 	)
 	(text "GPIO8"
 		(exclude_from_sim no)
-		(at 104.902 71.374 0)
+		(at 104.902 73.914 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2166,7 +2166,7 @@
 	)
 	(text "GPIO7"
 		(exclude_from_sim no)
-		(at 104.902 73.914 0)
+		(at 104.902 71.374 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2185,7 +2185,7 @@
 		)
 		(uuid "f277ca29-2390-40bd-b66c-1021ef592967")
 	)
-	(text "GPIO0 / GPIO1 (J4-22 / J4-23)\nCM4 pins 36 (ID_SD = GPIO0) and 35 (ID_SC = GPIO1). This is the\nI2C0 bus the firmware normally uses to look for a HAT EEPROM and to\ncontrol CSI0/DSI0 cameras and displays. This board has no HAT, camera\nor display, so the pins are free for general use.\n\nTo use them as GPIO, add to config.txt (CM4 datasheet section 2.10):\n  force_eeprom_read=0\n  disable_poe_fan=1\nWithout these, the firmware drives the bus at boot to look for an\nEEPROM, and anything wired to these pins sees I2C activity.\n\n- Both pins are pulled up (high) at reset.\n- 3.3 V logic. Not 5 V tolerant.\n- They can also be used as an I2C bus (I2C0: GPIO0 = SDA,\n  GPIO1 = SCL). Add external pull-ups if you do.\n"
+	(text "GPIO0 / GPIO1 (J4-13 / J4-10)\nCM4 pins 36 (ID_SD = GPIO0) and 35 (ID_SC = GPIO1). This is the\nI2C0 bus the firmware normally uses to look for a HAT EEPROM and to\ncontrol CSI0/DSI0 cameras and displays. This board has no HAT, camera\nor display, so the pins are free for general use.\n\nTo use them as GPIO, add to config.txt (CM4 datasheet section 2.10):\n  force_eeprom_read=0\n  disable_poe_fan=1\nWithout these, the firmware drives the bus at boot to look for an\nEEPROM, and anything wired to these pins sees I2C activity.\n\n- Both pins are pulled up (high) at reset.\n- 3.3 V logic. Not 5 V tolerant.\n- They can also be used as an I2C bus (I2C0: GPIO0 = SDA,\n  GPIO1 = SCL). Add external pull-ups if you do.\n"
 		(exclude_from_sim no)
 		(at 54.356 106.934 0)
 		(effects
@@ -2208,7 +2208,7 @@
 	)
 	(text "GPIO11"
 		(exclude_from_sim no)
-		(at 105.5067 63.754 0)
+		(at 55.8 76.454 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2251,6 +2251,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8851d9c6-35f9-4bbf-911a-062e7a0d8ce3")
+	)
+	(junction
+		(at 171.45 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d46bcbb7-457d-40f2-95cc-50303f88dcc0")
 	)
 	(junction
 		(at 147.32 166.37)
@@ -2301,6 +2307,16 @@
 			(type default)
 		)
 		(uuid "06a37d46-82da-46e8-82ea-19d782ed51b0")
+	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 71.12 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06c34723-bac6-48dc-a0d5-0cd39221b66a")
 	)
 	(wire
 		(pts
@@ -2374,13 +2390,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 59.69) (xy 71.12 59.69)
+			(xy 171.45 57.15) (xy 171.45 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "287d980f-da11-426c-a7e7-9fc0165a9618")
+		(uuid "2640fcdb-7e58-4ca6-b4af-7ed5760f2525")
 	)
 	(wire
 		(pts
@@ -2674,6 +2690,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 54.61) (xy 176.53 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eee2cb7-33a9-4cf5-b89f-c6ddddf57f18")
+	)
+	(wire
+		(pts
 			(xy 170.18 57.15) (xy 171.45 57.15)
 		)
 		(stroke
@@ -2741,6 +2767,16 @@
 			(type default)
 		)
 		(uuid "b3c4aac3-c421-4658-b1fa-b999649881cd")
+	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 58.42 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70cacd8-05a5-40e0-8ebb-e9f4f936524f")
 	)
 	(wire
 		(pts
@@ -2831,16 +2867,6 @@
 			(type default)
 		)
 		(uuid "ce7f488a-8806-43de-9a68-e1cdf0b2d137")
-	)
-	(wire
-		(pts
-			(xy 63.5 59.69) (xy 63.5 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfa2e150-033d-41ff-93b6-cf89fbef228e")
 	)
 	(wire
 		(pts
@@ -2973,7 +2999,7 @@
 		)
 		(uuid "08bc1718-20be-45bf-a841-e55eaeda76a8")
 	)
-	(hierarchical_label "I2C1_SCL"
+	(hierarchical_label "GPIO18"
 		(shape bidirectional)
 		(at 88.9 78.74 0)
 		(effects
@@ -3017,7 +3043,7 @@
 		)
 		(uuid "4a26740a-9475-4eb2-a7fa-cbaf1d13f627")
 	)
-	(hierarchical_label "GPIO18"
+	(hierarchical_label "GPIO19"
 		(shape bidirectional)
 		(at 71.12 71.12 180)
 		(effects
@@ -3028,7 +3054,7 @@
 		)
 		(uuid "4bdbda90-0acc-4a42-ae01-bb0121b2c84c")
 	)
-	(hierarchical_label "GPIO0"
+	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
 		(at 88.9 83.82 0)
 		(effects
@@ -3039,7 +3065,7 @@
 		)
 		(uuid "56e96ae2-acc0-4181-b846-51085aea3497")
 	)
-	(hierarchical_label "GPIO17"
+	(hierarchical_label "GPIO26"
 		(shape bidirectional)
 		(at 71.12 68.58 180)
 		(effects
@@ -3063,7 +3089,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 71.12 63.5 180)
+		(at 71.12 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3072,8 +3098,8 @@
 		)
 		(uuid "67650701-4c6f-4ed3-9a57-24105c2aa289")
 	)
-	(hierarchical_label "GPIO21"
-		(shape bidirectional)
+	(hierarchical_label "SPI0_MISO"
+		(shape output)
 		(at 71.12 78.74 180)
 		(effects
 			(font
@@ -3116,7 +3142,7 @@
 		)
 		(uuid "762eb35c-b59f-4126-89c6-a784aaea5887")
 	)
-	(hierarchical_label "SPI0_CE1"
+	(hierarchical_label "SPI0_CE0"
 		(shape input)
 		(at 88.9 73.66 0)
 		(effects
@@ -3149,7 +3175,7 @@
 		)
 		(uuid "8d7ccff4-79cf-488a-98b2-9f5c6897bc30")
 	)
-	(hierarchical_label "I2C1_SDA"
+	(hierarchical_label "GPIO23"
 		(shape bidirectional)
 		(at 88.9 76.2 0)
 		(effects
@@ -3162,7 +3188,7 @@
 	)
 	(hierarchical_label "3V3_CM4"
 		(shape input)
-		(at 71.12 66.04 180)
+		(at 71.12 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3171,7 +3197,7 @@
 		)
 		(uuid "a7c1652f-c4f0-4f25-ad46-d49f69c0a29e")
 	)
-	(hierarchical_label "GPIO22"
+	(hierarchical_label "I2C1_SDA"
 		(shape bidirectional)
 		(at 88.9 86.36 0)
 		(effects
@@ -3182,8 +3208,8 @@
 		)
 		(uuid "bf77bd97-1812-4003-9fb1-1eae8c21c992")
 	)
-	(hierarchical_label "SPI0_SCLK"
-		(shape input)
+	(hierarchical_label "GPIO21"
+		(shape bidirectional)
 		(at 88.9 63.5 0)
 		(effects
 			(font
@@ -3193,8 +3219,8 @@
 		)
 		(uuid "c2f46663-49b2-4cbd-8a4d-a4d7125c728f")
 	)
-	(hierarchical_label "GPIO20"
-		(shape bidirectional)
+	(hierarchical_label "SPI0_SCLK"
+		(shape input)
 		(at 71.12 76.2 180)
 		(effects
 			(font
@@ -3204,7 +3230,7 @@
 		)
 		(uuid "c4bc48fa-46e5-4949-ac7b-2c3fe99886ba")
 	)
-	(hierarchical_label "GPIO27"
+	(hierarchical_label "GPIO22"
 		(shape bidirectional)
 		(at 71.12 83.82 180)
 		(effects
@@ -3215,7 +3241,7 @@
 		)
 		(uuid "ca713689-d06b-4627-8368-db1dcf518f07")
 	)
-	(hierarchical_label "GPIO1"
+	(hierarchical_label "GPIO27"
 		(shape bidirectional)
 		(at 71.12 86.36 180)
 		(effects
@@ -3226,8 +3252,8 @@
 		)
 		(uuid "d677e091-60c4-484f-a4f0-9db8ba4de85a")
 	)
-	(hierarchical_label "SPI0_MISO"
-		(shape output)
+	(hierarchical_label "GPIO1"
+		(shape bidirectional)
 		(at 88.9 68.58 0)
 		(effects
 			(font
@@ -3237,7 +3263,7 @@
 		)
 		(uuid "dbc4c58a-4d67-4302-bf7f-e011cf36320c")
 	)
-	(hierarchical_label "GPIO26"
+	(hierarchical_label "GPIO17"
 		(shape bidirectional)
 		(at 88.9 81.28 0)
 		(effects
@@ -3248,8 +3274,8 @@
 		)
 		(uuid "ddb1c68a-99c5-4a84-aab6-7d00b1ab5460")
 	)
-	(hierarchical_label "SPI0_MOSI"
-		(shape input)
+	(hierarchical_label "GPIO20"
+		(shape bidirectional)
 		(at 88.9 66.04 0)
 		(effects
 			(font
@@ -3259,7 +3285,7 @@
 		)
 		(uuid "e2257629-9ee2-43bb-8fc7-1a4c9401b6c9")
 	)
-	(hierarchical_label "SPI0_CE0"
+	(hierarchical_label "SPI0_CE1"
 		(shape input)
 		(at 88.9 71.12 0)
 		(effects
@@ -3292,7 +3318,7 @@
 		)
 		(uuid "f60ccbaf-75e6-4e9d-815f-7ea05d391a9c")
 	)
-	(hierarchical_label "GPIO19"
+	(hierarchical_label "GPIO0"
 		(shape bidirectional)
 		(at 71.12 73.66 180)
 		(effects
@@ -3303,8 +3329,8 @@
 		)
 		(uuid "f7585639-f4f2-4cb3-a8a4-2c7b15f95780")
 	)
-	(hierarchical_label "GPIO23"
-		(shape bidirectional)
+	(hierarchical_label "SPI0_MOSI"
+		(shape input)
 		(at 71.12 81.28 180)
 		(effects
 			(font
@@ -3930,6 +3956,153 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:CL05B104KO5NNNC_ALT")
+		(at 176.53 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9477c6e4-b5cb-4643-8aae-5dbb7800efcd")
+		(property "Reference" "C84"
+			(at 177.8 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 177.8 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
+			(at 176.53 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 176.53 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SAMSUNG"
+			(at 176.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "16V"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C1525"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d91bd1a-df23-4f1a-8130-82e09a70da4b")
+		)
+		(pin "2"
+			(uuid "f06758b0-feca-4d5d-b66d-70c098faa133")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
+					(reference "C84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:210S-1*2PL=11.6MMGold-platedblack")
 		(at 128.27 177.8 180)
 		(unit 1)
@@ -4325,7 +4498,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 60.96 0)
+		(at 58.42 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4336,7 +4509,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3e7ed22-d6ed-40ba-956f-5d3f360875c1")
 		(property "Reference" "#PWR0106"
-			(at 63.5 67.31 0)
+			(at 58.42 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4347,7 +4520,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 66.04 0)
+			(at 58.42 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4358,7 +4531,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 60.96 0)
+			(at 58.42 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4369,7 +4542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 60.96 0)
+			(at 58.42 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4380,7 +4553,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 60.96 0)
+			(at 58.42 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4907,6 +5080,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 176.53 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f75ed390-3abb-4c61-b956-f98e9461a58f")
+		(property "Reference" "#PWR0465"
+			(at 176.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5eeb0899-c713-44a7-9825-2bf91caf13bc")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
+					(reference "#PWR0465")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:0402WGF2201TCE")
 		(at 158.75 171.45 0)
 		(unit 1)
@@ -5048,258 +5300,6 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
 					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 171.45 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d46bcbb7-457d-40f2-95cc-50303f88dcc0")
-	)
-	(wire
-		(pts
-			(xy 171.45 57.15) (xy 171.45 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2640fcdb-7e58-4ca6-b4af-7ed5760f2525")
-	)
-	(wire
-		(pts
-			(xy 171.45 54.61) (xy 176.53 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9eee2cb7-33a9-4cf5-b89f-c6ddddf57f18")
-	)
-	(symbol
-		(lib_id "MyParts:CL05B104KO5NNNC_ALT")
-		(at 176.53 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9477c6e4-b5cb-4643-8aae-5dbb7800efcd")
-		(property "Reference" "C84"
-			(at 177.8 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 177.8 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
-			(at 176.53 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
-			(at 176.53 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 176.53 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "SAMSUNG"
-			(at 176.53 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±10%"
-			(at 176.53 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL05B104KO5NNNC"
-			(at 176.53 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage Rating" "16V"
-			(at 176.53 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C1525"
-			(at 176.53 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pkg Type" "SMD 0402"
-			(at 176.53 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4d91bd1a-df23-4f1a-8130-82e09a70da4b")
-		)
-		(pin "2"
-			(uuid "f06758b0-feca-4d5d-b66d-70c098faa133")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "C84")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 176.53 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f75ed390-3abb-4c61-b956-f98e9461a58f")
-		(property "Reference" "#PWR0465"
-			(at 176.53 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 176.53 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5eeb0899-c713-44a7-9825-2bf91caf13bc")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
-					(reference "#PWR0465")
 					(unit 1)
 				)
 			)

@@ -534,6 +534,24 @@
       },
       {
         "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HUB_CTRL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -817,6 +835,22 @@
       {
         "netclass": "PWR_1A",
         "pattern": "Net-(U18-OUT)"
+      },
+      {
+        "netclass": "HUB_CTRL",
+        "pattern": "/CM4/usb/PWR1"
+      },
+      {
+        "netclass": "HUB_CTRL",
+        "pattern": "/CM4/usb/PWR2"
+      },
+      {
+        "netclass": "HUB_CTRL",
+        "pattern": "/CM4/usb/nOCS1"
+      },
+      {
+        "netclass": "HUB_CTRL",
+        "pattern": "slash"
       }
     ]
   },

@@ -110,8 +110,8 @@ detail.
 
 - **Ethernet:** gigabit RJ45 with integrated magnetics. The PHY is on the CM4.
 - **USB:**
-  - A USB2514B hub drives a dual USB-A port and a 2-port expansion header (J2),
-    with current limiting and ESD protection.
+  - A USB2514B hub drives a dual USB-A port, with current limiting and ESD
+    protection. The hub's ports 3 and 4 are not used and are disabled by strap.
   - A USB mux switches the CM4's USB port to the USB-C connector for `rpiboot`
     (OTG programming of the eMMC).
 - **GPS:**
