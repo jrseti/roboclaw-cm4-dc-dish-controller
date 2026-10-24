@@ -5398,7 +5398,7 @@
 		(uuid "aea8a4d6-f1d7-45fa-aaf6-a69895cff79f")
 	)
 	(rectangle
-		(start 17.78 119.38)
+		(start 13.97 119.38)
 		(end 55.88 162.56)
 		(stroke
 			(width 0)
@@ -5875,10 +5875,6 @@
 		(uuid "0d79e791-dc2b-4646-9876-6890758f2225")
 	)
 	(no_connect
-		(at 25.4 144.78)
-		(uuid "17379c69-9968-4cf9-b48d-02ec9bfa9f8a")
-	)
-	(no_connect
 		(at 162.56 85.09)
 		(uuid "77a64f26-f326-4349-9741-828d788941a8")
 	)
@@ -5887,20 +5883,8 @@
 		(uuid "82a132a8-c637-46dd-9959-051746397cdc")
 	)
 	(no_connect
-		(at 50.8 147.32)
-		(uuid "8565dbfc-56a2-4770-9a73-1590bf993b7f")
-	)
-	(no_connect
-		(at 25.4 147.32)
-		(uuid "86a80c62-1651-49c3-bbe3-dc541ca6e8af")
-	)
-	(no_connect
 		(at 95.25 72.39)
 		(uuid "e3dbaab9-67ac-4445-8ccb-2ce13cad50d0")
-	)
-	(no_connect
-		(at 50.8 144.78)
-		(uuid "f13a4df1-1253-454e-a63f-78d9df7d649f")
 	)
 	(no_connect
 		(at 95.25 74.93)
@@ -6118,7 +6102,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 142.24) (xy 22.86 149.86)
+			(xy 15.24 142.24) (xy 15.24 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6225,16 +6209,6 @@
 			(type solid)
 		)
 		(uuid "27af34d4-0973-4e8e-8ace-4354d8fca2ef")
-	)
-	(wire
-		(pts
-			(xy 73.66 50.8) (xy 90.17 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27c03bc1-ce2c-4bee-8069-7877fb09c8ba")
 	)
 	(wire
 		(pts
@@ -6498,16 +6472,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 142.24) (xy 53.34 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "557d1a17-ac11-4b80-bc91-69cc61735a71")
-	)
-	(wire
-		(pts
 			(xy 262.89 146.05) (xy 262.89 144.78)
 		)
 		(stroke
@@ -6595,26 +6559,6 @@
 			(type default)
 		)
 		(uuid "5efd38b6-a234-4df2-9700-542b23a367e7")
-	)
-	(wire
-		(pts
-			(xy 90.17 45.72) (xy 95.25 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fd71c87-d15c-43c1-8699-e05c3600543c")
-	)
-	(wire
-		(pts
-			(xy 73.66 48.26) (xy 95.25 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "603a5df9-0c5e-4583-b974-0fa5c7d75a13")
 	)
 	(wire
 		(pts
@@ -6775,16 +6719,6 @@
 			(type default)
 		)
 		(uuid "74db34ce-9208-4a66-8791-5f8e6319114b")
-	)
-	(wire
-		(pts
-			(xy 90.17 50.8) (xy 90.17 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75a4dd70-d9ae-4ec6-b140-27a25cf6a35b")
 	)
 	(wire
 		(pts
@@ -6995,16 +6929,6 @@
 			(type solid)
 		)
 		(uuid "98339f99-dc43-413a-ad49-14ca9b96cc63")
-	)
-	(wire
-		(pts
-			(xy 50.8 142.24) (xy 53.34 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9921fa2f-a329-4f5e-9e97-c69a87f46589")
 	)
 	(wire
 		(pts
@@ -7328,7 +7252,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 142.24) (xy 22.86 142.24)
+			(xy 25.4 142.24) (xy 15.24 142.24)
 		)
 		(stroke
 			(width 0)
@@ -14144,7 +14068,7 @@
 			"TkSuQmCC"
 		)
 	)
-	(label "USB_HUB_N"
+	(label "USB_HUB_P"
 		(at 74.93 50.8 0)
 		(effects
 			(font
@@ -14234,7 +14158,7 @@
 		)
 		(uuid "28a4425b-af7f-4572-80b1-44519887cf4c")
 	)
-	(label "HSD2+"
+	(label "HSD2-"
 		(at 76.2 43.18 0)
 		(effects
 			(font
@@ -14275,7 +14199,7 @@
 		(uuid "35e4dbae-ff6b-4e1d-b6e4-a5cbe48667d0")
 	)
 	(label "HSD2+"
-		(at 25.4 137.16 180)
+		(at 25.4 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14285,7 +14209,7 @@
 		(uuid "37b3ea93-6c6d-41ff-87c6-6646ad91cd0f")
 	)
 	(label "HSD2-"
-		(at 25.4 139.7 180)
+		(at 25.4 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14424,16 +14348,6 @@
 		)
 		(uuid "7846f4b9-a448-4f42-8843-4f5cf3e012a3")
 	)
-	(label "HSD2+"
-		(at 50.8 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7f5b193c-bba9-49bd-a90e-e6822203efea")
-	)
 	(label "HD1_N"
 		(at 165.1 45.72 0)
 		(effects
@@ -14444,7 +14358,7 @@
 		)
 		(uuid "8e923394-34ac-4a40-bd04-c5389353481b")
 	)
-	(label "HSD2-"
+	(label "HSD2+"
 		(at 76.2 45.72 0)
 		(effects
 			(font
@@ -14453,16 +14367,6 @@
 			(justify left bottom)
 		)
 		(uuid "9712256e-106a-4f4a-8879-52d729af65a8")
-	)
-	(label "HSD2-"
-		(at 50.8 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a45b0341-d72c-498b-8db4-0ab90e228ae5")
 	)
 	(label "HD2_N"
 		(at 165.1 57.15 0)
@@ -14534,7 +14438,7 @@
 		)
 		(uuid "cad4185b-f9d2-4179-a6e8-3352ac943fe7")
 	)
-	(label "USB_HUB_P"
+	(label "USB_HUB_N"
 		(at 74.93 48.26 0)
 		(effects
 			(font
@@ -14694,7 +14598,7 @@
 		)
 		(uuid "fd6f1d5d-2125-4728-bc35-e3e8b4781d3e")
 	)
-	(hierarchical_label "USB2_N"
+	(hierarchical_label "USB2_P"
 		(shape bidirectional)
 		(at 44.45 48.26 180)
 		(effects
@@ -14738,7 +14642,7 @@
 		)
 		(uuid "4f8d01d8-dee5-4b03-863e-8788683a8099")
 	)
-	(hierarchical_label "USB2_P"
+	(hierarchical_label "USB2_N"
 		(shape bidirectional)
 		(at 44.45 45.72 180)
 		(effects
@@ -17601,7 +17505,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 143.51 0)
+		(at 50.8 142.24 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17609,10 +17513,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "56535bad-e0ff-4456-9f7c-f579a2aced74")
 		(property "Reference" "#PWR084"
-			(at 53.34 149.86 0)
+			(at 54.61 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17623,7 +17526,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 148.59 0)
+			(at 46.99 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17634,7 +17537,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 143.51 0)
+			(at 50.8 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17645,7 +17548,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 143.51 0)
+			(at 50.8 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22687,7 +22590,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 22.86 149.86 0)
+		(at 15.24 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22698,7 +22601,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7d4ecd7-c705-4e68-8306-388992a15ded")
 		(property "Reference" "#PWR083"
-			(at 22.86 156.21 0)
+			(at 15.24 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22709,7 +22612,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 154.94 0)
+			(at 15.24 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22720,7 +22623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 149.86 0)
+			(at 15.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22731,7 +22634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 149.86 0)
+			(at 15.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22742,7 +22645,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 149.86 0)
+			(at 15.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23153,5 +23056,101 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 73.66 48.26) (xy 87.63 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9472bd1d-e17c-4365-986a-b72afef1c8ee")
+	)
+	(wire
+		(pts
+			(xy 87.63 48.26) (xy 87.63 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95cad500-12c6-4806-b60d-de0d303b87ae")
+	)
+	(wire
+		(pts
+			(xy 87.63 45.72) (xy 95.25 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a59ad9c-da2e-4277-9b1b-fee2975038c8")
+	)
+	(wire
+		(pts
+			(xy 73.66 50.8) (xy 92.71 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b9ce18-2819-48f2-a9f6-c2300b51642e")
+	)
+	(wire
+		(pts
+			(xy 92.71 50.8) (xy 92.71 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397cf082-8c48-4e0f-bfef-627896b6a61d")
+	)
+	(wire
+		(pts
+			(xy 92.71 48.26) (xy 95.25 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7437a0b-5487-4eb6-a67c-abcac0cdb06a")
+	)
+	(no_connect
+		(at 25.4 137.16)
+		(uuid "b6baad65-df43-4ece-9cf3-6306dbe5f83c")
+	)
+	(no_connect
+		(at 50.8 137.16)
+		(uuid "7d4c9fed-11c2-4286-a56d-899b454769df")
+	)
+	(no_connect
+		(at 25.4 139.7)
+		(uuid "9dc40dbb-c181-4685-978d-f3d63703b65d")
+	)
+	(no_connect
+		(at 50.8 139.7)
+		(uuid "cfdfb1b2-233c-474e-b6f7-4a465645c4a0")
+	)
+	(label "HSD2+"
+		(at 50.8 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e738449-3c4e-4e45-b4b9-444c76877ccc")
+	)
+	(label "HSD2-"
+		(at 50.8 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1b2d017-e7b8-4cca-9584-7af79e2dbe2d")
 	)
 )
