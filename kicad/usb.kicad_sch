@@ -5879,8 +5879,24 @@
 		(uuid "77a64f26-f326-4349-9741-828d788941a8")
 	)
 	(no_connect
+		(at 50.8 137.16)
+		(uuid "7d4c9fed-11c2-4286-a56d-899b454769df")
+	)
+	(no_connect
 		(at 162.56 73.66)
 		(uuid "82a132a8-c637-46dd-9959-051746397cdc")
+	)
+	(no_connect
+		(at 25.4 139.7)
+		(uuid "9dc40dbb-c181-4685-978d-f3d63703b65d")
+	)
+	(no_connect
+		(at 25.4 137.16)
+		(uuid "b6baad65-df43-4ece-9cf3-6306dbe5f83c")
+	)
+	(no_connect
+		(at 50.8 139.7)
+		(uuid "cfdfb1b2-233c-474e-b6f7-4a465645c4a0")
 	)
 	(no_connect
 		(at 95.25 72.39)
@@ -6112,6 +6128,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 45.72) (xy 95.25 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a59ad9c-da2e-4277-9b1b-fee2975038c8")
+	)
+	(wire
+		(pts
 			(xy 179.07 133.35) (xy 194.31 133.35)
 		)
 		(stroke
@@ -6329,6 +6355,16 @@
 			(type default)
 		)
 		(uuid "368d8d75-e4a3-4a9d-93d3-ebc079850e42")
+	)
+	(wire
+		(pts
+			(xy 92.71 50.8) (xy 92.71 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397cf082-8c48-4e0f-bfef-627896b6a61d")
 	)
 	(wire
 		(pts
@@ -6589,6 +6625,16 @@
 			(type solid)
 		)
 		(uuid "63cec654-0377-4bf0-b3a8-27398cfeb3c7")
+	)
+	(wire
+		(pts
+			(xy 73.66 50.8) (xy 92.71 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b9ce18-2819-48f2-a9f6-c2300b51642e")
 	)
 	(wire
 		(pts
@@ -6872,6 +6918,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 48.26) (xy 87.63 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9472bd1d-e17c-4365-986a-b72afef1c8ee")
+	)
+	(wire
+		(pts
 			(xy 106.68 177.8) (xy 116.84 177.8)
 		)
 		(stroke
@@ -6889,6 +6945,16 @@
 			(type default)
 		)
 		(uuid "956eaa7d-c891-4f59-a855-b156fe74ca37")
+	)
+	(wire
+		(pts
+			(xy 87.63 48.26) (xy 87.63 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95cad500-12c6-4806-b60d-de0d303b87ae")
 	)
 	(wire
 		(pts
@@ -6989,6 +7055,16 @@
 			(type default)
 		)
 		(uuid "a7051080-3ee6-464b-8a36-b66ec80004f8")
+	)
+	(wire
+		(pts
+			(xy 92.71 48.26) (xy 95.25 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7437a0b-5487-4eb6-a67c-abcac0cdb06a")
 	)
 	(wire
 		(pts
@@ -14178,6 +14254,16 @@
 		)
 		(uuid "2ad9c6dc-b485-46a7-85ca-d6ad04cb9391")
 	)
+	(label "HSD2+"
+		(at 50.8 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e738449-3c4e-4e45-b4b9-444c76877ccc")
+	)
 	(label "Net-(U5-ILIM)"
 		(at 218.948 135.89 0)
 		(effects
@@ -14367,6 +14453,16 @@
 			(justify left bottom)
 		)
 		(uuid "9712256e-106a-4f4a-8879-52d729af65a8")
+	)
+	(label "HSD2-"
+		(at 50.8 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1b2d017-e7b8-4cca-9584-7af79e2dbe2d")
 	)
 	(label "HD2_N"
 		(at 165.1 57.15 0)
@@ -23056,101 +23152,5 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 73.66 48.26) (xy 87.63 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9472bd1d-e17c-4365-986a-b72afef1c8ee")
-	)
-	(wire
-		(pts
-			(xy 87.63 48.26) (xy 87.63 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95cad500-12c6-4806-b60d-de0d303b87ae")
-	)
-	(wire
-		(pts
-			(xy 87.63 45.72) (xy 95.25 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a59ad9c-da2e-4277-9b1b-fee2975038c8")
-	)
-	(wire
-		(pts
-			(xy 73.66 50.8) (xy 92.71 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66b9ce18-2819-48f2-a9f6-c2300b51642e")
-	)
-	(wire
-		(pts
-			(xy 92.71 50.8) (xy 92.71 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "397cf082-8c48-4e0f-bfef-627896b6a61d")
-	)
-	(wire
-		(pts
-			(xy 92.71 48.26) (xy 95.25 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7437a0b-5487-4eb6-a67c-abcac0cdb06a")
-	)
-	(no_connect
-		(at 25.4 137.16)
-		(uuid "b6baad65-df43-4ece-9cf3-6306dbe5f83c")
-	)
-	(no_connect
-		(at 50.8 137.16)
-		(uuid "7d4c9fed-11c2-4286-a56d-899b454769df")
-	)
-	(no_connect
-		(at 25.4 139.7)
-		(uuid "9dc40dbb-c181-4685-978d-f3d63703b65d")
-	)
-	(no_connect
-		(at 50.8 139.7)
-		(uuid "cfdfb1b2-233c-474e-b6f7-4a465645c4a0")
-	)
-	(label "HSD2+"
-		(at 50.8 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2e738449-3c4e-4e45-b4b9-444c76877ccc")
-	)
-	(label "HSD2-"
-		(at 50.8 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a1b2d017-e7b8-4cca-9584-7af79e2dbe2d")
 	)
 )
