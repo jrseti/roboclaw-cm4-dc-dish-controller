@@ -6585,7 +6585,7 @@
 		)
 		(uuid "85cf1627-8d88-453c-bf78-a72c66a0999e")
 	)
-	(text "D15: Si TVS, 0.25 pF, 9.2 V clamp, K to RF_IN.\nInstall CN1 on a bulkhead SMA bonded to the\nenclosure, with a DC-pass coax arrestor."
+	(text "D15: Si TVS, 0.25 pF, 9.2 V clamp, K to RF_IN.\nInstall J2 on a bulkhead SMA bonded to the\nenclosure, with a DC-pass coax arrestor."
 		(exclude_from_sim no)
 		(at 156.21 136.398 0)
 		(effects
@@ -6831,12 +6831,6 @@
 		(uuid "82d9610c-b311-4fe4-9863-cfe19363dbdd")
 	)
 	(junction
-		(at 72.39 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83d08d83-cf32-4f69-b92f-6763793996d0")
-	)
-	(junction
 		(at 156.21 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6991,16 +6985,6 @@
 			(type default)
 		)
 		(uuid "07445054-ee98-412c-858c-5ed2d164d5f3")
-	)
-	(wire
-		(pts
-			(xy 72.39 95.25) (xy 72.39 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0752306a-8d82-4ccf-a50a-314774dac929")
 	)
 	(wire
 		(pts
@@ -16721,7 +16705,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4dd28efb-fcc3-40ab-96b1-7102a80b60cc")
-		(property "Reference" "CN1"
+		(property "Reference" "J2"
 			(at 181.61 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16844,7 +16828,7 @@
 			)
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "CN1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -19146,83 +19130,6 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
 					(reference "#PWR0406")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 72.39 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a5e7d84e-84db-4165-9907-193e5f8fc590")
-		(property "Reference" "TP22"
-			(at 71.374 97.028 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 72.39 96.012 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 72.39 96.012 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Test Point"
-			(at 72.39 96.012 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1b95b4e9-7156-4de5-b659-7361bddca58a")
-		)
-		(instances
-			(project "cm4-robo-controller"
-				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/59179e28-57e7-4020-bfeb-9df0a9a28165"
-					(reference "TP22")
 					(unit 1)
 				)
 			)
