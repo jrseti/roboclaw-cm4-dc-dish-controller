@@ -3587,6 +3587,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:SMBJ3V3"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SMBJ3V3"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SMB"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/SMBJ3V3.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+175℃ 1 600W@10/1000us 50A@10/1000us 200uA 3.3V 4.1V 7.3V TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMBJ3V3-E3/52"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C82082"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD SMB (DO-214AA)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMBJ3V3_0_1"
+				(polyline
+					(pts
+						(xy -1.905 -1.905) (xy -1.27 -1.27) (xy 1.27 -1.27) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMBJ3V3_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:SMF5.0A"
 			(pin_numbers
 				(hide yes)
@@ -5034,9 +5222,9 @@
 		)
 		(uuid "0d507ea9-2976-4322-bd32-992db1fb2c15")
 	)
-	(text "J9 (azimuth encoder, field-wired) has its own 3.3 V LDO, U18 (TPS70933, 30 V max, from RC_5V),\nnot 3V3_CM4, so a miswired supply on J9 cannot back-feed the CM4 or the GPS. U18 blocks reverse\ncurrent, so it cannot reach RC_5V either. EN is left open (internal pull-up; never tie EN to IN).\nF3 (100 mA PTC) limits a shorted cable, D23 (SMF5.0A) clamps J9. C81 >= 1.5 uF effective."
+	(text "J9 (azimuth encoder, field-wired) has its own 3.3 V LDO, U18 (TPS70933, 30 V max, from RC_5V),\nnot 3V3_CM4, so a miswired supply on J9 cannot back-feed the CM4 or the GPS. U18 blocks reverse\ncurrent, so it cannot reach RC_5V either. EN is left open (internal pull-up; never tie EN to IN).\nF3 (100 mA PTC) sits between J9 and D23 (SMBJ3V3); F3 limits a shorted cable or a miswire\nonto J9 while D23 clamps U18 OUT (7 V abs max). C81 >= 1.5 uF effective."
 		(exclude_from_sim no)
-		(at 115.062 151.765 0)
+		(at 115.062 153.67 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -5120,6 +5308,17 @@
 			(justify left top)
 		)
 		(uuid "7af8d9e9-dad1-4333-adee-572b24a8eed3")
+	)
+	(text "D23: Vishay SMBJ3V3-E3/52, 600 W\nSMB TVS. VBR >= 4.1 V, VC 7.3 V\n@ 50 A, IR <= 200 uA. Holds U18 OUT\n(7 V abs max) on a J9 miswire until\nF3 trips. Not a generic SMBJ3.3A:\nsome break down at 6.5 V."
+		(exclude_from_sim no)
+		(at 166.37 141.605 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "7b4580f3-9ec3-450b-8b37-1aa7f8b94fa4")
 	)
 	(text "EMC: run motor leads in shielded cable, shield\nclamped 360 deg to the enclosure at the gland\n(not to J11/J14). Clip-on CM ferrite per pair at\nentry; 100 nF brush caps at the motors. Keep\nmotor leads away from GNSS/encoder wiring."
 		(exclude_from_sim no)
@@ -5268,6 +5467,12 @@
 		(uuid "4a31ad39-4dba-41fb-9593-dda20762f3d7")
 	)
 	(junction
+		(at 154.94 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fdb4038-60e1-4b4a-bac2-8a8d35863ea5")
+	)
+	(junction
 		(at 171.45 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5284,12 +5489,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "923e9df5-5942-4e7c-8f28-9d462a9198d9")
-	)
-	(junction
-		(at 175.26 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9551bc3-6931-439a-8181-e9f0a20ba972")
 	)
 	(junction
 		(at 176.53 76.2)
@@ -5499,7 +5698,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 137.16) (xy 152.4 137.16)
+			(xy 147.32 137.16) (xy 160.02 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5509,7 +5708,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 137.16) (xy 182.88 137.16)
+			(xy 177.8 137.16) (xy 182.88 137.16)
 		)
 		(stroke
 			(width 0)
@@ -10791,8 +10990,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:SMF5.0A")
-		(at 175.26 140.97 180)
+		(lib_id "MyParts:SMBJ3V3")
+		(at 154.94 140.97 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10802,7 +11001,7 @@
 		(dnp no)
 		(uuid "76e228ac-b563-4037-a461-23afec77526a")
 		(property "Reference" "D23"
-			(at 177.8 139.7 0)
+			(at 157.48 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10812,8 +11011,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SMF5.0A"
-			(at 177.8 142.24 0)
+		(property "Value" "SMBJ3V3"
+			(at 157.48 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10823,8 +11022,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MyPartsIPC:SODFL3718X110N"
-			(at 175.26 140.97 0)
+		(property "Footprint" "MyPartsIPC:DIOM5436X244N"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10835,8 +11034,8 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/SMF5.0A.pdf"
-			(at 175.26 140.97 0)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/SMBJ3V3.pdf"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10847,8 +11046,8 @@
 				(justify left)
 			)
 		)
-		(property "Description" "-55℃~+150℃ 1 200W@10/1000us 21.7A@10/1000us 400uA 5V 7V 9.2V IEC 61000-4-2 TVS Unidirectional SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
-			(at 175.26 140.97 0)
+		(property "Description" "-55℃~+175℃ 1 600W@10/1000us 50A@10/1000us 200uA 3.3V 4.1V 7.3V TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10859,8 +11058,8 @@
 				(justify left)
 			)
 		)
-		(property "Manufacturer" "hongjiacheng"
-			(at 175.26 140.97 0)
+		(property "Manufacturer" "Vishay"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10872,7 +11071,7 @@
 			)
 		)
 		(property "ki_keywords" ""
-			(at 175.26 140.97 0)
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10884,7 +11083,7 @@
 			)
 		)
 		(property "ki_fp_filters" "D_*"
-			(at 175.26 140.97 0)
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10895,8 +11094,8 @@
 				(justify left)
 			)
 		)
-		(property "MPN" "SMF5.0A"
-			(at 175.26 140.97 0)
+		(property "MPN" "SMBJ3V3-E3/52"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10906,8 +11105,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C19077497"
-			(at 175.26 140.97 0)
+		(property "LCSC Part" "C82082"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10917,8 +11116,8 @@
 				)
 			)
 		)
-		(property "Pkg Type" "SMD SOD-123FL"
-			(at 175.26 140.97 0)
+		(property "Pkg Type" "SMD SMB (DO-214AA)"
+			(at 154.94 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12427,7 +12626,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:nSMD010")
-		(at 161.29 135.89 0)
+		(at 168.91 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12437,7 +12636,7 @@
 		(dnp no)
 		(uuid "b6e346b8-a69e-4926-9337-bc2dbf791d64")
 		(property "Reference" "F3"
-			(at 161.29 132.08 0)
+			(at 168.91 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12447,7 +12646,7 @@
 			)
 		)
 		(property "Value" "100mA"
-			(at 161.29 139.7 0)
+			(at 168.91 139.7 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12457,7 +12656,7 @@
 			)
 		)
 		(property "Footprint" "MyPartsIPC:FUSC3216X110N"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12468,7 +12667,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/nSMD010.pdf"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12479,7 +12678,7 @@
 			)
 		)
 		(property "Description" "PTC resettable fuse 100mA hold 250mA trip 60V 1206, 1.6 ohm initial"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12490,7 +12689,7 @@
 			)
 		)
 		(property "Manufacturer" "TECHFUSE"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12501,7 +12700,7 @@
 			)
 		)
 		(property "MPN" "nSMD010"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12512,7 +12711,7 @@
 			)
 		)
 		(property "LCSC Part" "C70065"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12523,7 +12722,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD 1206"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14803,7 +15002,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 175.26 144.78 0)
+		(at 154.94 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14813,7 +15012,7 @@
 		(dnp no)
 		(uuid "f657c3f1-dd73-4402-b071-57398fb9768d")
 		(property "Reference" "#PWR0456"
-			(at 175.26 151.13 0)
+			(at 154.94 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14824,7 +15023,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 175.26 148.59 0)
+			(at 154.94 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14835,7 +15034,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 144.78 0)
+			(at 154.94 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14846,7 +15045,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 144.78 0)
+			(at 154.94 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14857,7 +15056,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 175.26 144.78 0)
+			(at 154.94 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
