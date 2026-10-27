@@ -1,0 +1,2160 @@
+vrms:
+- name: J1 Battery
+  output:
+    ref: J1
+    net: Net-(J1-Pad1)
+    pins:
+    - '1'
+  voltage: 12.8
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: J1
+    net: PGND
+    pins:
+    - '2'
+  ground_sense: null
+  output_ground: null
+  phases: []
+  current_limit_a: null
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  vin_dv: false
+  acc_min: 10.0
+  acc_max: 14.6
+  acc_pct: false
+  acc_dv: false
+  load_line_mohm: 0.0
+  cable_mohm: 0.0
+  bandwidth_khz: 50.0
+  levels: []
+  mesh_sense: false
+  sense_points: []
+- name: USBC1 Net-(D24-Pad1)
+  output:
+    ref: USBC1
+    net: Net-(D24-Pad1)
+    pins:
+    - A4B9
+    - B4A9
+  voltage: 5.0
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: USBC1
+    net: CHASSIS
+    pins:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+  ground_sense: null
+  output_ground: null
+  phases: []
+  current_limit_a: null
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  vin_dv: false
+  acc_min: 4.75
+  acc_max: 5.5
+  acc_pct: false
+  acc_dv: false
+  load_line_mohm: 0.0
+  cable_mohm: 0.0
+  bandwidth_khz: 50.0
+  levels: []
+  mesh_sense: false
+  sense_points: []
+- name: A1 RC_5V
+  output:
+    ref: A1
+    net: /Robo/RC_5V
+    pins:
+    - 5VDC
+  voltage: 5.0
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: A1
+    net: PGND
+    pins:
+    - GND
+  ground_sense: null
+  output_ground: null
+  phases: []
+  current_limit_a: null
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  vin_dv: false
+  acc_min: 4.5
+  acc_max: 5.5
+  acc_pct: false
+  acc_dv: false
+  load_line_mohm: 0.0
+  cable_mohm: 0.0
+  bandwidth_khz: 50.0
+  levels: []
+  mesh_sense: false
+  sense_points: []
+- name: Module1 3V3_CM4
+  output:
+    ref: Module1
+    net: /3V3_CM4
+    pins:
+    - '84'
+    - '86'
+  voltage: 3.3
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  ground_sense: null
+  output_ground: null
+  phases: []
+  current_limit_a: 0.6
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  vin_dv: false
+  acc_min: null
+  acc_max: null
+  acc_pct: true
+  acc_dv: false
+  load_line_mohm: 0.0
+  cable_mohm: 0.0
+  bandwidth_khz: 50.0
+  levels: []
+  mesh_sense: false
+  sense_points: []
+- name: BT1 GPS/V_BCKP
+  output:
+    ref: BT1
+    net: /GPS/V_BCKP
+    pins:
+    - +
+  voltage: 3.0
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: BT1
+    net: GND
+    pins:
+    - '-'
+  ground_sense: null
+  output_ground: null
+  phases: []
+  current_limit_a: null
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  vin_dv: false
+  acc_min: 2.0
+  acc_max: 3.1
+  acc_pct: false
+  acc_dv: false
+  load_line_mohm: 0.0
+  cable_mohm: 0.0
+  bandwidth_khz: 50.0
+  levels: []
+  mesh_sense: false
+  sense_points: []
+- name: U15 Buck 5V
+  output:
+    ref: U15
+    net: Net-(U15-SW)
+    pins:
+    - '8'
+  voltage: 5.16
+  kind: smps
+  efficiency: 0.93
+  quiescent_a: 2.5e-05
+  input:
+    ref: U15
+    net: /power/12V
+    pins:
+    - '2'
+  sense:
+    ref: R42
+    net: /5V
+    pins:
+    - '2'
+  ground:
+    ref: U15
+    net: GND
+    pins:
+    - '7'
+    - '9'
+  ground_sense: null
+  output_ground: null
+  phases: []
+  current_limit_a: 3.0
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  vin_dv: false
+  acc_min: null
+  acc_max: null
+  acc_pct: true
+  acc_dv: false
+  load_line_mohm: 0.0
+  cable_mohm: 0.0
+  bandwidth_khz: 50.0
+  levels: []
+  mesh_sense: false
+  sense_points: []
+loads:
+- name: R59
+  supply:
+    ref: R59
+    net: Net-(D24-Pad1)
+    pins:
+    - '2'
+  current: 0.00125
+  ground:
+    ref: R61
+    net: GND
+    pins:
+    - '1'
+  tol_min: -5.0
+  tol_max: 10.0
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U18
+  supply:
+    ref: U18
+    net: /Robo/RC_5V
+    pins:
+    - '1'
+  current: 0.007
+  ground:
+    ref: U18
+    net: PGND
+    pins:
+    - '2'
+  tol_min: -10.0
+  tol_max: 10.0
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.01
+  current_known: true
+  copper_margin_v: null
+- name: U1
+  supply:
+    ref: U1
+    net: /3V3_CM4
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U10
+  supply:
+    ref: U10
+    net: /3V3_CM4
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U10
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U16
+  supply:
+    ref: U16
+    net: /3V3_CM4
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U16
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U17
+  supply:
+    ref: U17
+    net: /3V3_CM4
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U17
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U19
+  supply:
+    ref: U19
+    net: /3V3_CM4
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U19
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U2
+  supply:
+    ref: U2
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 1.0e-06
+  ground:
+    ref: U2
+    net: GND
+    pins:
+    - '5'
+  tol_min: 2.4
+  tol_max: 4.4
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: 0.8999999999999999
+- name: U3
+  supply:
+    ref: U3
+    net: /3V3_CM4
+    pins:
+    - '5'
+    - '10'
+    - '15'
+    - '23'
+    - '27'
+    - '29'
+    - '36'
+  current: 0.095
+  ground:
+    ref: U3
+    net: GND
+    pins:
+    - '37'
+  tol_min: 3.0
+  tol_max: 3.6
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.11
+  current_known: true
+  copper_margin_v: 0.2999999999999998
+- name: R92
+  supply:
+    ref: R92
+    net: /3V3_CM4
+    pins:
+    - '2'
+  current: 0.00031945788964181994
+  ground:
+    ref: R93
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: R8
+  supply:
+    ref: R8
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R24
+  supply:
+    ref: R24
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R25
+  supply:
+    ref: R25
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R16
+  supply:
+    ref: R16
+    net: /3V3_CM4
+    pins:
+    - '2'
+  current: 0.000165
+  ground:
+    ref: U3
+    net: GND
+    pins:
+    - '37'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R94
+  supply:
+    ref: R94
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: U3
+    net: GND
+    pins:
+    - '37'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R95
+  supply:
+    ref: R95
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: U3
+    net: GND
+    pins:
+    - '37'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R96
+  supply:
+    ref: R96
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: U3
+    net: GND
+    pins:
+    - '37'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R97
+  supply:
+    ref: R97
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: U3
+    net: GND
+    pins:
+    - '37'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: R60
+  supply:
+    ref: R60
+    net: /3V3_CM4
+    pins:
+    - '1'
+  current: 0.000165
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.00033
+  current_known: true
+  copper_margin_v: null
+- name: J4_5 (off-board)
+  supply:
+    ref: J4
+    net: /3V3_CM4
+    pins:
+    - '5'
+  current: 0.0
+  ground:
+    ref: J4
+    net: GND
+    pins:
+    - '1'
+    - '3'
+    - '6'
+    - '8'
+    - '10'
+    - '16'
+    - '18'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: false
+  copper_margin_v: null
+- name: RJ1_11 LED
+  supply:
+    ref: RJ1
+    net: /3V3_CM4
+    pins:
+    - '11'
+  current: 0.0045
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: RJ1_14 LED
+  supply:
+    ref: RJ1
+    net: /3V3_CM4
+    pins:
+    - '14'
+  current: 0.0045
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U13
+  supply:
+    ref: U13
+    net: /GPS/VCC
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U13
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U14
+  supply:
+    ref: U14
+    net: /GPS/VCC
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U14
+    net: GND
+    pins:
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: U12
+  supply:
+    ref: U12
+    net: /GPS/VCC
+    pins:
+    - '7'
+    - '8'
+  current: 0.0095
+  ground:
+    ref: U12
+    net: GND
+    pins:
+    - '1'
+    - '10'
+    - '12'
+  tol_min: 1.76
+  tol_max: 3.6
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 0.0115
+  current_known: true
+  copper_margin_v: 1.5396543999999996
+- name: U12 (GPS/V_BCKP)
+  supply:
+    ref: U12
+    net: /GPS/V_BCKP
+    pins:
+    - '6'
+  current: 2.8e-05
+  ground:
+    ref: U12
+    net: GND
+    pins:
+    - '1'
+    - '10'
+    - '12'
+  tol_min: -33.333333
+  tol_max: 3.333333
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: A1 motors
+  supply:
+    ref: A1
+    net: /Robo/V_MOTOR
+    pins:
+    - BAT+
+  current: 7.5
+  ground:
+    ref: A1
+    net: PGND
+    pins:
+    - BAT-
+  tol_min: 6.0
+  tol_max: 34.0
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 8.5
+  current_known: true
+  copper_margin_v: null
+- name: J8 Hall sensor (off-board)
+  supply:
+    ref: J8
+    net: /Robo/RC_5V
+    pins:
+    - '1'
+  current: 0.025
+  ground:
+    ref: J8
+    net: PGND
+    pins:
+    - '4'
+  tol_min: -10.0
+  tol_max: 10.0
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: Module1 5V
+  supply:
+    ref: Module1
+    net: /5V
+    pins:
+    - '77'
+    - '79'
+    - '81'
+    - '83'
+    - '85'
+    - '87'
+  current: 1.4
+  ground:
+    ref: Module1
+    net: GND
+    pins:
+    - '1'
+    - '2'
+    - '7'
+    - '8'
+    - '13'
+    - '14'
+    - '22'
+    - '23'
+    - '32'
+    - '33'
+    - '42'
+    - '43'
+    - '52'
+    - '53'
+    - '59'
+    - '60'
+    - '65'
+    - '66'
+    - '71'
+    - '74'
+    - '98'
+    - '107'
+    - '108'
+    - '113'
+    - '114'
+    - '119'
+    - '120'
+    - '125'
+    - '126'
+    - '131'
+    - '132'
+    - '137'
+    - '138'
+    - '144'
+    - '150'
+    - '155'
+    - '156'
+    - '161'
+    - '162'
+    - '167'
+    - '168'
+    - '173'
+    - '174'
+    - '179'
+    - '180'
+    - '185'
+    - '186'
+    - '191'
+    - '192'
+    - '197'
+    - '198'
+  tol_min: 4.75
+  tol_max: 5.25
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+- name: USB1 VBUS
+  supply:
+    ref: USB1
+    net: /CM4/usb/VBUS
+    pins:
+    - '1'
+    - '5'
+  current: 1.0
+  ground:
+    ref: USB1
+    net: GND
+    pins:
+    - '4'
+    - '8'
+  tol_min: 4.75
+  tol_max: 5.25
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: 1.75
+  current_known: true
+  copper_margin_v: null
+- name: R23 LED3
+  supply:
+    ref: R23
+    net: /power/12V
+    pins:
+    - '2'
+  current: 0.004
+  ground:
+    ref: LED3
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+  current_max: null
+  current_known: true
+  copper_margin_v: null
+links:
+- name: U11
+  side_a:
+    ref: U11
+    net: Net-(C24-Pad1)
+    pins:
+    - '1'
+    - '2'
+  side_b:
+    ref: U11
+    net: /power/EFUSE_OUT
+    pins:
+    - '17'
+    - '18'
+  resistance: 0.03
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.05
+  diode_vf_max: null
+  rated_current_a: 5.0
+  vf_curve: null
+  spice: null
+- name: L2
+  side_a:
+    ref: L2
+    net: Net-(U15-SW)
+    pins:
+    - '1'
+  side_b:
+    ref: L2
+    net: /5V
+    pins:
+    - '2'
+  resistance: 0.028
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.03
+  diode_vf_max: null
+  rated_current_a: 6.0
+  vf_curve: null
+  spice: null
+- name: U4
+  side_a:
+    ref: U4
+    net: /5V
+    pins:
+    - '1'
+  side_b:
+    ref: U4
+    net: /CM4/usb/VBUS
+    pins:
+    - '6'
+  resistance: 0.065
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.135
+  diode_vf_max: null
+  rated_current_a: 2.1
+  vf_curve: null
+  spice: null
+- name: FB2
+  side_a:
+    ref: FB2
+    net: /3V3_CM4
+    pins:
+    - '1'
+  side_b:
+    ref: FB2
+    net: /GPS/VCC
+    pins:
+    - '2'
+  resistance: 0.04
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: null
+  diode_vf_max: null
+  rated_current_a: 1.9000000000000001
+  vf_curve: null
+  spice: null
+- name: Q1
+  side_a:
+    ref: Q1
+    net: Net-(J1-Pad1)
+    pins:
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+  side_b:
+    ref: Q1
+    net: Net-(D2-K)
+    pins:
+    - '1'
+    - '2'
+    - '3'
+  resistance: 0.0049
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.0088
+  diode_vf_max: null
+  rated_current_a: 85.0
+  vf_curve: null
+  spice: null
+- name: F1
+  side_a:
+    ref: F1
+    net: Net-(D2-K)
+    pins:
+    - '3'
+    - '4'
+  side_b:
+    ref: F1
+    net: /Robo/V_MOTOR
+    pins:
+    - '1'
+    - '2'
+  resistance: 0.005
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: null
+  diode_vf_max: null
+  rated_current_a: 15.0
+  vf_curve: null
+  spice: null
+- name: F2
+  side_a:
+    ref: F2
+    net: Net-(D2-K)
+    pins:
+    - '3'
+    - '4'
+  side_b:
+    ref: F2
+    net: /battery-input/V_BAT
+    pins:
+    - '1'
+    - '2'
+  resistance: 0.016
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: null
+  diode_vf_max: null
+  rated_current_a: 5.0
+  vf_curve: null
+  spice: null
+- name: FB1
+  side_a:
+    ref: FB1
+    net: /battery-input/V_BAT
+    pins:
+    - '1'
+  side_b:
+    ref: FB1
+    net: /power/V_BAT_F
+    pins:
+    - '2'
+  resistance: 0.009
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.011
+  diode_vf_max: null
+  rated_current_a: 6.0
+  vf_curve: null
+  spice: null
+- name: Q3
+  side_a:
+    ref: Q3
+    net: /power/V_BAT_F
+    pins:
+    - '1'
+    - '2'
+    - '3'
+  side_b:
+    ref: Q3
+    net: Net-(C24-Pad1)
+    pins:
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+  resistance: 0.0156
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.02
+  diode_vf_max: null
+  rated_current_a: null
+  vf_curve: null
+  spice: null
+- name: Q2
+  side_a:
+    ref: Q2
+    net: /power/EFUSE_OUT
+    pins:
+    - '3'
+  side_b:
+    ref: Q2
+    net: /power/12V
+    pins:
+    - '2'
+  resistance: 0.028
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: 0.035
+  diode_vf_max: null
+  rated_current_a: 7.0
+  vf_curve: null
+  spice: null
+- name: NT1
+  side_a:
+    ref: NT1
+    net: PGND
+    pins:
+    - '1'
+  side_b:
+    ref: NT1
+    net: GND
+    pins:
+    - '2'
+  resistance: 0.001
+  esl_h: null
+  diode_vf: 0.0
+  resistance_max: null
+  diode_vf_max: null
+  rated_current_a: null
+  vf_curve: null
+  spice: null
+settings:
+  max_edge_mm: 0.5
+  min_angle_deg: 28.0
+  simplify_mm: 0.003
+  circle_quad_segs: 4
+  min_edge_mm: 0.02
+  grading: 0.2
+  via_rules:
+  - kind: micro
+    plating_mm: 0.012
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: buried
+    plating_mm: 0.013
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: blind
+    plating_mm: 0.02
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: blind_buried
+    plating_mm: 0.02
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: through
+    plating_mm: 0.02
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: pth
+    plating_mm: 0.02
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: any
+    plating_mm: 0.02
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  rho_ohm_mm: 1.724e-05
+  tcr_per_c: 0.00393
+  rho_by_layer: {}
+  tcr_by_layer: {}
+  conductor_by_layer: {}
+  tol: 1.0e-10
+  max_iter: 2000
+via_current_limit_a: 1.0
+thermal:
+  enabled: false
+  ambient_c: 25.0
+  iterations: 3
+  airflow_m_s: 0.0
+  grid_mm: 0.0
+  load_power: false
+  max_temp_c: null
+  max_rise_c: null
+html_report: false
+report_format: pdf
+nets:
+- Net-(C24-Pad1)
+- /3V3_CM4
+- /5V
+- /CM4/PGOOD_12V
+- /CM4/usb/PWR1
+- /CM4/usb/PWR2
+- /CM4/usb/usb2/VBUS_DET
+- /CM4/usb/VBUS
+- /GPS/VCC
+- /GPS/VCC_RF
+- /power/12V
+- /power/EFUSE_OUT
+- /power/OVP_SET
+- /power/PGTH_SET
+- /power/Power_5V/BUCK_EN
+- /power/V_BAT_F
+- /Robo/AZ_ENC_3V3
+- /Robo/M1A
+- /Robo/M1B
+- /Robo/M2A
+- /Robo/M2B
+- /Robo/RC_5V
+- /Robo/V_MOTOR
+- Net-(D2-K)
+- Net-(J1-Pad1)
+- Net-(U15-FB)
+- Net-(U15-SW)
+- Net-(U18-OUT)
+- unconnected-(A1-USB_VBUS-PadVBUS)
+- unconnected-(Module1A-+1.8v_(Output)-Pad88)
+- unconnected-(Module1A-+1.8v_(Output)-Pad90)
+- unconnected-(Module1A-SD_PWR_ON-Pad75)
+- unconnected-(Module1A-SD_VDD_Override-Pad73)
+- unconnected-(U12-VIO_SEL-Pad15)
+- CHASSIS
+- GND
+- PGND
+- /battery-input/V_BAT
+- /CM4/1PPS_MCU
+- /CM4/AIN0
+- /CM4/AIN1
+- /CM4/AIP0
+- /CM4/AIP1
+- /CM4/BOOT_CONSOLE_RXD
+- /CM4/BOOT_CONSOLE_TXD
+- /CM4/EEPROM_nWP
+- /CM4/EP0+
+- /CM4/EP0-
+- /CM4/EP1+
+- /CM4/EP1-
+- /CM4/EP2+
+- /CM4/EP2-
+- /CM4/EP3+
+- /CM4/EP3-
+- /CM4/ETH_LEDG
+- /CM4/ETH_LEDY
+- /CM4/GLOBAL_EN
+- /CM4/GPIO0
+- /CM4/GPIO17
+- /CM4/GPIO19
+- /CM4/GPIO22
+- /CM4/GPIO26
+- /CM4/GPIO27
+- /CM4/GPS_RX_MCU
+- /CM4/GPS_TX_MCU
+- /CM4/I2C1_SCL
+- /CM4/I2C1_SDA
+- /CM4/nEXTRST
+- /CM4/nPWR_CYCLE
+- /CM4/nPWR_LED
+- /CM4/nRPIBOOT
+- /CM4/ROBO_RX_MCU
+- /CM4/ROBO_TX_MCU
+- /CM4/SPI0_CE0
+- /CM4/SPI0_CE1
+- /CM4/SPI0_MISO
+- /CM4/SPI0_MOSI
+- /CM4/SPI0_SCLK
+- /CM4/usb/HD1_N
+- /CM4/usb/HD1_P
+- /CM4/usb/HD2_N
+- /CM4/usb/HD2_P
+- /CM4/usb/HD3_N
+- /CM4/usb/HD3_P
+- /CM4/usb/HD4_N
+- /CM4/usb/HD4_P
+- /CM4/usb/HSD2+
+- /CM4/usb/HSD2-
+- /CM4/usb/MUX_OE
+- /CM4/usb/Net-(U5-ILIM)
+- /CM4/usb/nOCS1
+- /CM4/usb/U5_EN
+- /CM4/usb/USB_HUB_N
+- /GPS/V_BCKP
+- Net-(D24-Pad1)
+excluded_nets: []
+stackup: null
+caps:
+- name: CC0603KRX7R9BB104
+  capacitance_f: 1.0000000000000001e-07
+  esl_h: 6.0e-10
+  esr_ohm: 0.0
+  refs:
+  - C47
+  - C31
+  - C34
+  - C35
+  - C39
+  - C25
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: CL05B104KO5NNNC
+  capacitance_f: 1.0000000000000001e-07
+  esl_h: 4.0000000000000007e-10
+  esr_ohm: 0.0
+  refs:
+  - C6
+  - C8
+  - C15
+  - C16
+  - C17
+  - C18
+  - C19
+  - C2
+  - C20
+  - C21
+  - C63
+  - C83
+  - C84
+  - C85
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: CL10A105KA8NNNC
+  capacitance_f: 1.0e-06
+  esl_h: 6.0e-10
+  esr_ohm: 0.0
+  refs:
+  - C80
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: CL10A105KB8NNNC
+  capacitance_f: 1.0e-06
+  esl_h: 6.0e-10
+  esr_ohm: 0.0
+  refs:
+  - C32
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: CL10A106MA8NRNC
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 6.0e-10
+  esr_ohm: 0.0
+  refs:
+  - C33
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: CL21B106KPQNNNE
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 7.0e-10
+  esr_ohm: 0.0
+  refs:
+  - C41
+  - C42
+  - C43
+  - C44
+  - C5
+  - C10
+  - C11
+  - C12
+  - C9
+  - C13
+  - C14
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: EEFCX0J101R
+  capacitance_f: 9.999999999999999e-05
+  esl_h: 0.0
+  esr_ohm: 0.0
+  refs:
+  - C45
+  - C7
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: GRM21BC8YA106KE11L
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 7.0e-10
+  esr_ohm: 0.0
+  refs:
+  - C48
+  - C49
+  - C50
+  - C51
+  - C52
+  - C53
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+- name: TCC1206X7R106K500HT
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 1.0e-09
+  esr_ohm: 0.0
+  refs:
+  - C26
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+  values_from:
+    C: schematic
+    ESL: estimated
+  defaults_because: ''
+  equivalent: ''
+  doubt: ''
+  spice: null
+probes: []
+packages: []
+ac:
+  f_start_hz: 1000.0
+  f_stop_hz: 300000000.0
+  points_per_decade: 250
+  field_points_per_decade: 20
+  max_edge_mm: 1.0
+  grading: 0.3
+  min_edge_mm: 0.03
+  grade_near_rail_only: true
+  loss_tangent: 0.02
+  default_er: 4.3
+  rail: USBC1 Net-(D24-Pad1)
+  ground: GND
+  html_report: false
+  report_format: html
+  dc_bias: true
+  mfg_tolerance: false
+  aging: false
+  aging_hours: 87600.0
+  temperature: none
+  temperature_c: 25.0
+corner: typ
+aggressors: []
+victims: []
+noise:
+  aggressor: ''
+  f_max_hz: null
+  max_harmonics: 4000
+  periods_shown: 2
+  dead_time_ns: 20.0
+  segment_mm: 0.5
+  window_mm: 3.0
+  board_model: true
+  field_per_decade: 10
+  victims: all
+  scan: false
+  scan_radius_mm: 10.0
+  scan_top_n: 10
+  scan_preset: hiz
+  scan_driver_ohm: 33.0
+  scan_logic_v: 3.3
+  html_report: false
+  report_format: html
+format_version: 2
