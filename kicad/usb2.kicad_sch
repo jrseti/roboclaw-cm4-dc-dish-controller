@@ -2079,17 +2079,6 @@
 		)
 		(uuid "726ca346-bfd8-4a7e-972d-84d1abe96f66")
 	)
-	(text "No fuse on USBC1 VBUS, on purpose: it is a 1.25 mA sense line, not a\nrail, and nothing on the board draws power from it. The USB host or\ncharger current-limits VBUS at the source, as USB requires. A short\n(D24 failed, TP28 probe slip) trips the host limit; the 0.3 mm track\ncarries that without fusing. If needed: 0603 PTC (~50 mA) USBC1 -> D24."
-		(exclude_from_sim no)
-		(at 27.178 94.234 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "d686c9c7-42c7-40c1-93d8-00154c79281e")
-	)
 	(text "USB_OTG_ID: high = CM4 device mode (rpiboot), \nlow/GND = CM4 host. Needs otg_mode=1 in config.txt.\nUSBC1 VBUS: 5.0 V nom (4.75 V min / 5.5 V max).\nNo USB-PD controller; CC has 5.1 kΩ Rd only.\nVBUS detect: R59/R61 (2.75 V max) -> U17 open-drain -> USB_OTG_ID.\nVBUS current: 1.25 mA continuous / 1.25 mA peak.\nVBUS survives 6.0 V DC (D24 SMF6.0A stand-off), surges\nclamped to 10.3 V; -0.7 V (D24 forward). U17 A sees half via R59/R61."
 		(exclude_from_sim no)
 		(at 27.178 84.836 0)
@@ -2100,6 +2089,17 @@
 			(justify left)
 		)
 		(uuid "cda4c191-7b8e-42e4-b048-76bd50fd5e9d")
+	)
+	(text "No fuse on USBC1 VBUS, on purpose: it is a 1.25 mA sense line, not a\nrail, and nothing on the board draws power from it. The USB host or\ncharger current-limits VBUS at the source, as USB requires. A short\n(D24 failed, TP28 probe slip) trips the host limit; the 0.3 mm track\ncarries that without fusing. If needed: 0603 PTC (~50 mA) USBC1 -> D24."
+		(exclude_from_sim no)
+		(at 27.178 94.234 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d686c9c7-42c7-40c1-93d8-00154c79281e")
 	)
 	(text "VBUS detect buffer"
 		(exclude_from_sim no)

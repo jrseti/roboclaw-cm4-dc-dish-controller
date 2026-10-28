@@ -1963,7 +1963,7 @@
 	)
 	(rectangle
 		(start 50.8 48.26)
-		(end 118.11 142.24)
+		(end 118.11 121.92)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2015,6 +2015,17 @@
 		)
 		(uuid "29133d3d-9f10-4b99-8075-c5475b7b75c8")
 	)
+	(text "GPIO0 (J4-13) as plain GPIO: add to config.txt\n  force_eeprom_read=0\n  disable_poe_fan=1\nor the firmware probes GPIO0/1 (I2C0) for a HAT EEPROM at boot."
+		(exclude_from_sim no)
+		(at 60.96 112.522 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "2febd577-31f7-469f-ba33-988b303c7ae1")
+	)
 	(text "EEPROM WRITE PROTECT (EEPROM_nWP, J3 3-4)\nThe CM4 pulls EEPROM_nWP up internally (100k), so the\nbootloader EEPROM is writable unless J3 3-4 is fitted.\nThe jumper only takes effect once protection is enabled\nin the bootloader config (CM4 datasheet 2.18).\n\nProduction:\n- Set eeprom_write_protect=1 in the bootloader config\n  (via usbboot or rpi-eeprom-config) before shipping.\n- Fit the J3 3-4 jumper. The EEPROM is then protected\n  from power-up (CM4 datasheet 5.1).\n\nBootloader update:\n- Remove J3 3-4, update via usbboot or self-update,\n  then refit the jumper.\n\nWhy not a GPIO with a pull-down: CM4 EEPROM updates run\nonly via usbboot or bootloader self-update (datasheet\n6.3), before Linux can drive a GPIO, so the pin could\nnever be released for an update."
 		(exclude_from_sim no)
 		(at 231.14 84.455 0)
@@ -2037,7 +2048,7 @@
 		)
 		(uuid "372d484b-1e6c-47c1-8198-246722d57e13")
 	)
-	(text "I2C PULL-UPS\nI2C1: GPIO2 = I2C1_SDA (J4-24), GPIO3 = I2C1_SCL (J4-22)\nPulled up to 3.3 V (GPIO_VREF) by 1.8 kΩ inside the CM4\n(CM4 datasheet section 2.5, pins 56/58). No board pull-ups\nare needed. R20/R21 (2.2k, fitted via H5/H6) are optional.\n\nI2C0: GPIO0 = ID_SD (J4-22), GPIO1 = ID_SC (J4-23)\nNo I2C pull-ups on the CM4, only the BCM2711's weak reset\npull-ups (33-73 kΩ). If J4-22/23 are used as an I2C bus, the\ndevice on J4 must supply the pull-ups (2.2k-4.7k to 3.3 V)."
+	(text "I2C PULL-UPS\nI2C1: GPIO2 = I2C1_SDA (J4-24), GPIO3 = I2C1_SCL (J4-22)\nPulled up to 3.3 V (GPIO_VREF) by 1.8 kΩ inside the CM4\n(CM4 datasheet section 2.5, pins 56/58). No board pull-ups\nare needed. R20/R21 (2.2k, fitted via H5/H6) are optional."
 		(exclude_from_sim no)
 		(at 220.98 129.54 0)
 		(effects
@@ -2082,7 +2093,7 @@
 	)
 	(text "AIN0 / AIN1 (J4-2 / J4-4), field wired, to CM4\nAnalogIP0/1 (MxL7704 ADC). Measures 0 to 2.55 V (8-bit).\nSurvives +/-24 V either polarity: R7/R6 10k series\n+ D4/D5 BAT54S clamps to GND and 3V3_CM4 (RCM4 sheet)\nhold the pins within -0.3 V / +3.6 V (abs max -0.3/+6.0).\nError: ADC input < 1 uA x 10k = 10 mV, plus clamp leakage\n(up to ~1-2 % hot). With the CM4 off, a driven input feeds\n< 0.3 mA (at 6 V) into 3V3_CM4 through the upper clamp."
 		(exclude_from_sim no)
-		(at 55.626 138.176 0)
+		(at 60.452 108.712 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -2184,17 +2195,6 @@
 			(justify right bottom)
 		)
 		(uuid "f277ca29-2390-40bd-b66c-1021ef592967")
-	)
-	(text "GPIO0 / GPIO1 (J4-13 / J4-10)\nCM4 pins 36 (ID_SD = GPIO0) and 35 (ID_SC = GPIO1). This is the\nI2C0 bus the firmware normally uses to look for a HAT EEPROM and to\ncontrol CSI0/DSI0 cameras and displays. This board has no HAT, camera\nor display, so the pins are free for general use.\n\nTo use them as GPIO, add to config.txt (CM4 datasheet section 2.10):\n  force_eeprom_read=0\n  disable_poe_fan=1\nWithout these, the firmware drives the bus at boot to look for an\nEEPROM, and anything wired to these pins sees I2C activity.\n\n- Both pins are pulled up (high) at reset.\n- 3.3 V logic. Not 5 V tolerant.\n- They can also be used as an I2C bus (I2C0: GPIO0 = SDA,\n  GPIO1 = SCL). Add external pull-ups if you do.\n"
-		(exclude_from_sim no)
-		(at 54.356 106.934 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "f537e87d-afc5-4511-a9b6-9436cfc1d2e1")
 	)
 	(text "GPIO Headers"
 		(exclude_from_sim no)

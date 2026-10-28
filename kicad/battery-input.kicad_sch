@@ -1670,7 +1670,7 @@
 		)
 		(uuid "d8d4a515-a6ea-43ed-ab55-59f414573884")
 	)
-	(text "Q1 - 40V P-Channel Mosfet\nGive Q1's drain tab a solid copper pour; it \ndissipates about 0.55 W worst case."
+	(text "Q1 - SP40P04NK, 40 V P-channel MOSFET. Rated 85 A continuous at\nTc 25 C (57 A at Tc 100 C), 340 A pulsed; Rds(on) 6.1 mOhm max at -10 V.\nCarries 8.7 A typ / 9.4 A worst: ~0.4 W typ, 0.55 W worst, ~0.8 W hot.\nGive Q1's drain tab a solid copper pour."
 		(exclude_from_sim no)
 		(at 108.204 125.222 0)
 		(effects
