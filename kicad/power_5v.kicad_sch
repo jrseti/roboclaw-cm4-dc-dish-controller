@@ -869,308 +869,504 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MyParts:AP64501SP-13"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		(symbol "MyParts:AP64500SP-13"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "Value" "AP64501SP-13"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "MyParts:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL-EP-1"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "${MYPARTS_DATASHEETS}/AP64501SP-13.pdf"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "-40℃~+85℃ 1 25uA 3.8V~40V 570kHz 5A 800mV~39V Adjustable Buck Built-in Overcurrent Protection, Light load efficient mode, Adjustable soft-start, Cycle-by-cycle current limiting, Hiccup current limiting, External compensation, EMI optimization (spread spectrum) Step-down type Yes SOIC-8-EP DC-DC Converters ROHS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "DIODES"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "AP64501SP-13"
-				(at 0 -20.32 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C2071517"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pkg Type" "SMD SOIC-8 EP"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "DC-DC Converters"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AP64501SP-13_0_1"
-				(rectangle
-					(start -8.89 6.35)
-					(end 6.35 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -7.62 3.81)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -11.43 2.54 0)
-					(length 2.54)
-					(name "BST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -11.43 0 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -11.43 -2.54 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 -5.08 0)
-					(length 2.54)
-					(name "SS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 -5.08 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 -2.54 180)
-					(length 2.54)
-					(name "COMP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 8.89 2.54 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -1.27 -11.43 90)
-					(length 5.08)
-					(name "EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
 		)
+		(property "Value" "AP64500SP-13"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL-EP-1"
+			(at 0 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/AP64500SP-13.pdf"
+			(at 0 -15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+85℃ 1 25uA 3.8V~40V 100kHz~2.2MHz (RT) 5A 800mV~39V Adjustable Buck Built-in"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "DIODES"
+			(at 0 -17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AP64500SP-13"
+			(at 0 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2070920"
+			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD SOIC-8 EP"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "DC-DC Converters"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "AP64500SP-13_0_1"
+			(rectangle
+				(start -8.89 6.35)
+				(end 6.35 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -7.62 3.81)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -11.43 2.54 0)
+				(length 2.54)
+				(name "BST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -11.43 0 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -11.43 -5.08 0)
+				(length 2.54)
+				(name "RT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -5.08 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 8.89 -2.54 180)
+				(length 2.54)
+				(name "COMP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 0 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 8.89 2.54 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -1.27 -11.43 90)
+				(length 5.08)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+		(symbol "MyParts:0402WGF1743TCE"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 1.778 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "174kΩ"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:R0402"
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1743TCE.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 174kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1743TCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C26994"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "0402WGF1743TCE_0_1"
+			(rectangle
+				(start -1.016 2.54)
+				(end 1.016 -2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "0402WGF1743TCE_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 		(symbol "MyParts:CC0402KRX7R9BB122"
 			(pin_numbers
 				(hide yes)
@@ -3543,6 +3739,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "U15 SUBSTITUTION (2026-10-27)\nPreferred part: AP64501SP-13 (LCSC C2071517), fixed 570kHz, adjustable soft-start.\nIt is out of stock (JLCPCB 1 pc, Mouser 0, DigiKey 0), so AP64500SP-13 (C2070920) is fitted.\nSame die, pinout and SO-8EP footprint; only pin 4 differs: SS on the AP64501, RT/CLK on the\nAP64500. Loop gm, current sense, Vref, limits and compensation are identical, so R42/R44,\nR43/C56 and L2 are unchanged.\nR98 174k sets 575kHz; spread-spectrum stays on. The external-clock sync is not used\n(it needs a >3.5V clock and turns spread-spectrum off).\nTo go back to the AP64501: fit AP64501SP-13 and replace R98 with a 100nF 0402 cap\n(CL05B104KO5NNNC, C1525) for the ~20ms soft-start."
+		(exclude_from_sim no)
+		(at 152.4 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9bb1e82a-8693-42db-884f-84ffcb3c9ac0")
+	)
 	(text "12V to 5V"
 		(exclude_from_sim no)
 		(at 40.894 22.86 0)
@@ -3575,7 +3782,7 @@
 		)
 		(uuid "83f145ca-0a92-4f2c-81a4-89c7396c3800")
 	)
-	(text "12V to 5V Buck - AP64501 (5A, 570kHz, 0.8V reference)\nVout = 5.16V, designed for 3A. Input 8.3V-19V (eFuse UVLO cuts in at 8.3V, OVP cuts out at 17.5-19V).\nEN pulled up to VIN by R65 (100k): starts automatically, the eFuse upstream provides\nthe UVLO. TP30 on EN lets a test fixture hold the buck off.\n\nOutput voltage set by the FB divider\n\nVout = 0.8V x (1 + R42/R44) = 0.8 x (1 + 12k/2.2k) = 5.16V\nCorners 5.10-5.22V (Vref 792-808mV, R42/R44 0.1%). Worst-case USB VBUS\n= 5.10V - 40mV load reg - 1.908A x 135mΩ (U4) = 4.81V >= 4.75V;\nmax 5.22V stays within the CM4 5.25V limit. 1% resistors cannot meet both.\nR42 12k   0.1% thin film  top leg, 5V to FB\nR44 2.2k  0.1% thin film  bottom leg, FB to GND\nC46 DNP 470pF optional feedforward across R42 for transient tuning\n              (datasheet example 47pF across 115k, scaled for R42 = 12k)\n\nLoop compensation\n\nR43 20k + C56 1.2nF  series RC on COMP sets the loop response\nC55 DNP 33pF         optional HF pole (datasheet Table 1, 5V), fit only if needed\n\nGate drive and soft-start\n\nC40 100nF  bootstrap cap, BST to SW - powers the high-side FET driver\nR41 10R    boot resistor, slows the SW rising edge to cut EMI\nC54 100nF  soft-start; the internal 4uA source gives a ~20ms ramp\n\nInput bulk and bypass\n\nC48-C53  6 x 10uF 35V  bulk; carries ~1.5A RMS ripple at 3A out\nC47      0.1uF         HF bypass, place closest to VIN/GND\n\nOutput filter\n\nL2 3.3uH SRP7028A-3R3M  Bourns molded, 6A Irms, 12A Isat, 30mΩ DCR\n                     with 570kHz gives 1.56A p-p ripple at 12V in\n                     (2.0A p-p at 19V in; peak coil current 4.0A at 3A load)\n                     Isat 12A > U15 peak current limit (9.2A max), so L2\n                     does not saturate during overload before hiccup\nC41-C44 4 x 10uF 10V ceramic, low ESR\nC45 100uF 6.3V       polymer bulk for load steps; 5.16V = 82% of rating\n"
+	(text "12V to 5V Buck - AP64500 (5A, 575kHz set by R98, 0.8V reference)\nVout = 5.16V, designed for 3A. Input 8.3V-19V (eFuse UVLO cuts in at 8.3V, OVP cuts out at 17.5-19V).\nEN pulled up to VIN by R65 (100k): starts automatically, the eFuse upstream provides\nthe UVLO. TP30 on EN lets a test fixture hold the buck off.\n\nOutput voltage set by the FB divider\n\nVout = 0.8V x (1 + R42/R44) = 0.8 x (1 + 12k/2.2k) = 5.16V\nCorners 5.10-5.22V (Vref 792-808mV, R42/R44 0.1%). Worst-case USB VBUS\n= 5.10V - 40mV load reg - 1.908A x 135mΩ (U4) = 4.81V >= 4.75V;\nmax 5.22V stays within the CM4 5.25V limit. 1% resistors cannot meet both.\nR42 12k   0.1% thin film  top leg, 5V to FB\nR44 2.2k  0.1% thin film  bottom leg, FB to GND\nC46 DNP 470pF optional feedforward across R42 for transient tuning\n              (datasheet example 47pF across 115k, scaled for R42 = 12k)\n\nLoop compensation\n\nR43 20k + C56 1.2nF  series RC on COMP sets the loop response\nC55 DNP 33pF         optional HF pole (datasheet Table 1, 5V), fit only if needed\n\nGate drive and soft-start\n\nC40 100nF  bootstrap cap, BST to SW - powers the high-side FET driver\nR41 10R    boot resistor, slows the SW rising edge to cut EMI\nR98 174k   RT/CLK to GND: fsw = 100000/174k = 575kHz (AP64500 Eq. 7);\n           never leave RT/CLK open. Soft-start is fixed at 4ms inside the AP64500\n\nInput bulk and bypass\n\nC48-C53  6 x 10uF 35V  bulk; carries ~1.5A RMS ripple at 3A out\nC47      0.1uF         HF bypass, place closest to VIN/GND\n\nOutput filter\n\nL2 3.3uH SRP7028A-3R3M  Bourns molded, 6A Irms, 12A Isat, 30mΩ DCR\n                     with 575kHz gives 1.55A p-p ripple at 12V in\n                     (2.0A p-p at 19V in; peak coil current 4.0A at 3A load)\n                     Isat 12A > U15 peak current limit (9.2A max), so L2\n                     does not saturate during overload before hiccup\nC41-C44 4 x 10uF 10V ceramic, low ESR\nC45 100uF 6.3V       polymer bulk for load steps; 5.16V = 82% of rating\n"
 		(exclude_from_sim no)
 		(at 30.226 150.622 0)
 		(effects
@@ -11937,7 +12144,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:AP64501SP-13")
+		(lib_id "MyParts:AP64500SP-13")
 		(at 129.54 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -11957,7 +12164,7 @@
 				)
 			)
 		)
-		(property "Value" "AP64501SP-13"
+		(property "Value" "AP64500SP-13"
 			(at 130.048 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11978,7 +12185,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/AP64501SP-13.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/AP64500SP-13.pdf"
 			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -11989,7 +12196,7 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+85℃ 1 25uA 3.8V~40V 570kHz 5A 800mV~39V Adjustable Buck Built-in Overcurrent Protection, Light load efficient mode, Adjustable soft-start, Cycle-by-cycle current limiting, Hiccup current limiting, External compensation, EMI optimization (spread spectrum) Step-down type Yes SOIC-8-EP DC-DC Converters ROHS"
+		(property "Description" "-40℃~+85℃ 1 25uA 3.8V~40V 100kHz~2.2MHz (RT) 5A 800mV~39V Adjustable Buck Built-in"
 			(at 129.54 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -12011,7 +12218,7 @@
 				)
 			)
 		)
-		(property "MPN" "AP64501SP-13"
+		(property "MPN" "AP64500SP-13"
 			(at 129.54 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -12022,7 +12229,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2071517"
+		(property "LCSC Part" "C2070920"
 			(at 129.54 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -14451,7 +14658,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:CL05B104KO5NNNC_ALT")
+		(lib_id "MyParts:0402WGF1743TCE")
 		(at 116.84 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -14462,7 +14669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1af8bc1-2292-4c36-bb0b-26a20bfa7da7")
-		(property "Reference" "C54"
+		(property "Reference" "R98"
 			(at 119.38 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14473,7 +14680,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "174kΩ"
 			(at 119.38 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14484,7 +14691,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyPartsIPC:CAPC1005X55N"
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
 			(at 115.062 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -14495,7 +14702,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1743TCE.pdf"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14506,7 +14713,7 @@
 				)
 			)
 		)
-		(property "Description" "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "-55℃~+155℃ 174kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14517,7 +14724,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14528,7 +14735,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "Tolerance" "±1%"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14539,7 +14746,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "0402WGF1743TCE"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14550,7 +14757,7 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "16V"
+		(property "Voltage Rating" "50V"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14561,7 +14768,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C1525"
+		(property "LCSC Part" "C26994"
 			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14592,7 +14799,7 @@
 		(instances
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/b81204ce-c2fc-430f-9caf-a4f2d6cea5c9/2b73156f-617f-4ddb-9603-19922a26015d"
-					(reference "C54")
+					(reference "R98")
 					(unit 1)
 				)
 			)
