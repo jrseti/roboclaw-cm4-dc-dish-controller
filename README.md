@@ -1,7 +1,7 @@
 # roboclaw-cm4-dc-dish-controller
 
-A satellite dish controller board. A Raspberry Pi Compute Module 4 (CM4) commands a
-Basicmicro **RoboClaw 2x15A OEM** motor controller that drives the dish's azimuth and
+A satellite dish controller board in the form of a carrier board for a Raspberry Pi Compute Module 4 (CM4) which commands a
+Basicmicro **RoboClaw 2x15A OEM** motor controller. Drives the dish's azimuth and
 elevation motors. The board runs from a 12.8 V LiFePO4 battery.
 
 **Schematic:** [kicad/cm4-robo-controller.pdf](kicad/cm4-robo-controller.pdf)
