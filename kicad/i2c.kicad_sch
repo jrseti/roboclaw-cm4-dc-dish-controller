@@ -4086,7 +4086,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF220JTCE.pdf"
 			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4097,7 +4097,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±100ppm/°C 22Ω 0402 Chip Resistor - Surface Mount ROHS"
 			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4108,7 +4108,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25092"
+		(property "LCSC Part" "C25092"
 			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4196,7 +4196,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4295,7 +4295,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "0402WGF220JTCE"
 			(at 118.11 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -4376,7 +4376,29 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C558615.pdf?spm=wm.sxq.inf.ggs___wm.ssy.bg.0.xh&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFVXU1JRQVReUTsOAxUeFF5JWBYZEEoKFBINSQcJGk4eFQsCAgIaSgADAwAHC0slRldcU1ZUWQkaCgg%3D"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+			(at 129.54 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 129.54 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPESD0402G05V"
 			(at 129.54 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4827,6 +4849,28 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0603"
+			(at 125.73 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 125.73 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 125.73 63.5 0)
 			(hide yes)
@@ -4838,7 +4882,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC Part" "C19702"
 			(at 125.73 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4926,7 +4970,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 125.73 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5049,7 +5093,29 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF220JTCE.pdf"
+			(at 118.11 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 118.11 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF220JTCE"
 			(at 118.11 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5071,7 +5137,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25092"
+		(property "LCSC Part" "C25092"
 			(at 118.11 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5159,7 +5225,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 118.11 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5317,7 +5383,29 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+			(at 157.48 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 157.48 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 157.48 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5339,7 +5427,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC Part" "C1525"
 			(at 157.48 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5427,7 +5515,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 157.48 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5707,7 +5795,29 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
+			(at 80.01 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 80.01 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
 			(at 80.01 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5729,7 +5839,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC Part" "C25744"
 			(at 80.01 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5817,7 +5927,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 80.01 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5986,6 +6096,28 @@
 				)
 			)
 		)
+		(property "Pkg Type" "SMD 0402"
+			(at 153.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05A475MP5NRNC"
+			(at 153.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Description" "10V 4.7uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 153.67 59.69 0)
 			(hide yes)
@@ -5997,7 +6129,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23733"
+		(property "LCSC Part" "C23733"
 			(at 153.67 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6085,7 +6217,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 153.67 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6210,7 +6342,29 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 116.84 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6232,7 +6386,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC Part" "C1525"
 			(at 116.84 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6320,7 +6474,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 116.84 63.5 0)
 			(hide yes)
 			(show_name no)

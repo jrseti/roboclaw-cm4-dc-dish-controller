@@ -799,7 +799,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -821,7 +821,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C107021"
+		(property "LCSC Part" "C1525"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -929,7 +929,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -998,6 +998,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "460317bc-900d-4635-b75e-5524636c269c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4972bdf0-3ccb-41c0-9b80-eeedfcc7b53d")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5450,7 +5472,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C558615.pdf?spm=wm.sxq.inf.ggs___wm.ssy.bg.0.xh&lcsc_vid=FFBaV1wHQFldUVICFgBfBVJTQVJWXgBfEQRYBAFQE1YxVlNRQFVXU1JRQVReUTsOAxUeFF5JWBYZEEoKFBINSQcJGk4eFQsCAgIaSgADAwAHC0slRldcU1ZUWQkaCgg%3D"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5481,6 +5503,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa06b5f5-d7a6-4939-975d-5b6790711bc3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPESD0402G05V"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69c01158-d84b-44cc-a4d8-eead6ae8b324")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12434,7 +12478,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1002TCE.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12456,7 +12500,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933068"
+		(property "LCSC Part" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12576,7 +12620,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12681,6 +12725,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72c95e9e-3732-4bc1-9896-1be6da457845")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5720cfca-cce5-45e5-8853-52d95eb02a9d")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -14794,7 +14860,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF220JTCE.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -14816,7 +14882,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933068"
+		(property "LCSC Part" "C25092"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -14924,7 +14990,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -15029,6 +15095,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb4bb761-7923-46e6-b14b-f5a7c91043eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF220JTCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0e2c3e7-c42a-4f08-a363-6e254eba7d78")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -47636,7 +47724,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPESD0402G05V.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF220JTCE.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -47647,7 +47735,7 @@
 				)
 			)
 		)
-		(property "Description" "5VWM 40VC 0402"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±100ppm/°C 22Ω 0402 Chip Resistor - Surface Mount ROHS"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -47658,7 +47746,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933068"
+		(property "LCSC Part" "C25092"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -47766,7 +47854,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -47874,7 +47962,7 @@
 				)
 			)
 		)
-		(property "MPN" "TPESD0402G05V"
+		(property "MPN" "0402WGF220JTCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -50969,7 +51057,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL05B104KO5NNNC.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -50991,7 +51079,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C107021"
+		(property "LCSC Part" "C1525"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -51099,7 +51187,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -51168,6 +51256,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81b5ac4b-3487-48a3-b440-6cb86f709c33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73e446a5-192a-4b5b-a8f0-fbb500085549")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -70210,7 +70320,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C7393892"
+		(property "LCSC Part" "C19702"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -70318,7 +70428,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -70387,6 +70497,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8285d553-4e06-4bf5-af30-034f6a641d8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0224fc46-a2c6-4eda-9023-95664feb2aea")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -72104,7 +72236,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C107021"
+		(property "LCSC Part" "C23733"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -72212,7 +72344,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "SAMSUNG"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -72281,6 +72413,28 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "318a4307-d846-4807-ae2f-2a518b343737")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05A475MP5NRNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46d05cfd-b4e4-4459-956a-600ff4aead54")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
