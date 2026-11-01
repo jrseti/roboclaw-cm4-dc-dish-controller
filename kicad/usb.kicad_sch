@@ -3392,6 +3392,249 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:SA11AM101A19R15XXX"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100uF"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C135491.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+105℃ 100uF 15mΩ@100kHz 2000hrs@105℃ 2.5A@100kHz 10V Polarized Polymer ±20% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SA11AM101A19R15XXX"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±20%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "AISHI"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C135491"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD EIA-7343 (D case)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SA11AM101A19R15XXX_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SA11AM101A19R15XXX_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:SMF6.0A"
 			(pin_numbers
 				(hide yes)
@@ -3821,7 +4064,7 @@
 				(pin passive line
 					(at 12.7 -5.08 180)
 					(length 2.54)
-					(name "N.C."
+					(name "D2-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3839,7 +4082,7 @@
 				(pin passive line
 					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "N.C."
+					(name "D2+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3875,7 +4118,7 @@
 				(pin passive line
 					(at 12.7 2.54 180)
 					(length 2.54)
-					(name "N.C."
+					(name "D1-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3893,7 +4136,7 @@
 				(pin passive line
 					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "N.C."
+					(name "D1+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5539,6 +5782,17 @@
 			)
 		)
 		(uuid "9a8a5e51-9e4a-4d65-a6ee-31a6937836ec")
+	)
+	(text "C7 SUBSTITUTION (2026-11-01)\nPreferred part: Panasonic EEFCX0J101R (LCSC C189619), 100uF 6.3V polymer, 15mOhm, 5.1A ripple. Out of stock at JLCPCB\nsince 2026-10-30 (min order 14), so AISHI SA11AM101A19R15XXX (C135491) is fitted: same 7.3x4.3mm D-case footprint, 100uF 10V,\n15mOhm, 2.5A ripple, which is ample for VBUS hold-up. Refit the Panasonic when it is back in stock; nothing else changes."
+		(exclude_from_sim no)
+		(at 125 164 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a590327c-ccce-4d6e-a406-2a8ae7622982")
 	)
 	(text "Stacked USB connectors"
 		(exclude_from_sim no)
@@ -21855,7 +22109,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:EEFCX0J101R")
+		(lib_id "MyParts:SA11AM101A19R15XXX")
 		(at 231.14 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -21896,7 +22150,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/EEFCX0J101R.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C135491.html"
 			(at 241.3 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -21907,7 +22161,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+105℃ 100uF 15mΩ@100kHz 2000hrs@105℃ 4.3mm 5.1A@100kHz 6.3V 7.3mm Polarized Polymer ±20% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS"
+		(property "Description" "-55℃~+105℃ 100uF 15mΩ@100kHz 2000hrs@105℃ 2.5A@100kHz 10V Polarized Polymer ±20% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS"
 			(at 243.84 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -21918,7 +22172,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "PANASONIC"
+		(property "Manufacturer" "AISHI"
 			(at 246.38 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -21929,7 +22183,7 @@
 				)
 			)
 		)
-		(property "MPN" "EEFCX0J101R"
+		(property "MPN" "SA11AM101A19R15XXX"
 			(at 248.92 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -21940,7 +22194,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C189619"
+		(property "LCSC Part" "C135491"
 			(at 251.46 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -21962,7 +22216,7 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "6.3V"
+		(property "Voltage Rating" "10V"
 			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)

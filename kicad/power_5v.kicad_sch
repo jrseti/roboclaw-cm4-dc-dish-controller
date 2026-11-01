@@ -3262,6 +3262,249 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:SA11AM101A19R15XXX"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100uF"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C135491.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+105℃ 100uF 15mΩ@100kHz 2000hrs@105℃ 2.5A@100kHz 10V Polarized Polymer ±20% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SA11AM101A19R15XXX"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±20%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rating" "10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "AISHI"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C135491"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD EIA-7343 (D case)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SA11AM101A19R15XXX_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SA11AM101A19R15XXX_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:SRP7028A-3R3M"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3782,7 +4025,7 @@
 		)
 		(uuid "9bb1e82a-8693-42db-884f-84ffcb3c9ac0")
 	)
-	(text "12V to 5V Buck - AP64500 (5A, 575kHz set by R98, 0.8V reference)\nVout = 5.16V, designed for 3A. Input 8.3V-19V (eFuse UVLO cuts in at 8.3V, OVP cuts out at 17.5-19V).\nEN pulled up to VIN by R65 (100k): starts automatically, the eFuse upstream provides\nthe UVLO. TP30 on EN lets a test fixture hold the buck off.\n\nOutput voltage set by the FB divider\n\nVout = 0.8V x (1 + R42/R44) = 0.8 x (1 + 12k/2.2k) = 5.16V\nCorners 5.10-5.22V (Vref 792-808mV, R42/R44 0.1%). Worst-case USB VBUS\n= 5.10V - 40mV load reg - 1.908A x 135mΩ (U4) = 4.81V >= 4.75V;\nmax 5.22V stays within the CM4 5.25V limit. 1% resistors cannot meet both.\nR42 12k   0.1% thin film  top leg, 5V to FB\nR44 2.2k  0.1% thin film  bottom leg, FB to GND\nC46 DNP 470pF optional feedforward across R42 for transient tuning\n              (datasheet example 47pF across 115k, scaled for R42 = 12k)\n\nLoop compensation\n\nR43 20k + C56 1.2nF  series RC on COMP sets the loop response\nC55 DNP 33pF         optional HF pole (datasheet Table 1, 5V), fit only if needed\n\nGate drive and soft-start\n\nC40 100nF  bootstrap cap, BST to SW - powers the high-side FET driver\nR41 10R    boot resistor, slows the SW rising edge to cut EMI\nR98 174k   RT/CLK to GND: fsw = 100000/174k = 575kHz (AP64500 Eq. 7);\n           never leave RT/CLK open. Soft-start is fixed at 4ms inside the AP64500\n\nInput bulk and bypass\n\nC48-C53  6 x 10uF 35V  bulk; carries ~1.5A RMS ripple at 3A out\nC47      0.1uF         HF bypass, place closest to VIN/GND\n\nOutput filter\n\nL2 3.3uH SRP7028A-3R3M  Bourns molded, 6A Irms, 12A Isat, 30mΩ DCR\n                     with 575kHz gives 1.55A p-p ripple at 12V in\n                     (2.0A p-p at 19V in; peak coil current 4.0A at 3A load)\n                     Isat 12A > U15 peak current limit (9.2A max), so L2\n                     does not saturate during overload before hiccup\nC41-C44 4 x 10uF 10V ceramic, low ESR\nC45 100uF 6.3V       polymer bulk for load steps; 5.16V = 82% of rating\n"
+	(text "12V to 5V Buck - AP64500 (5A, 575kHz set by R98, 0.8V reference)\nVout = 5.16V, designed for 3A. Input 8.3V-19V (eFuse UVLO cuts in at 8.3V, OVP cuts out at 17.5-19V).\nEN pulled up to VIN by R65 (100k): starts automatically, the eFuse upstream provides\nthe UVLO. TP30 on EN lets a test fixture hold the buck off.\n\nOutput voltage set by the FB divider\n\nVout = 0.8V x (1 + R42/R44) = 0.8 x (1 + 12k/2.2k) = 5.16V\nCorners 5.10-5.22V (Vref 792-808mV, R42/R44 0.1%). Worst-case USB VBUS\n= 5.10V - 40mV load reg - 1.908A x 135mΩ (U4) = 4.81V >= 4.75V;\nmax 5.22V stays within the CM4 5.25V limit. 1% resistors cannot meet both.\nR42 12k   0.1% thin film  top leg, 5V to FB\nR44 2.2k  0.1% thin film  bottom leg, FB to GND\nC46 DNP 470pF optional feedforward across R42 for transient tuning\n              (datasheet example 47pF across 115k, scaled for R42 = 12k)\n\nLoop compensation\n\nR43 20k + C56 1.2nF  series RC on COMP sets the loop response\nC55 DNP 33pF         optional HF pole (datasheet Table 1, 5V), fit only if needed\n\nGate drive and soft-start\n\nC40 100nF  bootstrap cap, BST to SW - powers the high-side FET driver\nR41 10R    boot resistor, slows the SW rising edge to cut EMI\nR98 174k   RT/CLK to GND: fsw = 100000/174k = 575kHz (AP64500 Eq. 7);\n           never leave RT/CLK open. Soft-start is fixed at 4ms inside the AP64500\n\nInput bulk and bypass\n\nC48-C53  6 x 10uF 35V  bulk; carries ~1.5A RMS ripple at 3A out\nC47      0.1uF         HF bypass, place closest to VIN/GND\n\nOutput filter\n\nL2 3.3uH SRP7028A-3R3M  Bourns molded, 6A Irms, 12A Isat, 30mΩ DCR\n                     with 575kHz gives 1.55A p-p ripple at 12V in\n                     (2.0A p-p at 19V in; peak coil current 4.0A at 3A load)\n                     Isat 12A > U15 peak current limit (9.2A max), so L2\n                     does not saturate during overload before hiccup\nC41-C44 4 x 10uF 10V ceramic, low ESR\nC45  100uF 10V polymer (AISHI, see note)  bulk for load steps; 5.16V = 52% of rating\n"
 		(exclude_from_sim no)
 		(at 30.226 150.622 0)
 		(effects
@@ -3792,6 +4035,17 @@
 			(justify left)
 		)
 		(uuid "a7dcfcca-aba6-4b68-89b5-e6d7acd5ffcb")
+	)
+	(text "C45 SUBSTITUTION (2026-11-01)\nPreferred part: Panasonic EEFCX0J101R (LCSC C189619), 100uF 6.3V polymer, 15mOhm, 5.1A ripple. Out of stock at JLCPCB\nsince 2026-10-30 (min order 14), so AISHI SA11AM101A19R15XXX (C135491) is fitted: same 7.3x4.3mm D-case footprint, 100uF 10V,\n15mOhm, 2.5A ripple, which is ample for the 5V buck output ripple. Refit the Panasonic when it is back in stock; nothing else changes."
+		(exclude_from_sim no)
+		(at 152.4 100 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "bb464eee-3cda-4143-8e87-266e4588c60c")
 	)
 	(junction
 		(at 140.97 95.25)
@@ -15617,7 +15871,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:EEFCX0J101R")
+		(lib_id "MyParts:SA11AM101A19R15XXX")
 		(at 226.06 62.23 0)
 		(unit 1)
 		(body_style 1)
@@ -15660,7 +15914,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${MYPARTS_DATASHEETS}/EEFCX0J101R.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C135491.html"
 			(at 236.22 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -15671,7 +15925,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+105℃ 100uF 15mΩ@100kHz 2000hrs@105℃ 4.3mm 5.1A@100kHz 6.3V 7.3mm Polarized Polymer ±20% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS"
+		(property "Description" "-55℃~+105℃ 100uF 15mΩ@100kHz 2000hrs@105℃ 2.5A@100kHz 10V Polarized Polymer ±20% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS"
 			(at 238.76 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -15682,7 +15936,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "PANASONIC"
+		(property "Manufacturer" "AISHI"
 			(at 241.3 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -15693,7 +15947,7 @@
 				)
 			)
 		)
-		(property "MPN" "EEFCX0J101R"
+		(property "MPN" "SA11AM101A19R15XXX"
 			(at 243.84 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -15704,7 +15958,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C189619"
+		(property "LCSC Part" "C135491"
 			(at 246.38 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -15726,7 +15980,7 @@
 				)
 			)
 		)
-		(property "Voltage Rating" "6.3V"
+		(property "Voltage Rating" "10V"
 			(at 226.06 62.23 0)
 			(hide yes)
 			(show_name no)
