@@ -6,6 +6,18 @@
 	(paper "A4")
 	(lib_symbols)
 	(rectangle
+		(start 21.59 164.592)
+		(end 176.53 199.39)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "34e04a20-7e11-4475-a034-c947fd42bca2")
+	)
+	(rectangle
 		(start 21.59 30.48)
 		(end 144.78 161.29)
 		(stroke
@@ -39,6 +51,17 @@
 		)
 		(uuid "4788d054-a561-4421-ac60-3dd53e96a3fa")
 	)
+	(text "ENCODER CHANNELS ENC1 (J8) / ENC2 (J9): each accepts a quadrature or an absolute 0-2 V encoder, set per channel with shunts.\nConnector:  1 V+ (JP1/JP4 1-2 = 5 V RC_5V, 3-4 = 3.3 V U18, 5-6 = 12 V battery)   2 A or analog in   3 B (quad only)   4 GND\nMode JP2/JP5 (2x3):  QUAD = shunts 1-3 + 2-4: A goes through the 1k pull-up to 5 V and the 100R/10nF filter.  ABS = shunts 3-5 + 4-6:\n  A goes through JP3/JP6 into the 100k + 100nF node (JP3 1-2 = 68k top resistor, x0.595 for a 3.3 V sensor; 2-3 = 1k series, x0.99 for\n  a source that is already 0-2 V, tau = 0.1 ms). B is always the quadrature path. In ABS mode the whole quadrature network, pull-up\n  included, is lifted off the A input, so nothing pulls the analog node up.\nOmron E6B2-CWZ6C (NPN open-collector, 5-24 V, 80 mA max, 35 mA sink, 100 kHz): JP1/JP4 = 12 V (5-6) or 5 V (1-2), mode QUAD.\n  Wires: BROWN V+ -> 1, BLACK A -> 2, WHITE B -> 3, BLUE 0 V -> 4, ORANGE Z not used (insulate). Shield to the enclosure at the gland;\n  it is not bonded to 0 V inside the encoder. The 1k pull-up (to 5 V, whatever V+ is) sinks 5 mA; the rising edge is tau = 11 us,\n  fine to about 20 kHz: keep resolution x rpm / 60 under 20 kHz (1000 P/R to 1200 rpm). ENC_12V: V_MOTOR via F4 PTC, D28, C89.\nDirect 0-2 V source (JP3/JP6 2-3): a 5 V potentiometer needs R1 = 1.5 x Rpot in series with its top end (RoboClaw manual); the 100k\n  bottom resistor loads it by 1%.\nRC_5V budget: the four 1k pull-ups draw up to 20 mA plus the sensors (Firgelli Hall ~10 mA, E6B2 80 mA, AS5600 7 mA); BEC limit 800 mA."
+		(exclude_from_sim no)
+		(at 23.368 165.862 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4ccb9f12-7aad-42f1-a9cf-2f52681f4234")
+	)
 	(text "Elevation Axis"
 		(exclude_from_sim no)
 		(at 165.1 34.544 0)
@@ -49,7 +72,7 @@
 		)
 		(uuid "6bb970be-2ec5-442b-aca3-c30ea5869565")
 	)
-	(text "ELEVATION SENSING: Firgelli Hall quadrature into RoboClaw EN1 (motor M1)\n\nWiring, J8 to A1 (RoboClaw):\n  J8-1  RC_5V        Hall sensor supply from the RoboClaw 5VDC output (800 mA max, shared).\n                     D21 SMF6.0A clamps it.\n  J8-2  EL_ENC_A_IN  Hall A. R47 5.1k pull-up to RC_5V, D16 ESD clamp, R49 100R + C57 10nF \n                     -> EN1_A (A1 1A).\n  J8-3  EL_ENC_B_IN  Hall B. R51 5.1k pull-up to RC_5V, D18 ESD clamp, R53 100R + C59 10nF \n                     -> EN1_B (A1 1B).\n  J8-4  PGND         Sensor return, on the RoboClaw ground.\nThe pull-ups suit open-collector Hall outputs and are harmless with push-pull outputs.\nThe 100R/10nF filters (tau = 1 us, about 160 kHz) pass the Hall pulses and remove cable noise and ringing.\nRoboClaw inputs tolerate 5 V, so no level shifting is needed.\n\nHow the RoboClaw uses it:\n  - The two Hall sensors are 90 degrees apart (quadrature A/B). The RoboClaw counts the pulses, and\n    the A/B phase gives the direction. If the count falls while the actuator extends, swap A/B in\n    Motion Studio; no rewiring is needed.\n  - Position = encoder count. Speed = count rate. Set QPPS (counts/s at full speed) in Motion\n    Studio, then auto-tune the M1 velocity and position PID.\n  - The encoder is incremental, so the count is lost at power-off and the axis must be homed at\n    start-up. The actuator has no limit switches. Home on the elevation limit switch (J12 -> S4, set as\n    home/limit), or drive slowly to full retraction with a low current limit, then zero the counter.\n  - Stroke = counts / (Firgelli pulses per inch). Elevation angle follows from the mount geometry,\n    which is non-linear, so convert between angle and counts on the CM4."
+	(text "ELEVATION SENSING: Firgelli Hall quadrature into ENC1 (A1 EN1, motor M1)\n\nJumpers: JP1 1-2 (V+ = 5 V), JP2 QUAD (shunts 1-3 and 2-4), JP3 not used.\nWiring, J8 to A1 (circuit: see ENCODER CHANNELS below):\n  J8-1  ENC1_V     RED     Hall supply, 5 V from the RoboClaw BEC via JP1 (RC_5V, 800 mA max,\n                           shared). D21 SMF6.0A clamps RC_5V.\n  J8-2  ENC1_A_IN  YELLOW  Hall 1. D16 ESD clamp -> JP2 -> R47 1k pull-up to RC_5V,\n                           R49 100R + C57 10nF -> EN1_A (A1 1A).\n  J8-3  ENC1_B_IN  WHITE   Hall 2. D18 ESD clamp, R51 1k pull-up to RC_5V,\n                           R53 100R + C59 10nF -> EN1_B (A1 1B).\n  J8-4  PGND       BLACK   Sensor return, on the RoboClaw ground.\nThe pull-ups suit open-collector and push-pull Hall outputs. The 100R/10nF filters (tau = 1 us,\nabout 160 kHz) remove cable noise and ringing. RoboClaw inputs tolerate 5 V: no level shifting.\n\nHow the RoboClaw uses it:\n  - The two Hall sensors are 90 degrees apart (quadrature A/B). The RoboClaw counts the pulses,\n    and the A/B phase gives the direction. If the count falls while the actuator extends, swap\n    A/B in Motion Studio; no rewiring is needed.\n  - Position = encoder count. Speed = count rate. Set QPPS (counts/s at full speed) in Motion\n    Studio, then auto-tune the M1 velocity and position PID.\n  - The encoder is incremental, so the count is lost at power-off and the axis must be homed at\n    start-up. The actuator has no limit switches. Home on the elevation limit switch (J12 -> S4,\n    set as home/limit), or drive slowly to full retraction with a low current limit, then zero\n    the counter.\n  - Stroke = counts / (Firgelli pulses per inch). Elevation angle follows from the mount\n    geometry, which is non-linear, so convert between angle and counts on the CM4."
 		(exclude_from_sim no)
 		(at 158.496 106.934 0)
 		(effects
@@ -60,7 +83,7 @@
 		)
 		(uuid "7da812a7-2688-406d-aba8-de845f48a90a")
 	)
-	(text "AZIMUTH SENSING: AS5600 analog absolute angle into RoboClaw EN2 (motor M2)\n\nWiring, J9 to A1 (RoboClaw):\n  J9-1  AZ_ENC_3V3  AS5600 supply: U18 3.3 V LDO (from RC_5V) via F3 (100 mA PTC), D23 clamp.\n                    Run the AS5600 at 3.3 V (VDD5V tied to VDD3V3 on the sensor board).\n  J9-2  AZ_ENC_IN   AS5600 OUT. D22 ESD clamp. R57 68k / R58 100k divider (x0.595) -> EN2_A (A1 2A).\n                    C62 100nF filters it (40.5k x 100nF, tau = 4 ms, about 39 Hz).\n  J9-3  PGND        Sensor return.\n  EN2_B is unused; the analog signal needs one channel only.\nScaling: AS5600 0-3.3 V -> 0-1.96 V at EN2_A, inside the RoboClaw 0-2 V analog input range.\n\nHow the RoboClaw uses it:\n  - Set EN2 to Absolute encoder mode in Motion Studio. The voltage is an absolute angle, so no\n    homing is needed at power-up.\n  - M2 runs position PID on this reading. Speed is derived from the rate of change of position;\n    there is no separate speed sensor.\n  - Read the RoboClaw position value at each end of travel and set those as the M2 min/max position limits.\n  - The AS5600 is single-turn: its output jumps at the 0/360 deg wrap. Fit the magnet so the azimuth\n    travel never crosses the wrap, or set ZPOS/MPOS (I2C or OTP) to place the range. A crossing\n    makes the position loop run away.\n  - The magnet must be on a shaft that turns at most one revolution over the full azimuth travel.\n\nAS5600 output loading (datasheet): full-range analog (the default) needs >= 100k. R57 + R58 = 168k, OK.\n  - OUT capacitive load 1 nF max: R57 isolates C62; keep the J9 cable short (about 100 pF/m).\n  - Divider source impedance is about 40k. If the RoboClaw EN2 pull-up stays on in Absolute mode it lifts\n    the reading: bench-check EN2_A with and without the RoboClaw; calibrate travel limits on hardware.\n  - J9 is powered from 3V3_CM4 (logic GND) but returns on PGND, so the sensor current crosses NT1."
+	(text "AZIMUTH SENSING: AS5600 analog absolute angle into ENC2 (A1 EN2, motor M2)\n\nJumpers: JP4 3-4 (V+ = 3.3 V), JP5 ABS (shunts 3-5 and 4-6), JP6 1-2 (3.3 V sensor -> 2 V).\nWiring, J9 to A1:\n  J9-1  ENC2_V     AS5600 supply: U18 3.3 V LDO (from RC_5V) via F3 (100 mA PTC), D23 clamp, JP4.\n                   Run the AS5600 at 3.3 V (VDD5V tied to VDD3V3 on the sensor board).\n  J9-2  ENC2_A_IN  AS5600 OUT. D22 ESD clamp -> JP5 -> JP6 -> R57 68k / R58 100k divider (x0.595)\n                   -> EN2_A (A1 2A). C62 100nF filters it (40.5k x 100nF, tau = 4 ms, about 39 Hz).\n  J9-3  ENC2_B_IN  Not used in ABS mode: leave open (R105 holds EN2_B high).\n  J9-4  PGND       Sensor return.\nScaling: AS5600 0-3.3 V -> 0-1.96 V at EN2_A, inside the RoboClaw 0-2 V absolute-encoder range.\n\nHow the RoboClaw uses it:\n  - Set EN2 to Absolute encoder mode in Motion Studio. The voltage is an absolute angle, so no\n    homing is needed at power-up.\n  - M2 runs position PID on this reading. Speed is derived from the rate of change of position;\n    there is no separate speed sensor.\n  - Read the RoboClaw position value at each end of travel and set those as the M2 min/max limits.\n  - The AS5600 is single-turn: its output jumps at the 0/360 deg wrap. Fit the magnet so the azimuth\n    travel never crosses the wrap, or set ZPOS/MPOS (I2C or OTP) to place the range. A crossing\n    makes the position loop run away.\n  - The magnet must be on a shaft that turns at most one revolution over the full azimuth travel.\n\nAS5600 output loading (datasheet): full-range analog (the default) needs >= 100k. R57 + R58 = 168k, OK.\n  - OUT capacitive load 1 nF max: R57 isolates C62; keep the J9 cable short (about 100 pF/m).\n  - Divider source impedance is about 40k. If the RoboClaw EN2 pull-up stays on in Absolute mode it\n    lifts the reading: bench-check EN2_A with and without the RoboClaw; calibrate limits on hardware.\n  - J9 power: U18 (off RC_5V) out, PGND return, all on the RoboClaw ground; nothing crosses NT1."
 		(exclude_from_sim no)
 		(at 24.638 101.6 0)
 		(effects

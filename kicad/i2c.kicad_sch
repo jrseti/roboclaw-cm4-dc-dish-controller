@@ -2586,6 +2586,17 @@
 		)
 		(uuid "084c3f58-bbf2-4d75-a999-0d1bea26d796")
 	)
+	(text "I2C pullups exist and are located on the CM4_connectors sheet, H5/H6."
+		(exclude_from_sim no)
+		(at 104.648 144.526 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "152e5656-9c1e-442d-a323-02f40453f632")
+	)
 	(text "Diodes are the TPESD0402G05V"
 		(exclude_from_sim no)
 		(at 135.382 134.112 0)
@@ -2683,7 +2694,7 @@
 	(text_box ""
 		(exclude_from_sim no)
 		(at 90.17 95.25 0)
-		(size 90.17 49.53)
+		(size 90.17 52.07)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4387,6 +4398,17 @@
 				)
 			)
 		)
+		(property "Description" "5VWM 40VC 0402"
+			(at 129.54 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0402"
 			(at 129.54 123.19 0)
 			(hide yes)
@@ -4399,17 +4421,6 @@
 			)
 		)
 		(property "MPN" "TPESD0402G05V"
-			(at 129.54 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "5VWM 40VC 0402"
 			(at 129.54 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4849,6 +4860,17 @@
 				)
 			)
 		)
+		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 125.73 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0603"
 			(at 125.73 63.5 0)
 			(hide yes)
@@ -4861,17 +4883,6 @@
 			)
 		)
 		(property "MPN" "CL10A106KP8NNNC"
-			(at 125.73 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 125.73 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5104,6 +5115,17 @@
 				)
 			)
 		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±100ppm/°C 22Ω 0402 Chip Resistor - Surface Mount ROHS"
+			(at 118.11 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0402"
 			(at 118.11 113.03 0)
 			(hide yes)
@@ -5116,17 +5138,6 @@
 			)
 		)
 		(property "MPN" "0402WGF220JTCE"
-			(at 118.11 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±100ppm/°C 22Ω 0402 Chip Resistor - Surface Mount ROHS"
 			(at 118.11 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5394,6 +5405,17 @@
 				)
 			)
 		)
+		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 157.48 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0402"
 			(at 157.48 59.69 0)
 			(hide yes)
@@ -5406,17 +5428,6 @@
 			)
 		)
 		(property "MPN" "CL05B104KO5NNNC"
-			(at 157.48 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 157.48 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5806,6 +5817,17 @@
 				)
 			)
 		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 80.01 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0402"
 			(at 80.01 71.12 0)
 			(hide yes)
@@ -5818,17 +5840,6 @@
 			)
 		)
 		(property "MPN" "0402WGF1002TCE"
-			(at 80.01 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 80.01 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6096,6 +6107,17 @@
 				)
 			)
 		)
+		(property "Description" "10V 4.7uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 153.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0402"
 			(at 153.67 59.69 0)
 			(hide yes)
@@ -6108,17 +6130,6 @@
 			)
 		)
 		(property "MPN" "CL05A475MP5NRNC"
-			(at 153.67 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10V 4.7uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 153.67 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6353,6 +6364,17 @@
 				)
 			)
 		)
+		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pkg Type" "SMD 0402"
 			(at 116.84 63.5 0)
 			(hide yes)
@@ -6365,17 +6387,6 @@
 			)
 		)
 		(property "MPN" "CL05B104KO5NNNC"
-			(at 116.84 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 116.84 63.5 0)
 			(hide yes)
 			(show_name no)

@@ -37,22 +37,51 @@ on the right, and the field connections along the edges. Its source is
 
 | Axis | Motor | Position sensor | RoboClaw input |
 |---|---|---|---|
-| Elevation (M1) | Firgelli F-SD-H-450-12V linear actuator (5.5 A max, 450 lb) | Built-in Hall sensors, quadrature A/B | EN1 |
-| Azimuth (M2) | Bringsmart JGY-370 12 V worm-gear motor (1.8 A max) | AS5600 magnetic angle sensor, analog output | EN2 |
+| Elevation (M1) | Firgelli F-SD-H-450-12V linear actuator (5.5 A max, 450 lb) | Built-in Hall sensors, quadrature A/B | EN1 (J8) |
+| Azimuth (M2) | Bringsmart JGY-370 12 V worm-gear motor (1.8 A max) | AS5600 magnetic angle sensor, analog output | EN2 (J9) |
+
+Both encoder channels are identical and jumper-configurable, so either axis can
+use a quadrature encoder (the Firgelli Hall sensors, or an Omron E6B2-CWZ6C
+open-collector encoder) or an absolute analog encoder (0–2 V at the RoboClaw).
+Each 4-pin connector carries V+, A (or the analog signal), B and GND, with ESD
+clamps on both signals.
+
+| Jumper (ENC1 / ENC2) | Shunt | Setting |
+|---|---|---|
+| JP1 / JP4 — sensor supply (2x3, shunt across a row) | 1-2 | 5 V from the RoboClaw BEC (RC_5V) |
+| | 3-4 | 3.3 V from the on-board LDO U18 (ENC_3V3) |
+| | 5-6 | Battery voltage, 10–14.6 V (ENC_12V: V_MOTOR via a 250 mA PTC, SMAJ20A clamp), e.g. for an E6B2-CWZ6C |
+| JP2 / JP5 — mode (2x3) | 1-3 + 2-4 | QUAD: A gets a 1k pull-up to 5 V and a 100R/10nF filter; B always does |
+| | 3-5 + 4-6 | ABS: A goes to the analog node (100k/100nF); the pull-up is disconnected |
+| JP3 / JP6 — ABS scaling | 1-2 | 68k/100k divider (×0.6) for a 3.3 V sensor such as the AS5600 |
+| | 2-3 | 1k series, for a source that already outputs 0–2 V |
+
+Default fit: ENC1 = 5 V, QUAD (Firgelli); ENC2 = 3.3 V, ABS, 3.3 V scaling (AS5600).
+
+[docs/encoder-inputs.md](docs/encoder-inputs.md) explains, part by part, how the
+channel handles each encoder type: the E6B2-CWZ6C's NPN open-collector outputs,
+the Firgelli Hall quadrature, and an absolute 0–2 V encoder such as the AS5600.
 
 | Elevation: Firgelli F-SD-H-450 linear actuator | Azimuth: Bringsmart JGY-370 worm-gear motor |
 |:---:|:---:|
 | <img src="images/elevation_actuator.png" alt="Firgelli F-SD-H-450 linear actuator" width="300"> | <img src="images/azimuth_motor.png" alt="Bringsmart JGY-370 worm-gear motor" width="300"> |
 
-- **Elevation:** the actuator's Hall outputs (J8) are pulled up to the RoboClaw's
-  5 V supply, ESD-protected and RC-filtered before they reach EN1. The count is
-  incremental, so the axis is homed at start-up.
-- **Azimuth:** the AS5600 (J9) gives an absolute angle as a 0–3.3 V signal. A
-  68k/100k divider scales it to the RoboClaw's 0–2 V analog input, so no homing is
-  needed.
+- **Elevation:** the actuator's Hall outputs (J8, JP2 in QUAD) are pulled up to
+  the sensor supply (JP1 = 5 V), ESD-protected and RC-filtered before they reach
+  EN1. The count is incremental, so the axis is homed at start-up.
+- **Azimuth:** the AS5600 (J9, JP5 in ABS) gives an absolute angle as a 0–3.3 V
+  signal. The 68k/100k divider (JP6 1-2) scales it to the RoboClaw's 0–2 V
+  absolute-encoder input, so no homing is needed.
 - **Switch inputs:** E-stop (J10 → S3), elevation limit (J12 → S4) and azimuth
   limit (J13 → S5). All use normally-closed switches and have ESD protection and
-  filtering.
+  filtering. The RoboClaw has one limit input per motor but supports two switches
+  on it: wire the forward and reverse NC switches in series on J12/J13 (either
+  one opening trips the input), set Invert, and set S4/S5 to *Limit (Both)* or
+  *Home (User)/Limit (Fwd)* — the latter also zeroes the encoder against the
+  reverse-end switch, which is how the elevation axis homes. All three switch
+  loops run at battery voltage (ENC_12V, 4.7k pull-up, about 2.6 mA through the
+  contacts for wetting on long cables) and a 47k/20k divider brings the
+  open-switch 10–14.6 V down to 3.0–4.4 V at the RoboClaw pins.
 - **Motor outputs:** J11 and J14, both 7.62 mm screw terminals.
 
 The `Motor Notes` schematic sheet describes the sensor wiring and RoboClaw setup in
