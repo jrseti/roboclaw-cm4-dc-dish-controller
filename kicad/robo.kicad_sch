@@ -13008,7 +13008,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3a4b46bc-3e71-47ab-ad27-915bbbf1abe9")
 		(property "Reference" "A1"

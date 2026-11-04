@@ -1712,6 +1712,12 @@
 		(uuid "b015fe89-50e6-4eef-90ef-88a123a7dc3d")
 	)
 	(junction
+		(at 139.7 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b01ffed4-e5e2-473b-8c1b-7761135edeeb")
+	)
+	(junction
 		(at 167.64 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1737,7 +1743,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 72.39) (xy 142.24 72.39)
+			(xy 137.16 72.39) (xy 139.7 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1857,6 +1863,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 69.85) (xy 139.7 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af346ecf-22a2-487d-a915-c845d8762c01")
+	)
+	(wire
+		(pts
 			(xy 137.16 85.09) (xy 139.7 85.09)
 		)
 		(stroke
@@ -1927,6 +1943,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 72.39) (xy 142.24 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f01a7c49-fe48-4cd2-8349-d0f7fd53f95e")
+	)
+	(wire
+		(pts
 			(xy 121.92 72.39) (xy 121.92 74.93)
 		)
 		(stroke
@@ -1944,6 +1970,16 @@
 			(type default)
 		)
 		(uuid "fb6186f1-5de6-4e96-8095-5cdfee4aa79d")
+	)
+	(label "Pre-fuse_12V8"
+		(at 139.7 69.85 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9094e5e5-785b-4bf1-a8b6-4384ea379202")
 	)
 	(hierarchical_label "V_MOTOR"
 		(shape output)

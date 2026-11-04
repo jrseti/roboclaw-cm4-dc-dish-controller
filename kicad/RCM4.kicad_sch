@@ -5584,7 +5584,150 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:DF40C-100DS-0.4V(51)"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DF40C-100DS-0.4V(51)"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:DF40C-100DS-0.4V_BOM-ONLY"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C597931.html"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Hirose DF40C 100-pin 0.4 mm receptacle, 1.5 mm stack height. CM4 mezzanine connector; BOM and placement only, pads are in the CM4 footprint."
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "HRS(Hirose)"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "DF40C-100DS-0.4V(51)"
+				(at 0 -21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C597931"
+				(at 0 -24.13 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0.4 mm 2x50 receptacle"
+				(at 0 -26.67 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Hirose DF40 CM4 receptacle"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DF40C-100DS-0.4V(51)_0_1"
+				(rectangle
+					(start -8.89 2.54)
+					(end 8.89 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "CM4 receptacle\nBOM / CPL only"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:E6C0805UR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5936,6 +6079,17 @@
 			(justify left bottom)
 		)
 		(uuid "2721df53-c4d4-408d-91d3-228fce1c847b")
+	)
+	(text "J17/J18: Hirose DF40C-100DS-0.4V(51)\nCM4 receptacles (LCSC C597931).\nBOM / CPL only: their pads are in the\nA2 footprint. J17 = pads 1-100,\nJ18 = pads 101-200, pin 1 lower left.\nA1 (RoboClaw) and A2 (CM4): DNP, bought\nseparately, fitted by hand; A2 is also\nexcluded from the position file."
+		(exclude_from_sim no)
+		(at 177 154.3 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "5a866b58-b35f-4373-ad39-fbf5ed7d5619")
 	)
 	(text "Module1 pins 89 (WiFi_nDisable) \nand 91 (BT_nDisable) are left \nunconnected on purpose. This \nboard needs a CM4 WITHOUT\nwireless, where both pins are \nreserved (CM4 datasheet 2.1.1 / 2.1.2). \nIf a wireless CM4 is ever fitted, \ndisable the radios in config.txt: \ndtoverlay=disable-wifi and\ndtoverlay=disable-bt (the latter \nalso frees UART0)."
 		(exclude_from_sim no)
@@ -7701,7 +7855,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 182.88) (xy 99.06 181.61)
+			(xy 99.06 181.61) (xy 99.06 189.23)
 		)
 		(stroke
 			(width 0)
@@ -16931,7 +17085,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "05fd7bf8-13e7-4244-9c37-ce7e028575d6")
 		(property "Reference" "TP4"
@@ -16995,6 +17149,123 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb"
 					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:DF40C-100DS-0.4V(51)")
+		(at 143.5 80 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ae6f26d-7585-4750-9016-f64d3faed680")
+		(property "Reference" "J17"
+			(at 143.5 76.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DF40C-100DS-0.4V(51)"
+			(at 143.5 83.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:DF40C-100DS-0.4V_BOM-ONLY"
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C597931.html"
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Hirose DF40C 100-pin 0.4 mm receptacle, 1.5 mm stack height. CM4 mezzanine connector; BOM and placement only, pads are in the CM4 footprint."
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "HRS(Hirose)"
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DF40C-100DS-0.4V(51)"
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C597931"
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0.4 mm 2x50 receptacle"
+			(at 143.5 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb"
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -17594,6 +17865,123 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:DF40C-100DS-0.4V(51)")
+		(at 143.5 92.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ac83b2e-0e77-4039-9a7f-0ee5802ba849")
+		(property "Reference" "J18"
+			(at 143.5 88.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DF40C-100DS-0.4V(51)"
+			(at 143.5 96.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:DF40C-100DS-0.4V_BOM-ONLY"
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C597931.html"
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Hirose DF40C 100-pin 0.4 mm receptacle, 1.5 mm stack height. CM4 mezzanine connector; BOM and placement only, pads are in the CM4 footprint."
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "HRS(Hirose)"
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DF40C-100DS-0.4V(51)"
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C597931"
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0.4 mm 2x50 receptacle"
+			(at 143.5 92.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb"
+					(reference "J18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MyParts:E6C0805UR")
 		(at 110.49 185.42 0)
 		(unit 1)
@@ -17877,8 +18265,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "534805c6-6ad1-437d-bacb-a71be2973c35")
 		(property "Reference" "A2"
@@ -18964,8 +19352,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7f2544f8-aca8-4c83-9154-c7f031bdb872")
 		(property "Reference" "A2"
@@ -19674,7 +20062,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 99.06 182.88 0)
+		(at 99.06 189.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19684,7 +20072,7 @@
 		(dnp no)
 		(uuid "99c1c7c0-b573-442d-aa6e-bbee02c18d13")
 		(property "Reference" "TP7"
-			(at 99.06 184.912 0)
+			(at 99.06 191.262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19694,7 +20082,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 99.06 182.88 0)
+			(at 99.06 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19705,7 +20093,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 99.06 182.88 0)
+			(at 99.06 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19716,7 +20104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 182.88 0)
+			(at 99.06 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19727,7 +20115,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 99.06 182.88 0)
+			(at 99.06 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19738,7 +20126,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD Test pad D1.5"
-			(at 99.06 182.88 0)
+			(at 99.06 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20069,7 +20457,7 @@
 		(dnp no)
 		(uuid "bc894b7e-f205-4241-bf9e-89bd6edfdf99")
 		(property "Reference" "U1"
-			(at 85.09 172.72 270)
+			(at 84.836 179.07 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20079,7 +20467,7 @@
 			)
 		)
 		(property "Value" "74LVC1G07SE-7"
-			(at 85.09 187.325 270)
+			(at 88.646 185.166 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

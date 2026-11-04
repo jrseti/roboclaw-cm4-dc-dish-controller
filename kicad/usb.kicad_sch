@@ -16833,7 +16833,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2db1cb95-7039-4bec-9216-88175992662c")
 		(property "Reference" "TP8"
@@ -18243,7 +18243,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "5c05ba39-1f5c-4892-8303-b27a2f4fd383")
 		(property "Reference" "TP29"
