@@ -197,7 +197,10 @@ Use a **CM4 without wireless and with eMMC**, for example `CM4004032` (4 GB RAM,
 ## Board
 
 - 4-layer PCB, 150 × 90 mm, with four M3 mounting holes.
-- Assembled on one side by JLCPCB. Parts carry LCSC part numbers.
+- Assembled on one side by JLCPCB. Parts carry LCSC part numbers. The RoboClaw
+  (A1) and the CM4 (A2) are DNP: bought separately and fitted by hand. The two
+  Hirose DF40 receptacles under the CM4 are J17/J18, BOM and placement entries
+  only, since their pads are part of the CM4 footprint.
 - The RoboClaw sits in sockets (J15/J16) so it can be removed. Nothing is placed
   under the CM4 or the RoboClaw.
 - The inner layers are planes:
