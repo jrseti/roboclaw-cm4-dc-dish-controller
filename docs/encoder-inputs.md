@@ -168,3 +168,80 @@ Bench checks before closing the enclosure:
       the min/max position limits from the end-of-travel readings.
 - [ ] RC_5V load: four 1k pull-ups (≤ 20 mA) plus the sensors stay well under the
       800 mA BEC limit; a 12 V sensor draws from the battery branch instead.
+
+## On-axis encoders on J4 (CM4)
+
+The RoboClaw channels above take the motor-shaft encoders. Two more
+E6B2-CWZ6C encoders can sit directly on the dish axes and be read by the CM4
+through the GPIO header J4. They give a slow, independent position reference.
+
+J4 has enough GPIOs for both encoders, including the Z (index) outputs:
+
+| Signal | CM4 GPIO | J4 pin |
+|---|---|---|
+| ENC1 A | GPIO17 | 20 |
+| ENC1 B | GPIO27 | 23 |
+| ENC1 Z | GPIO19 | 11 |
+| ENC2 A | GPIO22 | 21 |
+| ENC2 B | GPIO26 | 9 |
+| ENC2 Z | GPIO0 | 13 |
+| Encoder V+ | 5 V | 7 |
+| Pull-up supply | 3V3_CM4 | 5 |
+| Encoder 0 V | GND | 6, 8, 10, 16 or 18 |
+
+GPIO0 works as a plain GPIO only with `force_eeprom_read=0` in config.txt.
+Otherwise the firmware probes it for a HAT EEPROM at boot. If you do not need
+ENC2 Z, leave GPIO0 free. The SPI0 pins on J4 are also usable as GPIOs when SPI
+is not in use.
+
+### Mounting a HAT board on J4
+
+A small interface board can plug straight onto J4 with an 8.5 mm female
+header, which puts its underside 11.0 mm above the main board. Mounting hole
+H7 secures it: an M2.5 hole with no copper, 2.7 mm diameter, at (72.9, 112.6)
+on the main board. That is 7.36 mm east and 5.85 mm north of J4 pin 1, between
+the pin 5 and pin 7 rows. Use an M2.5 x 11 mm standoff. Copper is held back
+3 mm around the hole on every layer, so the standoff and the screw head sit on
+bare laminate.
+
+On the HAT, put the matching hole 7.36 mm east and 5.85 mm north of its J4
+pin 1 socket. The HAT can extend about 10 mm east of J4 before it reaches the
+CM4 at x 77; wider HATs pass over the CM4 with about 5.9 mm to spare under
+them.
+
+### Interface circuit (off-board)
+
+These J4 pins are bare 3.3 V CM4 GPIOs. They have no pull-ups, series
+resistors or clamps on the board, and they are not 5 V tolerant. Long encoder
+cables on the dish need conditioning, and J4 has no spare room for it on the
+board, so put it on a small breakout or terminal board at J4. Per encoder
+output (A, B, Z):
+
+- **Pull-up, 2.2 kΩ to 3V3_CM4 (J4-5).** The E6B2 output is NPN open
+  collector, so it only pulls low. With a 3.3 V pull-up the GPIO sees 0 to
+  3.3 V, and the encoder sinks 1.5 mA, well under its 35 mA limit.
+- **Series resistor, 1 kΩ, into the GPIO.** It limits the current into the CM4
+  if the cable picks up a surge or is miswired.
+- **Clamp to GND and 3V3.** Use a BAT54S on the GPIO side of the series
+  resistor, the same scheme the board uses on AIN0/AIN1, or a 3.3 V ESD diode.
+
+Power each encoder from J4-7 (5 V rail, 5.16 V). The E6B2 needs 4.75 V minimum
+and draws up to 80 mA, so two encoders take about 160 mA from the 3 A 5 V
+buck. Connect the encoder 0 V to J4 GND and the cable shield to the enclosure
+ground, not to J4.
+
+### Software
+
+The dish axes turn slowly. Even at 2000 pulses per revolution and 2 °/s an
+output toggles at about 11 Hz, so Linux GPIO edge counting is enough and no
+hardware counter is needed. Two simple options:
+
+- The kernel's rotary-encoder overlay, one line per encoder in config.txt:
+
+  ```
+  dtoverlay=rotary-encoder,pin_a=17,pin_b=27,relative_axis=1,steps-per-period=4
+  dtoverlay=rotary-encoder,pin_a=22,pin_b=26,relative_axis=1,steps-per-period=4
+  ```
+
+- Edge callbacks from user space with lgpio, which also makes it easy to latch
+  the count on the Z pulse for homing.

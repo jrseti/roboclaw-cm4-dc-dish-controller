@@ -2897,7 +2897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
 			(at 54.61 40.64 0)
 			(hide yes)
 			(show_name no)

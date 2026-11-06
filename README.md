@@ -149,6 +149,10 @@ detail.
   - A second SMA input accepts an external 1PPS reference, such as an FE-5680A
     rubidium clock.
 - **GPIO header (J4):** spare CM4 GPIOs and two protected analog inputs.
+  Two on-axis E6B2-CWZ6C encoders can be read here, see
+  [On-axis encoders on J4](docs/encoder-inputs.md#on-axis-encoders-on-j4-cm4).
+  H7, an M2.5 hole next to J4, secures a plug-on HAT board; see
+  [Mounting a HAT board on J4](docs/encoder-inputs.md#mounting-a-hat-board-on-j4).
 - **Jumpers:** boot control, EEPROM write protect and self power-cycle.
 - **Boot console UART (J5):** a serial console on the CM4's UART0. See below.
 
