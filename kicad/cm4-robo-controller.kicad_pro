@@ -729,6 +729,9 @@
       "/CM4/AIN1": [
         "AIN"
       ],
+      "/CM4/usb/usb2/VBUS_USBC": [
+        "VBUS"
+      ],
       "/Robo/V_MOTOR": [
         "V_MOTOR"
       ],

@@ -5369,6 +5369,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:SMD0603-020-24V"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMD0603-020-24V"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C19108393.html"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTC resettable fuse 200mA hold 500mA trip 24V 0603, 0.55 ohm initial, 3.5 ohm max after trip"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "TECHFUSE"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMD0603-020-24V"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C19108393"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC resettable fuse polyfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMD0603-020-24V_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.016) (xy 2.54 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:SMF5.0A"
 			(pin_numbers
 				(hide yes)
@@ -6591,6 +6771,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "SMD0603-020-24V_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMD0603-020-24V"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C19108393.html"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTC resettable fuse 200mA hold 500mA trip 24V 0603, 0.55 ohm initial, 3.5 ohm max after trip"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "TECHFUSE"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMD0603-020-24V"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C19108393"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC resettable fuse polyfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMD0603-020-24V_1_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.016) (xy 2.54 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -7049,6 +7409,17 @@
 		)
 		(uuid "0583a89b-3944-4f3b-a0f1-0aa53e886357")
 	)
+	(text "F6 / F7: 200 mA PTC (TECHFUSE SMD0603-020-24V, 0.55 ohm) in series with the 5 V\noption only (JP1 / JP4 1-2). RC_5V is the RoboClaw BEC, which also feeds the\nRoboClaw logic: a shorted or miswired encoder cable on the 5 V setting would\ndrag it down. F6/F7 trip at 500 mA and reset when the fault clears. Hold current\ncovers an E6B2-CWZ6C (80 mA) with margin; drop at 80 mA is about 50 mV. The 3.3 V\noption has F3 (100 mA), the 12 V option F4 (250 mA). The 1k pull-ups stay on\nRC_5V unfused (20 mA worst case)."
+		(exclude_from_sim no)
+		(at 150 192 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "10ee99a3-fd75-4578-93a2-419d3bfafb1f")
+	)
 	(text "2V"
 		(exclude_from_sim no)
 		(at 238.76 95.89 0)
@@ -7268,7 +7639,7 @@
 		)
 		(uuid "83f06ada-379f-4af0-841d-08b4930360c8")
 	)
-	(text "JUMPERS  (ENC1: JP1 JP2 JP3, ENC2: JP4 JP5 JP6)\nJP1/JP4  V+ supply   1-2: 5 V (RC_5V)\n                     3-4: 3.3 V (ENC_3V3, U18)\n                     5-6: 12 V (ENC_12V, battery)\n         Shunt across a row only: 1-3 or 3-5 shorts two rails.\nJP2/JP5  mode        1-3 + 2-4: QUAD\n                     3-5 + 4-6: ABS\nJP3/JP6  ABS scale   1-2: 3.3 V sensor -> 2 V\n                     2-3: 0-2 V direct\nDefault ENC1 (Firgelli): 5V, QUAD\nDefault ENC2 (AS5600): 3.3V, ABS, 3V3"
+	(text "JUMPERS  (ENC1: JP1 JP2 JP3, ENC2: JP4 JP5 JP6)\nJP1/JP4  V+ supply   1-2: 5 V (RC_5V via F6/F7, 200 mA PTC)\n                     3-4: 3.3 V (ENC_3V3, U18)\n                     5-6: 12 V (ENC_12V, battery)\n         Shunt across a row only: 1-3 or 3-5 shorts two rails.\nJP2/JP5  mode        1-3 + 2-4: QUAD\n                     3-5 + 4-6: ABS\nJP3/JP6  ABS scale   1-2: 3.3 V sensor -> 2 V\n                     2-3: 0-2 V direct\nDefault ENC1 (Firgelli): 5V, QUAD\nDefault ENC2 (AS5600): 3.3V, ABS, 3V3"
 		(exclude_from_sim no)
 		(at 207.01 156.21 0)
 		(effects
@@ -7345,9 +7716,9 @@
 		)
 		(uuid "e21c84d4-91d3-48ad-b284-786741b02ccd")
 	)
-	(text "RC_5V budget: <= 800 mA (BEC).\nLoad: ~20 mA pull-ups + sensors."
+	(text "RC_5V budget: <= 800 mA (BEC).\nLoad: ~20 mA pull-ups + sensors.\nF6/F7: 200 mA PTC, 5 V option."
 		(exclude_from_sim no)
-		(at 62.23 113.03 0)
+		(at 72.39 116.84 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7471,7 +7842,7 @@
 		(uuid "62aea66c-edb3-4e38-bfcf-e88926ce5898")
 	)
 	(junction
-		(at 86.36 105.41)
+		(at 96.52 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "642872e5-fe61-48cf-b5e3-b7d241bfafc8")
@@ -7525,7 +7896,7 @@
 		(uuid "9c6409b2-2c34-4040-b96f-d73babf9b9c8")
 	)
 	(junction
-		(at 86.36 123.19)
+		(at 96.52 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f24b556-0ee8-4731-a0d4-028fd250a192")
@@ -7928,6 +8299,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 124.46) (xy 81.28 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3821b342-b0fc-46b3-9c6d-ee22945fe10a")
+	)
+	(wire
+		(pts
 			(xy 335.28 87.63) (xy 335.28 88.9)
 		)
 		(stroke
@@ -7945,6 +8326,16 @@
 			(type default)
 		)
 		(uuid "3a2cf9a6-20ad-496b-a397-db64577d9470")
+	)
+	(wire
+		(pts
+			(xy 72.39 106.68) (xy 81.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b62f565-19ce-4e2c-8f79-5d3488caf67a")
 	)
 	(wire
 		(pts
@@ -7978,7 +8369,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 105.41) (xy 88.9 105.41)
+			(xy 96.52 109.22) (xy 99.06 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7998,7 +8389,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 123.19) (xy 88.9 123.19)
+			(xy 96.52 127) (xy 99.06 127)
 		)
 		(stroke
 			(width 0)
@@ -8095,6 +8486,16 @@
 			(type default)
 		)
 		(uuid "57c8b880-bbb9-402c-8f11-4cea9778a2b1")
+	)
+	(wire
+		(pts
+			(xy 63.5 106.68) (xy 64.77 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "583038e6-f7af-4acd-b13e-a73c9632d7d9")
 	)
 	(wire
 		(pts
@@ -8218,7 +8619,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 120.65) (xy 86.36 125.73)
+			(xy 96.52 124.46) (xy 96.52 129.54)
 		)
 		(stroke
 			(width 0)
@@ -8258,7 +8659,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 102.87) (xy 86.36 107.95)
+			(xy 96.52 106.68) (xy 96.52 111.76)
 		)
 		(stroke
 			(width 0)
@@ -8858,6 +9259,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 124.46) (xy 64.77 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cee7e319-c612-4ded-8b29-06cadca6a866")
+	)
+	(wire
+		(pts
 			(xy 222.25 113.03) (xy 234.95 113.03)
 		)
 		(stroke
@@ -9317,7 +9728,7 @@
 		(uuid "34ad6729-8267-40f2-8bac-e9fafb6b85a5")
 	)
 	(label "ENC_12V"
-		(at 71.12 125.73 180)
+		(at 81.28 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9327,7 +9738,7 @@
 		(uuid "35f8024e-7595-433c-92a9-f36992670d1e")
 	)
 	(label "RC_5V"
-		(at 71.12 120.65 180)
+		(at 63.5 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9387,7 +9798,7 @@
 		(uuid "47351d3b-8393-460f-98ab-2e3177075858")
 	)
 	(label "ENC2_V"
-		(at 88.9 123.19 0)
+		(at 99.06 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9417,7 +9828,7 @@
 		(uuid "4e75eca7-ed48-41f2-9804-61e4d67e4d80")
 	)
 	(label "ENC_3V3"
-		(at 71.12 105.41 180)
+		(at 81.28 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9477,7 +9888,7 @@
 		(uuid "6f0780f0-9793-43ba-8ae8-80d27752d1b2")
 	)
 	(label "ENC_3V3"
-		(at 71.12 123.19 180)
+		(at 81.28 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9677,7 +10088,7 @@
 		(uuid "b05aa253-2d41-48a6-b699-85a2a7f1fa79")
 	)
 	(label "ENC_12V"
-		(at 71.12 107.95 180)
+		(at 81.28 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9717,7 +10128,7 @@
 		(uuid "dcbd60f6-f066-4d69-9955-b95a61b6d214")
 	)
 	(label "RC_5V"
-		(at 71.12 102.87 180)
+		(at 63.5 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9767,7 +10178,7 @@
 		(uuid "eff46699-d5ab-4a98-8755-f0da651fc127")
 	)
 	(label "ENC1_V"
-		(at 88.9 105.41 0)
+		(at 99.06 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18185,7 +18596,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:Header-Male-2.54_2x3")
-		(at 78.74 105.41 0)
+		(at 88.9 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18195,7 +18606,7 @@
 		(dnp no)
 		(uuid "b782d2a3-aced-4133-a53c-7ef225f9a990")
 		(property "Reference" "JP1"
-			(at 73.66 100.97 0)
+			(at 86.868 108.966 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18206,7 +18617,7 @@
 			)
 		)
 		(property "Value" "Header-Male-2.54_2x3"
-			(at 78.74 105.41 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18217,7 +18628,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:HDR-TH_6P-P2.54-V-M-R2-C3-S2.54-1"
-			(at 78.74 115.57 0)
+			(at 88.9 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18228,7 +18639,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/2.54-2_3PPin.pdf"
-			(at 78.74 118.11 0)
+			(at 88.9 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18239,7 +18650,7 @@
 			)
 		)
 		(property "Description" "2.54mm 2*3P"
-			(at 78.74 130.81 0)
+			(at 88.9 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18250,7 +18661,7 @@
 			)
 		)
 		(property "Manufacturer" "BOOMELE"
-			(at 78.74 120.65 0)
+			(at 88.9 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18261,7 +18672,7 @@
 			)
 		)
 		(property "MPN" "2.54-2*3PPin"
-			(at 78.74 123.19 0)
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18272,7 +18683,7 @@
 			)
 		)
 		(property "LCSC Part" "C65114"
-			(at 78.74 125.73 0)
+			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18283,7 +18694,7 @@
 			)
 		)
 		(property "Pkg Type" "THT Pin header 2x3 P2.54"
-			(at 78.74 105.41 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21078,7 +21489,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:Header-Male-2.54_2x3")
-		(at 78.74 123.19 0)
+		(at 88.9 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21088,7 +21499,7 @@
 		(dnp no)
 		(uuid "df820131-538c-49dc-b6f3-36246730f7ae")
 		(property "Reference" "JP4"
-			(at 73.66 118.75 0)
+			(at 87.122 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21099,7 +21510,7 @@
 			)
 		)
 		(property "Value" "Header-Male-2.54_2x3"
-			(at 78.74 123.19 0)
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21110,7 +21521,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:HDR-TH_6P-P2.54-V-M-R2-C3-S2.54-1"
-			(at 78.74 133.35 0)
+			(at 88.9 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21121,7 +21532,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/2.54-2_3PPin.pdf"
-			(at 78.74 135.89 0)
+			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21132,7 +21543,7 @@
 			)
 		)
 		(property "Description" "2.54mm 2*3P"
-			(at 78.74 148.59 0)
+			(at 88.9 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21143,7 +21554,7 @@
 			)
 		)
 		(property "Manufacturer" "BOOMELE"
-			(at 78.74 138.43 0)
+			(at 88.9 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21154,7 +21565,7 @@
 			)
 		)
 		(property "MPN" "2.54-2*3PPin"
-			(at 78.74 140.97 0)
+			(at 88.9 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21165,7 +21576,7 @@
 			)
 		)
 		(property "LCSC Part" "C65114"
-			(at 78.74 143.51 0)
+			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21176,7 +21587,7 @@
 			)
 		)
 		(property "Pkg Type" "THT Pin header 2x3 P2.54"
-			(at 78.74 123.19 0)
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21514,6 +21925,255 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:SMD0603-020-24V")
+		(at 68.58 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e812de1e-9407-447d-abdc-0d224950cec1")
+		(property "Reference" "F6"
+			(at 68.58 104.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD0603-020-24V"
+			(at 68.58 104.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19108393.html"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC resettable fuse 200mA hold 500mA trip 24V 0603, 0.55 ohm initial, 3.5 ohm max after trip"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SMD0603-020-24V"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19108393"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 68.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d8da8d9-1b37-4224-a2e1-ceb9a56783fc")
+		)
+		(pin "2"
+			(uuid "650219f1-b1bd-476d-bc57-4cf85bd314f2")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "F6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "SMD0603-020-24V_1")
+		(lib_id "MyParts:SMD0603-020-24V")
+		(at 68.58 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee0c2a84-ee3b-4980-b1b6-2f3fc6d471d8")
+		(property "Reference" "F7"
+			(at 68.58 122.428 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD0603-020-24V"
+			(at 68.58 122.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19108393.html"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC resettable fuse 200mA hold 500mA trip 24V 0603, 0.55 ohm initial, 3.5 ohm max after trip"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SMD0603-020-24V"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19108393"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eaf499b2-4aee-4d3e-99db-2d10fa06b613")
+		)
+		(pin "2"
+			(uuid "0b28bccc-0179-428f-8466-2f833a1fe601")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "F7")
 					(unit 1)
 				)
 			)

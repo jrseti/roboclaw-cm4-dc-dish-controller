@@ -16,13 +16,14 @@ RoboClaw end never sees more than 5 V or, in absolute mode, 0–2 V.
 | Stage | ENC1 parts | ENC2 parts | What it does |
 |---|---|---|---|
 | Connector (4-pin terminal block) | J8 | J9 | 1 V+ · 2 A or analog in · 3 B · 4 GND (PGND) |
-| Supply jumper (2x3, shunt across a row) | JP1 | JP4 | 1-2 = 5 V (RC_5V) · 3-4 = 3.3 V (U18) · 5-6 = battery 10–14.6 V (ENC_12V) |
+| Supply jumper (2x3, shunt across a row) | JP1 | JP4 | 1-2 = 5 V (RC_5V via F6 / F7) · 3-4 = 3.3 V (U18) · 5-6 = battery 10–14.6 V (ENC_12V) |
 | ESD clamps on pins 2 and 3 | D16, D18 | D22, D27 | TPESD0402G12V to PGND, 0.05 pF |
 | Mode header (2x3) | JP2 | JP5 | 1-3 + 2-4 = QUAD, 3-5 + 4-6 = ABS; swaps the whole network on A |
 | QUAD network on A | R47 1k, R49 100R, C57 10nF | R102, R103, C87 | pull-up to RC_5V, then 100R/10nF to EN_A |
 | Network on B (always fitted) | R51 1k, R53 100R, C59 10nF | R105, R106, C88 | same as QUAD A, straight to EN_B |
 | ABS network on A | JP3, R99 68k, R100 1k, R101 100k, C86 100nF | JP6, R57, R104, R58, C62 | JP3 1-2 = ×0.595 divider, 2-3 = 1k series; 100k/100nF node to EN_A |
 | 12 V branch (shared) | F4 250 mA PTC, D28 SMAJ20A, C89 10 µF | — | V_MOTOR → ENC_12V, on the RoboClaw ground |
+| 5 V branch | F6 200 mA PTC | F7 | RC_5V → JP1/JP4 pin 1; a shorted cable trips the PTC instead of the RoboClaw BEC |
 
 Two decisions carry all three cases. The pull-ups go to a fixed 5 V (RC_5V),
 not to the selected V+, so a 12 V sensor supply can never reach the RoboClaw

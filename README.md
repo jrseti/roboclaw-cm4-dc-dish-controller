@@ -48,7 +48,7 @@ clamps on both signals.
 
 | Jumper (ENC1 / ENC2) | Shunt | Setting |
 |---|---|---|
-| JP1 / JP4 — sensor supply (2x3, shunt across a row) | 1-2 | 5 V from the RoboClaw BEC (RC_5V) |
+| JP1 / JP4 — sensor supply (2x3, shunt across a row) | 1-2 | 5 V from the RoboClaw BEC (RC_5V) through F6 / F7, 200 mA PTC |
 | | 3-4 | 3.3 V from the on-board LDO U18 (ENC_3V3) |
 | | 5-6 | Battery voltage, 10–14.6 V (ENC_12V: V_MOTOR via a 250 mA PTC, SMAJ20A clamp), e.g. for an E6B2-CWZ6C |
 | JP2 / JP5 — mode (2x3) | 1-3 + 2-4 | QUAD: A gets a 1k pull-up to 5 V and a 100R/10nF filter; B always does |
