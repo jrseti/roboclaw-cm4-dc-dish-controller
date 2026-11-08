@@ -50,7 +50,7 @@ clamps on both signals.
 |---|---|---|
 | JP1 / JP4 — sensor supply (2x3, shunt across a row) | 1-2 | 5 V from the RoboClaw BEC (RC_5V) through F6 / F7, 200 mA PTC |
 | | 3-4 | 3.3 V from the on-board LDO U18 (ENC_3V3) |
-| | 5-6 | Battery voltage, 10–14.6 V (ENC_12V: V_MOTOR via a 250 mA PTC, SMAJ20A clamp), e.g. for an E6B2-CWZ6C |
+| | 5-6 | Battery voltage, 10–14.6 V (ENC_12V: V_MOTOR via a 350 mA PTC, SMAJ20A clamp), e.g. for an E6B2-CWZ6C |
 | JP2 / JP5 — mode (2x3) | 1-3 + 2-4 | QUAD: A gets a 1k pull-up to 5 V and a 100R/10nF filter; B always does |
 | | 3-5 + 4-6 | ABS: A goes to the analog node (100k/100nF); the pull-up is disconnected |
 | JP3 / JP6 — ABS scaling | 1-2 | 68k/100k divider (×0.6) for a 3.3 V sensor such as the AS5600 |
@@ -100,6 +100,10 @@ detail.
 - **Fuses:** two ATO blade fuses split the supply:
   - F1 (15 A) feeds the RoboClaw motor supply (V_MOTOR).
   - F2 (5 A) feeds the logic branch.
+  - D29 (SS54, 5 A Schottky, next to F1 above D1) sits across F1 as the return
+    path for RoboClaw regenerative current when F1 is open, as the RoboClaw data
+    sheet recommends. A fault that blows F1 pulls V_MOTOR low, so D29 cannot
+    bypass the fuse.
 
   <img src="images/fuse.jpg" alt="5 A ATO automotive blade fuse" width="120">
 
@@ -148,7 +152,8 @@ detail.
     connects to an SMA jack, and a coin cell backs up the receiver for fast restarts.
   - A second SMA input accepts an external 1PPS reference, such as an FE-5680A
     rubidium clock.
-- **GPIO header (J4):** spare CM4 GPIOs and two protected analog inputs.
+- **GPIO header (J4):** spare CM4 GPIOs and two protected analog inputs. The
+  3.3 V on pin 5 is fused at 100 mA (F9); the 5 V on pin 7 is not.
   Two on-axis E6B2-CWZ6C encoders can be read here, see
   [On-axis encoders on J4](docs/encoder-inputs.md#on-axis-encoders-on-j4-cm4).
   H7, an M2.5 hole next to J4, secures a plug-on HAT board; see

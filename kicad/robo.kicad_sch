@@ -2206,6 +2206,208 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:1206L035-60NR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "350mA"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyParts:F1206"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${MYPARTS_DATASHEETS}/1206L025-60NR.pdf"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTC resettable fuse 350mA hold 750mA trip 60V 1206, 0.25 ohm initial, 1.5 ohm max after trip"
+				(at 0 -24.13 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "LUTE"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "1206L035/60NR"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C55109877"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 1206"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC resettable fuse polyfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1206L035-60NR_0_1"
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy -2.54 -1.27) (xy -1.27 1.27) (xy 0 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(bezier
+					(pts
+						(xy 0 -1.27) (xy 1.27 -3.81) (xy 2.54 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy 3.81 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -8.89 -1.27 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -1.27 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:74LVC1G17SE-7"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7409,7 +7611,7 @@
 		)
 		(uuid "0583a89b-3944-4f3b-a0f1-0aa53e886357")
 	)
-	(text "F6 / F7: 200 mA PTC (TECHFUSE SMD0603-020-24V, 0.55 ohm) in series with the 5 V\noption only (JP1 / JP4 1-2). RC_5V is the RoboClaw BEC, which also feeds the\nRoboClaw logic: a shorted or miswired encoder cable on the 5 V setting would\ndrag it down. F6/F7 trip at 500 mA and reset when the fault clears. Hold current\ncovers an E6B2-CWZ6C (80 mA) with margin; drop at 80 mA is about 50 mV. The 3.3 V\noption has F3 (100 mA), the 12 V option F4 (250 mA). The 1k pull-ups stay on\nRC_5V unfused (20 mA worst case)."
+	(text "F6 / F7: 200 mA PTC (TECHFUSE SMD0603-020-24V, 0.55 ohm) in series with the 5 V\noption only (JP1 / JP4 1-2). RC_5V is the RoboClaw BEC, which also feeds the\nRoboClaw logic: a shorted or miswired encoder cable on the 5 V setting would\ndrag it down. F6/F7 trip at 500 mA and reset when the fault clears. Hold current\ncovers an E6B2-CWZ6C (80 mA) with margin; drop at 80 mA is about 50 mV. The 3.3 V\noption has F3 (100 mA), the 12 V option F4 (350 mA). The 1k pull-ups stay on\nRC_5V unfused (20 mA worst case)."
 		(exclude_from_sim no)
 		(at 150 192 0)
 		(effects
@@ -7727,7 +7929,7 @@
 		)
 		(uuid "f2de7e5d-e19d-4e62-b25e-754e81c7ca60")
 	)
-	(text "Battery voltage (10-14.6 V) for sensors that need it (E6B2-CWZ6C: 5-24 V, 80 mA)\nand the E-stop / limit-switch loops (4.7k pull-ups). From V_MOTOR, so the return stays on\nthe RoboClaw ground. F4 250 mA PTC, D28 SMAJ20A, C89 10 uF. Encoder pull-ups: RC_5V."
+	(text "Battery voltage (10-14.6 V) for sensors that need it (E6B2-CWZ6C: 5-24 V, 80 mA)\nand the E-stop / limit-switch loops (4.7k pull-ups). From V_MOTOR, so the return stays on\nthe RoboClaw ground. F4 350 mA PTC, D28 SMAJ20A, C89 10 uF. Encoder pull-ups: RC_5V."
 		(exclude_from_sim no)
 		(at 208.28 184.15 0)
 		(effects
@@ -11819,7 +12021,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MyParts:1206L025-60NR")
+		(lib_id "MyParts:1206L035-60NR")
 		(at 231.14 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -11839,7 +12041,7 @@
 				)
 			)
 		)
-		(property "Value" "250mA"
+		(property "Value" "350mA"
 			(at 231.14 171.45 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11871,7 +12073,7 @@
 				)
 			)
 		)
-		(property "Description" "PTC resettable fuse 250mA hold 500mA trip 60V 1206, 0.35 ohm initial"
+		(property "Description" "PTC resettable fuse 350mA hold 750mA trip 60V 1206, 0.25 ohm initial, 1.5 ohm max after trip"
 			(at 231.14 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11893,7 +12095,7 @@
 				)
 			)
 		)
-		(property "MPN" "1206L025/60NR"
+		(property "MPN" "1206L035/60NR"
 			(at 231.14 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11904,7 +12106,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C47345582"
+		(property "LCSC Part" "C55109877"
 			(at 231.14 167.64 0)
 			(hide yes)
 			(show_name no)

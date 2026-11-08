@@ -1809,6 +1809,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:SMD0603-010-24V"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMD0603-010-24V"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C70048.html"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTC resettable fuse 100mA hold 300mA trip 24V 0603, 0.9 ohm initial, 10 ohm max after trip"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "TECHFUSE"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMD0603-010-24V"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C70048"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC resettable fuse polyfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMD0603-010-24V_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.016) (xy 2.54 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1927,7 +2107,7 @@
 	)
 	(rectangle
 		(start 127 47.625)
-		(end 283.21 121.92)
+		(end 269.24 121.92)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2007,7 +2187,7 @@
 	)
 	(text "GPIO2"
 		(exclude_from_sim no)
-		(at 104.902 86.614 0)
+		(at 109.982 86.614 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2017,7 +2197,7 @@
 	)
 	(text "GPIO0 (J4-13) as plain GPIO: add to config.txt\n  force_eeprom_read=0\n  disable_poe_fan=1\nor the firmware probes GPIO0/1 (I2C0) for a HAT EEPROM at boot."
 		(exclude_from_sim no)
-		(at 60.96 112.522 0)
+		(at 60.96 113.792 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -2028,7 +2208,7 @@
 	)
 	(text "EEPROM WRITE PROTECT (EEPROM_nWP, J3 3-4)\nThe CM4 pulls EEPROM_nWP up internally (100k), so the\nbootloader EEPROM is writable unless J3 3-4 is fitted.\nThe jumper only takes effect once protection is enabled\nin the bootloader config (CM4 datasheet 2.18).\n\nProduction:\n- Set eeprom_write_protect=1 in the bootloader config\n  (via usbboot or rpi-eeprom-config) before shipping.\n- Fit the J3 3-4 jumper. The EEPROM is then protected\n  from power-up (CM4 datasheet 5.1).\n\nBootloader update:\n- Remove J3 3-4, update via usbboot or self-update,\n  then refit the jumper.\n\nWhy not a GPIO with a pull-down: CM4 EEPROM updates run\nonly via usbboot or bootloader self-update (datasheet\n6.3), before Linux can drive a GPIO, so the pin could\nnever be released for an update."
 		(exclude_from_sim no)
-		(at 231.14 84.455 0)
+		(at 215.646 96.012 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -2072,7 +2252,7 @@
 	)
 	(text "GPIO3"
 		(exclude_from_sim no)
-		(at 104.902 84.074 0)
+		(at 109.982 84.074 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2093,7 +2273,7 @@
 	)
 	(text "AIN0 / AIN1 (J4-2 / J4-4), field wired, to CM4\nAnalogIP0/1 (MxL7704 ADC). Measures 0 to 2.55 V (8-bit).\nSurvives +/-24 V either polarity: R7/R6 10k series\n+ D4/D5 BAT54S clamps to GND and 3V3_CM4 (RCM4 sheet)\nhold the pins within -0.3 V / +3.6 V (abs max -0.3/+6.0).\nError: ADC input < 1 uA x 10k = 10 mV, plus clamp leakage\n(up to ~1-2 % hot). With the CM4 off, a driven input feeds\n< 0.3 mA (at 6 V) into 3V3_CM4 through the upper clamp."
 		(exclude_from_sim no)
-		(at 60.452 108.712 0)
+		(at 60.452 110.744 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -2115,7 +2295,7 @@
 	)
 	(text "GPIO9"
 		(exclude_from_sim no)
-		(at 55.8 78.994 0)
+		(at 60.88 78.994 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2125,7 +2305,7 @@
 	)
 	(text "GPIO10"
 		(exclude_from_sim no)
-		(at 55.8 81.534 0)
+		(at 60.88 81.534 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2167,7 +2347,7 @@
 	)
 	(text "GPIO8"
 		(exclude_from_sim no)
-		(at 104.902 73.914 0)
+		(at 109.982 73.914 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2177,7 +2357,7 @@
 	)
 	(text "GPIO7"
 		(exclude_from_sim no)
-		(at 104.902 71.374 0)
+		(at 109.982 71.374 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2196,6 +2376,17 @@
 		)
 		(uuid "f277ca29-2390-40bd-b66c-1021ef592967")
 	)
+	(text "F9 (100 mA PTC, SMD0603-010-24V) fuses the 3.3 V on J4 pin 5: a short on a\nplug-in board trips F9, not the CM4 rail. HAT budget 100 mA; CN3 has F8."
+		(exclude_from_sim no)
+		(at 52.324 92.71 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "fc6c294a-cf31-48d2-9e12-0c05081ac76e")
+	)
 	(text "GPIO Headers"
 		(exclude_from_sim no)
 		(at 62.992 51.562 0)
@@ -2208,7 +2399,7 @@
 	)
 	(text "GPIO11"
 		(exclude_from_sim no)
-		(at 55.8 76.454 0)
+		(at 60.88 76.454 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2223,16 +2414,16 @@
 		(uuid "0dba6c24-d94a-4864-968c-db10333a7bf9")
 	)
 	(junction
-		(at 71.12 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10ae137a-b945-4efe-be64-6bf138cf020f")
-	)
-	(junction
 		(at 205.74 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "468e9558-1347-4e18-ba5f-eb5e0085cffb")
+	)
+	(junction
+		(at 76.2 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4979b778-c86a-4b26-ba0d-79faf5912261")
 	)
 	(junction
 		(at 180.34 64.77)
@@ -2270,7 +2461,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 83.82) (xy 88.9 83.82)
+			(xy 92.71 83.82) (xy 93.98 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2290,7 +2481,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 58.42) (xy 88.9 58.42)
+			(xy 92.71 58.42) (xy 93.98 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2300,7 +2491,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 76.2) (xy 88.9 76.2)
+			(xy 92.71 76.2) (xy 93.98 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2310,17 +2501,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 59.69) (xy 71.12 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06c34723-bac6-48dc-a0d5-0cd39221b66a")
-	)
-	(wire
-		(pts
-			(xy 72.39 78.74) (xy 71.12 78.74)
+			(xy 77.47 78.74) (xy 76.2 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2340,7 +2521,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 60.96) (xy 88.9 60.96)
+			(xy 92.71 60.96) (xy 93.98 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2350,7 +2531,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 81.28) (xy 71.12 81.28)
+			(xy 77.47 81.28) (xy 76.2 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2450,7 +2631,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 58.42) (xy 71.12 59.69)
+			(xy 76.2 58.42) (xy 76.2 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2480,7 +2661,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 76.2) (xy 71.12 76.2)
+			(xy 77.47 76.2) (xy 76.2 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2500,7 +2681,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 63.5) (xy 72.39 63.5)
+			(xy 76.2 63.5) (xy 77.47 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2540,7 +2721,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 73.66) (xy 71.12 73.66)
+			(xy 77.47 73.66) (xy 76.2 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2560,7 +2741,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 63.5) (xy 88.9 63.5)
+			(xy 92.71 63.5) (xy 93.98 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2580,7 +2761,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 60.96) (xy 72.39 60.96)
+			(xy 76.2 60.96) (xy 77.47 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2600,7 +2781,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 71.12) (xy 71.12 71.12)
+			(xy 77.47 71.12) (xy 76.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2610,7 +2791,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 86.36) (xy 88.9 86.36)
+			(xy 92.71 86.36) (xy 93.98 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2630,6 +2811,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 58.42) (xy 76.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a9e79eb-4920-4b5a-9a38-ef89aa63069c")
+	)
+	(wire
+		(pts
 			(xy 198.12 67.31) (xy 200.66 67.31)
 		)
 		(stroke
@@ -2640,7 +2831,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 68.58) (xy 71.12 68.58)
+			(xy 77.47 68.58) (xy 76.2 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2670,16 +2861,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 59.69) (xy 71.12 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1d5c8ba-8b45-4822-a92e-fd0ca9e7f542")
-	)
-	(wire
-		(pts
 			(xy 204.47 146.05) (xy 205.74 146.05)
 		)
 		(stroke
@@ -2700,7 +2881,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 73.66) (xy 88.9 73.66)
+			(xy 92.71 73.66) (xy 93.98 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2710,7 +2891,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 83.82) (xy 71.12 83.82)
+			(xy 77.47 83.82) (xy 76.2 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2730,7 +2911,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 59.69) (xy 58.42 60.96)
+			(xy 63.5 58.42) (xy 63.5 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2770,7 +2951,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 78.74) (xy 88.9 78.74)
+			(xy 92.71 78.74) (xy 93.98 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2790,7 +2971,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 81.28) (xy 88.9 81.28)
+			(xy 92.71 81.28) (xy 93.98 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2820,7 +3001,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 71.12) (xy 88.9 71.12)
+			(xy 92.71 71.12) (xy 93.98 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2830,7 +3011,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 58.42) (xy 71.12 58.42)
+			(xy 77.47 58.42) (xy 76.2 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2840,7 +3021,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 66.04) (xy 72.39 66.04)
+			(xy 76.2 66.04) (xy 77.47 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2870,7 +3051,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 86.36) (xy 71.12 86.36)
+			(xy 77.47 86.36) (xy 76.2 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2910,7 +3091,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 68.58) (xy 88.9 68.58)
+			(xy 92.71 68.58) (xy 93.98 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2930,7 +3111,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 66.04) (xy 88.9 66.04)
+			(xy 92.71 66.04) (xy 93.98 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2960,7 +3141,7 @@
 	)
 	(hierarchical_label "AIN1"
 		(shape output)
-		(at 88.9 60.96 0)
+		(at 93.98 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3004,7 +3185,7 @@
 	)
 	(hierarchical_label "GPIO19"
 		(shape bidirectional)
-		(at 71.12 71.12 180)
+		(at 76.2 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3015,7 +3196,7 @@
 	)
 	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
-		(at 88.9 83.82 0)
+		(at 93.98 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3026,7 +3207,7 @@
 	)
 	(hierarchical_label "GPIO26"
 		(shape bidirectional)
-		(at 71.12 68.58 180)
+		(at 76.2 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3048,7 +3229,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 71.12 66.04 180)
+		(at 76.2 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3059,7 +3240,7 @@
 	)
 	(hierarchical_label "SPI0_MISO"
 		(shape output)
-		(at 71.12 78.74 180)
+		(at 76.2 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3103,7 +3284,7 @@
 	)
 	(hierarchical_label "SPI0_CE0"
 		(shape input)
-		(at 88.9 73.66 0)
+		(at 93.98 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3136,7 +3317,7 @@
 	)
 	(hierarchical_label "3V3_CM4"
 		(shape input)
-		(at 71.12 63.5 180)
+		(at 68.58 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3147,7 +3328,7 @@
 	)
 	(hierarchical_label "I2C1_SDA"
 		(shape bidirectional)
-		(at 88.9 86.36 0)
+		(at 93.98 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3158,7 +3339,7 @@
 	)
 	(hierarchical_label "SPI0_SCLK"
 		(shape input)
-		(at 71.12 76.2 180)
+		(at 76.2 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3169,7 +3350,7 @@
 	)
 	(hierarchical_label "GPIO22"
 		(shape bidirectional)
-		(at 71.12 83.82 180)
+		(at 76.2 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3180,7 +3361,7 @@
 	)
 	(hierarchical_label "GPIO27"
 		(shape bidirectional)
-		(at 71.12 86.36 180)
+		(at 76.2 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3191,7 +3372,7 @@
 	)
 	(hierarchical_label "GPIO17"
 		(shape bidirectional)
-		(at 88.9 81.28 0)
+		(at 93.98 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3202,7 +3383,7 @@
 	)
 	(hierarchical_label "SPI0_CE1"
 		(shape input)
-		(at 88.9 71.12 0)
+		(at 93.98 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3213,7 +3394,7 @@
 	)
 	(hierarchical_label "AIN0"
 		(shape output)
-		(at 88.9 58.42 0)
+		(at 93.98 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3235,7 +3416,7 @@
 	)
 	(hierarchical_label "GPIO0"
 		(shape bidirectional)
-		(at 71.12 73.66 180)
+		(at 76.2 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3246,7 +3427,7 @@
 	)
 	(hierarchical_label "SPI0_MOSI"
 		(shape input)
-		(at 71.12 81.28 180)
+		(at 76.2 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3257,7 +3438,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 68.58 90)
+		(at 93.98 68.58 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3268,7 +3449,7 @@
 		(fields_autoplaced yes)
 		(uuid "028c60fc-d6fe-444a-98b4-6ae43525de0b")
 		(property "Reference" "#PWR0469"
-			(at 95.25 68.58 0)
+			(at 100.33 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3279,7 +3460,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 68.58 0)
+			(at 97.79 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3290,7 +3471,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 68.58 90)
+			(at 93.98 68.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3301,7 +3482,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 68.58 90)
+			(at 93.98 68.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3312,7 +3493,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 68.58 90)
+			(at 93.98 68.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3336,7 +3517,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 66.04 90)
+		(at 93.98 66.04 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3347,7 +3528,7 @@
 		(fields_autoplaced yes)
 		(uuid "0fcc6b56-0957-4750-9d4a-ee0a6be8085b")
 		(property "Reference" "#PWR0468"
-			(at 95.25 66.04 0)
+			(at 100.33 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3358,7 +3539,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 66.04 0)
+			(at 97.79 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3369,7 +3550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 66.04 90)
+			(at 93.98 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3380,7 +3561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 66.04 90)
+			(at 93.98 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3391,7 +3572,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 66.04 90)
+			(at 93.98 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3690,7 +3871,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 63.5 90)
+		(at 93.98 63.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3701,7 +3882,7 @@
 		(fields_autoplaced yes)
 		(uuid "41b416e7-5241-427a-8619-94ba3eaaf38c")
 		(property "Reference" "#PWR0467"
-			(at 95.25 63.5 0)
+			(at 100.33 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3712,7 +3893,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 63.5 0)
+			(at 97.79 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3723,7 +3904,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 63.5 90)
+			(at 93.98 63.5 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3734,7 +3915,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 63.5 90)
+			(at 93.98 63.5 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3745,7 +3926,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 63.5 90)
+			(at 93.98 63.5 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3841,6 +4022,130 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
 					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:SMD0603-010-24V")
+		(at 72.39 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49fa96e9-360b-4574-aba4-e9c057848f9a")
+		(property "Reference" "F9"
+			(at 72.39 61.468 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD0603-010-24V"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C70048.html"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC resettable fuse 100mA hold 300mA trip 24V 0603, 0.9 ohm initial, 10 ohm max after trip"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SMD0603-010-24V"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C70048"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 72.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58aa20ec-5bc9-47d4-8e8c-a8221d206bf6")
+		)
+		(pin "2"
+			(uuid "201352d3-5074-427c-abab-5ff12a15b386")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/ea625b3a-a58b-4ce4-9f3d-01a79f8438bc"
+					(reference "F9")
 					(unit 1)
 				)
 			)
@@ -4256,7 +4561,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:2541WV-2X12P")
-		(at 80.01 72.39 0)
+		(at 85.09 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4266,7 +4571,7 @@
 		(dnp no)
 		(uuid "a2b4c5b2-9fde-4feb-8642-628cbe3d8427")
 		(property "Reference" "J4"
-			(at 80.01 67.056 0)
+			(at 85.09 67.056 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4276,7 +4581,7 @@
 			)
 		)
 		(property "Value" "2541WV-2X12P"
-			(at 80.264 90.17 0)
+			(at 85.344 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4286,7 +4591,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:HDR-TH_24P-P2.54-V-M-R2-C12-S2.54"
-			(at 80.01 93.98 0)
+			(at 85.09 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4297,7 +4602,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/2541WV-2x12P.pdf"
-			(at 80.01 96.52 0)
+			(at 85.09 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4308,7 +4613,7 @@
 			)
 		)
 		(property "Description" "-55℃~+105℃ 2 2.54mm 2.54mm 2.54mm 24P 2x12P 3A 3mm 6mm Brass Gold Pin Header Through Hole Plugin,P=2.54mm Pin Headers ROHS"
-			(at 80.01 72.39 0)
+			(at 85.09 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4319,7 +4624,7 @@
 			)
 		)
 		(property "Manufacturer" "HanElectricity"
-			(at 80.01 99.06 0)
+			(at 85.09 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4330,7 +4635,7 @@
 			)
 		)
 		(property "MPN" "2541WV-2x12P"
-			(at 80.01 101.6 0)
+			(at 85.09 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4341,7 +4646,7 @@
 			)
 		)
 		(property "LCSC Part" "C5383110"
-			(at 80.01 104.14 0)
+			(at 85.09 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4352,7 +4657,7 @@
 			)
 		)
 		(property "Pkg Type" "THT Pin header 2x12 P2.54"
-			(at 80.01 72.39 0)
+			(at 85.09 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4524,7 +4829,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 60.96 0)
+		(at 63.5 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4535,7 +4840,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3e7ed22-d6ed-40ba-956f-5d3f360875c1")
 		(property "Reference" "#PWR0106"
-			(at 58.42 67.31 0)
+			(at 63.5 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4546,7 +4851,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 66.04 0)
+			(at 63.5 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4557,7 +4862,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 60.96 0)
+			(at 63.5 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4568,7 +4873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 60.96 0)
+			(at 63.5 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4579,7 +4884,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 60.96 0)
+			(at 63.5 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4603,7 +4908,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 76.2 90)
+		(at 93.98 76.2 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4614,7 +4919,7 @@
 		(fields_autoplaced yes)
 		(uuid "c55542ee-ac3c-46a3-bd9b-45797864d466")
 		(property "Reference" "#PWR0470"
-			(at 95.25 76.2 0)
+			(at 100.33 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4625,7 +4930,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 76.2 0)
+			(at 97.79 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4636,7 +4941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 76.2 90)
+			(at 93.98 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4647,7 +4952,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 76.2 90)
+			(at 93.98 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4658,7 +4963,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 76.2 90)
+			(at 93.98 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5265,7 +5570,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 78.74 90)
+		(at 93.98 78.74 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5276,7 +5581,7 @@
 		(fields_autoplaced yes)
 		(uuid "f92f3f8d-5baa-45d8-ae64-421f951c2598")
 		(property "Reference" "#PWR0471"
-			(at 95.25 78.74 0)
+			(at 100.33 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5287,7 +5592,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 78.74 0)
+			(at 97.79 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,7 +5603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 78.74 90)
+			(at 93.98 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5309,7 +5614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 78.74 90)
+			(at 93.98 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5320,7 +5625,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 78.74 90)
+			(at 93.98 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

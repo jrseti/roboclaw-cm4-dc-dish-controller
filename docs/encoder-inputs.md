@@ -22,7 +22,7 @@ RoboClaw end never sees more than 5 V or, in absolute mode, 0–2 V.
 | QUAD network on A | R47 1k, R49 100R, C57 10nF | R102, R103, C87 | pull-up to RC_5V, then 100R/10nF to EN_A |
 | Network on B (always fitted) | R51 1k, R53 100R, C59 10nF | R105, R106, C88 | same as QUAD A, straight to EN_B |
 | ABS network on A | JP3, R99 68k, R100 1k, R101 100k, C86 100nF | JP6, R57, R104, R58, C62 | JP3 1-2 = ×0.595 divider, 2-3 = 1k series; 100k/100nF node to EN_A |
-| 12 V branch (shared) | F4 250 mA PTC, D28 SMAJ20A, C89 10 µF | — | V_MOTOR → ENC_12V, on the RoboClaw ground |
+| 12 V branch (shared) | F4 350 mA PTC, D28 SMAJ20A, C89 10 µF | — | V_MOTOR → ENC_12V, on the RoboClaw ground |
 | 5 V branch | F6 200 mA PTC | F7 | RC_5V → JP1/JP4 pin 1; a shorted cable trips the PTC instead of the RoboClaw BEC |
 
 Two decisions carry all three cases. The pull-ups go to a fixed 5 V (RC_5V),
@@ -58,7 +58,7 @@ the encoder, so clamp it to the enclosure at the gland.
 How each part of the path handles it:
 
 1. **Supply.** The encoder accepts 5 V −5 % to 24 V +15 % and draws up to
-   80 mA. On 5-6 it runs from the battery (10–14.6 V) through F4 (250 mA PTC),
+   80 mA. On 5-6 it runs from the battery (10–14.6 V) through F4 (350 mA PTC),
    clamped by D28 (SMAJ20A) and bypassed by C89; the 5 V BEC's 5.0 V nominal is
    also inside its range on 1-2. Both returns are PGND, the RoboClaw ground.
 2. **ESD.** D16/D18 (D22/D27) clamp the two signal pins at the connector.
@@ -187,7 +187,7 @@ J4 has enough GPIOs for both encoders, including the Z (index) outputs:
 | ENC2 B | GPIO26 | 9 |
 | ENC2 Z | GPIO0 | 13 |
 | Encoder V+ | 5 V | 7 |
-| Pull-up supply | 3V3_CM4 | 5 |
+| Pull-up supply | 3V3_CM4, through F9 (100 mA PTC) | 5 |
 | Encoder 0 V | GND | 6, 8, 10, 16 or 18 |
 
 GPIO0 works as a plain GPIO only with `force_eeprom_read=0` in config.txt.

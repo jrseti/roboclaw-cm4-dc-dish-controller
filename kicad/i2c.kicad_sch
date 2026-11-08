@@ -730,6 +730,183 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MyParts:SMD0603-010-24V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMD0603-010-24V"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C70048.html"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTC resettable fuse 100mA hold 300mA trip 24V 0603, 0.9 ohm initial, 10 ohm max after trip"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "TECHFUSE"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SMD0603-010-24V"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C70048"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pkg Type" "SMD 0603"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC resettable fuse polyfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMD0603-010-24V_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.016) (xy 2.54 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MyParts:TPESD0402G05V"
 			(pin_numbers
 				(hide yes)
@@ -2588,7 +2765,7 @@
 	)
 	(text "I2C pull-ups R20/R21 are on the CM4 Connectors sheet, enabled by H5."
 		(exclude_from_sim no)
-		(at 104.648 144.526 0)
+		(at 96.012 151.892 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2639,9 +2816,9 @@
 		)
 		(uuid "5b452ec2-062e-4845-be91-6a464270eaf5")
 	)
-	(text "The 22Ω resistors limit fault current and damp cable reflections without \nmeaningfully affecting I2C at the operating speed.\nNot using a polyfuse on the 3.3V to the I2C sensors."
+	(text "The 22Ω resistors limit fault current and damp cable reflections without \nmeaningfully affecting I2C at the operating speed.\nF8 (TECHFUSE SMD0603-010-24V, 100 mA hold, 300 mA trip, 0.9 ohm) feeds\nCN3 pin 2 from 3V3_CM4: a shorted or miswired sensor cable trips F8\ninstead of collapsing the CM4 3.3 V rail and rebooting the CM4. Sensor\nbudget 50 mA (about 50 mV drop); the CM4 PMIC is the backstop."
 		(exclude_from_sim no)
-		(at 104.648 139.446 0)
+		(at 95.758 143.002 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2694,7 +2871,7 @@
 	(text_box ""
 		(exclude_from_sim no)
 		(at 90.17 95.25 0)
-		(size 90.17 52.07)
+		(size 90.17 60.96)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2911,7 +3088,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 120.65) (xy 137.16 120.65)
+			(xy 146.05 120.65) (xy 137.16 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3111,7 +3288,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 113.03) (xy 138.43 113.03)
+			(xy 123.19 113.03) (xy 146.05 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3151,7 +3328,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 107.95) (xy 138.43 107.95)
+			(xy 137.16 107.95) (xy 146.05 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3301,7 +3478,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 115.57) (xy 138.43 115.57)
+			(xy 129.54 115.57) (xy 146.05 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3311,7 +3488,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 125.73) (xy 138.43 125.73)
+			(xy 137.16 125.73) (xy 146.05 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4601,7 +4778,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:SM04B-SRSS-TB(LF)(SN)")
-		(at 142.24 116.84 90)
+		(at 149.86 116.84 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4611,7 +4788,7 @@
 		(dnp no)
 		(uuid "61fd9615-7709-429f-92af-e1d73cdb5a0a")
 		(property "Reference" "CN3"
-			(at 141.224 104.394 90)
+			(at 148.84 104.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4622,7 +4799,7 @@
 			)
 		)
 		(property "Value" "SM04B-SRSS-TB (LF)(SN)"
-			(at 135.89 130.81 90)
+			(at 143.51 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4634,7 +4811,7 @@
 			)
 		)
 		(property "Footprint" "MyPartsIPC:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
-			(at 146.05 116.84 0)
+			(at 153.67 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4645,7 +4822,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/SM04B-SRSS-TB_LF__SN_.pdf"
-			(at 148.59 116.84 0)
+			(at 156.21 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4656,7 +4833,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 116.84 0)
+			(at 149.86 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4667,7 +4844,7 @@
 			)
 		)
 		(property "LCSC Part" "C160404"
-			(at 151.13 116.84 0)
+			(at 158.75 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4678,7 +4855,7 @@
 			)
 		)
 		(property "MPN" "SM04B-SRSS-TB(LF)(SN)"
-			(at 135.89 130.81 90)
+			(at 143.51 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4689,7 +4866,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD JST SH 1x4 P1.00"
-			(at 135.89 130.81 90)
+			(at 143.51 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6561,6 +6738,130 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/588e6858-0fe3-41af-96b0-2f025e1a9578"
 					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MyParts:SMD0603-010-24V")
+		(at 142.24 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7c39f33-dfc7-41fe-8b48-740fea006868")
+		(property "Reference" "F8"
+			(at 142.24 116.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD0603-010-24V"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:FUSC1608X100N"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C70048.html"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTC resettable fuse 100mA hold 300mA trip 24V 0603, 0.9 ohm initial, 10 ohm max after trip"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SMD0603-010-24V"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C70048"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0603"
+			(at 142.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09989337-1fe4-41f7-a99d-0686c82c23e4")
+		)
+		(pin "2"
+			(uuid "aa6ffb9c-d915-4a3d-81bb-60f31db14acc")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/588e6858-0fe3-41af-96b0-2f025e1a9578"
+					(reference "F8")
 					(unit 1)
 				)
 			)
