@@ -138,6 +138,14 @@ detail.
     ground at a single point (NT1) next to the battery terminal.
   - Connector shields and mounting holes go to CHASSIS, which is bled to ground
     through 1 MΩ in parallel with 4.7 nF.
+  - Once installed, GND is bonded to the utility box at the J2 antenna
+    arrestor, the only intended GND-to-box connection. Battery negative
+    already reaches the box through the board this way, so neither it nor
+    the negative of anything else on the battery may have any other
+    connection to the box or the mounting plate.
+  - The optional FE-5680A rubidium reference (1PPS into J7) is mounted
+    isolated from the plate and powered through an isolated DC-DC
+    converter, so its only connection to the board is the J7 coax shield.
 
 ## CM4 interfaces
 

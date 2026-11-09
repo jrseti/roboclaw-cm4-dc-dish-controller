@@ -1549,9 +1549,9 @@
 		)
 		(uuid "a0f547e3-98e5-461e-a0ed-828c9bac58cb")
 	)
-	(text "R2/C1: CHASSIS-GND bleed. Place near\nUSB-C / USB-A / RJ45. Shields and RJ45\ntermination (P10) go to CHASSIS."
+	(text "R2/C1: CHASSIS-GND static bleed (R2) and HF\nbond (C1, keep 2 kV). Shields and RJ45\ntermination (P10) go to CHASSIS. Installed,\nGND is also bonded to the box at the J2\narrestor, so R2 is bypassed at DC."
 		(exclude_from_sim no)
-		(at 73.66 186.69 0)
+		(at 76.2 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
