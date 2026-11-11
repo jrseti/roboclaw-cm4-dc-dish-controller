@@ -6080,9 +6080,9 @@
 		)
 		(uuid "2721df53-c4d4-408d-91d3-228fce1c847b")
 	)
-	(text "J17/J18: Hirose DF40C-100DS-0.4V(51)\nCM4 receptacles (LCSC C597931).\nBOM / CPL only: their pads are in the\nA2 footprint. J17 = pads 1-100,\nJ18 = pads 101-200, pin 1 lower left.\nA1 (RoboClaw) and A2 (CM4): DNP, bought\nseparately, fitted by hand; A2 is also\nexcluded from the position file."
+	(text "J17/J18: Hirose DF40C-100DS-0.4V(51) CM4 receptacles (LCSC C597931).\nBOM / CPL only: their pads are in the A2 footprint. J17 = pads 1-100,\nJ18 = pads 101-200, pin 1 lower left. A1 (RoboClaw) and A2 (CM4): DNP, bought\nseparately, fitted by hand; A2 is also excluded from the position file."
 		(exclude_from_sim no)
-		(at 177 154.3 0)
+		(at 162.56 158.75 0)
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -18002,7 +18002,7 @@
 				)
 			)
 		)
-		(property "Value" "E6C0805UR"
+		(property "Value" "GREEN"
 			(at 110.49 191.77 0)
 			(show_name no)
 			(do_not_autoplace no)

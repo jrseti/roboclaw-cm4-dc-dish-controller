@@ -6710,7 +6710,7 @@
 				)
 			)
 		)
-		(property "Value" "SMD0603-005-24V"
+		(property "Value" "50mA"
 			(at 46.228 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)

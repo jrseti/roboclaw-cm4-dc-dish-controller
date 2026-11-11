@@ -7581,7 +7581,7 @@
 	)
 	(rectangle
 		(start 111.76 137.16)
-		(end 198.12 173.99)
+		(end 198.12 178.435)
 		(stroke
 			(width 0)
 			(type dash)
@@ -7756,7 +7756,7 @@
 		)
 		(uuid "13314fb5-e38c-42c0-b860-b14cdf0929c6")
 	)
-	(text "The encoder connectors J8/J9 (field-wired) take their 3.3 V option from U18 (TPS70933, 30 V max,\nfrom RC_5V), not 3V3_CM4, so a miswired sensor supply cannot back-feed the CM4 or the GPS. U18 \nblocks reverse current, so it cannot reach RC_5V either. EN is left open (internal pull-up; \nnever tie EN to IN).\nF3 (100 mA PTC) sits between J9 and D23 (SMBJ3V3); F3 limits a shorted cable or a miswire\nonto J8/J9 while D23 clamps U18 OUT (7 V abs max). C81 >= 1.5 uF effective."
+	(text "The encoder connectors J8/J9 (field-wired) take their 3.3 V option from U18 (TPS70933, 30 V max,\nfrom RC_5V), not 3V3_CM4, so a miswired sensor supply cannot back-feed the CM4 or the GPS. U18 \nblocks reverse current, so it cannot reach RC_5V either. EN: R110 100k pull-up to RC_5V, TP37\nfor test (ground TP37 to hold U18 off). Never tie EN straight to IN.\nF3 (100 mA PTC) sits between J9 and D23 (SMBJ3V3); F3 limits a shorted cable or a miswire\nonto J8/J9 while D23 clamps U18 OUT (7 V abs max). C81 >= 1.5 uF effective."
 		(exclude_from_sim no)
 		(at 113.538 164.084 0)
 		(effects
@@ -7944,7 +7944,7 @@
 	)
 	(text "D23: Vishay SMBJ3V3-E3/52, 600 W\nSMB TVS. VBR >= 4.1 V, VC 7.3 V\n@ 50 A, IR <= 200 uA. Holds U18 OUT\n(7 V abs max) on a J9 miswire until\nF3 trips. Not a generic SMBJ3.3A:\nsome break down at 6.5 V."
 		(exclude_from_sim no)
-		(at 166.37 151.765 0)
+		(at 165.354 153.924 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7985,6 +7985,17 @@
 			(justify left bottom)
 		)
 		(uuid "8f405950-873e-40c0-a4e1-6895e9573a28")
+	)
+	(text "U18 EN (pin 3): R110 100k pull-up to RC_5V, TP37 for test. Ground TP37 to hold U18 off,\nrelease to run. EN clamps at 6.5 V: keep TP37 under 6 V and never tie EN straight to IN."
+		(exclude_from_sim no)
+		(at 113.538 176.022 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "9cdaf491-e452-4588-8f38-5657a54e15f3")
 	)
 	(text "EMC: run motor leads in shielded cable, shield\nclamped 360 deg to the enclosure at the gland\n(not to J11/J14). Clip-on CM ferrite per pair at\nentry; 100 nF brush caps at the motors. Keep\nmotor leads away from GNSS/encoder wiring."
 		(exclude_from_sim no)
@@ -8107,7 +8118,7 @@
 		(uuid "ffd26183-2e06-4211-b60e-2e7561dd1ab0")
 	)
 	(junction
-		(at 147.32 147.32)
+		(at 153.67 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "070f8b06-3570-4c28-80e8-3c8c41ae3c23")
@@ -8149,13 +8160,19 @@
 		(uuid "39c91082-fbb7-4a7a-a31a-117f21f7b064")
 	)
 	(junction
+		(at 133.35 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "420b1981-6cb3-4015-a404-99619725b359")
+	)
+	(junction
 		(at 245.11 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49d23055-dffe-459f-b25c-6ecaf17943fc")
 	)
 	(junction
-		(at 154.94 147.32)
+		(at 161.29 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4fdb4038-60e1-4b4a-bac2-8a8d35863ea5")
@@ -8203,7 +8220,7 @@
 		(uuid "8d14bba2-1221-4cf0-a9b8-26dc7cb8a49f")
 	)
 	(junction
-		(at 127 147.32)
+		(at 133.35 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d8340cf-c230-48db-a80c-ebb7286938e5")
@@ -8251,12 +8268,6 @@
 		(uuid "a640176c-fd9d-4d8d-8e5d-d2ed808ee711")
 	)
 	(junction
-		(at 123.19 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c736c1f8-e9d0-4159-899c-84f4135d3e1c")
-	)
-	(junction
 		(at 160.02 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8287,6 +8298,12 @@
 		(uuid "e75d3f16-382b-45a5-9a1b-ab879131a03b")
 	)
 	(junction
+		(at 128.27 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e884e61a-63fc-4539-89d4-0cad7d96e0ee")
+	)
+	(junction
 		(at 175.26 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8297,6 +8314,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb672eb2-5087-4755-ae28-09e9b8ec40f0")
+	)
+	(junction
+		(at 123.19 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5c41245-d8fa-4e0d-989a-b4bdba9a555c")
 	)
 	(junction
 		(at 335.28 76.2)
@@ -8317,10 +8340,6 @@
 	(no_connect
 		(at 102.87 69.85)
 		(uuid "904e2734-79ee-41ea-8914-70ed6024c7eb")
-	)
-	(no_connect
-		(at 128.27 149.86)
-		(uuid "aaa55694-da08-498d-9436-a670f0841f2a")
 	)
 	(no_connect
 		(at 67.31 82.55)
@@ -8450,6 +8469,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 149.86) (xy 133.35 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ff12825-a8f4-4610-a390-9aaa3840d5b8")
+	)
+	(wire
+		(pts
 			(xy 317.5 101.6) (xy 323.85 101.6)
 		)
 		(stroke
@@ -8457,6 +8486,16 @@
 			(type default)
 		)
 		(uuid "141757be-b8a6-471a-8f19-bd791b802148")
+	)
+	(wire
+		(pts
+			(xy 128.27 160.02) (xy 128.27 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1474bbd1-94ad-4391-9f9b-60aa31f5d153")
 	)
 	(wire
 		(pts
@@ -8590,7 +8629,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 147.32) (xy 160.02 147.32)
+			(xy 153.67 147.32) (xy 166.37 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8600,13 +8639,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 147.32) (xy 182.88 147.32)
+			(xy 134.62 149.86) (xy 133.35 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e91218d-9a39-4dbf-964f-7bf6e767b02f")
+		(uuid "2e7141ef-207c-45d5-a390-6593caffcea5")
 	)
 	(wire
 		(pts
@@ -8750,6 +8789,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 154.94) (xy 123.19 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4667ef31-d9a3-4d99-bade-42998f2f0d52")
+	)
+	(wire
+		(pts
 			(xy 342.9 101.6) (xy 344.17 101.6)
 		)
 		(stroke
@@ -8800,13 +8849,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 147.32) (xy 123.19 147.32)
+			(xy 133.35 160.02) (xy 128.27 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "560e5860-5e59-4f18-9b6f-576fe3a6b635")
+		(uuid "54a4857a-16c9-4de4-ab17-d0331b4807d0")
 	)
 	(wire
 		(pts
@@ -8867,6 +8916,16 @@
 			(type default)
 		)
 		(uuid "59c9291c-123f-4043-b8a1-e820a069ff6c")
+	)
+	(wire
+		(pts
+			(xy 121.92 147.32) (xy 123.19 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2ccc4a-48b9-434a-a8da-c719e2812700")
 	)
 	(wire
 		(pts
@@ -8940,7 +8999,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 146.05) (xy 127 147.32)
+			(xy 133.35 146.05) (xy 133.35 147.32)
 		)
 		(stroke
 			(width 0)
@@ -9240,6 +9299,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 147.32) (xy 128.27 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e65bd14-1eba-4d2b-a078-a7a108457709")
+	)
+	(wire
+		(pts
 			(xy 342.9 101.6) (xy 342.9 102.87)
 		)
 		(stroke
@@ -9277,6 +9346,16 @@
 			(type default)
 		)
 		(uuid "9539808f-d5aa-45e7-9a78-4c95b859a652")
+	)
+	(wire
+		(pts
+			(xy 133.35 158.75) (xy 133.35 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "964a556b-8dbc-4e6e-8d23-3e9279ed097c")
 	)
 	(wire
 		(pts
@@ -9350,7 +9429,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 147.32) (xy 147.32 147.32)
+			(xy 128.27 147.32) (xy 134.62 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9faa80a3-3557-4795-9599-002b4009b332")
+	)
+	(wire
+		(pts
+			(xy 149.86 147.32) (xy 153.67 147.32)
 		)
 		(stroke
 			(width 0)
@@ -9530,6 +9619,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 149.86) (xy 132.08 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2ab835d-9fd2-4412-abcf-57c7ecb97002")
+	)
+	(wire
+		(pts
 			(xy 182.88 72.39) (xy 182.88 92.71)
 		)
 		(stroke
@@ -9547,6 +9646,16 @@
 			(type default)
 		)
 		(uuid "c77bd11a-6870-48c5-afd6-62b6a6eb0af1")
+	)
+	(wire
+		(pts
+			(xy 184.15 147.32) (xy 185.42 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b44056-c8d2-40ce-bf82-3cf6ec25e635")
 	)
 	(wire
 		(pts
@@ -9727,16 +9836,6 @@
 			(type default)
 		)
 		(uuid "e41d8f28-26e8-48c2-9c3d-75d3c62b310f")
-	)
-	(wire
-		(pts
-			(xy 123.19 147.32) (xy 128.27 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e445e77c-953d-40e9-a4af-196632d62cb4")
 	)
 	(wire
 		(pts
@@ -13413,7 +13512,7 @@
 		(uuid "46aa4f00-9b45-42df-993e-e515fe6ca90d")
 	)
 	(label "ENC_3V3"
-		(at 182.88 147.32 0)
+		(at 185.42 147.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14669,7 +14768,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:TPS70933DBVR")
-		(at 135.89 149.86 0)
+		(at 142.24 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14679,7 +14778,7 @@
 		(dnp no)
 		(uuid "11d625c2-3695-4858-8070-85750e382fc0")
 		(property "Reference" "U18"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14689,7 +14788,7 @@
 			)
 		)
 		(property "Value" "TPS70933DBVR"
-			(at 135.89 144.145 0)
+			(at 142.24 144.145 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14699,7 +14798,7 @@
 			)
 		)
 		(property "Footprint" "MyPartsIPC:SOT95P280X145-5N"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14710,7 +14809,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/TPS70933DBVR.pdf"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14721,7 +14820,7 @@
 			)
 		)
 		(property "Description" "TPS70933DBVR 3.3V 150mA LDO, 30V max input, 1.4uA IQ, reverse-current protection, EN with internal pull-up (do not tie EN to IN), Cout >= 1.5uF effective, SOT-23-5"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14732,7 +14831,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14743,7 +14842,7 @@
 			)
 		)
 		(property "MPN" "TPS70933DBVR"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14754,7 +14853,7 @@
 			)
 		)
 		(property "LCSC Part" "C89347"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14765,7 +14864,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD SOT-23-5"
-			(at 135.89 149.86 0)
+			(at 142.24 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18517,7 +18616,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:CL10A106MA8NRNC")
-		(at 147.32 151.13 0)
+		(at 153.67 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18527,7 +18626,7 @@
 		(dnp no)
 		(uuid "65528bc5-61c0-48f1-9999-e460fdf33563")
 		(property "Reference" "C81"
-			(at 149.225 149.86 0)
+			(at 155.575 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18538,7 +18637,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 149.225 152.4 0)
+			(at 155.575 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18549,7 +18648,7 @@
 			)
 		)
 		(property "Footprint" "MyPartsIPC:CAPC1608X95N"
-			(at 145.542 151.13 90)
+			(at 151.892 151.13 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18560,7 +18659,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/CL10A106MA8NRNC.pdf"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18571,7 +18670,7 @@
 			)
 		)
 		(property "Description" "10uF 25V X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18582,7 +18681,7 @@
 			)
 		)
 		(property "Manufacturer" "SAMSUNG"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18593,7 +18692,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18604,7 +18703,7 @@
 			)
 		)
 		(property "MPN" "CL10A106MA8NRNC"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18615,7 +18714,7 @@
 			)
 		)
 		(property "Voltage Rating" "25V"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18626,7 +18725,7 @@
 			)
 		)
 		(property "LCSC Part" "C96446"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18637,7 +18736,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD 0603"
-			(at 147.32 151.13 0)
+			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19558,7 +19657,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:SMBJ3V3")
-		(at 154.94 151.13 180)
+		(at 161.29 151.13 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19568,7 +19667,7 @@
 		(dnp no)
 		(uuid "76e228ac-b563-4037-a461-23afec77526a")
 		(property "Reference" "D23"
-			(at 157.48 149.86 0)
+			(at 163.83 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19579,7 +19678,7 @@
 			)
 		)
 		(property "Value" "SMBJ3V3"
-			(at 157.48 152.4 0)
+			(at 163.83 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19590,7 +19689,7 @@
 			)
 		)
 		(property "Footprint" "MyPartsIPC:DIOM5436X244N"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19602,7 +19701,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/SMBJ3V3.pdf"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19614,7 +19713,7 @@
 			)
 		)
 		(property "Description" "-55℃~+175℃ 1 600W@10/1000us 50A@10/1000us 200uA 3.3V 4.1V 7.3V TVS Unidirectional SMB(DO-214AA) ESD and Surge Protection (TVS/ESD) ROHS"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19626,7 +19725,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19638,7 +19737,7 @@
 			)
 		)
 		(property "ki_keywords" ""
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19650,7 +19749,7 @@
 			)
 		)
 		(property "ki_fp_filters" "D_*"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19662,7 +19761,7 @@
 			)
 		)
 		(property "MPN" "SMBJ3V3-E3/52"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19673,7 +19772,7 @@
 			)
 		)
 		(property "LCSC Part" "C82082"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19684,7 +19783,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD SMB (DO-214AA)"
-			(at 154.94 151.13 0)
+			(at 161.29 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20048,7 +20147,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 123.19 154.94 0)
+		(at 123.19 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20058,7 +20157,7 @@
 		(dnp no)
 		(uuid "7c456a2f-8786-4ed5-bacf-a7999c832b20")
 		(property "Reference" "#PWR0459"
-			(at 123.19 161.29 0)
+			(at 123.19 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20069,7 +20168,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 123.19 158.75 0)
+			(at 123.19 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20080,7 +20179,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 154.94 0)
+			(at 123.19 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20091,7 +20190,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 154.94 0)
+			(at 123.19 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20102,7 +20201,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 123.19 154.94 0)
+			(at 123.19 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20353,6 +20452,82 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
 					(reference "#PWR0473")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 132.08 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "894fe91e-2baa-4a5b-85b5-83ef027bfc9e")
+		(property "Reference" "TP37"
+			(at 132.08 148.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 159.258 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 159.258 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 159.258 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99f29835-d00e-4d2d-ba2d-4e77a6ac3c0f")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "TP37")
 					(unit 1)
 				)
 			)
@@ -20654,7 +20829,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 127 146.05 0)
+		(at 133.35 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20664,7 +20839,7 @@
 		(dnp no)
 		(uuid "96366be7-67c6-4a88-8812-77aef98e850b")
 		(property "Reference" "TP32"
-			(at 126.365 144.145 0)
+			(at 132.715 144.145 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20675,7 +20850,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 126.238 146.05 0)
+			(at 132.588 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20686,7 +20861,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
-			(at 126.238 146.05 0)
+			(at 132.588 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20697,7 +20872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 146.05 0)
+			(at 133.35 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20707,7 +20882,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 126.238 146.05 0)
+			(at 132.588 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21102,6 +21277,153 @@
 		)
 	)
 	(symbol
+		(lib_id "MyParts:0402WGF1003TCE")
+		(at 133.35 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a287b111-2199-4aae-b1ad-ce73ccd15482")
+		(property "Reference" "R110"
+			(at 134.112 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 133.35 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MyPartsIPC:RESC1005X40N"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${MYPARTS_DATASHEETS}/0402WGF1003TCE.pdf"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 100kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0402WGF1003TCE"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C25741"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD 0402"
+			(at 269.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2a65bc1d-7bc6-452b-a405-85b1cf3cc63c")
+		)
+		(pin "2"
+			(uuid "114d081d-9250-4245-b992-95fffaa09ac9")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/fb50d315-12f7-4e6b-b285-268923f15ffb"
+					(reference "R110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 143.51 80.01 0)
 		(unit 1)
@@ -21461,7 +21783,7 @@
 		(dnp no)
 		(uuid "a907b078-5cfc-4c64-8c78-4e4528f9e500")
 		(property "Reference" "C80"
-			(at 118.69 149.68 90)
+			(at 117.19 149.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21471,7 +21793,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 118.69 151.38 90)
+			(at 117.19 151.38 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22175,7 +22497,7 @@
 	)
 	(symbol
 		(lib_id "MyParts:nSMD010")
-		(at 168.91 146.05 0)
+		(at 175.26 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22185,7 +22507,7 @@
 		(dnp no)
 		(uuid "b6e346b8-a69e-4926-9337-bc2dbf791d64")
 		(property "Reference" "F3"
-			(at 168.91 142.24 0)
+			(at 175.26 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22195,7 +22517,7 @@
 			)
 		)
 		(property "Value" "100mA"
-			(at 168.91 149.86 0)
+			(at 175.26 149.86 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -22205,7 +22527,7 @@
 			)
 		)
 		(property "Footprint" "MyPartsIPC:FUSC3216X110N"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22216,7 +22538,7 @@
 			)
 		)
 		(property "Datasheet" "${MYPARTS_DATASHEETS}/nSMD010.pdf"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22227,7 +22549,7 @@
 			)
 		)
 		(property "Description" "PTC resettable fuse 100mA hold 250mA trip 60V 1206, 1.6 ohm initial"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22238,7 +22560,7 @@
 			)
 		)
 		(property "Manufacturer" "TECHFUSE"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22249,7 +22571,7 @@
 			)
 		)
 		(property "MPN" "nSMD010"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22260,7 +22582,7 @@
 			)
 		)
 		(property "LCSC Part" "C70065"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22271,7 +22593,7 @@
 			)
 		)
 		(property "Pkg Type" "SMD 1206"
-			(at 168.91 146.05 0)
+			(at 175.26 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25328,7 +25650,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 135.89 157.48 0)
+		(at 142.24 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25338,7 +25660,7 @@
 		(dnp no)
 		(uuid "dfc77384-2c91-4b1e-941d-0c3b33053e13")
 		(property "Reference" "#PWR0461"
-			(at 135.89 163.83 0)
+			(at 142.24 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25349,7 +25671,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 135.89 161.29 0)
+			(at 142.24 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25360,7 +25682,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 157.48 0)
+			(at 142.24 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25371,7 +25693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 157.48 0)
+			(at 142.24 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25382,7 +25704,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 135.89 157.48 0)
+			(at 142.24 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25653,7 +25975,7 @@
 				)
 			)
 		)
-		(property "Value" "SMD0603-020-24V"
+		(property "Value" "200mA"
 			(at 68.58 104.65 0)
 			(hide yes)
 			(show_name no)
@@ -25778,7 +26100,7 @@
 				)
 			)
 		)
-		(property "Value" "SMD0603-020-24V"
+		(property "Value" "200mA"
 			(at 68.58 122.91 0)
 			(hide yes)
 			(show_name no)
@@ -26333,7 +26655,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 147.32 154.94 0)
+		(at 153.67 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26343,7 +26665,7 @@
 		(dnp no)
 		(uuid "f37756de-860b-4b7b-9319-7d9028dc0736")
 		(property "Reference" "#PWR0460"
-			(at 147.32 161.29 0)
+			(at 153.67 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26354,7 +26676,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 147.32 158.75 0)
+			(at 153.67 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26365,7 +26687,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 154.94 0)
+			(at 153.67 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26376,7 +26698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 154.94 0)
+			(at 153.67 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26387,7 +26709,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 147.32 154.94 0)
+			(at 153.67 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26411,7 +26733,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 154.94 154.94 0)
+		(at 161.29 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26421,7 +26743,7 @@
 		(dnp no)
 		(uuid "f657c3f1-dd73-4402-b071-57398fb9768d")
 		(property "Reference" "#PWR0456"
-			(at 154.94 161.29 0)
+			(at 161.29 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26432,7 +26754,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 154.94 158.75 0)
+			(at 161.29 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26443,7 +26765,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 154.94 0)
+			(at 161.29 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26454,7 +26776,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 154.94 0)
+			(at 161.29 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26465,7 +26787,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 154.94 154.94 0)
+			(at 161.29 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

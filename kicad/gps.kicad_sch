@@ -680,7 +680,7 @@
 						(type background)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -698,7 +698,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -6636,7 +6636,7 @@
 	)
 	(text "TIMEPULSE shares a pin with SAFEBOOT_N (1k inside U12); low at\nstartup = safeboot, no NMEA (MAX-M10S IM 2.3.3.3: no load on it).\nR39/LED4 and R34 into GPIO16 (default pull-down) could hold it\nmid-rail. U14 leaves only input leakage on TIMEPULSE and drives\nthe LED and GPIO16. VCC is from 3V3_CM4: no back-power path."
 		(exclude_from_sim no)
-		(at 45.212 184.15 0)
+		(at 56.896 183.896 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -15121,7 +15121,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "XL-0805QBC"
+		(property "Value" "BLUE"
 			(at 64.77 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)

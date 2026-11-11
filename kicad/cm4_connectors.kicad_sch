@@ -4048,7 +4048,7 @@
 				)
 			)
 		)
-		(property "Value" "SMD0603-010-24V"
+		(property "Value" "100mA"
 			(at 72.39 63.5 0)
 			(hide yes)
 			(show_name no)

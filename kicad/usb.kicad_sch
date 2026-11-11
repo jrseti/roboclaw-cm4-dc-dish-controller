@@ -5915,6 +5915,12 @@
 		(uuid "38e77d31-8f8e-471e-b120-92a4f2f7c9de")
 	)
 	(junction
+		(at 90.17 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c5b9919-a937-4c98-9afc-76f8a74ca1e3")
+	)
+	(junction
 		(at 83.82 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6009,6 +6015,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73bc3477-55a4-4e02-a142-7f9b9e4a775c")
+	)
+	(junction
+		(at 265.43 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86d62d90-2b56-40e7-9799-abe6ea91c1e8")
 	)
 	(junction
 		(at 262.89 133.35)
@@ -6332,6 +6344,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 85.09) (xy 265.43 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1584c08e-28ed-4fa2-93ff-33c867aca902")
+	)
+	(wire
+		(pts
 			(xy 95.25 82.55) (xy 80.01 82.55)
 		)
 		(stroke
@@ -6612,6 +6634,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 85.09) (xy 265.43 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395e4d37-ec34-4625-898e-0a2faf9247ed")
+	)
+	(wire
+		(pts
 			(xy 92.71 50.8) (xy 92.71 48.26)
 		)
 		(stroke
@@ -6642,7 +6674,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 71.12) (xy 265.43 86.36)
+			(xy 265.43 71.12) (xy 265.43 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7292,6 +7324,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 53.34) (xy 95.25 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3dbf19c-82e9-4aa3-9f67-e0396a6f55ab")
+	)
+	(wire
+		(pts
 			(xy 162.56 59.69) (xy 165.1 59.69)
 		)
 		(stroke
@@ -7502,6 +7544,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 54.61) (xy 90.17 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ab568e-da6f-41ad-be26-1f3fbbd94abc")
+	)
+	(wire
+		(pts
 			(xy 129.54 35.56) (xy 129.54 36.83)
 		)
 		(stroke
@@ -7562,7 +7614,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 53.34) (xy 95.25 53.34)
+			(xy 88.9 53.34) (xy 90.17 53.34)
 		)
 		(stroke
 			(width 0)
@@ -20883,6 +20935,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 90.17 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "c6e26efe-3204-487e-bb4d-94078d556eef")
+		(property "Reference" "TP35"
+			(at 90.17 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4064adc-09d9-4722-886d-2237332c2efa")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "TP35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 25.4 82.55 0)
 		(unit 1)
@@ -21944,6 +22085,95 @@
 			(project "cm4-robo-controller"
 				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 266.7 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e69cbbfd-6b07-43d5-9fb5-7154ba0f53bc")
+		(property "Reference" "TP34"
+			(at 267.97 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 266.7 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TestPoint_Pad_D0.8mm"
+			(at 266.7 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 266.7 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pkg Type" "SMD Test pad D1.5"
+			(at 266.7 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d51e765d-31a2-4be6-a353-bf4d107c89e5")
+		)
+		(instances
+			(project "cm4-robo-controller"
+				(path "/c1285fbe-5f56-49a8-9041-410713cbe619/3cc0f123-2315-4414-aa85-3a1a0bb694eb/d3e40802-8c80-491e-9238-e962cd612968"
+					(reference "TP34")
 					(unit 1)
 				)
 			)
