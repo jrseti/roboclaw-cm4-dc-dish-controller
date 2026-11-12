@@ -1,8 +1,18 @@
 # roboclaw-cm4-dc-dish-controller
 
-A satellite dish controller board in the form of a carrier board for a Raspberry Pi Compute Module 4 (CM4) which commands a
-Basicmicro **RoboClaw 2x15A OEM** motor controller. Drives the dish's azimuth and
-elevation motors. The board runs from a 12.8 V LiFePO4 battery.
+A radio astronomy dish controller: a carrier board for a Raspberry Pi Compute
+Module 4 (CM4) that commands a Basicmicro **RoboClaw 2x15A OEM** brushed DC motor
+controller to drive the dish's azimuth and elevation motors. The board runs from a
+12.8 V LiFePO4 battery that can be charged from a solar panel.
+
+The goal is a self-contained observing system that points the dish, gathers data
+and stores it for later retrieval and analysis. An SDR, such as an Airspy R2,
+plugs into one USB port and an SSD into the other. The CM4 stores the samples
+either raw or integrated. Both share one USB 2.0 link (about 35–40 MB/s), so raw
+recording works at reduced bandwidth, such as the R2's 2.5 MSPS rate.
+
+Data and control go through the CM4 over Ethernet. A battery-powered fiber media
+converter can extend the link to the shack and isolate it electrically.
 
 **Schematic:** [kicad/cm4-robo-controller.pdf](kicad/cm4-robo-controller.pdf)
 
@@ -19,10 +29,10 @@ The board combines two modules:
 - **Raspberry Pi CM4**: runs the pointing software and provides networking, USB,
   GPS timing and spare I/O. It plugs into two Hirose mezzanine connectors in the
   middle of the board.
-- **RoboClaw 2x15A OEM**: a dual-channel brushed DC motor controller with
-  closed-loop position and speed control. It plugs into two pin-header sockets on
-  the right of the board. The CM4 sends it commands over a TTL serial link
-  (RoboClaw packet serial).
+- **RoboClaw 2x15A OEM**: a dual-channel controller for brushed DC motors (not
+  brushless, stepper or servo) with closed-loop position and speed control. It
+  plugs into two pin-header sockets on the right of the board. The CM4 sends it
+  commands over a TTL serial link (RoboClaw packet serial).
 
 The CM4 decides where the dish should point. The RoboClaw reads the axis sensors
 and runs the motor control loops.
@@ -146,6 +156,9 @@ detail.
   - The optional FE-5680A rubidium reference (1PPS into J7) is mounted
     isolated from the plate and powered through an isolated DC-DC
     converter, so its only connection to the board is the J7 coax shield.
+  - The SDR's antenna coax shield reaches board GND through its USB cable. Bring
+    that coax in next to the J2 arrestor, or isolate its shield from the box, so
+    it does not make a second GND-to-box bond.
 
 ## CM4 interfaces
 
