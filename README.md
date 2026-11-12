@@ -8,7 +8,7 @@ elevation motors. The board runs from a 12.8 V LiFePO4 battery.
 
 **Simulations:** [sim/README.md](sim/README.md)
 
-[Tomachie AI](https://tomachie.com) reviewed the schematic. Here is the [Certificate of Accomplishment](https://tomachie.com/v/b8da506f574865dab301721f5bbff94c9c30). Scored 97/100 (which I think is pretty good).
+[Tomachie AI](https://tomachie.com) reviewed the schematic. Here is the [review report](tomachie/TomachieReview.pdf). Scored 100/100. Its other outputs are described in [tomachie/](tomachie/README.md).
 
 ![3D render of the controller PCB](images/pcb-3d.png)
 
@@ -237,6 +237,7 @@ in progress. The software has not been started yet.
 | `parts/` | Git submodule ([jrseti/parts](https://github.com/jrseti/parts)): the `MyParts` symbol, footprint and 3D-model library, its datasheets, and `add.py` for importing LCSC parts |
 | `docs/` | Component datasheets and design notes |
 | `drawings/` | Draw.io source for the functional diagram |
+| `tomachie/` | Tomachie schematic review: report PDF, BOM, netlist, power tree and marked-up sheets ([README](tomachie/README.md)) |
 | `images/` | Images used in this README |
 | `software/` | CM4 software (not yet started) |
 
