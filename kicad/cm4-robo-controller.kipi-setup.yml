@@ -2195,7 +2195,7 @@ thermal:
   copper_at_ambient: true
   edges: []
 html_report: false
-report_format: html
+report_format: pdf
 nets:
 - /3V3_CM4
 - /5V
