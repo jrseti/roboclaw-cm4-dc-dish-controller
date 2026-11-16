@@ -1,9 +1,11 @@
 # Tomachie design review
 
+<a href="https://tomachie.com"><img src="tomachie-logo.png" alt="Tomachie" width="200" align="left" hspace="10"></a>
+Tomachie is an automated schematic review service. It reads the KiCad schematic, applies part datasheet limits, and reports power, connectivity, EMC/ESD and test coverage findings.
+
+<br clear="left">
+
 This directory holds the output of a Tomachie review of the `kicad/` project.
-Tomachie is an automated schematic review service. It reads the KiCad schematic,
-applies part datasheet limits, and reports power, connectivity, EMC/ESD and
-test coverage findings.
 
 These files are a snapshot of one review run. They describe the schematic as it
 was when it was uploaded, not as it is now. Re-run the review after schematic
