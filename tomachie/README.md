@@ -16,7 +16,7 @@ changes and replace the whole directory.
 | Tool | Tomachie 5.208 |
 | Run | Job 17953055, 2026-11-12 |
 | Input | KiCad 10 project `kicad/cm4-robo-controller.kicad_pro`, 13 sheets |
-| Scope | Schematic only. Tomachie does not see the PCB layout, routing or thermal data. |
+| Scope | Schematic only. Tomachie does not see the PCB layout, routing or thermal data here. The PCB layout is analysed separately by Tomachie's [KiPI](https://github.com/Tomachie/KiPI) power integrity tool; its results are in [kipi/](../kipi/README.md). |
 
 ## Files
 
