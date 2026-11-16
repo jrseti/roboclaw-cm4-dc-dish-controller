@@ -18,7 +18,7 @@ converter can extend the link to the shack and isolate it electrically.
 
 **Simulations:** [sim/README.md](sim/README.md)
 
-**Tomachie Review:** [Tomachie AI](https://tomachie.com) reviewed the schematic. Here is the [review report](tomachie/TomachieReview.pdf). Scored 100/100. Its other outputs are described in [tomachie/](tomachie/README.md).
+<a href="tomachie/"><img src="images/tomachie-check.png" alt="Tomachie check mark" height="22" align="top"></a> **Tomachie Review:** [Tomachie AI](https://tomachie.com) reviewed the schematic. Here is the [review report](https://tomachie.com/r/17953055-d683-4b13-9460-e759b78ff8f2). Scored 100/100. Its other outputs are described in [tomachie/](tomachie/README.md).
 
 **Power Integrity Report:** [KiPI](https://github.com/Tomachie/KiPI) simulated the power and ground copper of the layout. Here is the [power integrity report](kipi/cm4-robo-controller_kipi_report.pdf), with a summary in [kipi/](kipi/README.md).
 
