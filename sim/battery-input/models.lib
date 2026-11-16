@@ -30,6 +30,12 @@ Rm m A 100Meg
 .model DTVSB D(Is=1e-14 Rs=0.2 BV=20.8 IBV=1m Cjo=1.2n)
 .ends
 
+* D29 SS54 (MDD, rev 2024A4): 40 V 5 A Schottky, VF 0.55 V max at 5 A,
+* IR 1 mA at 40 V (25 C), IFSM 120 A (8.3 ms half sine), Cj 500 pF at 4 V,
+* RthJA 60 C/W on 5x5 cm pads, Tj 125 C, IF(AV) derated above 75 C case.
+* Fitted VF: 0.46 V at 5 A, 0.58 V at 10 A, 0.79 V at 20 A (typical curve).
+.model SS54 D(Is=1e-5 N=1.05 Rs=20m Cjo=1.1n M=0.35 Vj=0.4 BV=40 IBV=1m Eg=0.69 Xti=2)
+
 * RoboClaw reverse path: H-bridge body diodes, PGND -> motor pin -> BAT+
 * (two diodes in series per leg, two legs per channel, two channels).
 .subckt RC_BODY BATP BATM

@@ -8,7 +8,7 @@ by hand.
 
 | Study | Write-up | Files |
 |---|---|---|
-| Battery input: hot-plug, regen with the BMS opening, reverse polarity | [battery-input.md](battery-input.md) | [battery-input/](battery-input/) |
+| Battery input: hot-plug, regen with the BMS opening, regen with F1 open (D29), reverse polarity | [battery-input.md](battery-input.md) | [battery-input/](battery-input/) |
 | Power sheet: U11 eFuse start-up, SW1/Q2 switch-on, low-battery brownout, over-voltage cutoff | [power.md](power.md) | [power/](power/) |
 | Power_5V sheet: U15 buck start-up, load steps, loop stability, switching ripple | [power-5v.md](power-5v.md) | [power-5v/](power-5v/) |
 | Field inputs: Hall encoder edges, motor PWM noise, limit/E-stop trip, ESD on the terminals | [field-inputs.md](field-inputs.md) | [field-inputs/](field-inputs/) |
@@ -46,8 +46,8 @@ and `.log` files are large and are excluded from git; the PNGs are kept.
 - **A shared board netlist per study.** In `battery-input`, the board
   circuit is in `board.inc`, and each test (`hotplug.cir`, `regen.cir`,
   `reverse.cir`) adds its own sources and test-bench parts around it.
-  `run.sh` passes the varied parameter (capacitance, braking current, Q1
-  shorted or not) through a generated `case.inc`. `power` and `power-5v`
+  `run.sh` passes the varied parameters (capacitance, braking current, Q1
+  shorted or not, F1 intact or open) through a generated `case.inc`. `power` and `power-5v`
   are built the same way.
 - **Behavioural ICs.** The eFuse (U11), the buck controller (U15) and the
   USB power switch (U4) have no SPICE models either. Each study's

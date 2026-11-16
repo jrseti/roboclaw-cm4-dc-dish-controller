@@ -4,9 +4,11 @@
 * battery. At 4 ms the BMS opens (charge over-current or a full cell);
 * the current then has nowhere to go but the RoboClaw's capacitors and
 * the TVS diodes D1 and D3.
+* RF1 (set by run.sh) is 4.5m with F1 intact or 1e9 with F1 open; with F1
+* open, D29 is the only path from V_MOTOR back to the battery.
 .include models.lib
 .include board.inc
-.param RF1=4.5m CRC=470u ESRRC=40m
+.param CRC=470u ESRRC=40m
 .include case.inc
 
 VBAT bat 0 14.6
@@ -22,7 +24,11 @@ IRG 0 vm PWL(0 0 2m 0 3m {IREG})
 run
 let vsg = v(vs) - v(g)
 let p_d1 = v(vm) * i(VSD1)
+let p_d29 = (v(vm) - v(vs)) * i(VSD29)
 meas tran vm_before find v(vm) at=3.9m
+meas tran id29_before find i(VSD29) at=3.9m
+meas tran pd29_before find p_d29 at=3.9m
+meas tran id29_pk max i(VSD29)
 meas tran vm_pk max v(vm)
 meas tran vbf_pk max v(vbf)
 meas tran vsg_pk max vsg
@@ -31,7 +37,7 @@ meas tran id3_end find i(VSD3) at=8m
 meas tran pd1_end find p_d1 at=8m
 set wr_singlescale
 set wr_vecnames
-wrdata out.dat v(vm) v(vbf) vsg i(VSD1) i(VSD3)
+wrdata out.dat v(vm) v(vbf) vsg i(VSD1) i(VSD3) i(VSD29) p_d29
 quit
 .endc
 .end

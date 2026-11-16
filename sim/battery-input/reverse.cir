@@ -2,9 +2,11 @@
 * QSHORT=0: Q1 healthy, it should block.
 * QSHORT=1: Q1 failed short; the reversed battery forward-biases D1, D3
 * and the RoboClaw's bridge body diodes, and F1/F2 carry that current.
+* D29 is forward-biased too and shares F1's current; with F1 open
+* (RF1=1e9, set by run.sh) it carries the V_MOTOR branch alone.
 .include models.lib
 .include board.inc
-.param RF1=4.5m CRC=470u ESRRC=40m
+.param CRC=470u ESRRC=40m
 .include case.inc
 RQ1SHORT jp vs {1m + (1-QSHORT)*1e9}
 
@@ -24,16 +26,18 @@ RCAB b3 jp 17m
 .tran 100n 2m 0 1u uic
 .control
 run
-let if1 = (v(vs) - v(vm)) / 4.5m
+let if1 = i(VSF1)
 let if2 = (v(vs) - v(vb)) / 17m
+let id29 = i(VSD29)
 meas tran icab_end find i(LCAB) at=2m
 meas tran if1_end find if1 at=2m
 meas tran if2_end find if2 at=2m
+meas tran id29_end find id29 at=2m
 meas tran vm_end find v(vm) at=2m
 meas tran vbf_min min v(vbf)
 set wr_singlescale
 set wr_vecnames
-wrdata out.dat v(vm) v(vbf) if1 if2
+wrdata out.dat v(vm) v(vbf) if1 if2 id29
 quit
 .endc
 .end

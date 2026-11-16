@@ -3,6 +3,7 @@
 This note covers what the battery input stage does under three stresses:
 - plugging in a fully charged battery;
 - motor braking (regen), including the battery's BMS disconnecting mid-brake;
+- motor braking with F1 open, the case D29 is fitted for;
 - connecting the battery backwards.
 
 The input stage is in `kicad/battery-input.kicad_sch`. The simulation files,
@@ -34,6 +35,13 @@ current, and the RoboClaw's input capacitance and bridge diodes.
 - F1 (15 A) feeds `V_MOTOR`, the RoboClaw's battery input.
 - F2 (5 A) feeds `V_BAT`, the logic supply branch.
 
+**Regen return diode (D29).** An SS54 Schottky (5 A, 40 V) sits across F1
+with its anode on `V_MOTOR` and its cathode on the fuse common. If F1 is
+open, braking current from the RoboClaw still has a path back to the
+battery through D29 and Q1, as the RoboClaw manual recommends. It is
+reverse-biased whenever the battery is feeding `V_MOTOR`, so it can't
+bypass the fuse.
+
 **Surge clamps.** Each branch has an SMCJ18A TVS diode to PGND: D1 on
 V_MOTOR, D3 on V_BAT. Both start conducting at 20–22 V.
 
@@ -55,6 +63,7 @@ it cuts the 5 V supply.
 | Cable | 1 m of 14 AWG pair: 1 µH, 17 mΩ |
 | Fuse cold resistance | 4.5 mΩ (15 A), 17 mΩ (5 A) |
 | C26 | 10 µF derated to 5 µF for DC bias |
+| D29 | SS54 fitted to the MDD datasheet: 0.46 V at 5 A, 0.58 V at 10 A, 120 A surge, 60 °C/W |
 | RoboClaw input capacitance | Not published; tested at 470 µF, 47 µF and none |
 
 These LCSC parts have no vendor SPICE models. The models are fitted to
@@ -101,6 +110,9 @@ discharges through R1. Q1 is fully on (more than 8 V) about 0.3 ms after plug-in
 settles at 14.4 V, just under D2's clamp. Until then the body diode carries
 the inrush, a short pulse well within its rating.
 
+**D29** stays reverse-biased throughout and never carries more than about
+30 µA. The hot-plug results are the same with or without it.
+
 ## Regen with the BMS opening
 
 ![Regen results](battery-input/results/regen.png)
@@ -135,26 +147,69 @@ protection: braking costs nothing.
 - V_BAT_F follows the rail to about 21.5 V, past U11's 18 V cutoff, so U11
   shuts off the 5 V supply and the CM4 loses power.
 
+With F1 intact, D29 plays no part in this: the 45 mV across F1 at 10 A is
+far below its forward drop, and it never conducts.
+
+## Regen with F1 open
+
+![Regen with F1 open](battery-input/results/regen_f1open.png)
+
+**The test:** the same braking ramp and BMS disconnect as above, but with
+F1 open. The dotted lines in the left panel are the F1-intact results for
+comparison. An open F1 means the RoboClaw has no supply, so this is a
+motor being back-driven, such as the elevation actuator under the dish's
+weight, with the RoboClaw's bridge rectifying the back-EMF into its input.
+
+| Braking current | Rail with battery connected | D29 current, power | Rail after BMS opens | D1 + D3 power |
+|---|---|---|---|---|
+| 5 A | 15.3 V | 5.0 A, 2.3 W | 21.6 V | 108 W |
+| 10 A | 15.6 V | 10 A, 5.8 W | 22.1 V | 220 W |
+
+**While the battery is connected,** D29 does what it is there for. All of
+the braking current goes through it to the battery, and the rail rises by
+only D29's forward drop, 0.5–1 V more than with F1 intact. V_BAT_F stays
+under U11's 18 V cutoff, so the CM4 keeps running.
+
+**When the BMS opens as well,** the outcome is the same as with F1 intact:
+D1 and D3 clamp the rail at 21.6–22.1 V and dissipate 110–220 W. D29 then
+carries only the 1.4–3.6 A that reaches D3 through the fuse common.
+
+**D29's ratings** are the limit here, not the circuit:
+- The SS54 is rated 5 A average, derated above 75 °C case temperature, with
+  60 °C/W junction-to-ambient even on 5 × 5 cm copper pads. At 5 A it
+  dissipates 2.3 W, which it cannot shed continuously on a board pad.
+- Short braking events are fine. The datasheet's transient thermal
+  impedance is about 20 °C/W at 1 s and 7 °C/W at 0.1 s, so a 1 s stop at
+  5 A raises the junction about 45 °C, and at 10 A about 115 °C.
+- So D29 is a transient return path. It covers normal stops of the dish,
+  but not sustained back-driving, and 10 A is twice its average rating.
+
 ## Reverse polarity
 
 ![Reverse-polarity result](battery-input/results/reverse.png)
 
-**The test:** the battery is connected backwards, in two cases.
+**The test:** the battery is connected backwards, in three cases.
 
 **Q1 healthy:** no measurable current flows (nanoamps). Q1 blocks the full
 reversed voltage, nothing on the board sees it, and no fuse blows. The
 plot doesn't show this case because there's nothing to show.
 
 **Q1 failed short (the plot):**
-- The reversed battery drives current forward through D1, D3 and the
+- The reversed battery drives current forward through D1, D3, D29 and the
   RoboClaw's bridge diodes.
-- About 273 A flows in total, settling within 0.2 ms: 203 A through F1 and
-  70 A through F2. That's more than 13 times each fuse's rating, so both
-  blow quickly.
+- With F1 intact (left panel), about 275 A flows in total, settling within
+  0.2 ms: 186 A through F1, 22 A through D29 beside it, and 67 A through
+  F2. That's more than 12 times each fuse's rating, so both blow quickly.
+- Once F1 has blown (right panel), D29 is the only path on the motor
+  branch. It carries 104 A, with 137 A in F2. That is close to the SS54's
+  120 A single-pulse surge rating, so D29 fails within milliseconds. If it
+  fails short, the motor branch has no fuse, and only the battery's own
+  short-circuit protection ends the fault.
 - The battery BMS's short-circuit protection will probably open even
   sooner.
 
-The fuses are the backup for a failed Q1, as the README describes.
+The fuses are the backup for a failed Q1, as the README describes. D29
+weakens that backup on the motor branch, but only in this double fault.
 
 ## Battery limits (CRIUS12 BMS)
 
@@ -191,6 +246,9 @@ In the simulations it does all three with wide margins:
   and 40 V ratings. Q1's gate never exceeds 15 V.
 - **Braking current gets back to the battery** with only about 0.5 V of
   rise.
+- **D29 does its job.** With F1 open, braking current still returns to the
+  battery through D29, the rail stays at 15.3–15.6 V, and the CM4 keeps
+  running.
 
 The weak point is regen when the battery disconnects. Given the battery's
 limits above, this can happen in normal use. The circuit survives
@@ -214,7 +272,16 @@ braking energy, and the CM4 drops out. I'd address it in this order:
    resistor that switches across V_MOTOR above about 17 V. Check whether
    the RoboClaw manual offers a voltage-clamp output that can drive it.
 
-Two smaller observations:
+Four smaller observations:
+- **D29 is a transient part.** At 5 A it dissipates 2.3 W, more than an SMA
+  package sheds continuously, so it covers stops lasting a second or so,
+  not sustained back-driving. Keeping regen under 5 A (step 2 above)
+  protects D29 as well as the BMS.
+- **D29 in the double fault.** With Q1 failed short and the battery
+  reversed, D29 carries 22 A beside F1, then 104 A alone once F1 blows,
+  near its 120 A surge rating. It will fail, and if it fails short the
+  motor branch is unfused until the battery's protection opens. This needs
+  two faults at once, so I'd note it rather than change the design.
 - **Spark at the connector.** The 113 A inrush (with large RoboClaw
   capacitance) will make a visible spark at J1. It's harmless to the
   circuit, but it will pit the connector contacts over many plug-ins.

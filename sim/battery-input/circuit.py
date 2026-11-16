@@ -54,8 +54,11 @@ with schemdraw.Drawing(show=False) as d:
     d.add(elm.Line().right().at((gx, gy)).to((16, gy)))
     d.add(elm.Zener().up().at((16, gy)).to((16, Y0)).label("D2\nBZT52C15", loc="bottom"))
 
-    # V_MOTOR branch
-    d.add(elm.Fuse().right().at((17, Y0)).to((20, Y0)).label("F1 15 A, 4.5 mΩ"))
+    # V_MOTOR branch; D29 across F1, anode on V_MOTOR, returns regen when F1 is open
+    d.add(elm.Fuse().right().at((17, Y0)).to((20, Y0)).label("F1 15 A, 4.5 mΩ", loc="bottom"))
+    d.add(elm.Line().up().at((17, Y0)).to((17, 1.8)))
+    d.add(elm.Line().up().at((20, Y0)).to((20, 1.8)))
+    d.add(elm.Schottky().left().at((20, 1.8)).to((17, 1.8)).label("D29 SS54\n(5 A Schottky)"))
     d.add(elm.Line().right().at((20, Y0)).to((33, Y0)))
     net(d, (20, Y0), "V_MOTOR")
     for x in (20, 23, 26, 29):
@@ -76,7 +79,7 @@ with schemdraw.Drawing(show=False) as d:
 
     # V_BAT branch
     d.add(elm.Line().down().at((17, Y0)).to((17, YB)))
-    d.add(elm.Fuse().right().at((17, YB)).to((20, YB)).label("F2 5 A, 17 mΩ"))
+    d.add(elm.Fuse().right().at((17, YB)).to((20, YB)).label("F2 5 A, 17 mΩ", loc="bottom"))
     d.add(elm.Dot().at((20, YB)))
     net(d, (20, YB), "V_BAT")
     d.add(elm.DiodeTVS().up().at((20, YB - 3)).to((20, YB)).label("D3\nSMCJ18A", loc="bottom"))

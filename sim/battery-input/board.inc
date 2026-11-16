@@ -1,7 +1,7 @@
 * Battery input stage as drawn in kicad/battery-input.kicad_sch,
 * plus the parts each output feeds on the first stage of the
 * power and Robo sheets.
-* VSDx are 0 V sense sources for the TVS currents.
+* VSDx are 0 V sense sources for the TVS and D29 currents, VSF1 for F1.
 * Nodes: jp = J1 pin 1 (battery +), 0 = PGND/J1 pin 2,
 *        vs = Q1 source (fuse common), vm = V_MOTOR, vb = V_BAT,
 *        vbf = V_BAT_F (U11 eFuse input), g = Q1 gate.
@@ -11,9 +11,16 @@ MQ1 jp g vs SP40P04NK
 R1 g 0 47k
 DD2 g vs BZT52C15
 
-* Fuses (cold resistance of Littelfuse 0287 ATO plus holder)
-RF1 vs vm {RF1}
+* Fuses (cold resistance of Littelfuse 0287 ATO plus holder).
+* RF1 is set by run.sh: 4.5m intact, 1e9 for an open F1. VSF1 senses its current.
+RF1 vs f1 {RF1}
+VSF1 f1 vm 0
 RF2 vs vb 17m
+
+* D29 SS54 Schottky across F1: anode on V_MOTOR, cathode on the fuse common.
+* Returns RoboClaw braking current to the battery when F1 is open.
+VSD29 vm d29a 0
+DD29 d29a vs SS54
 
 * V_MOTOR: D1 TVS and the RoboClaw's own input capacitance (unknown,
 * parametrised; ESR in series)
